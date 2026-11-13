@@ -1,0 +1,320 @@
+<template>
+  <style>
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      src: url('assets/fonts/captured-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 600;
+      src: url('assets/fonts/captured-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      src: url('assets/fonts/captured-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'JetBrains Mono';
+      font-style: normal;
+      font-weight: 500;
+      src: url('assets/fonts/captured-tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwgknk-4.woff2') format('woff2');
+    }
+
+    #root {
+      width: 1080px;
+      height: 1920px;
+      position: relative;
+      overflow: hidden;
+      font-family: 'Inter', sans-serif;
+      color: #FAFAFA;
+      box-sizing: border-box;
+      background: #09090B;
+    }
+
+    .f03-bg {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, #0E0E12 0%, #08080A 100%);
+      z-index: 0;
+    }
+
+    .f03-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1080px;
+      height: 1600px;
+      padding: 85px 50px 30px 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      z-index: 2;
+      box-sizing: border-box;
+    }
+
+    .f03-tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      color: #D4681A;
+      background: rgba(212, 104, 26, 0.08);
+      border: 1px solid rgba(212, 104, 26, 0.25);
+      padding: 10px 24px;
+      border-radius: 9999px;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+    }
+
+    .f03-headline {
+      font-size: 68px;
+      font-weight: 700;
+      line-height: 1.08;
+      letter-spacing: -0.03em;
+      text-transform: uppercase;
+      margin-bottom: 45px;
+      color: #FAFAFA;
+    }
+
+    .f03-headline span.accent {
+      color: #D4681A;
+    }
+
+    .f03-grid {
+      width: 100%;
+      max-width: 980px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+    }
+
+    .f03-card {
+      background: #141417;
+      border: 1px solid #27272A;
+      border-radius: 18px;
+      padding: 26px 26px;
+      text-align: left;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    .f03-card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 14px;
+    }
+
+    .f03-icon-box {
+      width: 52px;
+      height: 52px;
+      border-radius: 12px;
+      background: rgba(212, 104, 26, 0.1);
+      border: 1px solid rgba(212, 104, 26, 0.25);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 26px;
+    }
+
+    .f03-card-stat {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      font-weight: 600;
+      color: #D4681A;
+      background: rgba(212, 104, 26, 0.08);
+      border: 1px solid rgba(212, 104, 26, 0.2);
+      padding: 6px 12px;
+      border-radius: 6px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .f03-card-title {
+      font-size: 26px;
+      font-weight: 700;
+      color: #FAFAFA;
+      margin-bottom: 8px;
+      letter-spacing: -0.01em;
+    }
+
+    .f03-card-desc {
+      font-size: 18px;
+      color: #A1A1AA;
+      line-height: 1.4;
+    }
+
+    .f03-banner {
+      margin-top: 36px;
+      width: 100%;
+      max-width: 980px;
+      background: #111114;
+      border: 1px solid #222226;
+      border-radius: 16px;
+      padding: 20px 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .f03-banner-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 16px;
+      font-weight: 500;
+      color: #D4D4D8;
+    }
+
+    .f03-banner-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #D4681A;
+    }
+  </style>
+
+  <div data-hf-id="hf-ns54"
+    id="root"
+    data-composition-id="03-features"
+    data-start="10"
+    data-duration="8.5"
+    data-width="1080"
+    data-height="1920"
+  >
+    <div data-hf-id="hf-n77n" id="f03-bg" class="clip f03-bg" data-start="0" data-duration="8.5" data-track-index="0"></div>
+
+    <div data-hf-id="hf-apmg" id="f03-main" class="clip f03-container" data-start="0" data-duration="8.5" data-track-index="1">
+      <div data-hf-id="hf-wa8k" id="f03-tag" class="f03-tag">PANEL DE GESTIÓN INTEGRAL</div>
+      <h2 data-hf-id="hf-xoui" id="f03-title" class="f03-headline">
+        MÓDULOS COMPLETOS<br data-hf-id="hf-x5px" />
+        <span data-hf-id="hf-nv17" class="accent">PARA TU GIMNASIO</span>
+      </h2>
+
+      <div data-hf-id="hf-lrea" class="f03-grid">
+        <div data-hf-id="hf-9rd0" id="f03-c1" class="f03-card">
+          <div data-hf-id="hf-xlse" class="f03-card-header">
+            <div data-hf-id="hf-1xhl" class="f03-icon-box">💳</div>
+            <div data-hf-id="hf-9px7" class="f03-card-stat">Automático</div>
+          </div>
+          <div data-hf-id="hf-nthm" class="f03-card-title">Membresías y Cobros</div>
+          <div data-hf-id="hf-mctv" class="f03-card-desc">Planes periódicos, control de cuotas y alertas de socios por vencer.</div>
+        </div>
+
+        <div data-hf-id="hf-kmun" id="f03-c2" class="f03-card">
+          <div data-hf-id="hf-mvte" class="f03-card-header">
+            <div data-hf-id="hf-j2md" class="f03-icon-box">🆔</div>
+            <div data-hf-id="hf-7hdr" class="f03-card-stat">En Puerta</div>
+          </div>
+          <div data-hf-id="hf-kcnn" class="f03-card-title">Acceso por DNI</div>
+          <div data-hf-id="hf-hjvr" class="f03-card-desc">Validación automática de estado activo al ingresar al gimnasio.</div>
+        </div>
+
+        <div data-hf-id="hf-eh4u" id="f03-c3" class="f03-card">
+          <div data-hf-id="hf-na4f" class="f03-card-header">
+            <div data-hf-id="hf-34eo" class="f03-icon-box">💰</div>
+            <div data-hf-id="hf-7o1r" class="f03-card-stat">Finanzas</div>
+          </div>
+          <div data-hf-id="hf-6rnz" class="f03-card-title">Caja en Vivo</div>
+          <div data-hf-id="hf-ydw1" class="f03-card-desc">Cierre diario, múltiples medios de pago y flujo de caja claro.</div>
+        </div>
+
+        <div data-hf-id="hf-pcmh" id="f03-c4" class="f03-card">
+          <div data-hf-id="hf-nofg" class="f03-card-header">
+            <div data-hf-id="hf-urz3" class="f03-icon-box">📅</div>
+            <div data-hf-id="hf-9olr" class="f03-card-stat">Con Cupos</div>
+          </div>
+          <div data-hf-id="hf-udec" class="f03-card-title">Clases y Horarios</div>
+          <div data-hf-id="hf-fomx" class="f03-card-desc">Definición de turnos, cupos por clase y asignación de profesores.</div>
+        </div>
+
+        <div data-hf-id="hf-okyo" id="f03-c5" class="f03-card">
+          <div data-hf-id="hf-o2qh" class="f03-card-header">
+            <div data-hf-id="hf-hnv6" class="f03-icon-box">📦</div>
+            <div data-hf-id="hf-ffka" class="f03-card-stat">Mostrador</div>
+          </div>
+          <div data-hf-id="hf-m2g3" class="f03-card-title">Productos y Stock</div>
+          <div data-hf-id="hf-545q" class="f03-card-desc">Venta rápida de bebidas y suplementos con descuento automático.</div>
+        </div>
+
+        <div data-hf-id="hf-x8uj" id="f03-c6" class="f03-card">
+          <div data-hf-id="hf-oh1i" class="f03-card-header">
+            <div data-hf-id="hf-ssfy" class="f03-icon-box">📊</div>
+            <div data-hf-id="hf-pd53" class="f03-card-stat">Métricas</div>
+          </div>
+          <div data-hf-id="hf-1g3d" class="f03-card-title">Reportes y Retención</div>
+          <div data-hf-id="hf-zoxe" class="f03-card-desc">Ingresos mensuales, asistencia promedio y socios activos.</div>
+        </div>
+      </div>
+
+      <div data-hf-id="hf-c9vy" id="f03-banner" class="f03-banner">
+        <div data-hf-id="hf-fjpo" class="f03-banner-item">
+          <div data-hf-id="hf-4h6a" class="f03-banner-dot"></div>
+          <span data-hf-id="hf-ddbr">100% en la Nube</span>
+        </div>
+        <div data-hf-id="hf-8ko4" class="f03-banner-item">
+          <div data-hf-id="hf-fbue" class="f03-banner-dot"></div>
+          <span data-hf-id="hf-22uq">Recepción Ágil</span>
+        </div>
+        <div data-hf-id="hf-7dr1" class="f03-banner-item">
+          <div data-hf-id="hf-fq5f" class="f03-banner-dot"></div>
+          <span data-hf-id="hf-8hnm">Multi-Dispositivo</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+
+    tl.fromTo("#f03-tag", 
+      { opacity: 0, y: -20 }, 
+      { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 
+      0.2
+    );
+
+    tl.fromTo("#f03-title", 
+      { opacity: 0, y: 30 }, 
+      { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }, 
+      0.4
+    );
+
+    // Stagger cards in pairs
+    tl.fromTo(["#f03-c1", "#f03-c2"], 
+      { opacity: 0, y: 35, scale: 0.97 }, 
+      { opacity: 1, y: 0, scale: 1, duration: 0.6, stagger: 0.15, ease: "power2.out" }, 
+      1.1
+    );
+
+    tl.fromTo(["#f03-c3", "#f03-c4"], 
+      { opacity: 0, y: 35, scale: 0.97 }, 
+      { opacity: 1, y: 0, scale: 1, duration: 0.6, stagger: 0.15, ease: "power2.out" }, 
+      2.6
+    );
+
+    tl.fromTo(["#f03-c5", "#f03-c6"], 
+      { opacity: 0, y: 35, scale: 0.97 }, 
+      { opacity: 1, y: 0, scale: 1, duration: 0.6, stagger: 0.15, ease: "power2.out" }, 
+      4.2
+    );
+
+    tl.fromTo("#f03-banner", 
+      { opacity: 0, y: 20 }, 
+      { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }, 
+      5.8
+    );
+
+    window.__timelines["03-features"] = tl;
+    tl.seek(0);
+  </script>
+</template>

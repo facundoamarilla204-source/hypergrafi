@@ -1,0 +1,25 @@
+{
+  "name": "paola-avila-motion",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Sistema audiovisual maestro en Remotion para Reels educativos de Paola Avila Propiedades",
+  "scripts": {
+    "dev": "remotion studio",
+    "build": "remotion bundle",
+    "render:demo": "remotion render StyleTestDemo exports/style-test-demo.mp4",
+    "render:ep01": "remotion render 01-BoletoVsEscritura exports/01-boleto-vs-escritura.mp4"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.539",
+    "@remotion/google-fonts": "4.0.539",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "remotion": "4.0.539"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.7.0"
+  }
+}
+

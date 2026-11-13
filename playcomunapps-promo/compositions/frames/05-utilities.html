@@ -1,0 +1,496 @@
+<template>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    #root-05 {
+      width: 1080px;
+      height: 1920px;
+      position: relative;
+      overflow: hidden;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: #ffffff;
+      background: linear-gradient(155deg, #2e096e 0%, #20064f 52%, #150336 100%);
+      box-sizing: border-box;
+    }
+
+    .u05-bg-shape-1 {
+      position: absolute;
+      width: 340px;
+      height: 760px;
+      border-radius: 9999px;
+      background: linear-gradient(180deg, rgba(124, 58, 237, 0.16) 0%, rgba(91, 33, 182, 0.03) 100%);
+      top: -140px;
+      right: -80px;
+      pointer-events: none;
+    }
+
+    .u05-bg-shape-2 {
+      position: absolute;
+      width: 280px;
+      height: 620px;
+      border-radius: 9999px;
+      background: linear-gradient(180deg, rgba(139, 92, 246, 0.10) 0%, rgba(91, 33, 182, 0.02) 100%);
+      bottom: -120px;
+      left: -70px;
+      pointer-events: none;
+    }
+
+    .u05-content {
+      position: absolute;
+      top: 175px;
+      left: 72px;
+      right: 72px;
+      bottom: 240px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      z-index: 10;
+    }
+
+    .u05-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 14px;
+    }
+
+    .u05-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 20px;
+      background: rgba(59, 130, 246, 0.2);
+      border: 1px solid rgba(147, 197, 253, 0.4);
+      border-radius: 9999px;
+      font-size: 14px;
+      font-weight: 700;
+      color: #93c5fd;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .u05-title {
+      font-family: 'Sora', sans-serif;
+      font-size: 60px;
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      color: #ffffff;
+      max-width: 900px;
+    }
+
+    .u05-title span.hl {
+      color: #93c5fd;
+    }
+
+    /* Stack of 3 Utility Tools */
+    .u05-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+    }
+
+    .u05-tool-card {
+      background: rgba(19, 4, 46, 0.82);
+      border: 1.5px solid rgba(196, 181, 253, 0.22);
+      border-radius: 22px;
+      padding: 24px;
+      box-shadow: 0 20px 44px rgba(8, 2, 24, 0.45);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      position: relative;
+    }
+
+    .u05-card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .u05-card-title-group {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .u05-icon-box {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .u05-icon-box.blue {
+      background: rgba(59, 130, 246, 0.22);
+      color: #93c5fd;
+      border: 1px solid rgba(59, 130, 246, 0.45);
+    }
+
+    .u05-icon-box.purple {
+      background: rgba(124, 58, 237, 0.25);
+      color: #ddd6fe;
+      border: 1px solid rgba(167, 139, 250, 0.45);
+    }
+
+    .u05-icon-box.emerald {
+      background: rgba(16, 185, 129, 0.22);
+      color: #6ee7b7;
+      border: 1px solid rgba(16, 185, 129, 0.45);
+    }
+
+    .u05-card-heading {
+      font-size: 23px;
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    .u05-card-sub {
+      font-size: 15px;
+      color: #cbd5e1;
+    }
+
+    .u05-status-badge {
+      font-size: 14px;
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 8px;
+    }
+
+    .u05-status-badge.blue {
+      background: rgba(59, 130, 246, 0.18);
+      color: #93c5fd;
+      border: 1px solid rgba(59, 130, 246, 0.35);
+    }
+
+    .u05-status-badge.purple {
+      background: rgba(124, 58, 237, 0.22);
+      color: #ddd6fe;
+      border: 1px solid rgba(167, 139, 250, 0.4);
+    }
+
+    .u05-status-badge.green {
+      background: rgba(16, 185, 129, 0.18);
+      color: #6ee7b7;
+      border: 1px solid rgba(16, 185, 129, 0.35);
+    }
+
+    /* Card 1: QR Generator Detail - Enlarged & High Contrast */
+    .u05-qr-view {
+      background: rgba(12, 2, 32, 0.55);
+      border: 1px solid rgba(196, 181, 253, 0.14);
+      border-radius: 16px;
+      padding: 18px 22px;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .u05-qr-matrix {
+      width: 112px;
+      height: 112px;
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+    }
+
+    .u05-qr-desc {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .u05-qr-target {
+      font-size: 20px;
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    .u05-qr-hint {
+      font-size: 15px;
+      color: #cbd5e1;
+    }
+
+    .u05-qr-formats {
+      display: flex;
+      gap: 8px;
+      margin-top: 4px;
+    }
+
+    .u05-qr-tag {
+      font-size: 13px;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 6px;
+      background: rgba(124, 58, 237, 0.25);
+      color: #ddd6fe;
+      border: 1px solid rgba(167, 139, 250, 0.35);
+    }
+
+    /* Card 2: PDF Signature Detail */
+    .u05-sign-view {
+      background: rgba(12, 2, 32, 0.55);
+      border: 1px solid rgba(196, 181, 253, 0.14);
+      border-radius: 14px;
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .u05-signature-box {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .u05-signature-canvas {
+      height: 38px;
+      display: flex;
+      align-items: center;
+    }
+
+    /* Card 3: Image Compressor Detail */
+    .u05-compress-view {
+      background: rgba(12, 2, 32, 0.55);
+      border: 1px solid rgba(196, 181, 253, 0.14);
+      border-radius: 14px;
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .u05-comp-col {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .u05-comp-size {
+      font-size: 24px;
+      font-weight: 800;
+      color: #ffffff;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .u05-comp-size.reduced {
+      color: #34d399;
+    }
+
+    /* Bottom Nav */
+    .u05-bottom-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 22px;
+      background: rgba(19, 4, 46, 0.72);
+      border: 1px solid rgba(196, 181, 253, 0.2);
+      border-radius: 16px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #e2e8f0;
+    }
+
+    .u05-bottom-nav span.tag {
+      color: #93c5fd;
+    }
+  </style>
+
+  <div data-hf-id="hf-05-root" id="root-05" data-composition-id="05-utilities" data-width="1080" data-height="1920">
+    <div class="u05-bg-shape-1"></div>
+    <div class="u05-bg-shape-2"></div>
+
+    <div class="u05-content">
+      <!-- Header -->
+      <div id="u05-header" class="u05-header">
+        <div class="u05-badge" data-layout-ignore="true">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="16 18 22 12 16 6"/>
+            <polyline points="8 6 2 12 8 18"/>
+          </svg>
+          Documentos & Archivos
+        </div>
+        <h1 class="u05-title">
+          Códigos QR, Firmas PDF y <span class="hl">Compresión al Instante</span>
+        </h1>
+      </div>
+
+      <!-- Tools Stack -->
+      <div class="u05-stack">
+        <!-- 1. Generador QR (con QR 27x27 real de alta densidad) -->
+        <div id="u05-card-qr" class="u05-tool-card">
+          <div class="u05-card-header">
+            <div class="u05-card-title-group">
+              <div class="u05-icon-box blue">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect width="7" height="7" x="3" y="3" rx="1"/>
+                  <rect width="7" height="7" x="14" y="3" rx="1"/>
+                  <rect width="7" height="7" x="14" y="14" rx="1"/>
+                  <rect width="7" height="7" x="3" y="14" rx="1"/>
+                </svg>
+              </div>
+              <div>
+                <div class="u05-card-heading">Generador de Códigos QR</div>
+                <div class="u05-card-sub" data-layout-ignore="true">Para tu menú, local, catálogo o enlace de WhatsApp</div>
+              </div>
+            </div>
+            <span class="u05-status-badge blue" data-layout-ignore="true">Descarga Vectorial</span>
+          </div>
+
+          <div class="u05-qr-view">
+            <div class="u05-qr-matrix">
+              <!-- Full 27x27 authentic QR Code for https://playcomun.online -->
+              <svg width="100" height="100" viewBox="0 0 27 27" shape-rendering="crispEdges" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#FFFFFF" d="M0 0h27v27H0z"/>
+                <path stroke="#0F172A" stroke-width="1" d="M1 1.5h7m1 0h3m3 0h1m1 0h1m1 0h7M1 2.5h1m5 0h1m1 0h1m9 0h1m5 0h1M1 3.5h1m1 0h3m1 0h1m1 0h3m1 0h2m4 0h1m1 0h3m1 0h1M1 4.5h1m1 0h3m1 0h1m2 0h1m1 0h1m1 0h1m1 0h2m1 0h1m1 0h3m1 0h1M1 5.5h1m1 0h3m1 0h1m1 0h1m1 0h1m1 0h3m1 0h1m1 0h1m1 0h3m1 0h1M1 6.5h1m5 0h1m4 0h1m1 0h2m3 0h1m5 0h1M1 7.5h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7M11 8.5h2m1 0h1m2 0h1M1 9.5h1m2 0h7m1 0h1m2 0h2m1 0h1m2 0h1m1 0h3M2 10.5h1m3 0h1m1 0h4m1 0h4m3 0h5M2 11.5h2m1 0h5m1 0h1m1 0h2m1 0h2m3 0h2m2 0h1M1 12.5h2m1 0h1m1 0h1m2 0h2m1 0h2m4 0h2m2 0h4M4 13.5h2m1 0h1m9 0h1m1 0h1m5 0h1M1 14.5h1m1 0h1m2 0h1m1 0h4m1 0h1m1 0h3m3 0h1m2 0h1M1 15.5h7m1 0h1m1 0h1m2 0h3m2 0h1m1 0h5M1 16.5h1m3 0h1m2 0h1m1 0h1m2 0h1m1 0h2m1 0h3m1 0h2m1 0h1M1 17.5h1m1 0h2m2 0h4m1 0h3m2 0h5m1 0h2M9 18.5h2m1 0h1m1 0h1m2 0h1m3 0h1m1 0h2M1 19.5h7m1 0h1m1 0h1m1 0h3m1 0h1m1 0h1m1 0h1m3 0h1M1 20.5h1m5 0h1m1 0h1m1 0h2m1 0h1m1 0h2m3 0h1m3 0h1M1 21.5h1m1 0h3m1 0h1m1 0h2m1 0h2m1 0h7M1 22.5h1m1 0h3m1 0h1m1 0h3m1 0h4m1 0h2m4 0h2M1 23.5h1m1 0h3m1 0h1m2 0h3m1 0h1m1 0h1m4 0h5M1 24.5h1m5 0h1m3 0h2m5 0h1m1 0h2m1 0h3M1 25.5h7m1 0h1m2 0h2m3 0h1m1 0h1m2 0h1m2 0h1"/>
+              </svg>
+            </div>
+            <div class="u05-qr-desc">
+              <span class="u05-qr-target" data-layout-ignore="true">https://playcomun.online/menu</span>
+              <span class="u05-qr-hint" data-layout-ignore="true">Sin vencimiento • Listo para imprimir o compartir</span>
+              <div class="u05-qr-formats" data-layout-ignore="true">
+                <span class="u05-qr-tag">PNG Alta Res</span>
+                <span class="u05-qr-tag">SVG Vector</span>
+                <span class="u05-qr-tag">PDF</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Firmar Documentos PDF -->
+        <div id="u05-card-sign" class="u05-tool-card">
+          <div class="u05-card-header">
+            <div class="u05-card-title-group">
+              <div class="u05-icon-box purple">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 19l7-7 3 3-7 7-3-3z"/>
+                  <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/>
+                  <path d="M2 2l7.586 7.586"/>
+                  <circle cx="11" cy="11" r="2"/>
+                </svg>
+              </div>
+              <div>
+                <div class="u05-card-heading">Firmar Documentos PDF</div>
+                <div class="u05-card-sub" data-layout-ignore="true">Estampá tu firma digital directo desde el celular o mouse</div>
+              </div>
+            </div>
+            <span class="u05-status-badge purple" data-layout-ignore="true">100% Privado</span>
+          </div>
+
+          <div class="u05-sign-view" data-layout-ignore="true">
+            <div class="u05-signature-box">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#c4b5fd" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+              </svg>
+              <span style="font-size: 16px; color: #e2e8f0; font-weight: 600;">Contrato_Servicios_2026.pdf</span>
+            </div>
+            <div class="u05-signature-canvas">
+              <svg width="120" height="34" viewBox="0 0 120 34" fill="none">
+                <path d="M5 26C20 18 35 8 50 16C62 23 48 30 68 20C82 13 95 18 115 10" stroke="#38bdf8" stroke-width="2.8" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Compresor de Imágenes -->
+        <div id="u05-card-compress" class="u05-tool-card">
+          <div class="u05-card-header">
+            <div class="u05-card-title-group">
+              <div class="u05-icon-box emerald">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"/>
+                  <path d="M12 12v9"/>
+                  <path d="m8 17 4 4 4-4"/>
+                </svg>
+              </div>
+              <div>
+                <div class="u05-card-heading">Compresor de Imágenes Pesadas</div>
+                <div class="u05-card-sub" data-layout-ignore="true">Bajá el peso de tus fotos sin perder nitidez visual</div>
+              </div>
+            </div>
+            <span class="u05-status-badge green" data-layout-ignore="true">-92% peso</span>
+          </div>
+
+          <div class="u05-compress-view">
+            <div class="u05-comp-col">
+              <span style="font-size: 13px; color: #cbd5e1; font-weight: 600; text-transform: uppercase;" data-layout-ignore="true">Original</span>
+              <span class="u05-comp-size">8.6 MB</span>
+            </div>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="2">
+              <line x1="5" y1="12" x2="19" y2="12"/>
+              <polyline points="12 5 19 12 12 19"/>
+            </svg>
+            <div class="u05-comp-col" style="text-align: right;">
+              <span style="font-size: 13px; color: #cbd5e1; font-weight: 600; text-transform: uppercase;" data-layout-ignore="true">Optimizado</span>
+              <span class="u05-comp-size reduced">640 KB</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Nav -->
+      <div id="u05-nav" class="u05-bottom-nav" data-layout-ignore="true">
+        <span>Tus archivos no se suben a ningún servidor externo</span>
+        <span class="tag">Procesamiento local</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    window.__timelines = window.__timelines || {};
+    (function () {
+      const tl = gsap.timeline({ paused: true });
+      window.__timelines["05-utilities"] = tl;
+
+      tl.fromTo("#u05-header", 
+        { y: -25, opacity: 0 }, 
+        { y: 0, opacity: 1, duration: 0.45, ease: "power3.out" }, 
+        0.1
+      );
+
+      tl.fromTo("#u05-card-qr", 
+        { scale: 0.94, y: 25, opacity: 0 }, 
+        { scale: 1, y: 0, opacity: 1, duration: 0.45, ease: "power2.out" }, 
+        0.25
+      );
+
+      tl.fromTo("#u05-card-sign", 
+        { scale: 0.94, y: 25, opacity: 0 }, 
+        { scale: 1, y: 0, opacity: 1, duration: 0.45, ease: "power2.out" }, 
+        2.2
+      );
+
+      tl.fromTo("#u05-card-compress", 
+        { scale: 0.94, y: 25, opacity: 0 }, 
+        { scale: 1, y: 0, opacity: 1, duration: 0.45, ease: "power2.out" }, 
+        4.3
+      );
+
+      tl.fromTo("#u05-nav", 
+        { y: 20, opacity: 0 }, 
+        { y: 0, opacity: 1, duration: 0.4, ease: "power2.out" }, 
+        5.8
+      );
+
+      tl.to({}, { duration: 8.2 }, 0);
+    })();
+  </script>
+</template>

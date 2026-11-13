@@ -1,0 +1,248 @@
+<template>
+  <style>
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      src: url('assets/fonts/captured-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      src: url('assets/fonts/captured-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'JetBrains Mono';
+      font-style: normal;
+      font-weight: 500;
+      src: url('assets/fonts/captured-tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwgknk-4.woff2') format('woff2');
+    }
+
+    #root {
+      width: 1080px;
+      height: 1920px;
+      position: relative;
+      overflow: hidden;
+      font-family: 'Inter', sans-serif;
+      color: #FAFAFA;
+      box-sizing: border-box;
+      background: #09090B;
+    }
+
+    .f01-bg {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, #0F0F13 0%, #08080A 100%);
+      z-index: 0;
+    }
+
+    .f01-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1080px;
+      height: 1600px;
+      padding: 120px 70px 60px 70px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      text-align: center;
+      z-index: 2;
+      box-sizing: border-box;
+    }
+
+    .f01-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 26px;
+      background: rgba(239, 68, 68, 0.08);
+      border: 1px solid rgba(239, 68, 68, 0.25);
+      border-radius: 9999px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 22px;
+      font-weight: 500;
+      color: #F87171;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 50px;
+    }
+
+    .f01-headline {
+      font-size: 76px;
+      font-weight: 700;
+      line-height: 1.08;
+      letter-spacing: -0.04em;
+      text-transform: uppercase;
+      margin-bottom: 70px;
+      color: #FFFFFF;
+    }
+
+    .f01-headline span.highlight {
+      color: #D4681A;
+      display: block;
+    }
+
+    .f01-cards-wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 26px;
+      align-items: center;
+    }
+
+    .f01-card {
+      width: 100%;
+      max-width: 900px;
+      background: #141417;
+      border: 1px solid #27272A;
+      border-left: 5px solid #EF4444;
+      border-radius: 18px;
+      padding: 30px 38px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    }
+
+    .f01-card-info {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      text-align: left;
+    }
+
+    .f01-card-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 12px;
+      background: rgba(239, 68, 68, 0.1);
+      color: #F87171;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+    }
+
+    .f01-card-title {
+      font-size: 30px;
+      font-weight: 700;
+      color: #F4F4F5;
+      margin-bottom: 6px;
+    }
+
+    .f01-card-sub {
+      font-size: 20px;
+      color: #A1A1AA;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .f01-card-status {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 20px;
+      font-weight: 600;
+      color: #F87171;
+      background: rgba(239, 68, 68, 0.08);
+      border: 1px solid rgba(239, 68, 68, 0.2);
+      padding: 8px 18px;
+      border-radius: 8px;
+    }
+  </style>
+
+  <div data-hf-id="hf-19if"
+    id="root"
+    data-composition-id="01-hook"
+    data-start="0"
+    data-duration="5.6"
+    data-width="1080"
+    data-height="1920"
+  >
+    <div data-hf-id="hf-6u21" id="f01-bg" class="clip f01-bg" data-start="0" data-duration="5.6" data-track-index="0"></div>
+
+    <div data-hf-id="hf-keoe" id="f01-main" class="clip f01-container" data-start="0" data-duration="5.6" data-track-index="1">
+      <div data-hf-id="hf-o9s0" id="f01-badge" class="f01-badge">
+        <span data-hf-id="hf-bizx">¿Tu gimnasio sigue así?</span>
+      </div>
+
+      <h1 data-hf-id="hf-mfz7" id="f01-title" class="f01-headline">
+        ¿SEGUÍS ANOTANDO
+        <span data-hf-id="hf-yfp8" class="highlight">CUOTAS EN PAPEL?</span>
+      </h1>
+
+      <div data-hf-id="hf-g57f" class="f01-cards-wrapper">
+        <div data-hf-id="hf-1n4w" id="f01-card-1" class="f01-card">
+          <div data-hf-id="hf-57t7" class="f01-card-info">
+            <div data-hf-id="hf-wtir" class="f01-card-icon">✕</div>
+            <div data-hf-id="hf-yeow">
+              <div data-hf-id="hf-qdw6" class="f01-card-title">Cuadernos y Planillas</div>
+              <div data-hf-id="hf-40p8" class="f01-card-sub">Registros manuales y desorden</div>
+            </div>
+          </div>
+          <div data-hf-id="hf-czjz" class="f01-card-status">CAOS</div>
+        </div>
+
+        <div data-hf-id="hf-cimj" id="f01-card-2" class="f01-card">
+          <div data-hf-id="hf-jsx7" class="f01-card-info">
+            <div data-hf-id="hf-ip30" class="f01-card-icon">⚠</div>
+            <div data-hf-id="hf-y7yw">
+              <div data-hf-id="hf-rifq" class="f01-card-title">Socios Sin Cobrar</div>
+              <div data-hf-id="hf-lib9" class="f01-card-sub">Cuotas vencidas sin aviso</div>
+            </div>
+          </div>
+          <div data-hf-id="hf-cb5p" class="f01-card-status">PÉRDIDAS</div>
+        </div>
+
+        <div data-hf-id="hf-8kii" id="f01-card-3" class="f01-card">
+          <div data-hf-id="hf-jem6" class="f01-card-info">
+            <div data-hf-id="hf-tpae" class="f01-card-icon">📉</div>
+            <div data-hf-id="hf-x11t">
+              <div data-hf-id="hf-vxyl" class="f01-card-title">Caja Descontrolada</div>
+              <div data-hf-id="hf-7gqh" class="f01-card-sub">Números que no coinciden</div>
+            </div>
+          </div>
+          <div data-hf-id="hf-ovx3" class="f01-card-status">ESTRÉS</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+
+    tl.fromTo("#f01-badge", 
+      { opacity: 0, y: -30, scale: 0.95 }, 
+      { opacity: 1, y: 0, scale: 1, duration: 0.6, ease: "power2.out" }, 
+      0.1
+    );
+
+    tl.fromTo("#f01-title", 
+      { opacity: 0, y: 40, scale: 0.96 }, 
+      { opacity: 1, y: 0, scale: 1, duration: 0.7, ease: "power3.out" }, 
+      0.4
+    );
+
+    tl.fromTo("#f01-card-1", 
+      { opacity: 0, x: -60 }, 
+      { opacity: 1, x: 0, duration: 0.5, ease: "power2.out" }, 
+      1.2
+    );
+
+    tl.fromTo("#f01-card-2", 
+      { opacity: 0, x: 60 }, 
+      { opacity: 1, x: 0, duration: 0.5, ease: "power2.out" }, 
+      2.0
+    );
+
+    tl.fromTo("#f01-card-3", 
+      { opacity: 0, y: 50 }, 
+      { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 
+      2.8
+    );
+
+    window.__timelines["01-hook"] = tl;
+    tl.seek(0);
+  </script>
+</template>

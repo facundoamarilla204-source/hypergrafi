@@ -1,0 +1,250 @@
+<template>
+  <style>
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      src: url('assets/fonts/captured-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      src: url('assets/fonts/captured-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'JetBrains Mono';
+      font-style: normal;
+      font-weight: 500;
+      src: url('assets/fonts/captured-tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwgknk-4.woff2') format('woff2');
+    }
+
+    #root {
+      width: 1080px;
+      height: 1920px;
+      position: relative;
+      overflow: hidden;
+      font-family: 'Inter', sans-serif;
+      color: #FAFAFA;
+      box-sizing: border-box;
+    }
+
+    .f02-bg {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 50% 30%, #301708 0%, #120c08 50%, #08080a 100%);
+      z-index: 0;
+    }
+
+    .f02-glow {
+      position: absolute;
+      top: 250px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(255, 122, 26, 0.28) 0%, transparent 70%);
+      filter: blur(50px);
+      z-index: 1;
+    }
+
+    .f02-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1080px;
+      height: 1600px;
+      padding: 100px 60px 40px 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      z-index: 2;
+      box-sizing: border-box;
+    }
+
+    .f02-logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      padding: 16px 36px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 122, 26, 0.4);
+      border-radius: 9999px;
+      backdrop-filter: blur(16px);
+      box-shadow: 0 0 30px rgba(255, 122, 26, 0.2);
+      margin-bottom: 40px;
+    }
+
+    .f02-logo-icon {
+      width: 50px;
+      height: 50px;
+    }
+
+    .f02-logo-text {
+      font-size: 38px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: #FFFFFF;
+    }
+
+    .f02-logo-text span {
+      color: #FF7A1A;
+    }
+
+    .f02-headline {
+      font-size: 80px;
+      font-weight: 700;
+      line-height: 1.05;
+      letter-spacing: -0.04em;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+      color: #FFFFFF;
+    }
+
+    .f02-sub {
+      font-size: 32px;
+      color: #D4D4D8;
+      max-width: 840px;
+      line-height: 1.4;
+      margin-bottom: 50px;
+      font-weight: 400;
+    }
+
+    .f02-pills {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 50px;
+    }
+
+    .f02-pill {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 20px;
+      font-weight: 600;
+      padding: 12px 24px;
+      background: rgba(255, 122, 26, 0.16);
+      border: 1px solid rgba(255, 122, 26, 0.4);
+      color: #FFA058;
+      border-radius: 30px;
+      letter-spacing: 0.05em;
+    }
+
+    .f02-mockup-frame {
+      width: 100%;
+      max-width: 880px;
+      border-radius: 24px;
+      overflow: hidden;
+      border: 2px solid rgba(255, 255, 255, 0.15);
+      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.7), 0 0 40px rgba(255, 122, 26, 0.15);
+      background: #18181B;
+      position: relative;
+    }
+
+    .f02-mockup-bar {
+      height: 48px;
+      background: #27272A;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      gap: 10px;
+    }
+
+    .f02-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .f02-mockup-img {
+      width: 100%;
+      height: 460px;
+      object-fit: cover;
+      object-position: top center;
+      display: block;
+    }
+  </style>
+
+  <div data-hf-id="hf-ija8" id="root" data-composition-id="02-solution" data-start="5" data-duration="5.5" data-width="1080" data-height="1920">
+    <div data-hf-id="hf-e5ua" id="f02-bg" class="clip f02-bg" data-start="0" data-duration="5.5" data-track-index="0"></div>
+    <div data-hf-id="hf-gumv" id="f02-glow" class="clip f02-glow" data-start="0" data-duration="5.5" data-track-index="1"></div>
+
+    <div data-hf-id="hf-cwlg" id="f02-main" class="clip f02-container" data-start="0" data-duration="5.5" data-track-index="2">
+      <div data-hf-id="hf-r7e3" id="f02-logo" class="f02-logo-wrap">
+        
+        <div data-hf-id="hf-vnnv" class="f02-logo-text">Fit<span data-hf-id="hf-q1pq">Admi</span></div>
+      </div>
+
+      <h2 data-hf-id="hf-o29f" id="f02-title" class="f02-headline">
+        TODO TU GIMNASIO<br data-hf-id="hf-x5px">
+        <span data-hf-id="hf-ogss" style="color: #FF7A1A;">BAJO CONTROL</span>
+      </h2>
+
+      <p data-hf-id="hf-dwb5" id="f02-desc" class="f02-sub">
+        Olvidate de las planillas. FitAdmi automatiza tu administración desde un solo panel.
+      </p>
+
+      <div data-hf-id="hf-5eh8" id="f02-pills" class="f02-pills">
+        <div data-hf-id="hf-39zw" class="f02-pill">✓ 100% ONLINE</div>
+        <div data-hf-id="hf-ibh0" class="f02-pill">✓ MULTI-DISPOSITIVO</div>
+        <div data-hf-id="hf-q2rq" class="f02-pill">✓ SIN INSTALACIÓN</div>
+      </div>
+
+      <div data-hf-id="hf-8zbi" id="f02-mockup" class="f02-mockup-frame">
+        <div data-hf-id="hf-l780" class="f02-mockup-bar">
+          <div data-hf-id="hf-i0o6" class="f02-dot" style="background: #ff5f56;"></div>
+          <div data-hf-id="hf-d5p9" class="f02-dot" style="background: #ffbd2e;"></div>
+          <div data-hf-id="hf-a2k0" class="f02-dot" style="background: #27c93f;"></div>
+        </div>
+        <img data-hf-id="hf-7w6k" src="assets/scroll-000.png" alt="Dashboard FitAdmi" class="f02-mockup-img">
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+
+    tl.fromTo("#f02-logo", 
+      { opacity: 0, scale: 0.8 }, 
+      { opacity: 1, scale: 1, duration: 0.6, ease: "back.out(1.8)" }, 
+      0.1
+    );
+
+    tl.fromTo("#f02-title", 
+      { opacity: 0, y: 40 }, 
+      { opacity: 1, y: 0, duration: 0.7, ease: "power3.out" }, 
+      0.4
+    );
+
+    tl.fromTo("#f02-desc", 
+      { opacity: 0, y: 20 }, 
+      { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }, 
+      0.8
+    );
+
+    tl.fromTo("#f02-pills .f02-pill", 
+      { opacity: 0, y: 20, scale: 0.9 }, 
+      { opacity: 1, y: 0, scale: 1, duration: 0.5, stagger: 0.15, ease: "power2.out" }, 
+      1.3
+    );
+
+    tl.fromTo("#f02-mockup", 
+      { opacity: 0, y: 80, scale: 0.95 }, 
+      { opacity: 1, y: 0, scale: 1, duration: 0.8, ease: "power3.out" }, 
+      1.8
+    );
+
+    // Subtle floating camera push
+    tl.to("#f02-mockup", {
+      y: -15,
+      duration: 2.2,
+      ease: "sine.inOut"
+    }, 2.6);
+
+    window.__timelines["02-solution"] = tl;
+    tl.seek(0);
+  </script>
+</template>

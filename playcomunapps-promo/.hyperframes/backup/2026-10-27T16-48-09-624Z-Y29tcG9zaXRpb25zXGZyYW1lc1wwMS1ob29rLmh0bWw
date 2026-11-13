@@ -1,0 +1,293 @@
+<template>
+  <style>
+    @font-face {
+      font-family: 'Sora';
+      font-style: normal;
+      font-weight: 400 800;
+      src: local('Sora'), url('assets/fonts/57dc28f7118abe14-s.15emath8fyzqj.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'Work Sans';
+      font-style: normal;
+      font-weight: 400 800;
+      src: local('Work Sans'), url('assets/fonts/7ddd198311ba7843-s.p.31l30c9jv8unx.woff2') format('woff2');
+    }
+
+    #root-01 {
+      width: 1080px;
+      height: 1920px;
+      position: relative;
+      overflow: hidden;
+      font-family: 'Sora', sans-serif;
+      color: #ffffff;
+      box-sizing: border-box;
+      background: radial-gradient(circle at 50% 25%, #4c16a3 0%, #2f0d68 45%, #1a053d 100%);
+    }
+
+    .h01-glow {
+      position: absolute;
+      width: 800px;
+      height: 800px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(124, 58, 237, 0.45) 0%, rgba(124, 58, 237, 0) 70%);
+      top: 250px;
+      left: 140px;
+      filter: blur(60px);
+      pointer-events: none;
+    }
+
+    .h01-container {
+      position: absolute;
+      top: 200px;
+      left: 80px;
+      right: 80px;
+      bottom: 260px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 10;
+    }
+
+    .h01-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 28px;
+      background: rgba(255, 255, 255, 0.12);
+      border: 2px solid rgba(255, 255, 255, 0.25);
+      border-radius: 9999px;
+      font-family: 'Work Sans', sans-serif;
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      color: #ffffff;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .h01-dot {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: #10B981;
+      box-shadow: 0 0 12px #10B981;
+    }
+
+    .h01-title {
+      font-size: 64px;
+      font-weight: 800;
+      line-height: 1.18;
+      text-align: center;
+      margin-top: 24px;
+      color: #ffffff;
+      text-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+    }
+
+    .h01-title span {
+      background: linear-gradient(135deg, #ddd6fe 0%, #c4b5fd 50%, #ffffff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .h01-cards-stack {
+      position: relative;
+      width: 100%;
+      height: 680px;
+      margin-top: 30px;
+      perspective: 1200px;
+    }
+
+    .h01-card {
+      position: absolute;
+      left: 50%;
+      width: 780px;
+      border-radius: 28px;
+      background: #ffffff;
+      color: #0f172a;
+      box-shadow: 0 30px 60px rgba(18, 4, 43, 0.45), 0 0 0 1px rgba(255, 255, 255, 0.1);
+      padding: 34px 40px;
+      transform-origin: center center;
+    }
+
+    .h01-c1 {
+      top: 20px;
+      transform: translateX(-50%) rotate(-4deg);
+      z-index: 1;
+    }
+
+    .h01-c2 {
+      top: 140px;
+      transform: translateX(-50%) rotate(3deg);
+      z-index: 2;
+    }
+
+    .h01-c3 {
+      top: 260px;
+      transform: translateX(-50%) rotate(-1deg);
+      z-index: 3;
+    }
+
+    .h01-card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 16px;
+    }
+
+    .h01-card-tag {
+      font-family: 'Work Sans', sans-serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: #7C3AED;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .h01-card-badge {
+      font-family: 'Work Sans', sans-serif;
+      font-size: 28px;
+      font-weight: 600;
+      padding: 6px 16px;
+      border-radius: 12px;
+      background: #F5F3FF;
+      color: #6D28D9;
+    }
+
+    .h01-card-name {
+      font-size: 38px;
+      font-weight: 700;
+      color: #0F172A;
+      margin-bottom: 14px;
+    }
+
+    .h01-card-box {
+      background: #F8FAFC;
+      border: 2px solid #E2E8F0;
+      border-radius: 18px;
+      padding: 18px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .h01-box-label {
+      font-size: 28px;
+      color: #64748B;
+      font-weight: 500;
+    }
+
+    .h01-box-val {
+      font-size: 34px;
+      font-weight: 800;
+      color: #047857;
+    }
+
+    .h01-bottom-bar {
+      display: flex;
+      gap: 20px;
+      width: 100%;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .h01-bottom-item {
+      font-family: 'Work Sans', sans-serif;
+      font-size: 28px;
+      font-weight: 600;
+      color: #ddd6fe;
+      background: rgba(255, 255, 255, 0.08);
+      padding: 12px 24px;
+      border-radius: 9999px;
+    }
+  </style>
+
+  <div
+    id="root-01"
+    data-composition-id="01-hook"
+    data-start="0"
+    data-duration="3.8"
+    data-width="1080"
+    data-height="1920"
+  >
+    <div class="h01-glow"></div>
+
+    <div class="h01-container" data-layout-allow-overlap>
+      <div id="h01-pill" class="h01-pill">
+        <span class="h01-dot"></span>
+        <span>Catálogo de utilidades online</span>
+      </div>
+
+      <h1 id="h01-heading" class="h01-title" data-layout-allow-overlap>
+        ¿Y si tu próxima<br />
+        <span>herramienta</span><br />
+        ya estuviera acá?
+      </h1>
+
+      <div class="h01-cards-stack" data-layout-allow-overlap data-layout-allow-occlusion>
+        <!-- Card 1 -->
+        <div id="h01-card-1" class="h01-card h01-c1" data-layout-allow-overlap data-layout-allow-occlusion>
+          <div class="h01-card-header">
+            <span class="h01-card-tag">📊 Precios y Costos</span>
+            <span class="h01-card-badge">Gratis</span>
+          </div>
+          <div class="h01-card-name">Calculadora de Precios</div>
+          <div class="h01-card-box">
+            <span class="h01-box-label">Margen 40%</span>
+            <span class="h01-box-val">Venta: $16.666</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div id="h01-card-2" class="h01-card h01-c2" data-layout-allow-overlap data-layout-allow-occlusion>
+          <div class="h01-card-header">
+            <span class="h01-card-tag">📄 Gestión Comercial</span>
+            <span class="h01-card-badge">PDF</span>
+          </div>
+          <div class="h01-card-name">Generador de Presupuestos</div>
+          <div class="h01-card-box">
+            <span class="h01-box-label">Descarga directa</span>
+            <span class="h01-box-val">Listo en 5 seg</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div id="h01-card-3" class="h01-card h01-c3" data-layout-allow-overlap data-layout-allow-occlusion>
+          <div class="h01-card-header">
+            <span class="h01-card-tag">🎬 Utilidades</span>
+            <span class="h01-card-badge">MP4 / MP3</span>
+          </div>
+          <div class="h01-card-name">Descargador de Videos</div>
+          <div class="h01-card-box">
+            <span class="h01-box-label">Reels, TikTok, FB</span>
+            <span class="h01-box-val">100% Calidad</span>
+          </div>
+        </div>
+      </div>
+
+      <div data-hf-id="hf-xxpi" id="h01-bottom" class="h01-bottom-bar">
+        <div data-hf-id="hf-90jg" class="h01-bottom-item">⚡ Sin instalar</div>
+        <div data-hf-id="hf-y38n" class="h01-bottom-item">🎯 28 herramientas</div>
+        <div data-hf-id="hf-u29p" class="h01-bottom-item">✨ 100% libre</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    window.__timelines = window.__timelines || {};
+    (function () {
+      const tl = gsap.timeline({ paused: true });
+      window.__timelines["01-hook"] = tl;
+
+      // Absolute endpoints for deterministic seeking
+      tl.fromTo("#h01-pill", { y: -25, opacity: 0.8 }, { y: 0, opacity: 1, duration: 0.5, ease: "power2.out" }, 0);
+      tl.fromTo("#h01-heading", { scale: 0.95, opacity: 0.9 }, { scale: 1, opacity: 1, duration: 0.7, ease: "power2.out" }, 0);
+
+      tl.fromTo("#h01-card-1", { y: 70, opacity: 0.8 }, { y: 0, opacity: 1, duration: 0.7, ease: "power3.out" }, 0.1);
+      tl.fromTo("#h01-card-2", { y: 110, opacity: 0.8 }, { y: 0, opacity: 1, duration: 0.8, ease: "power3.out" }, 0.25);
+      tl.fromTo("#h01-card-3", { y: 150, opacity: 0.8 }, { y: 0, opacity: 1, duration: 0.9, ease: "power3.out" }, 0.4);
+
+      tl.fromTo("#h01-bottom", { y: 25, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power2.out" }, 0.6);
+      tl.to({}, { duration: 3.8 }, 0);
+    })();
+  </script>
+</template>

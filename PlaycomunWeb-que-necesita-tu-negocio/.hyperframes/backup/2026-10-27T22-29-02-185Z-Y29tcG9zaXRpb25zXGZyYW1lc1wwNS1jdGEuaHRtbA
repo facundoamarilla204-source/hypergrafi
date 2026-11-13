@@ -1,0 +1,223 @@
+<template>
+  <div id="root" data-composition-id="05-cta" data-width="1080" data-height="1920">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@400;600;700;800&display=swap');
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      #root {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: #0e0d15;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        color: #ffffff;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        padding: 210px 72px 260px 72px;
+      }
+
+      .bg-glow-purple {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        width: 700px;
+        height: 700px;
+        background: radial-gradient(circle, rgba(110, 86, 207, 0.28) 0%, rgba(14, 13, 21, 0) 70%);
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+        filter: blur(50px);
+      }
+
+      .top-tag {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        padding: 10px 24px;
+        background: rgba(110, 86, 207, 0.18);
+        border: 1px solid rgba(110, 86, 207, 0.45);
+        border-radius: 9999px;
+        font-size: 22px;
+        font-weight: 700;
+        color: #c4b5fd;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+      }
+
+      .brand-title {
+        font-family: 'Sora', sans-serif;
+        font-size: 80px;
+        font-weight: 800;
+        letter-spacing: -0.02em;
+        margin-top: 24px;
+        line-height: 1.1;
+      }
+
+      .brand-title span.violet {
+        color: #c4b5fd;
+      }
+
+      .slogan-box {
+        margin-top: 32px;
+        padding: 28px 42px;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 22px;
+        backdrop-filter: blur(10px);
+        max-width: 860px;
+      }
+
+      .slogan-main {
+        font-family: 'Sora', sans-serif;
+        font-size: 40px;
+        font-weight: 800;
+        color: #ffffff;
+        margin-bottom: 12px;
+      }
+
+      .slogan-sub {
+        font-size: 28px;
+        color: #cbd5e1;
+        line-height: 1.45;
+      }
+
+      /* Proyectos reales */
+      .projects-strip {
+        display: flex;
+        gap: 16px;
+        margin-top: 32px;
+      }
+
+      .project-pill {
+        padding: 12px 24px;
+        background: rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        border-radius: 14px;
+        font-size: 20px;
+        font-weight: 700;
+        color: #f1f5f9;
+      }
+
+      /* CTA Button */
+      .cta-wrapper {
+        margin-top: 36px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        position: relative;
+      }
+
+      .cta-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+        padding: 24px 64px;
+        background: #ffffff;
+        color: #0e0d15;
+        font-family: 'Sora', sans-serif;
+        font-size: 36px;
+        font-weight: 800;
+        border-radius: 20px;
+        box-shadow: 0 10px 45px rgba(255, 255, 255, 0.3);
+        border: none;
+        position: relative;
+      }
+
+      .cta-hint {
+        font-size: 24px;
+        color: #cbd5e1;
+        font-weight: 600;
+      }
+
+      /* Puntero de Mouse */
+      .mouse-pointer {
+        position: absolute;
+        width: 36px;
+        height: 36px;
+        z-index: 50;
+        pointer-events: none;
+        filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.6));
+      }
+    </style>
+
+    <div class="bg-glow-purple"></div>
+
+    <div class="cta-header">
+      <div id="cta-tag" class="top-tag" data-layout-ignore="true">Trato Directo</div>
+      <h2 id="cta-brand" class="brand-title">Play<span class="violet">Comun</span></h2>
+    </div>
+
+    <div id="cta-slogan" class="slogan-box">
+      <div class="slogan-main">Conmigo hablás, conmigo trabajás.</div>
+      <div class="slogan-sub">
+        Sin intermediarios ni plantillas recicladas. Entendemos tu negocio antes de escribir una sola línea de código.
+      </div>
+    </div>
+
+    <div id="cta-strip" class="projects-strip">
+      <div class="project-pill" data-layout-ignore="true">⚡ FitAdmi</div>
+      <div class="project-pill" data-layout-ignore="true">🍸 BarraStock</div>
+      <div class="project-pill" data-layout-ignore="true">🎟️ Mercury Eventos</div>
+    </div>
+
+    <div class="cta-wrapper">
+      <div id="cta-btn" class="cta-btn">
+        <span>playcomun.com</span>
+      </div>
+      <div id="cta-sub" class="cta-hint" data-layout-ignore="true">Hablemos directo de tu próximo proyecto</div>
+
+      <!-- Mouse cursor que le da clic al botón final -->
+      <svg id="cta-cursor" class="mouse-pointer" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="opacity: 0;">
+        <path d="M4 3L11 21L14 13L22 10L4 3Z" fill="#ffffff" stroke="#0e0d15" stroke-width="2" stroke-linejoin="round"/>
+      </svg>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      window.__timelines["05-cta"] = gsap.timeline({ paused: true });
+
+      (function() {
+        var tl = window.__timelines["05-cta"];
+
+        // Entrada de marca
+        tl.fromTo("#cta-tag", { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 0.45, ease: "power2.out" }, 0.1);
+        tl.fromTo("#cta-brand", { opacity: 0, scale: 0.9, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.6, ease: "back.out(1.4)" }, 0.25);
+
+        // Entrada slogan
+        tl.fromTo("#cta-slogan", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, 0.8);
+
+        // Proyectos
+        tl.fromTo("#cta-strip", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 1.5);
+
+        // Botón CTA
+        tl.fromTo("#cta-btn", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.6, ease: "back.out(1.5)" }, 2.2);
+        tl.fromTo("#cta-sub", { opacity: 0 }, { opacity: 1, duration: 0.5 }, 2.6);
+
+        // El cursor se acerca y da clic al botón
+        tl.fromTo("#cta-cursor", 
+          { opacity: 0, x: 250, y: 120 }, 
+          { opacity: 1, x: 80, y: 40, duration: 0.65, ease: "power2.out" }, 
+          2.9
+        );
+        tl.to("#cta-cursor", { scale: 0.85, duration: 0.12, yoyo: true, repeat: 1 }, 3.6);
+        tl.to("#cta-btn", { scale: 0.95, duration: 0.12, yoyo: true, repeat: 1 }, 3.6);
+
+        // Pulso sutil continuo en el botón
+        tl.to("#cta-btn", { scale: 1.05, duration: 0.8, yoyo: true, repeat: 2, ease: "sine.inOut" }, 3.8);
+
+        // Duración anclada: 5.7s
+        tl.to({}, { duration: 5.7 }, 0);
+      })();
+    </script>
+  </div>
+</template>

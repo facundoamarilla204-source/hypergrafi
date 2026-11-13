@@ -1,0 +1,311 @@
+<template>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    #root-06 {
+      width: 1080px;
+      height: 1920px;
+      position: relative;
+      overflow: hidden;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: #ffffff;
+      background: linear-gradient(155deg, #2e096e 0%, #20064f 52%, #150336 100%);
+      box-sizing: border-box;
+    }
+
+    .v06-bg-shape-1 {
+      position: absolute;
+      width: 340px;
+      height: 760px;
+      border-radius: 9999px;
+      background: linear-gradient(180deg, rgba(124, 58, 237, 0.16) 0%, rgba(91, 33, 182, 0.03) 100%);
+      top: -140px;
+      right: -80px;
+      pointer-events: none;
+    }
+
+    .v06-bg-shape-2 {
+      position: absolute;
+      width: 280px;
+      height: 620px;
+      border-radius: 9999px;
+      background: linear-gradient(180deg, rgba(139, 92, 246, 0.10) 0%, rgba(91, 33, 182, 0.02) 100%);
+      bottom: -120px;
+      left: -70px;
+      pointer-events: none;
+    }
+
+    .v06-content {
+      position: absolute;
+      top: 180px;
+      left: 72px;
+      right: 72px;
+      bottom: 240px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      z-index: 10;
+    }
+
+    .v06-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 16px;
+    }
+
+    .v06-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 22px;
+      background: rgba(167, 139, 250, 0.18);
+      border: 1px solid rgba(196, 181, 253, 0.38);
+      border-radius: 9999px;
+      font-size: 14px;
+      font-weight: 700;
+      color: #ede9fe;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .v06-title {
+      font-family: 'Sora', sans-serif;
+      font-size: 64px;
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      color: #ffffff;
+      max-width: 920px;
+    }
+
+    .v06-title span.hl {
+      color: #ddd6fe;
+    }
+
+    /* 3 Pillar Cards */
+    .v06-pillars-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+    }
+
+    .v06-pillar-card {
+      background: rgba(19, 4, 46, 0.82);
+      border: 1.5px solid rgba(196, 181, 253, 0.22);
+      border-radius: 22px;
+      padding: 26px 28px;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      box-shadow: 0 20px 44px rgba(8, 2, 24, 0.45);
+    }
+
+    .v06-pillar-icon {
+      width: 64px;
+      height: 64px;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .v06-pillar-icon.purple {
+      background: rgba(124, 58, 237, 0.25);
+      color: #ddd6fe;
+      border: 1px solid rgba(167, 139, 250, 0.45);
+    }
+
+    .v06-pillar-icon.emerald {
+      background: rgba(16, 185, 129, 0.22);
+      color: #6ee7b7;
+      border: 1px solid rgba(16, 185, 129, 0.45);
+    }
+
+    .v06-pillar-icon.blue {
+      background: rgba(59, 130, 246, 0.22);
+      color: #93c5fd;
+      border: 1px solid rgba(59, 130, 246, 0.45);
+    }
+
+    .v06-pillar-info {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      text-align: left;
+    }
+
+    .v06-pillar-heading {
+      font-size: 26px;
+      font-weight: 800;
+      color: #ffffff;
+    }
+
+    .v06-pillar-sub {
+      font-size: 17px;
+      color: #cbd5e1;
+      line-height: 1.45;
+    }
+
+    /* Bottom Trust Bar */
+    .v06-trust-strip {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      background: rgba(19, 4, 46, 0.72);
+      border: 1px solid rgba(196, 181, 253, 0.2);
+      border-radius: 18px;
+      padding: 18px 24px;
+    }
+
+    .v06-trust-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 17px;
+      font-weight: 600;
+      color: #ede9fe;
+    }
+
+    .v06-trust-item svg {
+      color: #34d399;
+    }
+  </style>
+
+  <div data-hf-id="hf-06-root" id="root-06" data-composition-id="06-frictionless" data-width="1080" data-height="1920">
+    <div data-hf-id="hf-pana" class="v06-bg-shape-1"></div>
+    <div data-hf-id="hf-lcj9" class="v06-bg-shape-2"></div>
+
+    <div data-hf-id="hf-rftc" class="v06-content">
+      <!-- Header -->
+      <div data-hf-id="hf-y4o2" id="v06-header" class="v06-header">
+        <div data-hf-id="hf-i3tn" class="v06-badge" data-layout-ignore="true">
+          <svg data-hf-id="hf-vnd4" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polygon data-hf-id="hf-oz1e" points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+          </svg>
+          Máxima Simplicidad
+        </div>
+        <h1 data-hf-id="hf-rrq8" class="v06-title">
+          Todo desde tu navegador. <br data-hf-id="hf-x5px"><span data-hf-id="hf-7mgd" class="hl">Sin vueltas.</span>
+        </h1>
+      </div>
+
+      <!-- 3 Value Pillars -->
+      <div data-hf-id="hf-5ggv" class="v06-pillars-stack">
+        <!-- 1. En el navegador -->
+        <div data-hf-id="hf-ague" id="v06-p1" class="v06-pillar-card">
+          <div data-hf-id="hf-psex" class="v06-pillar-icon purple">
+            <svg data-hf-id="hf-pq0p" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <circle data-hf-id="hf-m1lh" cx="12" cy="12" r="10" />
+              <line data-hf-id="hf-d7cg" x1="2" y1="12" x2="22" y2="12" />
+              <path data-hf-id="hf-izf7" d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+            </svg>
+          </div>
+          <div data-hf-id="hf-tjgq" class="v06-pillar-info">
+            <div data-hf-id="hf-jfep" class="v06-pillar-heading">100% en tu Navegador</div>
+            <div data-hf-id="hf-ebn2" class="v06-pillar-sub" data-layout-ignore="true">Entrás directo desde tu celular, tablet o computadora sin configurar nada.</div>
+          </div>
+        </div>
+
+        <!-- 2. Cero programas -->
+        <div data-hf-id="hf-6iqd" id="v06-p2" class="v06-pillar-card">
+          <div data-hf-id="hf-xhax" class="v06-pillar-icon emerald">
+            <svg data-hf-id="hf-vjkd" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path data-hf-id="hf-l57f" d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline data-hf-id="hf-9u64" points="7 10 12 15 17 10" />
+              <line data-hf-id="hf-4itj" x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+          </div>
+          <div data-hf-id="hf-sham" class="v06-pillar-info">
+            <div data-hf-id="hf-ygxc" class="v06-pillar-heading">Sin Instalar Programas</div>
+            <div data-hf-id="hf-4xvn" class="v06-pillar-sub" data-layout-ignore="true">Olvidate de descargas pesadas, ejecutables o malware. Cero espacio ocupado.</div>
+          </div>
+        </div>
+
+        <!-- 3. Sin vueltas -->
+        <div data-hf-id="hf-3jgs" id="v06-p3" class="v06-pillar-card">
+          <div data-hf-id="hf-eutf" class="v06-pillar-icon blue">
+            <svg data-hf-id="hf-wqhg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon data-hf-id="hf-9m10" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+          </div>
+          <div data-hf-id="hf-svln" class="v06-pillar-info">
+            <div data-hf-id="hf-z22p" class="v06-pillar-heading">Sin Vueltas&#160;</div>
+            <div data-hf-id="hf-9ow2" class="v06-pillar-sub" data-layout-ignore="true">Abrís la página, usás la herramienta y obtenés el resultado en el acto.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Trust Bar -->
+      <div data-hf-id="hf-wqlk" id="v06-trust" class="v06-trust-strip" data-layout-ignore="true">
+        <div data-hf-id="hf-6n3v" class="v06-trust-item">
+          <svg data-hf-id="hf-b3ry" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline data-hf-id="hf-mlxs" points="20 6 9 17 4 12" />
+          </svg>
+          <span data-hf-id="hf-zoc9">Acceso Instantáneo</span>
+        </div>
+        <div data-hf-id="hf-4bwb" class="v06-trust-item">
+          <svg data-hf-id="hf-3742" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline data-hf-id="hf-tizs" points="20 6 9 17 4 12" />
+          </svg>
+          <span data-hf-id="hf-jhdi">+27 herramientas listas</span>
+        </div>
+        <div data-hf-id="hf-3xla" class="v06-trust-item">
+          <svg data-hf-id="hf-3lf3" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline data-hf-id="hf-sc2p" points="20 6 9 17 4 12" />
+          </svg>
+          <span data-hf-id="hf-p80h">100% Gratis</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    window.__timelines = window.__timelines || {};
+    (function () {
+      const tl = gsap.timeline({ paused: true });
+      window.__timelines["06-frictionless"] = tl;
+
+      tl.fromTo("#v06-header", 
+        { y: -25, opacity: 0 }, 
+        { y: 0, opacity: 1, duration: 0.45, ease: "power3.out" }, 
+        0.1
+      );
+
+      tl.fromTo("#v06-p1", 
+        { scale: 0.94, y: 25, opacity: 0 }, 
+        { scale: 1, y: 0, opacity: 1, duration: 0.45, ease: "power2.out" }, 
+        0.3
+      );
+
+      tl.fromTo("#v06-p2", 
+        { scale: 0.94, y: 25, opacity: 0 }, 
+        { scale: 1, y: 0, opacity: 1, duration: 0.45, ease: "power2.out" }, 
+        1.1
+      );
+
+      tl.fromTo("#v06-p3", 
+        { scale: 0.94, y: 25, opacity: 0 }, 
+        { scale: 1, y: 0, opacity: 1, duration: 0.45, ease: "power2.out" }, 
+        2.0
+      );
+
+      tl.fromTo("#v06-trust", 
+        { y: 20, opacity: 0 }, 
+        { y: 0, opacity: 1, duration: 0.4, ease: "power2.out" }, 
+        2.9
+      );
+
+      tl.to({}, { duration: 4.8 }, 0);
+    })();
+  </script>
+</template>

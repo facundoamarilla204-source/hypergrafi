@@ -1,0 +1,2984 @@
+{
+  "version": 1,
+  "historyId": "699d4223-e468-4339-825d-0edfc3d53730",
+  "currentRevision": "bd77d6e1-60e9-40dd-b4f6-0498bca1bc6d",
+  "pendingChanges": false,
+  "files": {
+    "BRIEF.md": {
+      "hash": "5bfe7b67559960dd3640f19b946ba36c3eda44033fa312b7b89cc231b8a0fc1b",
+      "content": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\5b\\5bfe7b67559960dd3640f19b946ba36c3eda44033fa312b7b89cc231b8a0fc1b"
+    },
+    "SCRIPT.md": {
+      "hash": "bb22037cb10e7c2c8222f30e5f83b50374bd3d421f4065011a5d38088d5fae1a",
+      "content": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\bb\\bb22037cb10e7c2c8222f30e5f83b50374bd3d421f4065011a5d38088d5fae1a"
+    },
+    "STORYBOARD.md": {
+      "hash": "1c4b590f06ccc27b9cc625e5b40a03a439ebba257f9dc907d30b9deef99f712a",
+      "content": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\1c\\1c4b590f06ccc27b9cc625e5b40a03a439ebba257f9dc907d30b9deef99f712a"
+    },
+    "assets/audio/bgm.mp3": {
+      "hash": "e76ba37560ad5bff9a971836ec31b44dfc887a75282b9a0ee5ba5db0ec4b0290",
+      "content": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\e7\\e76ba37560ad5bff9a971836ec31b44dfc887a75282b9a0ee5ba5db0ec4b0290"
+    },
+    "assets/audio/master-mix.mp3": {
+      "hash": "e76ba37560ad5bff9a971836ec31b44dfc887a75282b9a0ee5ba5db0ec4b0290",
+      "content": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\e7\\e76ba37560ad5bff9a971836ec31b44dfc887a75282b9a0ee5ba5db0ec4b0290"
+    },
+    "assets/catalog-tools.png": {
+      "hash": "f323bf87baa4751839ca071e88992d34afa1ffc91c8b2635c44aca74d9dfcfcc",
+      "content": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\f3\\f323bf87baa4751839ca071e88992d34afa1ffc91c8b2635c44aca74d9dfcfcc"
+    },
+    "assets/favicon.png": {
+      "hash": "6439ca4439cd94476ef24bafee2c0fb5d75ae691796b7644d18994549862d6e2",
+      "content": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\64\\6439ca4439cd94476ef24bafee2c0fb5d75ae691796b7644d18994549862d6e2"
+    },
+    "assets/hero-landing.png": {
+      "hash": "a6f10ca571332e41db11e554d90d1e85c76a50f8eb7dde38648382a45c9566cd",
+      "content": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\a6\\a6f10ca571332e41db11e554d90d1e85c76a50f8eb7dde38648382a45c9566cd"
+    },
+    "assets/logo.png": {
+      "hash": "8ac2854fc06ac7f596ac5ac4f25bd7db5bfea69dbfa2b9fc874f1fd7181bb1fd",
+      "content": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\8a\\8ac2854fc06ac7f596ac5ac4f25bd7db5bfea69dbfa2b9fc874f1fd7181bb1fd"
+    },
+    "assets/tool-precios-calc.png": {
+      "hash": "fbe16fa4b3f2e08990122478abaad222a4a6203449bf3c065685beb9a58d7500",
+      "content": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\fb\\fbe16fa4b3f2e08990122478abaad222a4a6203449bf3c065685beb9a58d7500"
+    },
+    "assets/tool-precios.png": {
+      "hash": "32aa48a8001dc58c20a1823c18f6e0a6ea72647f2faffd59e79b60b420e02ed7",
+      "content": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\32\\32aa48a8001dc58c20a1823c18f6e0a6ea72647f2faffd59e79b60b420e02ed7"
+    },
+    "assets/tool-presupuestos-pdf.png": {
+      "hash": "43d4c58858bb719dd5cab0b8878ddd1c2872c33c39414659099a7c0984510a9b",
+      "content": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\43\\43d4c58858bb719dd5cab0b8878ddd1c2872c33c39414659099a7c0984510a9b"
+    },
+    "assets/tool-presupuestos.png": {
+      "hash": "a52e300f24438dee105de1a8e52b37c582bfa845620cddc0ebed812a8c9e0def",
+      "content": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\a5\\a52e300f24438dee105de1a8e52b37c582bfa845620cddc0ebed812a8c9e0def"
+    },
+    "assets/tool-qr.png": {
+      "hash": "4a7760536c7f11cc63e121a7a4809401bf4e77691e594ad51e1d4083b7a17690",
+      "content": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\4a\\4a7760536c7f11cc63e121a7a4809401bf4e77691e594ad51e1d4083b7a17690"
+    },
+    "compositions/frames/01-hook.html": {
+      "hash": "79d087ae8ce9eac0485ae5e842fc93de44aa49d3e9fc3a06f3a3e1f30d1da670",
+      "content": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\79\\79d087ae8ce9eac0485ae5e842fc93de44aa49d3e9fc3a06f3a3e1f30d1da670"
+    },
+    "compositions/frames/02-reveal.html": {
+      "hash": "6ae33f8564cfe2a51cfc40a810f95f6835bb37a4a980e59e6e59a023c8c408fb",
+      "content": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\6a\\6ae33f8564cfe2a51cfc40a810f95f6835bb37a4a980e59e6e59a023c8c408fb"
+    },
+    "frame.md": {
+      "hash": "cbc4227f853db8e1801308a2cb784283591c497e26ff3d49cdd572913095f837",
+      "content": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\cb\\cbc4227f853db8e1801308a2cb784283591c497e26ff3d49cdd572913095f837"
+    },
+    "hyperframes.json": {
+      "hash": "44d4e8dcefebce0a13f5afa82aa270b0b19a1d3f82e434f92616010cee775dc4",
+      "content": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\44\\44d4e8dcefebce0a13f5afa82aa270b0b19a1d3f82e434f92616010cee775dc4"
+    },
+    "index.html": {
+      "hash": "73554321c5bd6ca4e7a9799ffacdc65eb37cef53819bf7dd1989dc80c8291fd6",
+      "content": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\73\\73554321c5bd6ca4e7a9799ffacdc65eb37cef53819bf7dd1989dc80c8291fd6"
+    },
+    "package.json": {
+      "hash": "4dd15120df70df5190463fb4c0db6d57b1a4e56f0ea38a1f39bbfe0e80283623",
+      "content": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\4d\\4dd15120df70df5190463fb4c0db6d57b1a4e56f0ea38a1f39bbfe0e80283623"
+    },
+    "remotion/Main.tsx": {
+      "hash": "27fb9b81f02675edac0ef1319653590328b742154447d6dd7ac73d908fa31547",
+      "content": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\27\\27fb9b81f02675edac0ef1319653590328b742154447d6dd7ac73d908fa31547"
+    },
+    "remotion/Root.tsx": {
+      "hash": "ebae7bea4ca453db39fd8b1f553b0d2cc958b4f6483dd3886e4d61309aaa8e98",
+      "content": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\eb\\ebae7bea4ca453db39fd8b1f553b0d2cc958b4f6483dd3886e4d61309aaa8e98"
+    },
+    "remotion/remotion.config.ts": {
+      "hash": "15f70fd6d5bed7fae61a001a2d5cdcd1a1d5c25dc7fe9ee71fa40d581c01a56d",
+      "content": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\15\\15f70fd6d5bed7fae61a001a2d5cdcd1a1d5c25dc7fe9ee71fa40d581c01a56d"
+    },
+    "remotion/scenes/Scene01Hook.tsx": {
+      "hash": "6157c9971c72994a739e7f2a38fdc55a4bc9d129ece27e5fcfdd67d746577fb0",
+      "content": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\61\\6157c9971c72994a739e7f2a38fdc55a4bc9d129ece27e5fcfdd67d746577fb0"
+    },
+    "remotion/scenes/Scene02Reveal.tsx": {
+      "hash": "5236e624ccc90c8ac30c8c417cf6d92066f0f129728e67b7f2acad5593e29280",
+      "content": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\52\\5236e624ccc90c8ac30c8c417cf6d92066f0f129728e67b7f2acad5593e29280"
+    },
+    "remotion/scenes/Scene03Tools.tsx": {
+      "hash": "3d14f37204444a58e01758d0ec76082e0e58ce47ab330ace08480010eb2ca46a",
+      "content": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\3d\\3d14f37204444a58e01758d0ec76082e0e58ce47ab330ace08480010eb2ca46a"
+    },
+    "remotion/scenes/Scene04Value.tsx": {
+      "hash": "742dc8da37a86950b93518634c68bb2282164de68a109d3d0655a4280c464823",
+      "content": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\74\\742dc8da37a86950b93518634c68bb2282164de68a109d3d0655a4280c464823"
+    },
+    "remotion/scenes/Scene05CTA.tsx": {
+      "hash": "3f12233736d938cddd08cd90c05f265c8d8dfc3f934c9829660483f4ef9318f6",
+      "content": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\3f\\3f12233736d938cddd08cd90c05f265c8d8dfc3f934c9829660483f4ef9318f6"
+    },
+    "scripts/generate-audio.py": {
+      "hash": "e687064e3b5011f794b78dea62ac00fae6e2206c8c23d7d305c5e8ec1d5619d1",
+      "content": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\e6\\e687064e3b5011f794b78dea62ac00fae6e2206c8c23d7d305c5e8ec1d5619d1"
+    },
+    "assets/otter.png": {
+      "hash": "b95541a4c60c063061f409c675985f0894ccda41332b56e3268b8024860f4b00",
+      "content": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\b9\\b95541a4c60c063061f409c675985f0894ccda41332b56e3268b8024860f4b00"
+    },
+    "assets/fonts/57dc28f7118abe14-s.15emath8fyzqj.woff2": {
+      "hash": "fe0af300ce56932381af82ed960d8582dc8308ac2b7b48dd505dd49573a83ada",
+      "content": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\fe\\fe0af300ce56932381af82ed960d8582dc8308ac2b7b48dd505dd49573a83ada"
+    },
+    "assets/fonts/7ddd198311ba7843-s.p.31l30c9jv8unx.woff2": {
+      "hash": "72cd8f67849cc714f3364eeeb378df9a49f4aff00e6a3640fad36c9c93a9b197",
+      "content": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\72\\72cd8f67849cc714f3364eeeb378df9a49f4aff00e6a3640fad36c9c93a9b197"
+    },
+    "assets/fonts/8d617d005f4d73b0-s.p.3sdjrrkhw5nvf.woff2": {
+      "hash": "e2178ae653e18f90a2afea0a3eafa3042c03ebaa9a167e2899287ef5f22cb354",
+      "content": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\e2\\e2178ae653e18f90a2afea0a3eafa3042c03ebaa9a167e2899287ef5f22cb354"
+    },
+    "assets/fonts/8e3fbf4aa84d044b-s.3we0903o7i6f-.woff2": {
+      "hash": "a7685ec477b23edc368efaa59d8f717a1e01208b68f52982673552a04f9398d3",
+      "content": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\a7\\a7685ec477b23edc368efaa59d8f717a1e01208b68f52982673552a04f9398d3"
+    },
+    "scripts/generate-clean-audio.py": {
+      "hash": "044da30d21835be1003c39cb4152bf06eb89a7ba1cecb5d6839ac2362c743a04",
+      "content": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\04\\044da30d21835be1003c39cb4152bf06eb89a7ba1cecb5d6839ac2362c743a04"
+    },
+    "package-lock.json": {
+      "hash": "e9effecdb7d9b839d03669fd790e8526277d8dd7848f9a37bcb9fe61b23212dc",
+      "content": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\e9\\e9effecdb7d9b839d03669fd790e8526277d8dd7848f9a37bcb9fe61b23212dc"
+    },
+    "assets/qr-playcomun.svg": {
+      "hash": "237127f9e866070574e538447602ff356c455217d89dace80ce3b9c4c157e3f4",
+      "content": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\23\\237127f9e866070574e538447602ff356c455217d89dace80ce3b9c4c157e3f4"
+    },
+    "frame_01_hook_antislop.jpg": {
+      "hash": "923c18887e5462e332b430775f02db191ad6a76794bc56d4fddf48445cde1524",
+      "content": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\92\\923c18887e5462e332b430775f02db191ad6a76794bc56d4fddf48445cde1524"
+    },
+    "frame_04_value_antislop.jpg": {
+      "hash": "5a09c24122e0f691a035209c91a585d56552d694698a4cd218eaff3cfafbdd05",
+      "content": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\5a\\5a09c24122e0f691a035209c91a585d56552d694698a4cd218eaff3cfafbdd05"
+    },
+    "frame_05_cta_antislop.jpg": {
+      "hash": "37cab6b00bd465ceb0942bb202100dc0827b75627f23b1c96ac2f146e1b0211a",
+      "content": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\37\\37cab6b00bd465ceb0942bb202100dc0827b75627f23b1c96ac2f146e1b0211a"
+    },
+    "frame_05_cta_final.jpg": {
+      "hash": "daabf89671a604df391d4a0ae997aca1f420b06b7897a56a6f3bd8cf346d7acb",
+      "content": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\da\\daabf89671a604df391d4a0ae997aca1f420b06b7897a56a6f3bd8cf346d7acb"
+    },
+    "frame_04_redesigned.jpg": {
+      "hash": "e08ed666deb31e15529982442951c160bb52cb7a6513209517afbf86a3c22b09",
+      "content": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\e0\\e08ed666deb31e15529982442951c160bb52cb7a6513209517afbf86a3c22b09"
+    },
+    "compositions/frames/03-business.html": {
+      "hash": "75e8676a330aec33dc7f5647f6ccaf9bc45c8eb83dd8c1d930ce8c8db666369f",
+      "content": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\75\\75e8676a330aec33dc7f5647f6ccaf9bc45c8eb83dd8c1d930ce8c8db666369f"
+    },
+    "compositions/frames/04-finance.html": {
+      "hash": "3aad143566e15b1e87a0b071dd0aad7318ef6efee84ad0c01e5ab380593def4e",
+      "content": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\3a\\3aad143566e15b1e87a0b071dd0aad7318ef6efee84ad0c01e5ab380593def4e"
+    },
+    "compositions/frames/05-utilities.html": {
+      "hash": "1a55a5a11320adc3797c2a4f7bae999e9632251c04a54272d7f3d8a39213e968",
+      "content": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\1a\\1a55a5a11320adc3797c2a4f7bae999e9632251c04a54272d7f3d8a39213e968"
+    },
+    "compositions/frames/06-frictionless.html": {
+      "hash": "418d5a111a0ef317f55ac311be125a0f33bc6ef5ec0501eabf5b23dcd914aad4",
+      "content": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\41\\418d5a111a0ef317f55ac311be125a0f33bc6ef5ec0501eabf5b23dcd914aad4"
+    },
+    "compositions/frames/07-cta.html": {
+      "hash": "2166f4d2eae9363d79d2b4c77dcbe54742a517ee31be715e559de88c366ff07c",
+      "content": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\21\\2166f4d2eae9363d79d2b4c77dcbe54742a517ee31be715e559de88c366ff07c"
+    }
+  },
+  "revisions": {
+    "757e7775-41aa-4e1d-b1dd-2c66df217c76": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793118629519,
+      "endedAt": 1793118629541,
+      "files": {
+        "compositions/frames/01-hook.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\e5\\e50a15b0b4f43282ae70b3cb4aeae961d3aa6ad9d153d32b12ee017a6c0854f2",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\55\\5590081cbe6c7ab69e96c9f6928d39fb5c3d7f681a1f96485b975aca3d7263dd"
+        },
+        "compositions/frames/02-reveal.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\ca\\ca89f1aacccec185f5179d05079b877f060057725c5a30a24ac1fe8d9e725b93",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\10\\10b5bb15d5d66c76d6cf56925b3d0548d02100c204b31e0c4552f6edfc4e7afc"
+        },
+        "compositions/frames/03-tools.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\b8\\b89947696d757e55b74e74006560e7442332c31e79cc5243c0095f0995de6dc5",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\89\\896e0addb97786fc21bb80fc3897da20a83e236ce40036392740d97690b5638a"
+        },
+        "compositions/frames/04-value.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\c6\\c60eff520b804059f1bb841b9267644e8fa88502ee4284a23a1cafa51752b4af",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\67\\677c8f53b98a576e4d73c87c14476a5f33ea12774e0b923455ef1298489563a3"
+        },
+        "compositions/frames/05-cta.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\08\\080157586c8fef4da9f840a7d54182428d0d0df1a52f6076f3478512d3c81151",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\c3\\c39e3d553a04354ac479af1306e6bf083536711b3febf9d6afbe0108e99a6172"
+        }
+      }
+    },
+    "7d8f3088-913e-4e50-a8ca-45d1205c3017": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793118829272,
+      "endedAt": 1793118829375,
+      "files": {
+        "assets/fonts/57dc28f7118abe14-s.15emath8fyzqj.woff2": {
+          "before": null,
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\fe\\fe0af300ce56932381af82ed960d8582dc8308ac2b7b48dd505dd49573a83ada"
+        },
+        "assets/fonts/7ddd198311ba7843-s.p.31l30c9jv8unx.woff2": {
+          "before": null,
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\72\\72cd8f67849cc714f3364eeeb378df9a49f4aff00e6a3640fad36c9c93a9b197"
+        },
+        "assets/fonts/8d617d005f4d73b0-s.p.3sdjrrkhw5nvf.woff2": {
+          "before": null,
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\e2\\e2178ae653e18f90a2afea0a3eafa3042c03ebaa9a167e2899287ef5f22cb354"
+        },
+        "assets/fonts/8e3fbf4aa84d044b-s.3we0903o7i6f-.woff2": {
+          "before": null,
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\a7\\a7685ec477b23edc368efaa59d8f717a1e01208b68f52982673552a04f9398d3"
+        },
+        "compositions/frames/01-hook.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\55\\5590081cbe6c7ab69e96c9f6928d39fb5c3d7f681a1f96485b975aca3d7263dd",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\86\\866dcb48bb2a346e4abe66b1e7174c8e0497f9b5510471d92608446a32f4a631"
+        },
+        "compositions/frames/02-reveal.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\10\\10b5bb15d5d66c76d6cf56925b3d0548d02100c204b31e0c4552f6edfc4e7afc",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\d9\\d93f8ab7ea224e6ff4abc3de1d446a2563be934775baae7459e92c45f917b0fa"
+        },
+        "compositions/frames/03-tools.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\89\\896e0addb97786fc21bb80fc3897da20a83e236ce40036392740d97690b5638a",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\22\\22fb30cbd3907775ad3ed93b543b3e5cdb8088ec96d468022a1bc56bbec4bc4e"
+        },
+        "compositions/frames/04-value.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\67\\677c8f53b98a576e4d73c87c14476a5f33ea12774e0b923455ef1298489563a3",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\f9\\f9119443713dcd5e885ddf299bc6a62c666cc10e77ff9f393864df491eec7be2"
+        },
+        "compositions/frames/05-cta.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\c3\\c39e3d553a04354ac479af1306e6bf083536711b3febf9d6afbe0108e99a6172",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\ed\\eda3fc28ffa4604bc5c6461da52b930a6d858727a89cd8a99263b163475c3137"
+        }
+      }
+    },
+    "0ab6738e-9460-42a2-8531-263bd5b0d758": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793118862270,
+      "endedAt": 1793118862293,
+      "files": {
+        "compositions/frames/01-hook.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\86\\866dcb48bb2a346e4abe66b1e7174c8e0497f9b5510471d92608446a32f4a631",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\b5\\b5291def44671d674e6ba0e23d0d5c0ceb733fedccba50a51a8db25942df2964"
+        },
+        "compositions/frames/02-reveal.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\d9\\d93f8ab7ea224e6ff4abc3de1d446a2563be934775baae7459e92c45f917b0fa",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\4a\\4a71cb994f2bf70299f2a4fde937da30f72a9213f6ab8f3eda6e4c6f67da7a29"
+        },
+        "compositions/frames/03-tools.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\22\\22fb30cbd3907775ad3ed93b543b3e5cdb8088ec96d468022a1bc56bbec4bc4e",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\db\\db34242a631fdc50cb66f1e27b79e3614f689dcf14f8dd4c9f26f245a9ab424d"
+        },
+        "compositions/frames/04-value.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\f9\\f9119443713dcd5e885ddf299bc6a62c666cc10e77ff9f393864df491eec7be2",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\53\\5307021b8f6291652ec04b80a653184a447e613555e6108e88be1c215f8cf8c8"
+        },
+        "compositions/frames/05-cta.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\ed\\eda3fc28ffa4604bc5c6461da52b930a6d858727a89cd8a99263b163475c3137",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\9f\\9f9aeb0819668e5e5a6f80f2104402cc940792f7d049627216161fa1f88e9e08"
+        },
+        "index.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\5f\\5f5a1fdada2cf0300526a68f2478beefa74472ee4e34f2d6f41a7f598b269817",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\b9\\b921bded11ccf629adf90e814f4d28e9fcb5d2a66e904cd5f16dcf9a09dc6884"
+        }
+      }
+    },
+    "74b53c50-dba2-497b-be18-f3db5ca11409": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793118929812,
+      "endedAt": 1793118931827,
+      "files": {
+        "compositions/frames/01-hook.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\b5\\b5291def44671d674e6ba0e23d0d5c0ceb733fedccba50a51a8db25942df2964",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\0d\\0d367dbe1ba07e63ee367564ff0e68767ca9f7251821875918655daf37168d10"
+        }
+      }
+    },
+    "2b0e8a20-0d11-41e1-bdf3-7813cd685ed7": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793118955108,
+      "endedAt": 1793118957118,
+      "files": {
+        "compositions/frames/02-reveal.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\4a\\4a71cb994f2bf70299f2a4fde937da30f72a9213f6ab8f3eda6e4c6f67da7a29",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\6a\\6a5a89c2290f6aa56476aec8965563321e47576556574f4fa469f1502fa7faf7"
+        }
+      }
+    },
+    "675b0a9d-06e2-4c11-8805-b5ff600d3706": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793118995470,
+      "endedAt": 1793118997485,
+      "files": {
+        "compositions/frames/03-tools.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\db\\db34242a631fdc50cb66f1e27b79e3614f689dcf14f8dd4c9f26f245a9ab424d",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\75\\75d53870fb320db9d8dfc661be3074a2e96f5339295c996eee2ffb0fbeeea942"
+        }
+      }
+    },
+    "729af428-9abb-4926-b083-52cce032fff3": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793119022587,
+      "endedAt": 1793119024599,
+      "files": {
+        "compositions/frames/04-value.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\53\\5307021b8f6291652ec04b80a653184a447e613555e6108e88be1c215f8cf8c8",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\73\\73cccb857d90026b2776df65f03fdc3e952de324b9e10250c6057ed81fc4949d"
+        }
+      }
+    },
+    "56eecb73-028e-455d-85e0-dcc4c6d87cb1": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793119030174,
+      "endedAt": 1793119032180,
+      "files": {
+        "compositions/frames/04-value.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\73\\73cccb857d90026b2776df65f03fdc3e952de324b9e10250c6057ed81fc4949d",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\86\\8608e8bac1a0faa6b559b87c44d801caba05fee8a2a4583a3c2d0c34957be8ef"
+        }
+      }
+    },
+    "8a9b2b77-3235-4466-a4f8-86f84323b5e2": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793119075873,
+      "endedAt": 1793119077877,
+      "files": {
+        "compositions/frames/05-cta.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\9f\\9f9aeb0819668e5e5a6f80f2104402cc940792f7d049627216161fa1f88e9e08",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\23\\230682aa5db28ee46976b5d0e697bb62121d97eea34972bcb4e31a290efaeeee"
+        }
+      }
+    },
+    "b93460cb-1d2b-4932-9184-c79487a3110b": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793119116643,
+      "endedAt": 1793119118655,
+      "files": {
+        "compositions/frames/05-cta.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\23\\230682aa5db28ee46976b5d0e697bb62121d97eea34972bcb4e31a290efaeeee",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\12\\128b9111a897c11e729694dce127274cd20fe4c80589cc18e1c247d1e40f78bd"
+        }
+      }
+    },
+    "8630846e-325d-48ef-a693-dee225faadbc": {
+      "actor": {
+        "kind": "person",
+        "name": "You"
+      },
+      "label": "Move layer",
+      "startedAt": 1793119689697,
+      "endedAt": 1793119689697,
+      "files": {
+        "compositions/frames/01-hook.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\0d\\0d367dbe1ba07e63ee367564ff0e68767ca9f7251821875918655daf37168d10",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\c3\\c36f4f3264fd46bc95082140f3678f7f1b96d3abdaaa0fec0ea49b7504e240ff"
+        }
+      }
+    },
+    "536e8efe-b3e2-4d75-948c-49648effbbe0": {
+      "actor": {
+        "kind": "person",
+        "name": "You"
+      },
+      "label": "Undid: Move layer",
+      "startedAt": 1793119733032,
+      "endedAt": 1793119733035.9465,
+      "undoes": "8630846e-325d-48ef-a693-dee225faadbc",
+      "files": {
+        "compositions/frames/01-hook.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\c3\\c36f4f3264fd46bc95082140f3678f7f1b96d3abdaaa0fec0ea49b7504e240ff",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\0d\\0d367dbe1ba07e63ee367564ff0e68767ca9f7251821875918655daf37168d10"
+        }
+      }
+    },
+    "a8b57cff-d9e0-4806-ac5a-9fb35e1a3409": {
+      "actor": {
+        "kind": "person",
+        "name": "You"
+      },
+      "label": "Undid: Changed outside the app",
+      "startedAt": 1793119733518,
+      "endedAt": 1793119733529.19,
+      "undoes": "b93460cb-1d2b-4932-9184-c79487a3110b",
+      "files": {
+        "compositions/frames/05-cta.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\12\\128b9111a897c11e729694dce127274cd20fe4c80589cc18e1c247d1e40f78bd",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\23\\230682aa5db28ee46976b5d0e697bb62121d97eea34972bcb4e31a290efaeeee"
+        }
+      }
+    },
+    "b34b475f-f56d-4f50-b785-7621dbea11fa": {
+      "actor": {
+        "kind": "person",
+        "name": "You"
+      },
+      "label": "Undid: Changed outside the app",
+      "startedAt": 1793119734057,
+      "endedAt": 1793119734062.6943,
+      "undoes": "8a9b2b77-3235-4466-a4f8-86f84323b5e2",
+      "files": {
+        "compositions/frames/05-cta.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\23\\230682aa5db28ee46976b5d0e697bb62121d97eea34972bcb4e31a290efaeeee",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\9f\\9f9aeb0819668e5e5a6f80f2104402cc940792f7d049627216161fa1f88e9e08"
+        }
+      }
+    },
+    "c76173b6-d0a0-475c-a1e0-4e8f12b54c3f": {
+      "actor": {
+        "kind": "person",
+        "name": "You"
+      },
+      "label": "Undid: Changed outside the app",
+      "startedAt": 1793119734999,
+      "endedAt": 1793119735002.395,
+      "undoes": "56eecb73-028e-455d-85e0-dcc4c6d87cb1",
+      "files": {
+        "compositions/frames/04-value.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\86\\8608e8bac1a0faa6b559b87c44d801caba05fee8a2a4583a3c2d0c34957be8ef",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\73\\73cccb857d90026b2776df65f03fdc3e952de324b9e10250c6057ed81fc4949d"
+        }
+      }
+    },
+    "fe6a2562-5cfd-4eb4-8a48-29da7cb18a2d": {
+      "actor": {
+        "kind": "person",
+        "name": "You"
+      },
+      "label": "Undid: Changed outside the app",
+      "startedAt": 1793119736335,
+      "endedAt": 1793119736338.0813,
+      "undoes": "729af428-9abb-4926-b083-52cce032fff3",
+      "files": {
+        "compositions/frames/04-value.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\73\\73cccb857d90026b2776df65f03fdc3e952de324b9e10250c6057ed81fc4949d",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\53\\5307021b8f6291652ec04b80a653184a447e613555e6108e88be1c215f8cf8c8"
+        }
+      }
+    },
+    "27319c5f-239b-4e84-ae59-fa260592d64c": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793119754004,
+      "endedAt": 1793119754045,
+      "files": {
+        "compositions/frames/01-hook.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\0d\\0d367dbe1ba07e63ee367564ff0e68767ca9f7251821875918655daf37168d10",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\3b\\3b3945d15adc0dbe04f4b10c14ede86da827f3c719e7131b2e6eaf395b5712bc"
+        },
+        "compositions/frames/02-reveal.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\6a\\6a5a89c2290f6aa56476aec8965563321e47576556574f4fa469f1502fa7faf7",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\1d\\1d18fe4bac0a28be028ce6b1179906fbe5c703ec539f57c22291a65a32904a39"
+        },
+        "compositions/frames/03-tools.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\75\\75d53870fb320db9d8dfc661be3074a2e96f5339295c996eee2ffb0fbeeea942",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\38\\38e02b40c08a220fbdac6d98560a329623b8edeea88f8b9f026bd79a0ac53ad9"
+        }
+      }
+    },
+    "19b11ffe-d1c4-4e47-94e4-50b31ea32ab7": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793119903058,
+      "endedAt": 1793119905070,
+      "files": {
+        "scripts/generate-clean-audio.py": {
+          "before": null,
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\24\\2446e327e5c155d803ca70eca952a57126ef637d57f815d5d49042626e32be88"
+        }
+      }
+    },
+    "a3602724-95bb-4e0d-8bf6-8b3abd071cbb": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793119918477,
+      "endedAt": 1793119921385,
+      "files": {
+        "assets/audio/master-clean.wav": {
+          "before": null,
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\c3\\c3ea8de4bee16a68565cfe6097d6969f149942f9a343127f7b30d8f68cac615e"
+        }
+      }
+    },
+    "b1bdb335-9f42-455d-bb9d-707602a1536e": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793119930652,
+      "endedAt": 1793119932662,
+      "files": {
+        "scripts/generate-clean-audio.py": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\24\\2446e327e5c155d803ca70eca952a57126ef637d57f815d5d49042626e32be88",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\04\\044da30d21835be1003c39cb4152bf06eb89a7ba1cecb5d6839ac2362c743a04"
+        }
+      }
+    },
+    "3134d07a-289a-44dd-8da9-04ea15bc53f8": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793119944436,
+      "endedAt": 1793119948150,
+      "files": {
+        "assets/audio/bgm.mp3": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\d3\\d3bc5b2e8523ec4e2fd85ff81aa4c3a29563557eff409b194f5f9645faeca4cc",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\81\\814219504b8b375d3ff5a43fa8153837f14340d6c6c7712442c12896d9c08aa6"
+        },
+        "assets/audio/master-clean.wav": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\c3\\c3ea8de4bee16a68565cfe6097d6969f149942f9a343127f7b30d8f68cac615e",
+          "after": null
+        },
+        "assets/audio/master-mix.mp3": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\98\\98ee9f251665d48e88feed617d85a6157799dd7e6d50594d9d5c43e771b8f060",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\81\\814219504b8b375d3ff5a43fa8153837f14340d6c6c7712442c12896d9c08aa6"
+        }
+      }
+    },
+    "ce37f638-0d93-4f2f-8846-bd9de8713b14": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793119989371,
+      "endedAt": 1793119991384,
+      "files": {
+        "SCRIPT.md": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\5e\\5eeff7dc3db22e67847b9fcd15abce22dbc827eb0a77f1ee6f7496378b5f7cea",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\e4\\e48e06a52a4e6cabc43a12f154f3a18a4740a9abe48d279b45299980bc5a2d0c"
+        }
+      }
+    },
+    "b36731cd-617e-497b-ad89-038557771f7a": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793120045355,
+      "endedAt": 1793120047369,
+      "files": {
+        "compositions/frames/01-hook.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\3b\\3b3945d15adc0dbe04f4b10c14ede86da827f3c719e7131b2e6eaf395b5712bc",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\ce\\ce55352ff1123411266a9926e159a8b55827601253c4fd925968e8c5c233004a"
+        }
+      }
+    },
+    "7d6cfc11-b0b1-4807-8e01-eba35cc8cfd9": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793120103063,
+      "endedAt": 1793120105069,
+      "files": {
+        "compositions/frames/02-reveal.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\1d\\1d18fe4bac0a28be028ce6b1179906fbe5c703ec539f57c22291a65a32904a39",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\27\\272bcc4df987e1fb0c5febf17c5491d316f915b8733a09178d01d5d8c2567994"
+        }
+      }
+    },
+    "063f9194-b76c-44b7-bb21-bf140949296b": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793120198257,
+      "endedAt": 1793120200267,
+      "files": {
+        "compositions/frames/03-tools.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\38\\38e02b40c08a220fbdac6d98560a329623b8edeea88f8b9f026bd79a0ac53ad9",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\bc\\bc203f4815cb8cc0d441511111fc34d46a2d4f81877bb06864121ab322643860"
+        }
+      }
+    },
+    "053c2b38-cc5e-402e-a6fb-58fa67bbeb19": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793120245522,
+      "endedAt": 1793120247526,
+      "files": {
+        "compositions/frames/05-cta.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\9f\\9f9aeb0819668e5e5a6f80f2104402cc940792f7d049627216161fa1f88e9e08",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\ac\\ac37d7b148d8af009345fe2660601ef0ce6aea19a4079dfd4b0f53b77691d2a3"
+        }
+      }
+    },
+    "531ebdb9-ae28-4fe3-b355-bdd52cd6a260": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793120295957,
+      "endedAt": 1793120297973,
+      "files": {
+        "compositions/frames/03-tools.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\bc\\bc203f4815cb8cc0d441511111fc34d46a2d4f81877bb06864121ab322643860",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\fc\\fce61c288d76d166e58b4b853e8064be62d8e5e60684ca06362bbc1d4cd5a857"
+        },
+        "compositions/frames/05-cta.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\ac\\ac37d7b148d8af009345fe2660601ef0ce6aea19a4079dfd4b0f53b77691d2a3",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\96\\9668a4a71ab51d02b05c830c85c25a2da9e4b0692b67315d87f92dc1b7d03d0b"
+        }
+      }
+    },
+    "feece816-1c41-4dcd-ade7-061bf32c2a9d": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793120484344,
+      "endedAt": 1793120486355,
+      "files": {
+        "compositions/frames/03-tools.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\fc\\fce61c288d76d166e58b4b853e8064be62d8e5e60684ca06362bbc1d4cd5a857",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\79\\79b61f61346edf75ce2fa1bfb643b253eb01c7769bd0bd309b1c8b4c865fbada"
+        }
+      }
+    },
+    "f93f8d3d-2c9d-4afc-ae4d-a05e97857bcc": {
+      "actor": {
+        "kind": "person",
+        "name": "You"
+      },
+      "label": "Delete element",
+      "startedAt": 1793120544147,
+      "endedAt": 1793120544147,
+      "files": {
+        "compositions/frames/05-cta.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\96\\9668a4a71ab51d02b05c830c85c25a2da9e4b0692b67315d87f92dc1b7d03d0b",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\74\\749ea810ca4c622161b67d754e77d1aec7c766d198948f9fa600031cfae5622b"
+        }
+      }
+    },
+    "9dd8ddab-da8b-4ab3-b83a-e85daa1a016b": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793120552121,
+      "endedAt": 1793120554123,
+      "files": {
+        "compositions/frames/01-hook.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\ce\\ce55352ff1123411266a9926e159a8b55827601253c4fd925968e8c5c233004a",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\9b\\9b358556fa99b757268f07db7e33012d76b146e3d5676ae3b63ddac3ad171974"
+        }
+      }
+    },
+    "9960a60e-0280-48cf-ae7c-2845f6756178": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793120567452,
+      "endedAt": 1793120569467,
+      "files": {
+        "compositions/frames/01-hook.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\9b\\9b358556fa99b757268f07db7e33012d76b146e3d5676ae3b63ddac3ad171974",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\4c\\4c858e44daef9f151423be57d53c5d6c02ae73cae343f6f3aaa759bcc3ccd51b"
+        }
+      }
+    },
+    "1057bef4-2618-4e93-a0e1-95aa16158a16": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793120605084,
+      "endedAt": 1793120607084,
+      "files": {
+        "compositions/frames/04-value.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\53\\5307021b8f6291652ec04b80a653184a447e613555e6108e88be1c215f8cf8c8",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\0c\\0c4cefab5bf85d2290d03c46e31de0ec201a9ac6e5d74b2e27f26c496e23af3c"
+        }
+      }
+    },
+    "58ca31ba-c018-4444-a88d-7183d8dff2bc": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793120951890,
+      "endedAt": 1793120953902,
+      "files": {
+        "compositions/frames/02-reveal.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\27\\272bcc4df987e1fb0c5febf17c5491d316f915b8733a09178d01d5d8c2567994",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\78\\78aa3e25c8948377be046fd3d2c9256564366797161878800df3d57959aa21db"
+        }
+      }
+    },
+    "a983ab38-76c0-4587-80f3-e3a3debb1d8b": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793120967434,
+      "endedAt": 1793120969438,
+      "files": {
+        "compositions/frames/02-reveal.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\78\\78aa3e25c8948377be046fd3d2c9256564366797161878800df3d57959aa21db",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\9b\\9b42e1fffdc0c57ce5399b42edbd5d5dc00021f9c5d8e4a9e12116c81c40d142"
+        }
+      }
+    },
+    "5c6afa9d-b915-4113-a88b-dd435c5d2121": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793120984736,
+      "endedAt": 1793120986735,
+      "files": {
+        "compositions/frames/02-reveal.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\9b\\9b42e1fffdc0c57ce5399b42edbd5d5dc00021f9c5d8e4a9e12116c81c40d142",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\80\\8078a272dd7d966d92989c02a8b5f37b8b9d87466bccb7b08e95ecac5b382d30"
+        }
+      }
+    },
+    "dde866dd-0429-4934-8bdc-41b58519c1c4": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793121015400,
+      "endedAt": 1793121017407,
+      "files": {
+        "compositions/frames/05-cta.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\74\\749ea810ca4c622161b67d754e77d1aec7c766d198948f9fa600031cfae5622b",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\0d\\0dd576c37ccd1ca2866f2ac52a6f6f6c1cdaa07a55583d16ffc749dc4d29fda0"
+        }
+      }
+    },
+    "0c9b1f23-51a0-4e3f-8ee2-946809dde39b": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793121032959,
+      "endedAt": 1793121034966,
+      "files": {
+        "compositions/frames/05-cta.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\0d\\0dd576c37ccd1ca2866f2ac52a6f6f6c1cdaa07a55583d16ffc749dc4d29fda0",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\c4\\c4636033c55d9e2158fef834cbe22f30cbcc5903b26142595150d62ce305957f"
+        }
+      }
+    },
+    "d96ea1ce-7d2f-4eeb-a4aa-3c9f05cf4642": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793121069234,
+      "endedAt": 1793121071239,
+      "files": {
+        "compositions/frames/02-reveal.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\80\\8078a272dd7d966d92989c02a8b5f37b8b9d87466bccb7b08e95ecac5b382d30",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\0b\\0bc828ab8b536046697fbe3ff82025d05196f0beadafe0a55b24fef0a6d4ceb8"
+        }
+      }
+    },
+    "965300f6-1327-49a9-ae35-7928bc8c39f6": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793121079269,
+      "endedAt": 1793121081272,
+      "files": {
+        "compositions/frames/05-cta.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\c4\\c4636033c55d9e2158fef834cbe22f30cbcc5903b26142595150d62ce305957f",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\35\\35a74bbefd6890d865eaff131598a173a7d44f987f406583742afd1f5f2d0297"
+        }
+      }
+    },
+    "f9b98e8d-4928-4a36-8030-9adc337c2a95": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793121608079,
+      "endedAt": 1793121610091,
+      "files": {
+        "package-lock.json": {
+          "before": null,
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\e9\\e9effecdb7d9b839d03669fd790e8526277d8dd7848f9a37bcb9fe61b23212dc"
+        },
+        "package.json": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\b8\\b8959487ccb735089543083be344d3149dcbd17ed05dbd2e9d27b78360673d10",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\4d\\4dd15120df70df5190463fb4c0db6d57b1a4e56f0ea38a1f39bbfe0e80283623"
+        }
+      }
+    },
+    "66728678-8349-4b65-8c1d-00121127cc03": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793121630531,
+      "endedAt": 1793121632542,
+      "files": {
+        "assets/qr-playcomun.svg": {
+          "before": null,
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\23\\237127f9e866070574e538447602ff356c455217d89dace80ce3b9c4c157e3f4"
+        }
+      }
+    },
+    "d427333f-f73f-4c17-bd16-5b50e073ba6d": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793121785808,
+      "endedAt": 1793121787814,
+      "files": {
+        "compositions/frames/02-reveal.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\0b\\0bc828ab8b536046697fbe3ff82025d05196f0beadafe0a55b24fef0a6d4ceb8",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\85\\857902b15865a192b26c3e81fdf0e53d2c89c846079d5ec5ca737ffbae4e8d61"
+        }
+      }
+    },
+    "d955c076-1e1e-467a-96c8-8de612ca3779": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793121822326,
+      "endedAt": 1793121824332,
+      "files": {
+        "compositions/frames/02-reveal.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\85\\857902b15865a192b26c3e81fdf0e53d2c89c846079d5ec5ca737ffbae4e8d61",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\a0\\a0c589005bb3b3bed13a962937948195f7cb994748f805bfb7e311169ec7e196"
+        }
+      }
+    },
+    "afc1f3b1-6356-4d6a-9596-258f5b1f8dfd": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793121851633,
+      "endedAt": 1793121853647,
+      "files": {
+        "compositions/frames/02-reveal.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\a0\\a0c589005bb3b3bed13a962937948195f7cb994748f805bfb7e311169ec7e196",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\1c\\1c9643f45f0092027e4031f48f7e219365eef02c4444b3733714b8ff85fb7924"
+        }
+      }
+    },
+    "3e6ce50d-57fa-4075-8db5-0179948590f6": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793121882484,
+      "endedAt": 1793121884494,
+      "files": {
+        "compositions/frames/03-tools.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\79\\79b61f61346edf75ce2fa1bfb643b253eb01c7769bd0bd309b1c8b4c865fbada",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\26\\26e14384d66230dde0f647704cfd483711d733021f2789baff4080e5383fa598"
+        }
+      }
+    },
+    "7cd29437-5634-4d22-a79c-083a24456cb5": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793121952164,
+      "endedAt": 1793121954171,
+      "files": {
+        "compositions/frames/05-cta.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\35\\35a74bbefd6890d865eaff131598a173a7d44f987f406583742afd1f5f2d0297",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\c5\\c50e4492a00b685316f2b6d04a4eaab999c374ba80990c9352d91ff57b2c0381"
+        }
+      }
+    },
+    "8296f069-3419-493c-8145-8bf8011a2d2d": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793122006280,
+      "endedAt": 1793122008280,
+      "files": {
+        "compositions/frames/05-cta.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\c5\\c50e4492a00b685316f2b6d04a4eaab999c374ba80990c9352d91ff57b2c0381",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\5b\\5bbee2d57fdb5bdf92a35d1dc8c53f7dc773093bd77be54254c87308fb34168e"
+        }
+      }
+    },
+    "a8499c40-855c-427b-9ca2-89bc7a8580f6": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793122049967,
+      "endedAt": 1793122051982,
+      "files": {
+        "compositions/frames/02-reveal.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\1c\\1c9643f45f0092027e4031f48f7e219365eef02c4444b3733714b8ff85fb7924",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\f5\\f5e8774f4af481eb9e61161126d7644fac5bcf60beb19c45eac3f6ad0cf7b2bf"
+        }
+      }
+    },
+    "925aa4ee-57ca-42f3-8935-941aa67982d8": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793123334163,
+      "endedAt": 1793123336175,
+      "files": {
+        "compositions/frames/01-hook.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\4c\\4c858e44daef9f151423be57d53c5d6c02ae73cae343f6f3aaa759bcc3ccd51b",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\9e\\9e6209746cb808dba20be7bba0d4f6a513ec6791fe2e0f9bca88620f0dbf01d0"
+        }
+      }
+    },
+    "8cdddec6-6d65-4461-83a0-afbefe7e6e6f": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793123429396,
+      "endedAt": 1793123431411,
+      "files": {
+        "compositions/frames/04-value.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\0c\\0c4cefab5bf85d2290d03c46e31de0ec201a9ac6e5d74b2e27f26c496e23af3c",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\46\\466992bd654b03c7e864e5360622dcc544a40d49a6e7d63e50cdeec04bb2eddd"
+        }
+      }
+    },
+    "02f5da7f-047b-44ec-a9c0-34c6072b678e": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793123500483,
+      "endedAt": 1793123502485,
+      "files": {
+        "compositions/frames/04-value.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\46\\466992bd654b03c7e864e5360622dcc544a40d49a6e7d63e50cdeec04bb2eddd",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\d1\\d124f5a85d303026b4bc0c71650ce0d7a6a3ad8d6e1c3c67e6fd1ffc880bff61"
+        }
+      }
+    },
+    "85106b73-3411-48bc-b563-61f54a87d483": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793123530767,
+      "endedAt": 1793123532774,
+      "files": {
+        "compositions/frames/02-reveal.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\f5\\f5e8774f4af481eb9e61161126d7644fac5bcf60beb19c45eac3f6ad0cf7b2bf",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\af\\afc8ecbf035dadddd3cbbf203890a5076a7565dba33ed896e860de2e8a6b36db"
+        }
+      }
+    },
+    "1a37819b-2546-45eb-b11d-5a84eb252ded": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793123631479,
+      "endedAt": 1793123633810,
+      "files": {
+        "frame_01_hook_antislop.jpg": {
+          "before": null,
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\92\\923c18887e5462e332b430775f02db191ad6a76794bc56d4fddf48445cde1524"
+        },
+        "frame_04_value_antislop.jpg": {
+          "before": null,
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\5a\\5a09c24122e0f691a035209c91a585d56552d694698a4cd218eaff3cfafbdd05"
+        },
+        "frame_05_cta_antislop.jpg": {
+          "before": null,
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\37\\37cab6b00bd465ceb0942bb202100dc0827b75627f23b1c96ac2f146e1b0211a"
+        }
+      }
+    },
+    "179f29a0-97e2-4556-94ce-efa379f39281": {
+      "actor": {
+        "kind": "person",
+        "name": "You"
+      },
+      "label": "Delete element",
+      "startedAt": 1793123646641,
+      "endedAt": 1793123646641,
+      "files": {
+        "compositions/frames/05-cta.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\5b\\5bbee2d57fdb5bdf92a35d1dc8c53f7dc773093bd77be54254c87308fb34168e",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\34\\3483ddd3aaff46505728777616969891f45ecddcc0d9965949ef3cdb678cc62c"
+        }
+      }
+    },
+    "1d1d35a4-813c-46ce-a3ed-2db9d1510f64": {
+      "actor": {
+        "kind": "person",
+        "name": "You"
+      },
+      "targets": [
+        {
+          "file": "compositions/frames/05-cta.html",
+          "hfId": "hf-mpfu",
+          "selector": ".c05-status-pill",
+          "selectorIndex": 0
+        }
+      ],
+      "label": "Edit text",
+      "startedAt": 1793123659506,
+      "endedAt": 1793123659506,
+      "files": {
+        "compositions/frames/05-cta.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\34\\3483ddd3aaff46505728777616969891f45ecddcc0d9965949ef3cdb678cc62c",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\0d\\0df367fa227e6a7aa79c25d574d9827d8f21300ed8e826d47a9d8f0a1bcc6d91"
+        }
+      }
+    },
+    "e0198f91-88d7-41a0-a676-438567b56d56": {
+      "actor": {
+        "kind": "person",
+        "name": "You"
+      },
+      "label": "Delete element",
+      "startedAt": 1793123660266,
+      "endedAt": 1793123660266,
+      "files": {
+        "compositions/frames/05-cta.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\0d\\0df367fa227e6a7aa79c25d574d9827d8f21300ed8e826d47a9d8f0a1bcc6d91",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\67\\67505f87fb03cf3c4078ef571d70f93313364dbdec6e70196d3431898f476430"
+        }
+      }
+    },
+    "9f8efc52-5ed5-4acc-9abd-1aa7f73b4d1e": {
+      "actor": {
+        "kind": "person",
+        "name": "You"
+      },
+      "label": "Undid: Delete element",
+      "startedAt": 1793123666242,
+      "endedAt": 1793123666245.4214,
+      "undoes": "e0198f91-88d7-41a0-a676-438567b56d56",
+      "files": {
+        "compositions/frames/05-cta.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\67\\67505f87fb03cf3c4078ef571d70f93313364dbdec6e70196d3431898f476430",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\0d\\0df367fa227e6a7aa79c25d574d9827d8f21300ed8e826d47a9d8f0a1bcc6d91"
+        }
+      }
+    },
+    "d737987b-28d1-4171-8526-a1226bf95fbe": {
+      "actor": {
+        "kind": "person",
+        "name": "You"
+      },
+      "targets": [
+        {
+          "file": "compositions/frames/05-cta.html",
+          "hfId": "hf-mpfu",
+          "selector": ".c05-status-pill",
+          "selectorIndex": 0
+        }
+      ],
+      "label": "Undid: Edit text",
+      "startedAt": 1793123668541,
+      "endedAt": 1793123668542.5664,
+      "undoes": "1d1d35a4-813c-46ce-a3ed-2db9d1510f64",
+      "files": {
+        "compositions/frames/05-cta.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\0d\\0df367fa227e6a7aa79c25d574d9827d8f21300ed8e826d47a9d8f0a1bcc6d91",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\34\\3483ddd3aaff46505728777616969891f45ecddcc0d9965949ef3cdb678cc62c"
+        }
+      }
+    },
+    "ce581f39-32d9-47bf-bd97-d95005af7c73": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793123693381,
+      "endedAt": 1793123695386,
+      "files": {
+        "compositions/frames/05-cta.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\34\\3483ddd3aaff46505728777616969891f45ecddcc0d9965949ef3cdb678cc62c",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\4d\\4d419ba6cceb70a213ddd8dfb2e07b170f94d23b86bf8a2c3bb0a62adc414026"
+        }
+      }
+    },
+    "0cd4e952-30c8-4fa0-b32d-042bae84d7b5": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793123711456,
+      "endedAt": 1793123713459,
+      "files": {
+        "compositions/frames/05-cta.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\4d\\4d419ba6cceb70a213ddd8dfb2e07b170f94d23b86bf8a2c3bb0a62adc414026",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\a9\\a9c1c70b7d51a5398320dc3b22da43ab356a3a08b40bafa2a389c8f1c6aa3e53"
+        }
+      }
+    },
+    "fe5a87a2-70d9-45fa-8c89-46cbdbb4e8ec": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793123770784,
+      "endedAt": 1793123772784,
+      "files": {
+        "frame_05_cta_final.jpg": {
+          "before": null,
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\da\\daabf89671a604df391d4a0ae997aca1f420b06b7897a56a6f3bd8cf346d7acb"
+        }
+      }
+    },
+    "baf38a1c-64c9-4050-8510-af39b5e7587f": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793124196767,
+      "endedAt": 1793124198775,
+      "files": {
+        "compositions/frames/04-value.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\d1\\d124f5a85d303026b4bc0c71650ce0d7a6a3ad8d6e1c3c67e6fd1ffc880bff61",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\ac\\ace1ff74bb861d554e5e1cb5f77c1fd01cb784a66873a183b80d309110fa3678"
+        }
+      }
+    },
+    "257c0ff0-753e-4af2-b1b0-8c3bd74903a3": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793124295140,
+      "endedAt": 1793124297141,
+      "files": {
+        "frame_04_redesigned.jpg": {
+          "before": null,
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\e0\\e08ed666deb31e15529982442951c160bb52cb7a6513209517afbf86a3c22b09"
+        }
+      }
+    },
+    "dacebee0-46dd-4bea-813d-e165c8cc7b01": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793288923165,
+      "endedAt": 1793288923185,
+      "files": {
+        "compositions/frames/01-hook.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\9e\\9e6209746cb808dba20be7bba0d4f6a513ec6791fe2e0f9bca88620f0dbf01d0",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\7e\\7e8aaa0901e37fc570027a15c1970d8d7842e48d44eac0fdf8c26c02f69c45b8"
+        },
+        "compositions/frames/02-reveal.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\af\\afc8ecbf035dadddd3cbbf203890a5076a7565dba33ed896e860de2e8a6b36db",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\6c\\6ceb0de02d6685c5f47156a742af917f989171cd4d7ac75f7c7e54e8ee00e439"
+        },
+        "compositions/frames/03-tools.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\26\\26e14384d66230dde0f647704cfd483711d733021f2789baff4080e5383fa598",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\f3\\f30a008a5e72191d749ad1a3aa94b929430ff72b1f8c5414bc588f75b19638df"
+        },
+        "compositions/frames/04-value.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\ac\\ace1ff74bb861d554e5e1cb5f77c1fd01cb784a66873a183b80d309110fa3678",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\82\\8257d1bea1e4186eb1cc86332fdb2c40260d9dd2be1b52b9a568066ef340a709"
+        }
+      }
+    },
+    "4f810fe8-c120-49e5-adb2-31e144ed6952": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793290301174,
+      "endedAt": 1793290303178,
+      "files": {
+        "scripts/generate-audio.py": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\7c\\7c65bef69ad7d56143ba57c9f9642349ba40cb501983423574dd02df7ac01e61",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\60\\600fa33006ae0a03eee2cf24ee87fe0438b4d5567d1b3d16e4e89413b8d107c7"
+        }
+      }
+    },
+    "6dc23554-e365-4144-92a7-0cfd0475d761": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793290310280,
+      "endedAt": 1793290327539,
+      "files": {
+        "assets/audio/bgm.mp3": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\81\\814219504b8b375d3ff5a43fa8153837f14340d6c6c7712442c12896d9c08aa6",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\06\\066941b1a34d8d4d0605b7ee7999ba5f4fa3326377041c640af8ac59fbd86d74"
+        },
+        "assets/audio/master-mix.mp3": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\81\\814219504b8b375d3ff5a43fa8153837f14340d6c6c7712442c12896d9c08aa6",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\83\\83ccc335665874096638c961c4240b10f35ebd39222f495f25463c3d80d034a5"
+        },
+        "assets/audio/vo-01-hook.mp3": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\9d\\9dcaf56c0275ac9cc8b461eecd09c8e169f23d1ce67a97399d1d13e83a35ed5f",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\21\\21f0a2d0f20fbccf66c5e60667900467c4d403e9b622e7edf497fd24b6013f76"
+        },
+        "assets/audio/vo-02-reveal.mp3": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\4f\\4f5e8c0a300356a9b47b9d1bdaf0305b7bf289ca60b0cf4a9358f3f3fcf1c156",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\80\\80dd186eb00818a06529a338fb355227f4a46ec2cee6dee084d6fcd976c47368"
+        },
+        "assets/audio/vo-03-business.mp3": {
+          "before": null,
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\ae\\ae11fcbf17089cbd3c6292decba56f6463b7f64b089fe07d5fb721eb1bbd654b"
+        },
+        "assets/audio/vo-04-finance.mp3": {
+          "before": null,
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\a3\\a3134494748e90ec023ba69ce9a4f256fbe3e356a4035238d053c66ab2666dc2"
+        },
+        "assets/audio/vo-05-utilities.mp3": {
+          "before": null,
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\76\\769e2015811c3465420a4b5c2e202eaf322e5e08422febef74a5fe2391102569"
+        },
+        "assets/audio/vo-06-frictionless.mp3": {
+          "before": null,
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\5a\\5aefccfecdb803687816860b73e293e95d41f0030f2b08b0c014bcd34ff72f33"
+        },
+        "assets/audio/vo-07-cta.mp3": {
+          "before": null,
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\d9\\d925290212453b2406da7b5336f86e512b6e2b665f1a1273e84b0eeeea4a6757"
+        }
+      }
+    },
+    "48849247-747b-4f69-9050-fc709ed484cf": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793290395577,
+      "endedAt": 1793290397580,
+      "files": {
+        "compositions/frames/01-hook.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\7e\\7e8aaa0901e37fc570027a15c1970d8d7842e48d44eac0fdf8c26c02f69c45b8",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\88\\88918cf4b46fae0d8fae4c73326e76b08a1d445678aaa298daafe3ec1b0d2213"
+        }
+      }
+    },
+    "496a983f-54b2-4090-abe5-61041b245f58": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793290442780,
+      "endedAt": 1793290444796,
+      "files": {
+        "compositions/frames/02-reveal.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\6c\\6ceb0de02d6685c5f47156a742af917f989171cd4d7ac75f7c7e54e8ee00e439",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\a3\\a3bc0b26ad751d7d9cca8268e959d1c5b9f8f47265dc0bbebcf26ecc69f7670d"
+        }
+      }
+    },
+    "e9a61800-3332-473e-8484-3268abac508f": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793290485605,
+      "endedAt": 1793290487611,
+      "files": {
+        "compositions/frames/03-business.html": {
+          "before": null,
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\6e\\6ee7f5a154a13f5f061649468c3fc758af91dde3420d5658a7dd228d1b1c3125"
+        }
+      }
+    },
+    "e015d2f2-67af-4553-b15a-dc162c63f62d": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793290522469,
+      "endedAt": 1793290524485,
+      "files": {
+        "compositions/frames/04-finance.html": {
+          "before": null,
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\f9\\f9987e899ebdc53baf56e2254349c21169e4d2396507e8d02d61e627eb027ad2"
+        }
+      }
+    },
+    "4e6d3ba9-1659-49d8-9342-a112fca85d23": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793290569053,
+      "endedAt": 1793290571064,
+      "files": {
+        "compositions/frames/05-utilities.html": {
+          "before": null,
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\d3\\d3990c515a7fe17e07670482293b6d554bb64a38cb1085cd0d7b94931ac7f784"
+        }
+      }
+    },
+    "9541c107-1a33-49fc-a090-ffe072a3fbdd": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793290597132,
+      "endedAt": 1793290599132,
+      "files": {
+        "compositions/frames/06-frictionless.html": {
+          "before": null,
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\44\\44bf6143f97e5e0870a3e2674ae94ab9e8da46181c868d934c342069f7403ebe"
+        }
+      }
+    },
+    "06bd3bf4-f017-47e4-aa06-7c657759fff9": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793290630111,
+      "endedAt": 1793290632113,
+      "files": {
+        "compositions/frames/07-cta.html": {
+          "before": null,
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\b5\\b5477c1946132c8d208e569658a21c78d6311138d7a58e9a2945f83b004d47ec"
+        }
+      }
+    },
+    "7b7339a7-9755-429e-b780-e11db9b040bc": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793290653927,
+      "endedAt": 1793290655934,
+      "files": {
+        "index.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\b9\\b921bded11ccf629adf90e814f4d28e9fcb5d2a66e904cd5f16dcf9a09dc6884",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\16\\169b81601fc22b2fe7eb7df66196c8d259fa26d3f7abeb63d11df8850ddc6299"
+        }
+      }
+    },
+    "7cb90448-ad1f-4e81-b729-a8cdbd71a1f4": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793290664571,
+      "endedAt": 1793290666579,
+      "files": {
+        "BRIEF.md": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\aa\\aab2828abbcad72d6ae73aa6c921a56fc0a816484a54d9d15c8e302d6a46ae0e",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\5b\\5bfe7b67559960dd3640f19b946ba36c3eda44033fa312b7b89cc231b8a0fc1b"
+        }
+      }
+    },
+    "80c75f0a-c246-4d98-8dec-32a7b11dbbd0": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793290676746,
+      "endedAt": 1793290678747,
+      "files": {
+        "SCRIPT.md": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\e4\\e48e06a52a4e6cabc43a12f154f3a18a4740a9abe48d279b45299980bc5a2d0c",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\bb\\bb22037cb10e7c2c8222f30e5f83b50374bd3d421f4065011a5d38088d5fae1a"
+        }
+      }
+    },
+    "69d11548-23c5-4aca-9b55-c7237d973878": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793290686597,
+      "endedAt": 1793290688610,
+      "files": {
+        "STORYBOARD.md": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\2a\\2a86bf9d35a97399c0c3d2ecbcbc07046ed55db1d7fbfc8c738d86f5d396bc9b",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\1c\\1c4b590f06ccc27b9cc625e5b40a03a439ebba257f9dc907d30b9deef99f712a"
+        }
+      }
+    },
+    "d58cb557-0a5f-48b9-aac3-85bd730a36db": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793290714958,
+      "endedAt": 1793290716965,
+      "files": {
+        "compositions/frames/03-tools.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\f3\\f30a008a5e72191d749ad1a3aa94b929430ff72b1f8c5414bc588f75b19638df",
+          "after": null
+        },
+        "compositions/frames/04-value.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\82\\8257d1bea1e4186eb1cc86332fdb2c40260d9dd2be1b52b9a568066ef340a709",
+          "after": null
+        },
+        "compositions/frames/05-cta.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\a9\\a9c1c70b7d51a5398320dc3b22da43ab356a3a08b40bafa2a389c8f1c6aa3e53",
+          "after": null
+        }
+      }
+    },
+    "824c9b64-2e58-4f64-9b16-ab5ead6a65b7": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793290721577,
+      "endedAt": 1793290723584,
+      "files": {
+        "compositions/frames/01-hook.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\88\\88918cf4b46fae0d8fae4c73326e76b08a1d445678aaa298daafe3ec1b0d2213",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\fb\\fb5c7df68d776d1460471b398004558cae57107d664cd550662badd63f1222f1"
+        }
+      }
+    },
+    "45128e70-2475-4f1a-a8b6-bb522f5087dd": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793290726799,
+      "endedAt": 1793290728807,
+      "files": {
+        "compositions/frames/02-reveal.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\a3\\a3bc0b26ad751d7d9cca8268e959d1c5b9f8f47265dc0bbebcf26ecc69f7670d",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\89\\8910806f64a08b836a96433527160781c0046c2981ae0285b59a216eca1c817d"
+        }
+      }
+    },
+    "40a6e327-6f43-4e6b-97be-02b726cc7244": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793290732284,
+      "endedAt": 1793290734285,
+      "files": {
+        "compositions/frames/03-business.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\6e\\6ee7f5a154a13f5f061649468c3fc758af91dde3420d5658a7dd228d1b1c3125",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\01\\01fb2097f96c6eb2b2ac8d36495a07f2e77d97de8b40426c492c4973ebfb691c"
+        }
+      }
+    },
+    "b60b552f-fc17-493e-b34e-f826a80b085d": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793290737314,
+      "endedAt": 1793290739322,
+      "files": {
+        "compositions/frames/04-finance.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\f9\\f9987e899ebdc53baf56e2254349c21169e4d2396507e8d02d61e627eb027ad2",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\43\\43700c92bd7dd8e95b39b742d6216380a74673c3e7d77fe220f4cb874151826d"
+        }
+      }
+    },
+    "ce38c6ed-3e4a-467a-ae4c-3af45cf5d807": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793290743447,
+      "endedAt": 1793290745460,
+      "files": {
+        "compositions/frames/05-utilities.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\d3\\d3990c515a7fe17e07670482293b6d554bb64a38cb1085cd0d7b94931ac7f784",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\65\\653e5663cdbea9e599629fc31d63e4b0b868185d6ef4ca03fd37503d9fbfdc01"
+        }
+      }
+    },
+    "5cc03220-9b50-463f-92a7-4cad8d503cd4": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793290749991,
+      "endedAt": 1793290752002,
+      "files": {
+        "compositions/frames/06-frictionless.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\44\\44bf6143f97e5e0870a3e2674ae94ab9e8da46181c868d934c342069f7403ebe",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\f0\\f08c0ff24ec07439c79c1f2359eecd3bdc32425b94984d6bf7775b20f378ebd7"
+        }
+      }
+    },
+    "1a8bb650-e33c-421d-9a4a-716298bf5778": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793290756393,
+      "endedAt": 1793290758397,
+      "files": {
+        "compositions/frames/07-cta.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\b5\\b5477c1946132c8d208e569658a21c78d6311138d7a58e9a2945f83b004d47ec",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\2e\\2ee36a773661a2f7aa97c82b76d48bc5bb8861a0a56e0239c49949ef468945d5"
+        }
+      }
+    },
+    "696e5aa2-82e1-4c4d-988e-8c4152516fe3": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793290762483,
+      "endedAt": 1793290764498,
+      "files": {
+        "compositions/frames/07-cta.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\2e\\2ee36a773661a2f7aa97c82b76d48bc5bb8861a0a56e0239c49949ef468945d5",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\23\\238ef599fd518de808c83a6dcf4f76adc0c7db8353ca4c6382dfec58dff6bc4d"
+        }
+      }
+    },
+    "92b2a9c4-e83d-4d46-9ba6-8fbac13161a6": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793290791342,
+      "endedAt": 1793290793342,
+      "files": {
+        "compositions/frames/01-hook.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\fb\\fb5c7df68d776d1460471b398004558cae57107d664cd550662badd63f1222f1",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\c7\\c7ea8d257cec11ef1ca13bb781d61f000d083b94eba23838b49a6c784f3ed567"
+        }
+      }
+    },
+    "0531d30a-0260-4786-ba0b-91aa6825792a": {
+      "actor": {
+        "kind": "person",
+        "name": "You"
+      },
+      "targets": [
+        {
+          "file": "compositions/frames/07-cta.html",
+          "id": "c07-bottom",
+          "hfId": "hf-xzu7",
+          "selector": "#c07-bottom"
+        }
+      ],
+      "label": "Edit text",
+      "startedAt": 1793291001609,
+      "endedAt": 1793291001610,
+      "files": {
+        "compositions/frames/07-cta.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\23\\238ef599fd518de808c83a6dcf4f76adc0c7db8353ca4c6382dfec58dff6bc4d",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\37\\37fc7498ab1ce965eca356a69aa175571515e321dca805a30818ceded5e1ed40"
+        }
+      }
+    },
+    "394d487d-4ea7-4ca2-963d-38f8fb52fc68": {
+      "actor": {
+        "kind": "person",
+        "name": "You"
+      },
+      "targets": [
+        {
+          "file": "compositions/frames/07-cta.html",
+          "id": "c07-bottom",
+          "hfId": "hf-xzu7",
+          "selector": "#c07-bottom"
+        }
+      ],
+      "label": "Edit text",
+      "startedAt": 1793291010759,
+      "endedAt": 1793291010759,
+      "files": {
+        "compositions/frames/07-cta.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\37\\37fc7498ab1ce965eca356a69aa175571515e321dca805a30818ceded5e1ed40",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\b0\\b02707dd0b6924b84af28c49d7329d9dca9e882e18c8ad1f8c3aa8cc6254e53f"
+        }
+      }
+    },
+    "2bb274bc-2962-4639-9710-cf660ec98909": {
+      "actor": {
+        "kind": "person",
+        "name": "You"
+      },
+      "label": "Delete element",
+      "startedAt": 1793291034668,
+      "endedAt": 1793291034668,
+      "files": {
+        "compositions/frames/02-reveal.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\89\\8910806f64a08b836a96433527160781c0046c2981ae0285b59a216eca1c817d",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\ad\\add1fde360d2f8f4fdbd80e6e7dde2e9dd89d4eca7b6df8174b5faa1ff2c3607"
+        }
+      }
+    },
+    "7b8e4403-6dce-4b80-b079-7563821aba3c": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793291657868,
+      "endedAt": 1793291659879,
+      "files": {
+        "compositions/frames/07-cta.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\b0\\b02707dd0b6924b84af28c49d7329d9dca9e882e18c8ad1f8c3aa8cc6254e53f",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\b5\\b5e8b7dcff0468ca6a0f3dc39abab0db53458c9223c946f09ee5cc85d02bb1fe"
+        }
+      }
+    },
+    "7a745eac-bdcf-43b2-81c0-b6fb97ca6331": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793291769325,
+      "endedAt": 1793291771335,
+      "files": {
+        "scripts/generate-audio.py": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\60\\600fa33006ae0a03eee2cf24ee87fe0438b4d5567d1b3d16e4e89413b8d107c7",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\e6\\e687064e3b5011f794b78dea62ac00fae6e2206c8c23d7d305c5e8ec1d5619d1"
+        }
+      }
+    },
+    "b9f819e4-79ca-48ad-a66b-1c2ec8c4b973": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793291799014,
+      "endedAt": 1793291805358,
+      "files": {
+        "assets/audio/bgm.mp3": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\06\\066941b1a34d8d4d0605b7ee7999ba5f4fa3326377041c640af8ac59fbd86d74",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\e7\\e76ba37560ad5bff9a971836ec31b44dfc887a75282b9a0ee5ba5db0ec4b0290"
+        },
+        "assets/audio/master-mix.mp3": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\83\\83ccc335665874096638c961c4240b10f35ebd39222f495f25463c3d80d034a5",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\e7\\e76ba37560ad5bff9a971836ec31b44dfc887a75282b9a0ee5ba5db0ec4b0290"
+        },
+        "assets/audio/vo-01-hook.mp3": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\21\\21f0a2d0f20fbccf66c5e60667900467c4d403e9b622e7edf497fd24b6013f76",
+          "after": null
+        },
+        "assets/audio/vo-02-reveal.mp3": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\80\\80dd186eb00818a06529a338fb355227f4a46ec2cee6dee084d6fcd976c47368",
+          "after": null
+        },
+        "assets/audio/vo-03-business.mp3": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\ae\\ae11fcbf17089cbd3c6292decba56f6463b7f64b089fe07d5fb721eb1bbd654b",
+          "after": null
+        },
+        "assets/audio/vo-03-tools.mp3": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\72\\72fe55f97f833011fb8b2397143fd704a9b5b9f95bb3a665133a94463b46a241",
+          "after": null
+        },
+        "assets/audio/vo-04-finance.mp3": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\a3\\a3134494748e90ec023ba69ce9a4f256fbe3e356a4035238d053c66ab2666dc2",
+          "after": null
+        },
+        "assets/audio/vo-04-value.mp3": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\ad\\ad543dfac38a5159115475057fd7510252b7a5131401effab75d7734ebd0f01d",
+          "after": null
+        },
+        "assets/audio/vo-05-cta.mp3": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\41\\414eb550c07837b07c7cff86861368d6db257b71e21ca2b3784ce535efad9431",
+          "after": null
+        },
+        "assets/audio/vo-05-utilities.mp3": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\76\\769e2015811c3465420a4b5c2e202eaf322e5e08422febef74a5fe2391102569",
+          "after": null
+        },
+        "assets/audio/vo-06-frictionless.mp3": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\5a\\5aefccfecdb803687816860b73e293e95d41f0030f2b08b0c014bcd34ff72f33",
+          "after": null
+        },
+        "assets/audio/vo-07-cta.mp3": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\d9\\d925290212453b2406da7b5336f86e512b6e2b665f1a1273e84b0eeeea4a6757",
+          "after": null
+        }
+      }
+    },
+    "a9745ed1-1aa3-42df-b9f6-2c6916df1f35": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793291842577,
+      "endedAt": 1793291844584,
+      "files": {
+        "index.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\16\\169b81601fc22b2fe7eb7df66196c8d259fa26d3f7abeb63d11df8850ddc6299",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\73\\73554321c5bd6ca4e7a9799ffacdc65eb37cef53819bf7dd1989dc80c8291fd6"
+        }
+      }
+    },
+    "e45023fc-b521-4be1-b9cf-e27d12158dcc": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793291912513,
+      "endedAt": 1793291914523,
+      "files": {
+        "compositions/frames/01-hook.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\c7\\c7ea8d257cec11ef1ca13bb781d61f000d083b94eba23838b49a6c784f3ed567",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\79\\79d087ae8ce9eac0485ae5e842fc93de44aa49d3e9fc3a06f3a3e1f30d1da670"
+        }
+      }
+    },
+    "3b0e06b2-a8af-4428-a359-c259b159059c": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793291991988,
+      "endedAt": 1793291993990,
+      "files": {
+        "compositions/frames/02-reveal.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\ad\\add1fde360d2f8f4fdbd80e6e7dde2e9dd89d4eca7b6df8174b5faa1ff2c3607",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\e8\\e85852c98997a243b745000818e5ce9f348879f8362c10ffa2d4c0ad352516e6"
+        }
+      }
+    },
+    "4105effe-1a5d-4727-a347-f12c635fe67f": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793292070370,
+      "endedAt": 1793292072379,
+      "files": {
+        "compositions/frames/03-business.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\01\\01fb2097f96c6eb2b2ac8d36495a07f2e77d97de8b40426c492c4973ebfb691c",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\75\\75e8676a330aec33dc7f5647f6ccaf9bc45c8eb83dd8c1d930ce8c8db666369f"
+        }
+      }
+    },
+    "47a755c1-a172-402f-a9df-e7a44a339d29": {
+      "actor": {
+        "kind": "person",
+        "name": "You"
+      },
+      "label": "Delete element",
+      "startedAt": 1793292133713,
+      "endedAt": 1793292133713,
+      "files": {
+        "compositions/frames/02-reveal.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\e8\\e85852c98997a243b745000818e5ce9f348879f8362c10ffa2d4c0ad352516e6",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\6a\\6ae33f8564cfe2a51cfc40a810f95f6835bb37a4a980e59e6e59a023c8c408fb"
+        }
+      }
+    },
+    "de0e6b59-7538-47cd-8f24-5eae6feda38c": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793292148765,
+      "endedAt": 1793292150766,
+      "files": {
+        "compositions/frames/04-finance.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\43\\43700c92bd7dd8e95b39b742d6216380a74673c3e7d77fe220f4cb874151826d",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\3a\\3aad143566e15b1e87a0b071dd0aad7318ef6efee84ad0c01e5ab380593def4e"
+        }
+      }
+    },
+    "3e18a196-237e-47a3-8406-1cacd9b6a427": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793292230702,
+      "endedAt": 1793292232702,
+      "files": {
+        "compositions/frames/05-utilities.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\65\\653e5663cdbea9e599629fc31d63e4b0b868185d6ef4ca03fd37503d9fbfdc01",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\1a\\1a55a5a11320adc3797c2a4f7bae999e9632251c04a54272d7f3d8a39213e968"
+        }
+      }
+    },
+    "3df15da9-8991-42b4-88c1-c0c4cab727f8": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793292293034,
+      "endedAt": 1793292295036,
+      "files": {
+        "compositions/frames/06-frictionless.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\f0\\f08c0ff24ec07439c79c1f2359eecd3bdc32425b94984d6bf7775b20f378ebd7",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\73\\73a3d56eb270e2b276697995aaf444f87a16b09fc66122a03ae46ff08c11fdd1"
+        }
+      }
+    },
+    "69e5013a-06b5-453d-8e4e-3533dc07dd1f": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793292350288,
+      "endedAt": 1793292352299,
+      "files": {
+        "compositions/frames/07-cta.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\b5\\b5e8b7dcff0468ca6a0f3dc39abab0db53458c9223c946f09ee5cc85d02bb1fe",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\4b\\4b973be764ef944487470c7d7b0e13242106f62c56343fb26546e745fdcb095b"
+        }
+      }
+    },
+    "02aadde9-2209-4154-a990-126fe3547c3e": {
+      "actor": {
+        "kind": "person",
+        "name": "You"
+      },
+      "targets": [
+        {
+          "file": "compositions/frames/06-frictionless.html",
+          "hfId": "hf-z22p",
+          "selector": ".v06-pillar-heading",
+          "selectorIndex": 2
+        }
+      ],
+      "label": "Edit text",
+      "startedAt": 1793292357236,
+      "endedAt": 1793292357236,
+      "files": {
+        "compositions/frames/06-frictionless.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\73\\73a3d56eb270e2b276697995aaf444f87a16b09fc66122a03ae46ff08c11fdd1",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\03\\0392141a3f4f148e63939ae75d5b276c54006c81289b485dd16c974f44a93d3d"
+        }
+      }
+    },
+    "c2838551-3189-4f93-80db-bdefe817bd7b": {
+      "actor": {
+        "kind": "person",
+        "name": "You"
+      },
+      "label": "Delete element",
+      "startedAt": 1793292366361,
+      "endedAt": 1793292366361,
+      "files": {
+        "compositions/frames/06-frictionless.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\03\\0392141a3f4f148e63939ae75d5b276c54006c81289b485dd16c974f44a93d3d",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\41\\418d5a111a0ef317f55ac311be125a0f33bc6ef5ec0501eabf5b23dcd914aad4"
+        }
+      }
+    },
+    "c32b1aa7-e517-4377-ad51-a80eb7e754db": {
+      "actor": {
+        "kind": "person",
+        "name": "You"
+      },
+      "label": "Delete element",
+      "startedAt": 1793292379117,
+      "endedAt": 1793292379117,
+      "files": {
+        "compositions/frames/07-cta.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\4b\\4b973be764ef944487470c7d7b0e13242106f62c56343fb26546e745fdcb095b",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\50\\50e512bedfade60c4b456c8d1f8af0d1e003aef43be4e192da37f55d6ee2cdc9"
+        }
+      }
+    },
+    "439f7200-1d11-4163-8ded-3f8180ed165b": {
+      "actor": {
+        "kind": "person",
+        "name": "You"
+      },
+      "targets": [
+        {
+          "file": "compositions/frames/07-cta.html",
+          "id": "c07-bottom",
+          "hfId": "hf-5sq2",
+          "selector": "#c07-bottom"
+        }
+      ],
+      "label": "Edit text",
+      "startedAt": 1793292387869,
+      "endedAt": 1793292387869,
+      "files": {
+        "compositions/frames/07-cta.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\50\\50e512bedfade60c4b456c8d1f8af0d1e003aef43be4e192da37f55d6ee2cdc9",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\09\\098270f2e64acacbe6c9a5478c69aca37500f6b0e41d65f9d9220799e225a1f6"
+        }
+      }
+    },
+    "a23cf23c-1a34-4926-884d-776651d5c201": {
+      "actor": {
+        "kind": "person",
+        "name": "You"
+      },
+      "targets": [
+        {
+          "file": "compositions/frames/07-cta.html",
+          "id": "c07-bottom",
+          "hfId": "hf-5sq2",
+          "selector": "#c07-bottom"
+        }
+      ],
+      "label": "Edit text",
+      "startedAt": 1793292397018,
+      "endedAt": 1793292397018,
+      "files": {
+        "compositions/frames/07-cta.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\09\\098270f2e64acacbe6c9a5478c69aca37500f6b0e41d65f9d9220799e225a1f6",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\5e\\5ebb579c88b7ff3de772d213b7fa8ae8be24cd3b89ff614c1abf35653a8374af"
+        }
+      }
+    },
+    "b30c5075-fbe5-4e8d-a126-512878fc603f": {
+      "actor": {
+        "kind": "person",
+        "name": "You"
+      },
+      "targets": [
+        {
+          "file": "compositions/frames/07-cta.html",
+          "id": "c07-action",
+          "hfId": "hf-md2n",
+          "selector": "#c07-action"
+        }
+      ],
+      "label": "Edit text",
+      "startedAt": 1793292645183,
+      "endedAt": 1793292645183,
+      "files": {
+        "compositions/frames/07-cta.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\5e\\5ebb579c88b7ff3de772d213b7fa8ae8be24cd3b89ff614c1abf35653a8374af",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\28\\28a046348d3ed661dae56b0c0e9d646c566b745aa4eb8beec876418baf4c1ccb"
+        }
+      }
+    },
+    "bd77d6e1-60e9-40dd-b4f6-0498bca1bc6d": {
+      "actor": {
+        "kind": "person",
+        "name": "You"
+      },
+      "targets": [
+        {
+          "file": "compositions/frames/07-cta.html",
+          "id": "c07-action",
+          "hfId": "hf-md2n",
+          "selector": "#c07-action"
+        }
+      ],
+      "label": "Edit text",
+      "startedAt": 1793292648940,
+      "endedAt": 1793292648940,
+      "files": {
+        "compositions/frames/07-cta.html": {
+          "before": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\28\\28a046348d3ed661dae56b0c0e9d646c566b745aa4eb8beec876418baf4c1ccb",
+          "after": "C:\\Users\\Facundo-PC\\.cache\\hyperframes\\history\\699d4223-e468-4339-825d-0edfc3d53730\\blobs\\21\\2166f4d2eae9363d79d2b4c77dcbe54742a517ee31be715e559de88c366ff07c"
+        }
+      }
+    }
+  },
+  "checks": {
+    "latest": {
+      "revision": "bd77d6e1-60e9-40dd-b4f6-0498bca1bc6d",
+      "id": "f73f55ac-b25c-47d9-8cff-2e34988e6161"
+    },
+    "revisions": {
+      "757e7775-41aa-4e1d-b1dd-2c66df217c76": [
+        {
+          "id": "3787177d-6514-479c-9082-369d6a34eaa0",
+          "scope": "project",
+          "metadata": {
+            "ok": false,
+            "browserSkipped": true,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 10000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1793118629775,
+          "contentHash": "1617531caef7c5e45c6635370c6ee93fe2844f6885e8035000c8ffc3d9619617",
+          "revision": "757e7775-41aa-4e1d-b1dd-2c66df217c76",
+          "inputFingerprint": "6aba36078248cc3a45a401e0dfd314a4cc35fde12d31aa3a8ae0dd1364753c83",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "85a74b5a-ab77-4ebb-9097-7c606b6f1ae2"
+        }
+      ],
+      "7d8f3088-913e-4e50-a8ca-45d1205c3017": [
+        {
+          "id": "d9fecccf-8d28-445b-9b1c-c92daf126fc2",
+          "scope": "project",
+          "metadata": {
+            "ok": false,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 10000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1793118838843,
+          "contentHash": "3ff4baaf6200a22245a9943942e86a7e3e0a13ea98aea4f13477f0f3cf614549",
+          "revision": "7d8f3088-913e-4e50-a8ca-45d1205c3017",
+          "inputFingerprint": "768d3245ff31f6ad39681ac63c13470851f88dcd3be172e20dd243bffc33ebf3",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "85a74b5a-ab77-4ebb-9097-7c606b6f1ae2"
+        }
+      ],
+      "b93460cb-1d2b-4932-9184-c79487a3110b": [
+        {
+          "id": "56387e9e-c0c4-4c83-88cb-d05a20c0d9fe",
+          "scope": "project",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 10000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1793119138283,
+          "contentHash": "28fe112ae8a3f4f98724cc2eee80a57ca0643a3f6943796094a91ca5653a2d6e",
+          "revision": "b93460cb-1d2b-4932-9184-c79487a3110b",
+          "inputFingerprint": "8cc29b7ec65f2ef8520a7b5f7c1750fc12e073776c8e4c38458992d3bf138c6c",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "0d9c8956-040a-4bbb-a67f-bba79faa1b3f"
+        }
+      ],
+      "053c2b38-cc5e-402e-a6fb-58fa67bbeb19": [
+        {
+          "id": "06b27153-f176-49c8-8550-2433aba41fe6",
+          "scope": "project",
+          "metadata": {
+            "ok": false,
+            "browserSkipped": true,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 10000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1793120273797,
+          "contentHash": "a42262320f66f8339facdf1f577a12a8888d8bd3d286a7f5b3f8d2eae0e200c3",
+          "revision": "053c2b38-cc5e-402e-a6fb-58fa67bbeb19",
+          "inputFingerprint": "fe37bed31d82d0162ccc29ab64399c43b9f2184f7e555776aed676200854a952",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "be3a3dbf-0c2f-4bbd-a976-007e14809f9c"
+        }
+      ],
+      "feece816-1c41-4dcd-ade7-061bf32c2a9d": [
+        {
+          "id": "c8efaa17-12b0-4444-8248-d6939f13ace9",
+          "scope": "project",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 10000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1793120506843,
+          "contentHash": "21e7480dccd95836665f2ff5bb072a97a26753da5327875a66100c96d670dcd7",
+          "revision": "feece816-1c41-4dcd-ade7-061bf32c2a9d",
+          "inputFingerprint": "14b9d107f679120cc164290699d4ae0469f0ee0f20d73e097800e0518c9bb87f",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "be3a3dbf-0c2f-4bbd-a976-007e14809f9c"
+        }
+      ],
+      "1057bef4-2618-4e93-a0e1-95aa16158a16": [
+        {
+          "id": "0d43c454-ea26-4b51-8575-27f0c5d14d45",
+          "scope": "project",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 10000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1793120628264,
+          "contentHash": "de49ff3e1df1012ce7a49290777e35a3c296c2ae0758fe1b706d05150f8db9fb",
+          "revision": "1057bef4-2618-4e93-a0e1-95aa16158a16",
+          "inputFingerprint": "30cc657dcf997462ca08349714e9d50636ec3d21459d38c44909d6aae5d9e09b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "0e445802-b35a-447c-a507-1cd246e1c168"
+        }
+      ],
+      "0c9b1f23-51a0-4e3f-8ee2-946809dde39b": [
+        {
+          "id": "10b072d4-2a7b-4c13-8b30-d282f86927b4",
+          "scope": "project",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 10000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1793121055246,
+          "contentHash": "e806a33bba6425033d37907d6692e930430ba352e7d5c3f3d4ed9cdf21f1c010",
+          "revision": "0c9b1f23-51a0-4e3f-8ee2-946809dde39b",
+          "inputFingerprint": "c9bc7cc5fc5fd28d41c880ef0e415d480c77bc86f9610967f5ae9e06620442c3",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "0d9c8956-040a-4bbb-a67f-bba79faa1b3f"
+        }
+      ],
+      "7cd29437-5634-4d22-a79c-083a24456cb5": [
+        {
+          "id": "0c5c7177-0976-4533-bc42-a2b3a3a13466",
+          "scope": "project",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 10000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1793121973944,
+          "contentHash": "9d677d167a16e3652f29fa0568c8815750eaadda4f6e838e1e709a06cd80bc61",
+          "revision": "7cd29437-5634-4d22-a79c-083a24456cb5",
+          "inputFingerprint": "8970dc2e91bde83e44edc3ad13a909ab6a720898cf4012af3e92380aafdbfe34",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "0e445802-b35a-447c-a507-1cd246e1c168"
+        }
+      ],
+      "8cdddec6-6d65-4461-83a0-afbefe7e6e6f": [
+        {
+          "id": "9828f326-6c62-44d5-b43f-78017972323c",
+          "scope": "project",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 10000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1793123475849,
+          "contentHash": "ac0b9a8ef731d70ff33b9a19e8da65e1bac42137ce9b39ece2820815230e35b1",
+          "revision": "8cdddec6-6d65-4461-83a0-afbefe7e6e6f",
+          "inputFingerprint": "3cd36ae4a51ccd8ef35883ca5149ada9c9de93ca75fcefd864f4949506e759de",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "54b7fb84-8732-4ef9-b23f-f0e3bab1113d"
+        }
+      ],
+      "baf38a1c-64c9-4050-8510-af39b5e7587f": [],
+      "69d11548-23c5-4aca-9b55-c7237d973878": [
+        {
+          "id": "fdbe4c4a-1885-4c48-9b95-ae9c148cc3e5",
+          "scope": "project",
+          "metadata": {
+            "ok": false,
+            "browserSkipped": true,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 10000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1793290703597,
+          "contentHash": "d08fc48c6ea19d42411a64549168fe8839741c0266ad5d506e9c28aef0200a6e",
+          "revision": "69d11548-23c5-4aca-9b55-c7237d973878",
+          "inputFingerprint": "9df18bc9fd9045477082fc6751e2692a30375028bda8f00abf2775db92074678",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "5d3e2fbe-c040-475a-9108-59ff91c1651a"
+        }
+      ],
+      "696e5aa2-82e1-4c4d-988e-8c4152516fe3": [
+        {
+          "id": "c19d82a6-92a1-4392-b7fb-bd9b4c538069",
+          "scope": "project",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 10000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1793290779542,
+          "contentHash": "bcc971f9ba9908ea4b3fb21e1ed4205f21854b6cf79b798ecdac5e2774029e94",
+          "revision": "696e5aa2-82e1-4c4d-988e-8c4152516fe3",
+          "inputFingerprint": "19a6bae960badf2a4ff4881330c6f502b0930c797535190c39a8768d45c4edcc",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "5d3e2fbe-c040-475a-9108-59ff91c1651a"
+        }
+      ],
+      "bd77d6e1-60e9-40dd-b4f6-0498bca1bc6d": [
+        {
+          "id": "f73f55ac-b25c-47d9-8cff-2e34988e6161",
+          "scope": "project",
+          "report": "j:\\PROYECTOS\\Hyperframes\\playcomunapps-promo\\.hyperframes\\artifacts\\checks\\f73f55ac-b25c-47d9-8cff-2e34988e6161.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 10000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1793292672350,
+          "contentHash": "d661b9c8875a488f3c2f5d196ddc924a0108a08725dddac46a1908ae4f69cfbd",
+          "revision": "bd77d6e1-60e9-40dd-b4f6-0498bca1bc6d",
+          "inputFingerprint": "595b375a8a7700618e8324015c186ef2b37091b04f84ca8d5492b3aef649112a",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ]
+    },
+    "unversioned": []
+  },
+  "snapshots": {
+    "latest": {
+      "revision": "c32b1aa7-e517-4377-ad51-a80eb7e754db",
+      "id": "c1f549f6-cf9b-4ba5-88d7-cfd16ba321ec-7"
+    },
+    "revisions": {
+      "92b2a9c4-e83d-4d46-9ba6-8fbac13161a6": [
+        {
+          "scope": "full",
+          "id": "f198dd25-6a6f-44c5-b5d3-fabb5681e3fd-0",
+          "image": "j:\\PROYECTOS\\Hyperframes\\playcomunapps-promo\\renders\\snapshots\\frame-00-at-2s.png",
+          "time": 2,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793290833453,
+          "contentHash": "e045c3e42a1728954014ac6f6fe960a90e3a2c18191fe473da3cf2f7894fef6b",
+          "revision": "92b2a9c4-e83d-4d46-9ba6-8fbac13161a6",
+          "inputFingerprint": "c88efbf2277e92e44376de5bf2ac85f18f13b76be2f91b4476880f0a76492509",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "f198dd25-6a6f-44c5-b5d3-fabb5681e3fd-1",
+          "image": "j:\\PROYECTOS\\Hyperframes\\playcomunapps-promo\\renders\\snapshots\\frame-01-at-7s.png",
+          "time": 7,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793290833453,
+          "contentHash": "d213c6ba2332de81a774725b6c37c383c609ebb7ae1e00c5a35185fcb25c83be",
+          "revision": "92b2a9c4-e83d-4d46-9ba6-8fbac13161a6",
+          "inputFingerprint": "c88efbf2277e92e44376de5bf2ac85f18f13b76be2f91b4476880f0a76492509",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "f198dd25-6a6f-44c5-b5d3-fabb5681e3fd-2",
+          "image": "j:\\PROYECTOS\\Hyperframes\\playcomunapps-promo\\renders\\snapshots\\frame-02-at-14s.png",
+          "time": 14,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793290833453,
+          "contentHash": "43dfa4619be3de2850a4a3a197f03dc2404f2c7c55556a34b6ce0d49ff1c9251",
+          "revision": "92b2a9c4-e83d-4d46-9ba6-8fbac13161a6",
+          "inputFingerprint": "c88efbf2277e92e44376de5bf2ac85f18f13b76be2f91b4476880f0a76492509",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "f198dd25-6a6f-44c5-b5d3-fabb5681e3fd-3",
+          "image": "j:\\PROYECTOS\\Hyperframes\\playcomunapps-promo\\renders\\snapshots\\frame-03-at-22s.png",
+          "time": 22,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793290833453,
+          "contentHash": "a8fe7d8c05e0079abd0a5681bc1440e888ee54779ad007376d5c7a98a2607da0",
+          "revision": "92b2a9c4-e83d-4d46-9ba6-8fbac13161a6",
+          "inputFingerprint": "c88efbf2277e92e44376de5bf2ac85f18f13b76be2f91b4476880f0a76492509",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "f198dd25-6a6f-44c5-b5d3-fabb5681e3fd-4",
+          "image": "j:\\PROYECTOS\\Hyperframes\\playcomunapps-promo\\renders\\snapshots\\frame-04-at-29s.png",
+          "time": 29,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793290833454,
+          "contentHash": "85efa85a33d684ad1d2d83791b3e2599c43e290d4ecadf272af8c2705e429a8b",
+          "revision": "92b2a9c4-e83d-4d46-9ba6-8fbac13161a6",
+          "inputFingerprint": "c88efbf2277e92e44376de5bf2ac85f18f13b76be2f91b4476880f0a76492509",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "f198dd25-6a6f-44c5-b5d3-fabb5681e3fd-5",
+          "image": "j:\\PROYECTOS\\Hyperframes\\playcomunapps-promo\\renders\\snapshots\\frame-05-at-36s.png",
+          "time": 36,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793290833454,
+          "contentHash": "caa41444a67128550cdf84bbac2a2aece37f8ea49a26e430c63b33df58dcf9ad",
+          "revision": "92b2a9c4-e83d-4d46-9ba6-8fbac13161a6",
+          "inputFingerprint": "c88efbf2277e92e44376de5bf2ac85f18f13b76be2f91b4476880f0a76492509",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "f198dd25-6a6f-44c5-b5d3-fabb5681e3fd-6",
+          "image": "j:\\PROYECTOS\\Hyperframes\\playcomunapps-promo\\renders\\snapshots\\frame-06-at-41s.png",
+          "time": 41,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793290833455,
+          "contentHash": "64fa568b9c49dd546d1e441bba13863ecad2aa20955233076b4213e3b2107530",
+          "revision": "92b2a9c4-e83d-4d46-9ba6-8fbac13161a6",
+          "inputFingerprint": "c88efbf2277e92e44376de5bf2ac85f18f13b76be2f91b4476880f0a76492509",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "f198dd25-6a6f-44c5-b5d3-fabb5681e3fd-7",
+          "image": "j:\\PROYECTOS\\Hyperframes\\playcomunapps-promo\\renders\\snapshots\\frame-07-at-43.75s.png",
+          "time": 43.75,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793290833455,
+          "contentHash": "64fa568b9c49dd546d1e441bba13863ecad2aa20955233076b4213e3b2107530",
+          "revision": "92b2a9c4-e83d-4d46-9ba6-8fbac13161a6",
+          "inputFingerprint": "c88efbf2277e92e44376de5bf2ac85f18f13b76be2f91b4476880f0a76492509",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "cbad243b-f2ee-4365-86db-2185f874b128-0",
+          "image": "j:\\PROYECTOS\\Hyperframes\\playcomunapps-promo\\renders\\snapshots_full\\frame-00-at-3s.png",
+          "time": 3,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793290913014,
+          "contentHash": "ccb61d9020b7fd926994103ad604af27a2e56c6047762b3fc97c7058770e1bf8",
+          "revision": "92b2a9c4-e83d-4d46-9ba6-8fbac13161a6",
+          "inputFingerprint": "c88efbf2277e92e44376de5bf2ac85f18f13b76be2f91b4476880f0a76492509",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "cbad243b-f2ee-4365-86db-2185f874b128-1",
+          "image": "j:\\PROYECTOS\\Hyperframes\\playcomunapps-promo\\renders\\snapshots_full\\frame-01-at-7.5s.png",
+          "time": 7.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793290913015,
+          "contentHash": "d5dcaeb85d770f8369883fc63f961fb45775d50bd3229a3f9019a98152da5a20",
+          "revision": "92b2a9c4-e83d-4d46-9ba6-8fbac13161a6",
+          "inputFingerprint": "c88efbf2277e92e44376de5bf2ac85f18f13b76be2f91b4476880f0a76492509",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "cbad243b-f2ee-4365-86db-2185f874b128-2",
+          "image": "j:\\PROYECTOS\\Hyperframes\\playcomunapps-promo\\renders\\snapshots_full\\frame-02-at-17s.png",
+          "time": 17,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793290913016,
+          "contentHash": "fe6b3b7a1c92c60ff1261ef340fcb5902acedaa5e9bfa99e104a94312cd35391",
+          "revision": "92b2a9c4-e83d-4d46-9ba6-8fbac13161a6",
+          "inputFingerprint": "c88efbf2277e92e44376de5bf2ac85f18f13b76be2f91b4476880f0a76492509",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "cbad243b-f2ee-4365-86db-2185f874b128-3",
+          "image": "j:\\PROYECTOS\\Hyperframes\\playcomunapps-promo\\renders\\snapshots_full\\frame-03-at-24s.png",
+          "time": 24,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793290913017,
+          "contentHash": "94884f11bb901c2ceee50884b8a3834cbeb71cd2dc5fa20b268b8a86194e7c90",
+          "revision": "92b2a9c4-e83d-4d46-9ba6-8fbac13161a6",
+          "inputFingerprint": "c88efbf2277e92e44376de5bf2ac85f18f13b76be2f91b4476880f0a76492509",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "cbad243b-f2ee-4365-86db-2185f874b128-4",
+          "image": "j:\\PROYECTOS\\Hyperframes\\playcomunapps-promo\\renders\\snapshots_full\\frame-04-at-32s.png",
+          "time": 32,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793290913018,
+          "contentHash": "9110181cacee59a51d2c12635c172933549cc1bd4d534a53a58a50c7c35aaa6c",
+          "revision": "92b2a9c4-e83d-4d46-9ba6-8fbac13161a6",
+          "inputFingerprint": "c88efbf2277e92e44376de5bf2ac85f18f13b76be2f91b4476880f0a76492509",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "cbad243b-f2ee-4365-86db-2185f874b128-5",
+          "image": "j:\\PROYECTOS\\Hyperframes\\playcomunapps-promo\\renders\\snapshots_full\\frame-05-at-37s.png",
+          "time": 37,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793290913019,
+          "contentHash": "d7910af206e24df578913883bcdeee351be4edf3dbc844271dd263e1119e4ac9",
+          "revision": "92b2a9c4-e83d-4d46-9ba6-8fbac13161a6",
+          "inputFingerprint": "c88efbf2277e92e44376de5bf2ac85f18f13b76be2f91b4476880f0a76492509",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "cbad243b-f2ee-4365-86db-2185f874b128-6",
+          "image": "j:\\PROYECTOS\\Hyperframes\\playcomunapps-promo\\renders\\snapshots_full\\frame-06-at-42s.png",
+          "time": 42,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793290913020,
+          "contentHash": "64fa568b9c49dd546d1e441bba13863ecad2aa20955233076b4213e3b2107530",
+          "revision": "92b2a9c4-e83d-4d46-9ba6-8fbac13161a6",
+          "inputFingerprint": "c88efbf2277e92e44376de5bf2ac85f18f13b76be2f91b4476880f0a76492509",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "cbad243b-f2ee-4365-86db-2185f874b128-7",
+          "image": "j:\\PROYECTOS\\Hyperframes\\playcomunapps-promo\\renders\\snapshots_full\\frame-07-at-43.75s.png",
+          "time": 43.75,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793290913021,
+          "contentHash": "64fa568b9c49dd546d1e441bba13863ecad2aa20955233076b4213e3b2107530",
+          "revision": "92b2a9c4-e83d-4d46-9ba6-8fbac13161a6",
+          "inputFingerprint": "c88efbf2277e92e44376de5bf2ac85f18f13b76be2f91b4476880f0a76492509",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "c32b1aa7-e517-4377-ad51-a80eb7e754db": [
+        {
+          "scope": "full",
+          "id": "c1f549f6-cf9b-4ba5-88d7-cfd16ba321ec-0",
+          "image": "j:\\PROYECTOS\\Hyperframes\\playcomunapps-promo\\renders\\snapshots_v2\\frame-00-at-3s.png",
+          "time": 3,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793292384532,
+          "contentHash": "b3aaa225cc4f4173f0b7a9ab135344ae6229d2429045a8a8d80072671ac9b2e3",
+          "revision": "c32b1aa7-e517-4377-ad51-a80eb7e754db",
+          "inputFingerprint": "15c10c56b7aa2be440c208695db5cb194c18367bc05e7c0b9ef029c425a16a13",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "c1f549f6-cf9b-4ba5-88d7-cfd16ba321ec-1",
+          "image": "j:\\PROYECTOS\\Hyperframes\\playcomunapps-promo\\renders\\snapshots_v2\\frame-01-at-7.5s.png",
+          "time": 7.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793292384534,
+          "contentHash": "ca99ac3d324499c5c4af6c1a0222289b6ae9bf8a7ab098ea1c0a3fe5f3fdffa5",
+          "revision": "c32b1aa7-e517-4377-ad51-a80eb7e754db",
+          "inputFingerprint": "15c10c56b7aa2be440c208695db5cb194c18367bc05e7c0b9ef029c425a16a13",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "c1f549f6-cf9b-4ba5-88d7-cfd16ba321ec-2",
+          "image": "j:\\PROYECTOS\\Hyperframes\\playcomunapps-promo\\renders\\snapshots_v2\\frame-02-at-17s.png",
+          "time": 17,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793292384536,
+          "contentHash": "8612260df64aaa96a3b7188305c398bceb69e5995bfaf4681cc6db6caf67956d",
+          "revision": "c32b1aa7-e517-4377-ad51-a80eb7e754db",
+          "inputFingerprint": "15c10c56b7aa2be440c208695db5cb194c18367bc05e7c0b9ef029c425a16a13",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "c1f549f6-cf9b-4ba5-88d7-cfd16ba321ec-3",
+          "image": "j:\\PROYECTOS\\Hyperframes\\playcomunapps-promo\\renders\\snapshots_v2\\frame-03-at-24s.png",
+          "time": 24,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793292384537,
+          "contentHash": "5c2fefbbb1655e31437461636a06797f5c780aeebad44effbc2e0a9882a56237",
+          "revision": "c32b1aa7-e517-4377-ad51-a80eb7e754db",
+          "inputFingerprint": "15c10c56b7aa2be440c208695db5cb194c18367bc05e7c0b9ef029c425a16a13",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "c1f549f6-cf9b-4ba5-88d7-cfd16ba321ec-4",
+          "image": "j:\\PROYECTOS\\Hyperframes\\playcomunapps-promo\\renders\\snapshots_v2\\frame-04-at-32s.png",
+          "time": 32,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793292384539,
+          "contentHash": "db0cc9559dd78d9af959579910b12e3106df55479bcaaa0503349cd5d1f627f4",
+          "revision": "c32b1aa7-e517-4377-ad51-a80eb7e754db",
+          "inputFingerprint": "15c10c56b7aa2be440c208695db5cb194c18367bc05e7c0b9ef029c425a16a13",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "c1f549f6-cf9b-4ba5-88d7-cfd16ba321ec-5",
+          "image": "j:\\PROYECTOS\\Hyperframes\\playcomunapps-promo\\renders\\snapshots_v2\\frame-05-at-37s.png",
+          "time": 37,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793292384541,
+          "contentHash": "ff2338e45d8a45f194ca67d7f81e5e58c073452e0cec950033dfdfa56d5e438f",
+          "revision": "c32b1aa7-e517-4377-ad51-a80eb7e754db",
+          "inputFingerprint": "15c10c56b7aa2be440c208695db5cb194c18367bc05e7c0b9ef029c425a16a13",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "c1f549f6-cf9b-4ba5-88d7-cfd16ba321ec-6",
+          "image": "j:\\PROYECTOS\\Hyperframes\\playcomunapps-promo\\renders\\snapshots_v2\\frame-06-at-42s.png",
+          "time": 42,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793292384543,
+          "contentHash": "1f666a5c8bf8cd8fa211afdd5dd5726be30ada2a8c17d8aba8fc0bff1f197b30",
+          "revision": "c32b1aa7-e517-4377-ad51-a80eb7e754db",
+          "inputFingerprint": "15c10c56b7aa2be440c208695db5cb194c18367bc05e7c0b9ef029c425a16a13",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "c1f549f6-cf9b-4ba5-88d7-cfd16ba321ec-7",
+          "image": "j:\\PROYECTOS\\Hyperframes\\playcomunapps-promo\\renders\\snapshots_v2\\frame-07-at-43.75s.png",
+          "time": 43.75,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793292384545,
+          "contentHash": "1f666a5c8bf8cd8fa211afdd5dd5726be30ada2a8c17d8aba8fc0bff1f197b30",
+          "revision": "c32b1aa7-e517-4377-ad51-a80eb7e754db",
+          "inputFingerprint": "15c10c56b7aa2be440c208695db5cb194c18367bc05e7c0b9ef029c425a16a13",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ]
+    },
+    "unversioned": []
+  },
+  "renders": {
+    "latest": {
+      "id": "49ea4f7a-2196-4991-883e-1ef6ddb4835e",
+      "completedAt": 1793292747236,
+      "output": "j:\\PROYECTOS\\Hyperframes\\playcomunapps-promo\\renders\\playcomun-promo-redesigned.mp4",
+      "status": "completed",
+      "revision": "bd77d6e1-60e9-40dd-b4f6-0498bca1bc6d"
+    },
+    "retainedRevisions": [
+      "bd77d6e1-60e9-40dd-b4f6-0498bca1bc6d",
+      "92b2a9c4-e83d-4d46-9ba6-8fbac13161a6"
+    ]
+  },
+  "pendingArtifactCleanup": []
+}

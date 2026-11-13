@@ -1,0 +1,356 @@
+<template>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Sora:wght@700;800;900&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    #root-07 {
+      width: 1080px;
+      height: 1920px;
+      position: relative;
+      overflow: hidden;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: #ffffff;
+      background: #0d071c;
+      box-sizing: border-box;
+    }
+
+    .c07-grid {
+      position: absolute;
+      inset: 0;
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+      background-size: 72px 72px;
+      mask-image: radial-gradient(circle at 50% 45%, black 40%, transparent 85%);
+      -webkit-mask-image: radial-gradient(circle at 50% 45%, black 40%, transparent 85%);
+      pointer-events: none;
+    }
+
+    .c07-ambient {
+      position: absolute;
+      width: 820px;
+      height: 820px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(124, 58, 237, 0.22) 0%, transparent 70%);
+      top: 360px;
+      left: 130px;
+      pointer-events: none;
+    }
+
+    .c07-content {
+      position: absolute;
+      top: 170px;
+      left: 72px;
+      right: 72px;
+      bottom: 240px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      text-align: center;
+      z-index: 10;
+    }
+
+    /* Official Brand Badge */
+    .c07-brand-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 16px;
+      padding: 14px 32px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1.5px solid rgba(255, 255, 255, 0.14);
+      border-radius: 9999px;
+      backdrop-filter: blur(14px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+    }
+
+    .c07-brand-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #7c3aed 0%, #5b21b6 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 16px rgba(124, 58, 237, 0.5);
+    }
+
+    .c07-brand-name {
+      font-size: 30px;
+      font-weight: 800;
+      color: #ffffff;
+      letter-spacing: -0.01em;
+    }
+
+    .c07-brand-dot {
+      color: rgba(255, 255, 255, 0.4);
+      font-size: 22px;
+    }
+
+    .c07-brand-tag {
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      padding: 5px 12px;
+      background: #5b21b6;
+      color: #ddd6fe;
+      border-radius: 9999px;
+    }
+
+    /* Main Title */
+    .c07-title {
+      font-family: 'Sora', sans-serif;
+      font-size: 74px;
+      font-weight: 900;
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+      color: #ffffff;
+      margin-top: 10px;
+      max-width: 920px;
+    }
+
+    .c07-title span.hl {
+      color: #c4b5fd;
+    }
+
+    /* Centerpiece: Clean High-Fidelity Domain Card */
+    .c07-url-card {
+      width: 100%;
+      background: #140d28;
+      border: 1.5px solid rgba(124, 58, 237, 0.4);
+      border-radius: 28px;
+      padding: 32px 36px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.12);
+    }
+
+    .c07-omnibox-strip {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      background: rgba(0, 0, 0, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 16px;
+      padding: 12px 28px;
+      font-size: 20px;
+      font-weight: 600;
+      color: #94a3b8;
+    }
+
+    .c07-lock {
+      color: #10b981;
+      display: flex;
+      align-items: center;
+    }
+
+    .c07-domain-display {
+      font-family: 'Sora', sans-serif;
+      font-size: 64px;
+      font-weight: 900;
+      letter-spacing: -0.02em;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      gap: 2px;
+    }
+
+    .c07-domain-display span.tld {
+      color: #a78bfa;
+    }
+
+    .c07-sub-prompt {
+      font-size: 24px;
+      font-weight: 600;
+      color: #cbd5e1;
+      max-width: 760px;
+      line-height: 1.4;
+    }
+
+    /* Category Chips Grid */
+    .c07-chips-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      max-width: 860px;
+    }
+
+    .c07-chip {
+      padding: 10px 20px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #e2e8f0;
+    }
+
+    /* Primary Action Button */
+    .c07-cta-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      width: 100%;
+      max-width: 860px;
+      height: 84px;
+      background: #ffffff;
+      color: #0d071c;
+      font-family: 'Sora', sans-serif;
+      font-size: 32px;
+      font-weight: 800;
+      border-radius: 20px;
+      border: none;
+      box-shadow: 0 12px 40px rgba(255, 255, 255, 0.25);
+      text-decoration: none;
+    }
+
+    .c07-cta-btn svg {
+      color: #0d071c;
+    }
+
+    /* Bottom Assurance */
+    .c07-bottom-note {
+      font-size: 18px;
+      font-weight: 600;
+      color: #94a3b8;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .c07-bullet {
+      color: #a78bfa;
+    }
+  </style>
+
+  <div data-hf-id="hf-07-root" id="root-07" data-composition-id="07-cta" data-width="1080" data-height="1920">
+    <div data-hf-id="hf-73s5" class="c07-grid"></div>
+    <div data-hf-id="hf-sfhz" class="c07-ambient"></div>
+
+    <div data-hf-id="hf-i7uc" class="c07-content">
+      <!-- Official Brand Badge -->
+      <div data-hf-id="hf-u11u" id="c07-badge" class="c07-brand-badge">
+        <div data-hf-id="hf-ow7i" class="c07-brand-icon">
+          <svg data-hf-id="hf-827q" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path data-hf-id="hf-662i" d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z" />
+            <path data-hf-id="hf-5es0" d="m22 12.5-8.58 3.91a2 2 0 0 1-1.66 0L2 12.5" />
+            <path data-hf-id="hf-cyi0" d="m22 17.5-8.58 3.91a2 2 0 0 1-1.66 0L2 17.5" />
+          </svg>
+        </div>
+        <span data-hf-id="hf-viy3" class="c07-brand-name">PlayComun</span>
+        <span data-hf-id="hf-z6r6" class="c07-brand-dot">·</span>
+        <span data-hf-id="hf-1skv" class="c07-brand-tag">ONLINE</span>
+      </div>
+
+      <!-- Main Hook Title -->
+      <h1 data-hf-id="hf-xxq0" id="c07-title" class="c07-title">
+        Todas tus herramientas.<br data-hf-id="hf-x5px"><span data-hf-id="hf-23vb" class="hl">En un solo lugar.</span>
+      </h1>
+
+      <!-- High-Fidelity Domain Centerpiece -->
+      <div data-hf-id="hf-boyy" id="c07-card" class="c07-url-card">
+        <div data-hf-id="hf-98rk" class="c07-omnibox-strip">
+          <span data-hf-id="hf-q569" class="c07-lock">
+            <svg data-hf-id="hf-wmfk" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect data-hf-id="hf-9jn9" width="18" height="11" x="3" y="11" rx="2" ry="2" />
+              <path data-hf-id="hf-4qh8" d="M7 11V7a5 5 0 0 1 10 0v4" />
+            </svg>
+          </span>
+          <span data-hf-id="hf-fsdm">https://</span>
+        </div>
+
+        <div data-hf-id="hf-hb1k" class="c07-domain-display">
+          playcomun<span data-hf-id="hf-lpyw" class="tld">.online</span>
+        </div>
+
+        <p data-hf-id="hf-fzh5" class="c07-sub-prompt">
+          Entrá ahora y descubrí todo lo que podés resolver gratis y al instante.
+        </p>
+
+        <!-- Feature Chips -->
+        <div data-hf-id="hf-a70n" class="c07-chips-grid">
+          <span data-hf-id="hf-cjh3" class="c07-chip">Calculadora de Precios</span>
+          <span data-hf-id="hf-pxwk" class="c07-chip">Presupuestos PDF</span>
+          <span data-hf-id="hf-kgxd" class="c07-chip">Costeo de Recetas</span>
+          <span data-hf-id="hf-hnhn" class="c07-chip">Control de Gastos</span>
+          <span data-hf-id="hf-b0z6" class="c07-chip">Generador QR</span>
+          <span data-hf-id="hf-0ikc" class="c07-chip">Firmar Documentos</span>
+        </div>
+      </div>
+
+      <!-- Action Button -->
+      <div data-hf-id="hf-md2n" id="c07-action" class="c07-cta-btn">
+        <span data-hf-id="hf-6x2k">Comenzar a usar gratis</span>
+        <svg data-hf-id="hf-mp9a" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line data-hf-id="hf-0425" x1="5" y1="12" x2="19" y2="12" />
+          <polyline data-hf-id="hf-f3xy" points="12 5 19 12 12 19" />
+        </svg>
+      </div>
+
+      <!-- Bottom Microcopy -->
+      <div data-hf-id="hf-xzu7" id="c07-bottom" class="c07-bottom-note"><span data-hf-id="hf-nk4i" data-hf-text-key="child:1:span">•</span><span data-hf-id="hf-a6xl" data-hf-text-key="child:2:span">Sin instalar nada</span><span data-hf-id="hf-beyu" data-hf-text-key="child:3:span">•</span><span data-hf-id="hf-g8iy" data-hf-text-key="child:4:span">100% Gratuito</span></div>
+    </div>
+  </div>
+
+  <script>
+    window.__timelines = window.__timelines || {};
+    (function () {
+      const tl = gsap.timeline({ paused: true });
+      window.__timelines["07-cta"] = tl;
+
+      // Brand badge entrance
+      tl.fromTo("#c07-badge", 
+        { y: -25, opacity: 0 }, 
+        { y: 0, opacity: 1, duration: 0.45, ease: "power3.out" }, 
+        0.1
+      );
+
+      // Title entrance
+      tl.fromTo("#c07-title", 
+        { y: 20, opacity: 0 }, 
+        { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" }, 
+        0.25
+      );
+
+      // Domain card entrance
+      tl.fromTo("#c07-card", 
+        { scale: 0.94, y: 30, opacity: 0 }, 
+        { scale: 1, y: 0, opacity: 1, duration: 0.55, ease: "power3.out" }, 
+        0.5
+      );
+
+      // Domain subtle pulse
+      tl.fromTo(".c07-domain-display", 
+        { scale: 0.98 }, 
+        { scale: 1.02, yoyo: true, repeat: 1, duration: 0.35, ease: "power2.inOut" }, 
+        1.1
+      );
+
+      // Action button entrance
+      tl.fromTo("#c07-action", 
+        { scale: 0.92, y: 20, opacity: 0 }, 
+        { scale: 1, y: 0, opacity: 1, duration: 0.45, ease: "back.out(1.5)" }, 
+        1.5
+      );
+
+      // Bottom reassurance note
+      tl.fromTo("#c07-bottom", 
+        { y: 15, opacity: 0 }, 
+        { y: 0, opacity: 1, duration: 0.4, ease: "power2.out" }, 
+        1.9
+      );
+
+      // Total scene anchor (5.1s)
+      tl.to({}, { duration: 5.1 }, 0);
+    })();
+  </script>
+</template>

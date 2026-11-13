@@ -1,0 +1,485 @@
+<template>
+  <div id="root" data-composition-id="03-webapp" data-width="1080" data-height="1920">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=Sora:wght@300;400;600;700;800;900&display=swap');
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      #root {
+        position: relative;
+        width: 1080px;
+        height: 1920px;
+        background: #0e0d15;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        color: #ffffff;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 190px 72px 260px 72px;
+      }
+
+      .bg-glow-amber {
+        position: absolute;
+        top: 25%;
+        left: 10%;
+        width: 600px;
+        height: 600px;
+        background: radial-gradient(circle, rgba(245, 158, 11, 0.2) 0%, rgba(14, 13, 21, 0) 70%);
+        pointer-events: none;
+        filter: blur(50px);
+      }
+
+      .top-tag {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        padding: 10px 22px;
+        background: rgba(245, 158, 11, 0.16);
+        border: 1px solid rgba(245, 158, 11, 0.45);
+        border-radius: 9999px;
+        font-size: 22px;
+        font-weight: 700;
+        color: #fde68a;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        align-self: flex-start;
+      }
+
+      .frame-title {
+        font-family: 'Sora', sans-serif;
+        font-size: 68px;
+        letter-spacing: -0.02em;
+        margin-top: 24px;
+        margin-bottom: 16px;
+        line-height: 1.15;
+      }
+
+      .frame-desc {
+        font-size: 30px;
+        color: #cbd5e1;
+        line-height: 1.4;
+      }
+
+      /* Dashboard Mockup que se ensambla en vivo */
+      .dashboard-card {
+        margin-top: 32px;
+        background: #151420;
+        border: 1.5px solid rgba(255, 255, 255, 0.14);
+        border-radius: 24px;
+        padding: 34px 32px;
+        box-shadow: 0 30px 80px rgba(0, 0, 0, 0.7);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .dash-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 22px;
+        padding-bottom: 18px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .dash-heading {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .dash-dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: #10b981;
+        box-shadow: 0 0 10px #10b981;
+      }
+
+      .dash-title {
+        font-size: 26px;
+        font-weight: 800;
+      }
+
+      .badge-excel {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 16px;
+        background: rgba(239, 68, 68, 0.18);
+        border: 1px solid rgba(239, 68, 68, 0.45);
+        border-radius: 10px;
+        font-size: 18px;
+        color: #fca5a5;
+        font-weight: 700;
+      }
+
+      /* KPI row */
+      .kpi-row {
+        display: flex;
+        gap: 16px;
+        margin-bottom: 22px;
+      }
+
+      .kpi-box {
+        flex: 1;
+        padding: 18px 20px;
+        background: rgba(255, 255, 255, 0.04);
+        border-radius: 14px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .kpi-title {
+        font-size: 16px;
+        color: #cbd5e1;
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+
+      .kpi-val {
+        font-family: 'Sora', sans-serif;
+        font-size: 32px;
+        font-weight: 800;
+        margin-top: 6px;
+        color: #fde68a;
+      }
+
+      /* Fila interactiva de la tabla */
+      .table-box {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        background: rgba(0, 0, 0, 0.25);
+        padding: 20px;
+        border-radius: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.06);
+      }
+
+      .table-row-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px 20px;
+        background: rgba(255, 255, 255, 0.04);
+        border-radius: 12px;
+        font-size: 20px;
+        font-weight: 600;
+      }
+
+      .item-actions {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+      }
+
+      .stock-count {
+        font-family: monospace;
+        font-size: 22px;
+        font-weight: 800;
+        padding: 6px 14px;
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 8px;
+        color: #ffffff;
+      }
+
+      .btn-minus {
+        padding: 8px 16px;
+        background: #2563eb;
+        color: #ffffff;
+        font-size: 17px;
+        font-weight: 700;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+        transform-origin: center center;
+      }
+
+      .stock-delta {
+        position: absolute;
+        right: 48px;
+        top: 310px;
+        padding: 4px 10px;
+        background: #ef4444;
+        color: #ffffff;
+        font-weight: 800;
+        font-size: 16px;
+        border-radius: 6px;
+        pointer-events: none;
+        opacity: 0;
+        z-index: 40;
+      }
+
+      .status-pill {
+        padding: 6px 14px;
+        border-radius: 8px;
+        font-size: 15px;
+        font-weight: 800;
+        font-family: monospace;
+      }
+
+      .status-active {
+        background: rgba(16, 185, 129, 0.2);
+        color: #6ee7b7;
+      }
+
+      /* Puntero de Mouse */
+      .mouse-pointer {
+        position: absolute;
+        width: 36px;
+        height: 36px;
+        z-index: 50;
+        pointer-events: none;
+        filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.6));
+      }
+
+      /* Mini Cards Rediseñadas (Emil Kowalski dock style) */
+      .features-row {
+        display: flex;
+        gap: 16px;
+        margin-top: 28px;
+      }
+
+      .feat-box {
+        flex: 1;
+        padding: 22px 20px;
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 20px;
+        backdrop-filter: blur(14px);
+        text-align: left;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .feat-box::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, rgba(245, 158, 11, 0.6), transparent);
+        opacity: 0.7;
+      }
+
+      .feat-top {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 8px;
+      }
+
+      .feat-icon {
+        font-size: 20px;
+      }
+
+      .feat-label {
+        font-size: 15px;
+        color: #94a3b8;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+      }
+
+      .feat-value {
+        font-family: 'Sora', sans-serif;
+        font-size: 28px;
+        font-weight: 800;
+        color: #ffffff;
+        line-height: 1.2;
+      }
+
+      .feat-sub {
+        font-size: 16px;
+        font-weight: 500;
+        color: #cbd5e1;
+        margin-top: 4px;
+      }
+    </style>
+
+    <div class="bg-glow-amber"></div>
+
+    <div class="header-content">
+      <div id="app-tag" class="top-tag" data-layout-ignore="true">
+        <span>02 · Solución Digital</span>
+      </div>
+
+      <h2 id="app-title" class="frame-title">
+        <span style="font-weight: 300; opacity: 0.88;">Solución 02 · </span><span style="font-weight: 900;">Aplicación Web</span>
+      </h2>
+      <p id="app-desc" class="frame-desc">
+        <span style="font-weight: 400;">Operá tu empresa </span><strong style="font-weight: 700; color: #ffffff;">sin planillas rotas</strong><span style="font-weight: 400;">. Paneles rápidos con usuarios, stock y datos en tiempo real.</span>
+      </p>
+    </div>
+
+    <!-- Dashboard Mockup vivo -->
+    <div id="app-dash" class="dashboard-card">
+      <div class="dash-top">
+        <div class="dash-heading" data-layout-ignore="true">
+          <span class="dash-dot"></span>
+          <span class="dash-title" data-layout-ignore="true">Panel de Control & Stock</span>
+        </div>
+        <div class="badge-excel" data-layout-ignore="true">Chau planillas de Excel</div>
+      </div>
+
+      <!-- Métricas KPIs -->
+      <div id="kpi-row" class="kpi-row">
+        <div class="kpi-box">
+          <div class="kpi-title" data-layout-ignore="true">Stock Crítico</div>
+          <div class="kpi-val" data-layout-ignore="true">1,248 un.</div>
+        </div>
+        <div class="kpi-box">
+          <div class="kpi-title" data-layout-ignore="true">Ventas de Hoy</div>
+          <div class="kpi-val" data-layout-ignore="true" style="color: #6ee7b7;">$840.500</div>
+        </div>
+        <div class="kpi-box">
+          <div class="kpi-title" data-layout-ignore="true">Roles Activos</div>
+          <div class="kpi-val" data-layout-ignore="true" style="color: #93c5fd;">14 usuarios</div>
+        </div>
+      </div>
+
+      <!-- Fila interactiva de inventario con micro-interacción -->
+      <div id="table-box" class="table-box" data-layout-ignore="true">
+        <div class="table-row-item" data-layout-ignore="true">
+          <span data-layout-ignore="true">Control por ingrediente (receta)</span>
+          <div class="item-actions">
+            <span id="stock-val" class="stock-count" data-layout-ignore="true">10 un</span>
+            <button id="stock-btn" class="btn-minus" data-layout-ignore="true">-1 Venta</button>
+          </div>
+        </div>
+        <div class="table-row-item" data-layout-ignore="true">
+          <span data-layout-ignore="true">Cierre de caja sincronizado</span>
+          <span id="sync-status" class="status-pill status-active" data-layout-ignore="true">✓ SINCRONIZADO</span>
+        </div>
+      </div>
+
+      <!-- Micro feedback particle: -1 -->
+      <div id="stock-delta" class="stock-delta" data-layout-ignore="true">-1</div>
+
+      <!-- Mouse Cursor -->
+      <svg id="app-cursor" class="mouse-pointer" data-layout-allow-overflow="true" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="opacity: 0;">
+        <path d="M4 3L11 21L14 13L22 10L4 3Z" fill="#ffffff" stroke="#0e0d15" stroke-width="2" stroke-linejoin="round"/>
+      </svg>
+    </div>
+
+    <!-- 3 Mini Cards Rediseñadas (Entran unificadas con stagger) -->
+    <div class="features-row">
+      <div id="app-feat-1" class="feat-box">
+        <div class="feat-top" data-layout-ignore="true">
+          <span class="feat-icon">📊</span>
+          <span class="feat-label">Organización</span>
+        </div>
+        <div class="feat-value">Base Central</div>
+        <div class="feat-sub" data-layout-ignore="true">Todo en un lugar</div>
+      </div>
+      <div id="app-feat-2" class="feat-box">
+        <div class="feat-top" data-layout-ignore="true">
+          <span class="feat-icon">🔐</span>
+          <span class="feat-label">Seguridad</span>
+        </div>
+        <div class="feat-value">Roles y Permisos</div>
+        <div class="feat-sub" data-layout-ignore="true">Acceso restringido</div>
+      </div>
+      <div id="app-feat-3" class="feat-box">
+        <div class="feat-top" data-layout-ignore="true">
+          <span class="feat-icon">⚡</span>
+          <span class="feat-label">Automatización</span>
+        </div>
+        <div class="feat-value">Cero Manual</div>
+        <div class="feat-sub" data-layout-ignore="true">Sincronizado en vivo</div>
+      </div>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      window.__timelines["03-webapp"] = gsap.timeline({ paused: true });
+
+      (function() {
+        var tl = window.__timelines["03-webapp"];
+
+        // Entrada del encabezado
+        tl.fromTo("#app-tag", { opacity: 0, y: -16 }, { opacity: 1, y: 0, duration: 0.35, ease: "power2.out" }, 0.1);
+        tl.fromTo("#app-title", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 0.22);
+        tl.fromTo("#app-desc", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.4, ease: "power2.out" }, 0.4);
+
+        // 1. Entrada del contenedor del Dashboard con escala orgánica
+        tl.fromTo("#app-dash", 
+          { opacity: 0, y: 25, scale: 0.96, filter: "blur(4px)" }, 
+          { opacity: 1, y: 0, scale: 1, filter: "blur(0px)", duration: 0.55, ease: "cubic-bezier(0.23, 1, 0.32, 1)" }, 
+          0.65
+        );
+
+        // 2. Entran los KPIs
+        tl.fromTo("#kpi-row", { opacity: 0, y: -12 }, { opacity: 1, y: 0, duration: 0.45, ease: "power2.out" }, 1.25);
+
+        // 3. Entra la tabla de stock
+        tl.fromTo("#table-box", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.45, ease: "power2.out" }, 1.7);
+
+        // 4. Entrada unificada de las 3 mini cards inferiores (Emil Kowalski stagger)
+        tl.fromTo(".feat-box", 
+          { opacity: 0, y: 18, scale: 0.96, filter: "blur(4px)" }, 
+          { 
+            opacity: 1, 
+            y: 0, 
+            scale: 1, 
+            filter: "blur(0px)", 
+            duration: 0.45, 
+            stagger: 0.08, 
+            ease: "cubic-bezier(0.23, 1, 0.32, 1)" 
+          }, 
+          2.2
+        );
+
+        // 5. Cursor se desplaza hacia el botón "-1 Venta"
+        tl.fromTo("#app-cursor", 
+          { opacity: 0, x: 550, y: 320 }, 
+          { opacity: 1, x: 380, y: 270, duration: 0.7, ease: "power2.out" }, 
+          2.4
+        );
+
+        // 6. Clic del mouse con compresión :active (Emil Kowalski feedback)
+        tl.to("#app-cursor", { scale: 0.85, duration: 0.12, yoyo: true, repeat: 1, ease: "power1.inOut" }, 3.2);
+        tl.to("#stock-btn", { scale: 0.93, duration: 0.12, yoyo: true, repeat: 1, ease: "power1.inOut" }, 3.2);
+
+        // 7. Micro-interacción: partícula "-1" flota hacia arriba
+        tl.fromTo("#stock-delta", 
+          { opacity: 1, y: 0, scale: 1 }, 
+          { opacity: 0, y: -24, scale: 0.85, duration: 0.45, ease: "power2.out" }, 
+          3.3
+        );
+
+        // 8. El stock descuenta en vivo y parpadea en verde
+        tl.to("#stock-val", { 
+          backgroundColor: "rgba(16, 185, 129, 0.4)", 
+          borderColor: "#10b981", 
+          color: "#6ee7b7", 
+          duration: 0.25, 
+          onComplete: function() {
+            var el = document.getElementById("stock-val");
+            if (el) el.innerText = "9 un";
+          }
+        }, 3.35);
+
+        // 9. El estado de sincronización reacciona con pulso
+        tl.to("#sync-status", { scale: 1.08, duration: 0.2, yoyo: true, repeat: 1 }, 3.5);
+
+        // 10. La tarjeta de Automatización responde al evento
+        tl.to("#app-feat-3", { 
+          borderColor: "rgba(245, 158, 11, 0.8)", 
+          backgroundColor: "rgba(245, 158, 11, 0.14)", 
+          duration: 0.35, 
+          yoyo: true, 
+          repeat: 1 
+        }, 3.6);
+
+        // Duración anclada: 6.7s
+        tl.to({}, { duration: 6.7 }, 0);
+      })();
+    </script>
+  </div>
+</template>

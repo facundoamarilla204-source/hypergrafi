@@ -1,0 +1,624 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "composition_file_too_large",
+        "severity": "warning",
+        "message": "This HTML composition file has 303 lines. Smaller sub-compositions are easier to read, iterate on, and diff.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "J:\\PROYECTOS\\Hyperframes\\playcomun-promo\\compositions\\frames\\03-tools.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Split this sub-composition further into smaller .html files, then mount them from the parent with data-composition-src so each file stays small enough to inspect, revise, and validate independently."
+      }
+    ],
+    "filesScanned": 6
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "duration": 28.5,
+    "samples": [
+      1.583,
+      4.75,
+      7.917,
+      11.083,
+      14.25,
+      17.417,
+      20.583,
+      23.75,
+      26.917
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 0,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 6,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 1:1; WCAG AA requires 3:1.",
+        "text": "🔍",
+        "fg": "rgb(255,255,255)",
+        "bg": "rgb(255,255,255)",
+        "ratio": 1,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(148,148,148)",
+        "large": true,
+        "selector": "div > div:nth-of-type(2) > div > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/02-reveal.html",
+        "bbox": {
+          "x": 94,
+          "y": 620.3125,
+          "width": 46.6875,
+          "height": 46
+        },
+        "time": 7.917,
+        "times": [
+          7.917
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 1.1:1; WCAG AA requires 4.5:1.",
+        "text": "🧮",
+        "fg": "rgb(255,255,255)",
+        "bg": "rgb(245,243,255)",
+        "ratio": 1.1,
+        "requiredRatio": 4.5,
+        "suggestedColor": "rgb(112,112,112)",
+        "large": false,
+        "selector": "div > div:nth-of-type(2) > div > div:nth-of-type(2) > div:nth-of-type(4) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > div > span:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/02-reveal.html",
+        "bbox": {
+          "x": 124,
+          "y": 1071.421875,
+          "width": 27.46875,
+          "height": 27
+        },
+        "time": 7.917,
+        "times": [
+          7.917
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 1.1:1; WCAG AA requires 4.5:1.",
+        "text": "📄",
+        "fg": "rgb(255,255,255)",
+        "bg": "rgb(245,243,255)",
+        "ratio": 1.1,
+        "requiredRatio": 4.5,
+        "suggestedColor": "rgb(112,112,112)",
+        "large": false,
+        "selector": "div > div:nth-of-type(2) > div > div:nth-of-type(2) > div:nth-of-type(4) > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1) > div > span:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/02-reveal.html",
+        "bbox": {
+          "x": 574,
+          "y": 1071.421875,
+          "width": 27.46875,
+          "height": 27
+        },
+        "time": 7.917,
+        "times": [
+          7.917
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 1.1:1; WCAG AA requires 4.5:1.",
+        "text": "📱",
+        "fg": "rgb(255,255,255)",
+        "bg": "rgb(245,243,255)",
+        "ratio": 1.1,
+        "requiredRatio": 4.5,
+        "suggestedColor": "rgb(112,112,112)",
+        "large": false,
+        "selector": "div > div:nth-of-type(2) > div > div:nth-of-type(2) > div:nth-of-type(4) > div:nth-of-type(2) > div:nth-of-type(3) > div:nth-of-type(1) > div > span:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/02-reveal.html",
+        "bbox": {
+          "x": 124,
+          "y": 1340.609375,
+          "width": 27.46875,
+          "height": 27
+        },
+        "time": 7.917,
+        "times": [
+          7.917
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 1.1:1; WCAG AA requires 4.5:1.",
+        "text": "🎥",
+        "fg": "rgb(255,255,255)",
+        "bg": "rgb(245,243,255)",
+        "ratio": 1.1,
+        "requiredRatio": 4.5,
+        "suggestedColor": "rgb(112,112,112)",
+        "large": false,
+        "selector": "div > div:nth-of-type(2) > div > div:nth-of-type(2) > div:nth-of-type(4) > div:nth-of-type(2) > div:nth-of-type(4) > div:nth-of-type(1) > div > span:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/02-reveal.html",
+        "bbox": {
+          "x": 574,
+          "y": 1340.609375,
+          "width": 27.46875,
+          "height": 27
+        },
+        "time": 7.917,
+        "times": [
+          7.917
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.13:1; WCAG AA requires 4.5:1.",
+        "text": "Firma registrada en navegador",
+        "fg": "rgb(148,163,184)",
+        "bg": "rgb(235,233,239)",
+        "ratio": 2.13,
+        "requiredRatio": 4.5,
+        "suggestedColor": "rgb(96,106,120)",
+        "large": false,
+        "selector": "div > div:nth-of-type(3) > div > div:nth-of-type(2) > div:nth-of-type(3) > div:nth-of-type(4) > div:nth-of-type(4) > div > div:nth-of-type(2) > span:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/03-tools.html",
+        "bbox": {
+          "x": 392.0241394042969,
+          "y": 1201.356201171875,
+          "width": 295.9516906738281,
+          "height": 23.930419921875
+        },
+        "time": 14.25,
+        "times": [
+          14.25
+        ]
+      }
+    ],
+    "enabled": true,
+    "samples": [
+      1.583,
+      7.917,
+      14.25,
+      20.583,
+      26.917
+    ],
+    "checked": 62,
+    "passed": 56
+  },
+  "craft": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 2,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and 4 text elements stay under it for 0.5 s or more, the smallest \"Todas\" at 26 px: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "Todas",
+        "selector": "div.r02-pill.r02-pill-active > span:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/02-reveal.html",
+        "bbox": {
+          "x": 157.36,
+          "y": 795.01,
+          "width": 75.37,
+          "height": 30
+        },
+        "time": 4.125,
+        "times": [
+          4.125,
+          4.125,
+          4.125,
+          4.125
+        ],
+        "fontPx": 26,
+        "floorPx": 28,
+        "seconds": 4.125,
+        "elements": [
+          {
+            "selector": "div.r02-pill.r02-pill-active > span:nth-of-type(1)",
+            "text": "Todas",
+            "fontPx": 26,
+            "time": 4.125,
+            "seconds": 4.125
+          },
+          {
+            "selector": "#r02-pills > div:nth-of-type(2) > span:nth-of-type(1)",
+            "text": "Precios",
+            "fontPx": 26,
+            "time": 4.125,
+            "seconds": 4.125
+          },
+          {
+            "selector": "#r02-pills > div:nth-of-type(3) > span:nth-of-type(1)",
+            "text": "Finanzas",
+            "fontPx": 26,
+            "time": 4.125,
+            "seconds": 4.125
+          },
+          {
+            "selector": "#r02-pills > div:nth-of-type(4) > span:nth-of-type(1)",
+            "text": "Utilidades",
+            "fontPx": 26,
+            "time": 4.125,
+            "seconds": 4.125
+          }
+        ]
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and 35 text elements stay under it for 0.5 s or more, the smallest \"Firma registrada en navegador\" at 20 px: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "Firma registrada en navegador",
+        "selector": "div.w-sign-pad > span:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/03-tools.html",
+        "bbox": {
+          "x": 394.1,
+          "y": 1210.18,
+          "width": 291.8,
+          "height": 23.59
+        },
+        "time": 14.125,
+        "times": [
+          8.25,
+          8.25,
+          8.25,
+          8.25,
+          8.25,
+          8.25,
+          8.25,
+          10.125,
+          10.125,
+          10.125,
+          10.125,
+          10.125,
+          10.125,
+          10.125,
+          10.125,
+          12.125,
+          12.125,
+          12.125,
+          12.125,
+          14.125,
+          14.125,
+          14.125,
+          14.125,
+          14.125,
+          16.125,
+          16.125,
+          16.125,
+          16.125,
+          16.125,
+          18.125,
+          18.125,
+          18.125,
+          18.125,
+          18.125,
+          18.125
+        ],
+        "fontPx": 19.66,
+        "floorPx": 28,
+        "seconds": 1.875,
+        "elements": [
+          {
+            "selector": "div.w-sign-pad > span:nth-of-type(2)",
+            "text": "Firma registrada en navegador",
+            "fontPx": 19.66,
+            "time": 14.125,
+            "seconds": 1.875
+          },
+          {
+            "selector": "div.w-cuotas-box > div:nth-of-type(2) > div:nth-of-type(3)",
+            "text": "CFT e interés transparente",
+            "fontPx": 19.66,
+            "time": 18.125,
+            "seconds": 2.125
+          },
+          {
+            "selector": "span.w-pdf-num",
+            "text": "Cliente: Estudio Alfa",
+            "fontPx": 21.63,
+            "time": 10.125,
+            "seconds": 1.875
+          },
+          {
+            "selector": "div.w-qr-pills > span:nth-of-type(1)",
+            "text": "Descargar PNG",
+            "fontPx": 21.63,
+            "time": 12.125,
+            "seconds": 1.875
+          },
+          {
+            "selector": "div.w-qr-pills > span:nth-of-type(2)",
+            "text": "SVG Vectorial",
+            "fontPx": 21.63,
+            "time": 12.125,
+            "seconds": 1.875
+          },
+          {
+            "selector": "div.w-cuotas-box > div:nth-of-type(2) > div:nth-of-type(1)",
+            "text": "PLAN 6 CUOTAS FIJAS",
+            "fontPx": 21.63,
+            "time": 18.125,
+            "seconds": 2.125
+          },
+          {
+            "selector": "div.w-calc-result > div:nth-of-type(3)",
+            "text": "Ganancia: +$6.666 por unidad",
+            "fontPx": 21.85,
+            "time": 8.25,
+            "seconds": 1.75
+          },
+          {
+            "selector": "#tc-2 > div:nth-of-type(1) > div:nth-of-type(2)",
+            "text": "PDF Listo",
+            "fontPx": 23.59,
+            "time": 10.125,
+            "seconds": 1.875
+          },
+          {
+            "selector": "#tc-3 > div:nth-of-type(1) > div:nth-of-type(2)",
+            "text": "Vectorial",
+            "fontPx": 23.59,
+            "time": 12.125,
+            "seconds": 1.875
+          },
+          {
+            "selector": "#tc-4 > div:nth-of-type(1) > div:nth-of-type(2)",
+            "text": "Seguro",
+            "fontPx": 23.59,
+            "time": 14.125,
+            "seconds": 1.875
+          },
+          {
+            "selector": "div.w-sign-doc > div:nth-of-type(1) > span:nth-of-type(1)",
+            "text": "Documento: Contrato_2025.pdf",
+            "fontPx": 23.59,
+            "time": 14.125,
+            "seconds": 1.875
+          },
+          {
+            "selector": "div.w-sign-doc > div:nth-of-type(1) > span:nth-of-type(2)",
+            "text": "✓ Listo",
+            "fontPx": 23.59,
+            "time": 14.125,
+            "seconds": 1.875
+          },
+          {
+            "selector": "#tc-5 > div:nth-of-type(1) > div:nth-of-type(2)",
+            "text": "-77% Peso",
+            "fontPx": 23.59,
+            "time": 16.125,
+            "seconds": 1.875
+          },
+          {
+            "selector": "div.w-comp-meter > div:nth-of-type(4)",
+            "text": "🔥 ¡77% de ahorro en ancho de banda!",
+            "fontPx": 23.59,
+            "time": 16.125,
+            "seconds": 1.875
+          },
+          {
+            "selector": "#tc-6 > div:nth-of-type(1) > div:nth-of-type(2)",
+            "text": "Cuotas Fijas",
+            "fontPx": 23.59,
+            "time": 18.125,
+            "seconds": 2.125
+          },
+          {
+            "selector": "#tc-1 > div:nth-of-type(1) > div:nth-of-type(2)",
+            "text": "En vivo",
+            "fontPx": 23.83,
+            "time": 8.25,
+            "seconds": 1.75
+          },
+          {
+            "selector": "div.w-calc-res-lbl",
+            "text": "Precio de Venta Sugerido",
+            "fontPx": 23.83,
+            "time": 8.25,
+            "seconds": 1.75
+          },
+          {
+            "selector": "#tc-2 > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2)",
+            "text": "Gestión Comercial",
+            "fontPx": 25.56,
+            "time": 10.125,
+            "seconds": 1.875
+          },
+          {
+            "selector": "div.w-pdf-sheet > div:nth-of-type(2) > span:nth-of-type(1)",
+            "text": "1x Desarrollo Web & Landing",
+            "fontPx": 25.56,
+            "time": 10.125,
+            "seconds": 1.875
+          },
+          {
+            "selector": "div.w-pdf-sheet > div:nth-of-type(2) > span:nth-of-type(2)",
+            "text": "$45.000",
+            "fontPx": 25.56,
+            "time": 10.125,
+            "seconds": 1.875
+          },
+          {
+            "selector": "div.w-pdf-sheet > div:nth-of-type(3) > span:nth-of-type(1)",
+            "text": "1x Identidad & Branding",
+            "fontPx": 25.56,
+            "time": 10.125,
+            "seconds": 1.875
+          },
+          {
+            "selector": "div.w-pdf-sheet > div:nth-of-type(3) > span:nth-of-type(2)",
+            "text": "$25.000",
+            "fontPx": 25.56,
+            "time": 10.125,
+            "seconds": 1.875
+          },
+          {
+            "selector": "div.w-pdf-total > span:nth-of-type(1)",
+            "text": "TOTAL A COBRAR:",
+            "fontPx": 25.56,
+            "time": 10.125,
+            "seconds": 1.875
+          },
+          {
+            "selector": "#tc-3 > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2)",
+            "text": "Clientes & Marketing",
+            "fontPx": 25.56,
+            "time": 12.125,
+            "seconds": 1.875
+          },
+          {
+            "selector": "#tc-4 > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2)",
+            "text": "Documentos PDF",
+            "fontPx": 25.56,
+            "time": 14.125,
+            "seconds": 1.875
+          },
+          {
+            "selector": "#tc-5 > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2)",
+            "text": "Optimización",
+            "fontPx": 25.56,
+            "time": 16.125,
+            "seconds": 1.875
+          },
+          {
+            "selector": "div.w-comp-meter > div:nth-of-type(1) > span:nth-of-type(1)",
+            "text": "Foto Original:",
+            "fontPx": 25.56,
+            "time": 16.125,
+            "seconds": 1.875
+          },
+          {
+            "selector": "div.w-comp-meter > div:nth-of-type(3) > span:nth-of-type(1)",
+            "text": "Foto Optimizada:",
+            "fontPx": 25.56,
+            "time": 16.125,
+            "seconds": 1.875
+          },
+          {
+            "selector": "#tc-6 > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2)",
+            "text": "Finanzas",
+            "fontPx": 25.56,
+            "time": 18.125,
+            "seconds": 2.125
+          },
+          {
+            "selector": "div.w-cuotas-box > div:nth-of-type(1) > span:nth-of-type(1)",
+            "text": "Total a financiar:",
+            "fontPx": 25.56,
+            "time": 18.125,
+            "seconds": 2.125
+          },
+          {
+            "selector": "div.w-cuotas-box > div:nth-of-type(1) > span:nth-of-type(2)",
+            "text": "$100.000 ARS",
+            "fontPx": 25.56,
+            "time": 18.125,
+            "seconds": 2.125
+          },
+          {
+            "selector": "#tc-1 > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2)",
+            "text": "Precios & Costos",
+            "fontPx": 25.82,
+            "time": 8.25,
+            "seconds": 1.75
+          },
+          {
+            "selector": "#tc-1 > div:nth-of-type(4) > div:nth-of-type(1) > span:nth-of-type(1)",
+            "text": "Costo base del producto",
+            "fontPx": 25.82,
+            "time": 8.25,
+            "seconds": 1.75
+          },
+          {
+            "selector": "#tc-1 > div:nth-of-type(4) > div:nth-of-type(2) > span:nth-of-type(1)",
+            "text": "Margen de ganancia neto",
+            "fontPx": 25.82,
+            "time": 8.25,
+            "seconds": 1.75
+          },
+          {
+            "selector": "div.t03-indicator-pill",
+            "text": "PlayComun Online · Herramientas Reales",
+            "fontPx": 25.98,
+            "time": 8.25,
+            "seconds": 12
+          }
+        ]
+      }
+    ],
+    "enabled": true,
+    "step": 0.125,
+    "samples": 228
+  },
+  "audio": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  }
+}

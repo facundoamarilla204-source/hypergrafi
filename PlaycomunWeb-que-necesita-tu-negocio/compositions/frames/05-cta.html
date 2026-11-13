@@ -1,0 +1,240 @@
+<template>
+  <div data-hf-id="hf-ybjr" id="root" data-composition-id="05-cta" data-width="1080" data-height="1920">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=Sora:wght@300;400;600;700;800;900&display=swap');
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      #root {
+        position: relative;
+        width: 1080px;
+        height: 1920px;
+        background: #0e0d15;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        color: #ffffff;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        padding: 210px 72px 260px 72px;
+      }
+
+      .bg-glow-purple {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        width: 700px;
+        height: 700px;
+        background: radial-gradient(circle, rgba(110, 86, 207, 0.28) 0%, rgba(14, 13, 21, 0) 70%);
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+        filter: blur(50px);
+      }
+
+      .top-tag {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        padding: 10px 24px;
+        background: rgba(110, 86, 207, 0.18);
+        border: 1px solid rgba(110, 86, 207, 0.45);
+        border-radius: 9999px;
+        font-size: 22px;
+        font-weight: 700;
+        color: #c4b5fd;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+      }
+
+      .brand-title {
+        font-family: 'Sora', sans-serif;
+        font-size: 84px;
+        font-weight: 900;
+        letter-spacing: -0.02em;
+        margin-top: 24px;
+        line-height: 1.1;
+      }
+
+      .brand-title span.violet {
+        color: #c4b5fd;
+      }
+
+      .slogan-box {
+        margin-top: 28px;
+        padding: 30px 42px;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 24px;
+        backdrop-filter: blur(14px);
+        max-width: 860px;
+      }
+
+      .slogan-main {
+        font-family: 'Sora', sans-serif;
+        font-size: 40px;
+        color: #ffffff;
+        margin-bottom: 12px;
+        line-height: 1.25;
+      }
+
+      .slogan-sub {
+        font-size: 28px;
+        color: #cbd5e1;
+        line-height: 1.45;
+      }
+
+      /* Proyectos reales */
+      .projects-strip {
+        display: flex;
+        gap: 16px;
+        margin-top: 24px;
+      }
+
+      .project-pill {
+        padding: 12px 24px;
+        background: rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        border-radius: 14px;
+        font-size: 20px;
+        font-weight: 700;
+        color: #f1f5f9;
+      }
+
+      /* CTA Button */
+      .cta-wrapper {
+        margin-top: 28px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        position: relative;
+      }
+
+      .cta-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+        padding: 24px 64px;
+        background: #ffffff;
+        color: #0e0d15;
+        font-family: 'Sora', sans-serif;
+        font-size: 36px;
+        font-weight: 900;
+        border-radius: 20px;
+        box-shadow: 0 10px 45px rgba(255, 255, 255, 0.3);
+        border: none;
+        position: relative;
+        cursor: pointer;
+        transform-origin: center center;
+      }
+
+      .cta-hint {
+        font-size: 24px;
+        color: #cbd5e1;
+        font-weight: 600;
+      }
+
+      /* Puntero de Mouse */
+      .mouse-pointer {
+        position: absolute;
+        width: 36px;
+        height: 36px;
+        z-index: 50;
+        pointer-events: none;
+        filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.6));
+      }
+    </style>
+
+    <div data-hf-id="hf-t064" class="bg-glow-purple"></div>
+
+    <div data-hf-id="hf-7eu8" class="cta-header">
+      <div data-hf-id="hf-74u8" id="cta-tag" class="top-tag" data-layout-ignore="true">Trato Directo</div>
+      <h2 data-hf-id="hf-heov" id="cta-brand" class="brand-title">Play<span data-hf-id="hf-afgu" class="violet">Comun</span></h2>
+    </div>
+
+    <div data-hf-id="hf-7fr1" id="cta-slogan" class="slogan-box">
+      <div data-hf-id="hf-diir" class="slogan-main">
+        <span style="font-weight: 300; color: #cbd5e1;">Conmigo hablás, </span><span style="font-weight: 900; color: #ffffff;">conmigo trabajás.</span>
+      </div>
+      <div data-hf-id="hf-xqsy" class="slogan-sub">
+        <span style="font-weight: 400;">Sin intermediarios ni plantillas recicladas. </span><strong style="font-weight: 700; color: #ffffff;">Entendemos tu negocio</strong><span style="font-weight: 400;"> antes de escribir una sola línea de código.</span>
+      </div>
+    </div>
+
+    <!-- Proyectos reales del estudio -->
+    <div id="cta-strip" class="projects-strip">
+      <div class="project-pill" data-layout-ignore="true">⚡ FitAdmi</div>
+      <div class="project-pill" data-layout-ignore="true">🍸 BarraStock</div>
+      <div class="project-pill" data-layout-ignore="true">🎟️ Mercury Eventos</div>
+    </div>
+
+    <div data-hf-id="hf-jg10" class="cta-wrapper">
+      <div data-hf-id="hf-e5lw" id="cta-btn" class="cta-btn">
+        <span data-hf-id="hf-8u2o">playcomun.com</span>
+      </div>
+      <div data-hf-id="hf-a226" id="cta-sub" class="cta-hint" data-layout-ignore="true">Hablemos directo de tu próximo proyecto</div>
+
+      <!-- Mouse cursor que le da clic al botón final -->
+      <svg data-hf-id="hf-sao6" id="cta-cursor" class="mouse-pointer" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="opacity: 0;">
+        <path data-hf-id="hf-klhy" d="M4 3L11 21L14 13L22 10L4 3Z" fill="#ffffff" stroke="#0e0d15" stroke-width="2" stroke-linejoin="round" />
+      </svg>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      window.__timelines["05-cta"] = gsap.timeline({ paused: true });
+
+      (function() {
+        var tl = window.__timelines["05-cta"];
+
+        // Entrada de marca
+        tl.fromTo("#cta-tag", { opacity: 0, y: -16 }, { opacity: 1, y: 0, duration: 0.35, ease: "power2.out" }, 0.1);
+        tl.fromTo("#cta-brand", { opacity: 0, scale: 0.95, y: 16 }, { opacity: 1, scale: 1, y: 0, duration: 0.5, ease: "cubic-bezier(0.23, 1, 0.32, 1)" }, 0.22);
+
+        // Entrada slogan con blur
+        tl.fromTo("#cta-slogan", 
+          { opacity: 0, y: 25, scale: 0.96, filter: "blur(4px)" }, 
+          { opacity: 1, y: 0, scale: 1, filter: "blur(0px)", duration: 0.55, ease: "cubic-bezier(0.23, 1, 0.32, 1)" }, 
+          0.7
+        );
+
+        // Proyectos reales con stagger tight
+        tl.fromTo(".project-pill", 
+          { opacity: 0, y: 14, scale: 0.96 }, 
+          { opacity: 1, y: 0, scale: 1, duration: 0.4, stagger: 0.08, ease: "cubic-bezier(0.23, 1, 0.32, 1)" }, 
+          1.3
+        );
+
+        // Botón CTA con escala Emil Kowalski
+        tl.fromTo("#cta-btn", 
+          { opacity: 0, scale: 0.94, filter: "blur(4px)" }, 
+          { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.5, ease: "cubic-bezier(0.23, 1, 0.32, 1)" }, 
+          1.8
+        );
+        tl.fromTo("#cta-sub", { opacity: 0 }, { opacity: 1, duration: 0.4 }, 2.1);
+
+        // El cursor se acerca y da clic al botón con active feedback
+        tl.fromTo("#cta-cursor", 
+          { opacity: 0, x: 250, y: 120 }, 
+          { opacity: 1, x: 80, y: 35, duration: 0.65, ease: "power2.out" }, 
+          2.4
+        );
+        tl.to("#cta-cursor", { scale: 0.85, duration: 0.12, yoyo: true, repeat: 1 }, 3.1);
+        tl.to("#cta-btn", { scale: 0.94, duration: 0.12, yoyo: true, repeat: 1, ease: "power1.inOut" }, 3.1);
+
+        // Pulso sutil y elegante en el botón
+        tl.to("#cta-btn", { scale: 1.04, duration: 0.7, yoyo: true, repeat: 2, ease: "sine.inOut" }, 3.3);
+
+        // Duración anclada: 5.7s
+        tl.to({}, { duration: 5.7 }, 0);
+      })();
+    </script>
+  </div>
+</template>

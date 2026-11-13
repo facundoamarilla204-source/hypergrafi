@@ -1,0 +1,222 @@
+<template>
+  <style>
+    @font-face {
+      font-family: 'Sora';
+      font-style: normal;
+      font-weight: 400 800;
+      src: local('Sora'), url('assets/fonts/57dc28f7118abe14-s.15emath8fyzqj.woff2') format('woff2');
+    }
+
+    @font-face {
+      font-family: 'Work Sans';
+      font-style: normal;
+      font-weight: 400 800;
+      src: local('Work Sans'), url('assets/fonts/7ddd198311ba7843-s.p.31l30c9jv8unx.woff2') format('woff2');
+    }
+
+    #root-05 {
+      width: 1080px;
+      height: 1920px;
+      position: relative;
+      overflow: hidden;
+      font-family: 'Sora', sans-serif;
+      color: #ffffff;
+      box-sizing: border-box;
+      background: radial-gradient(circle at 50% 30%, #4c16a3 0%, #2f0d68 45%, #180438 100%);
+    }
+
+    .c05-glow {
+      position: absolute;
+      width: 950px;
+      height: 950px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(130, 73, 241, 0.45) 0%, rgba(130, 73, 241, 0) 70%);
+      top: 250px;
+      left: 65px;
+      filter: blur(85px);
+      pointer-events: none;
+    }
+
+    .c05-container {
+      position: absolute;
+      top: 200px;
+      left: 80px;
+      right: 80px;
+      bottom: 260px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 10;
+      text-align: center;
+    }
+
+    .c05-mascot-hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      margin-top: 15px;
+    }
+
+    .c05-mascot-circle {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      background: #ffffff;
+      border: 6px solid #8249F1;
+      overflow: hidden;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45), 0 0 35px rgba(130, 73, 241, 0.6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .c05-mascot-circle img {
+      width: 115%;
+      height: 115%;
+      object-fit: cover;
+    }
+
+    .c05-logo {
+      height: 90px;
+      width: auto;
+      filter: brightness(0) invert(1);
+      margin-top: 8px;
+    }
+
+    .c05-copy-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .c05-title {
+      font-size: 58px;
+      font-weight: 800;
+      line-height: 1.18;
+      color: #ffffff;
+    }
+
+    .c05-sub {
+      font-family: 'Work Sans', sans-serif;
+      font-size: 32px;
+      color: #ddd6fe;
+      font-weight: 500;
+      max-width: 780px;
+    }
+
+    .c05-domain-box {
+      width: 100%;
+      margin: 15px 0;
+    }
+
+    .c05-pill-box {
+      background: #ffffff;
+      border: 4px solid #8249F1;
+      border-radius: 36px;
+      padding: 34px 44px;
+      box-shadow: 0 25px 65px rgba(0, 0, 0, 0.45), 0 0 45px rgba(130, 73, 241, 0.5);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .c05-url-text {
+      font-size: 66px;
+      font-weight: 800;
+      color: #6D28D9;
+      letter-spacing: -0.5px;
+    }
+
+    .c05-url-sub {
+      font-family: 'Work Sans', sans-serif;
+      font-size: 28px;
+      font-weight: 600;
+      color: #64748B;
+    }
+
+    .c05-btn {
+      background: linear-gradient(135deg, #7C3AED 0%, #8249F1 50%, #6916dc 100%);
+      color: #ffffff;
+      border: 2px solid rgba(255, 255, 255, 0.35);
+      border-radius: 26px;
+      padding: 26px 54px;
+      font-size: 34px;
+      font-weight: 800;
+      box-shadow: 0 16px 40px rgba(124, 58, 237, 0.55);
+      width: 100%;
+      letter-spacing: 0.2px;
+    }
+
+    .c05-trust {
+      font-family: 'Work Sans', sans-serif;
+      font-size: 28px;
+      font-weight: 600;
+      color: #c4b5fd;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+  </style>
+
+  <div data-hf-id="hf-y0d8" id="root-05" data-composition-id="05-cta" data-start="24.5" data-duration="4.0"
+    data-width="1080" data-height="1920">
+    <div data-hf-id="hf-g1e4" class="c05-glow"></div>
+
+    <div data-hf-id="hf-de1k" class="c05-container">
+      <div data-hf-id="hf-r26r" id="c05-mascot" class="c05-mascot-hero">
+        <div data-hf-id="hf-oe0j" class="c05-mascot-circle">
+          <img data-hf-id="hf-mv3w" src="assets/otter.png" alt="PlayComun Nutria" />
+        </div>
+        <img data-hf-id="hf-ykbx" class="c05-logo" src="assets/logo.png" alt="PlayComun" />
+      </div>
+
+      <div data-hf-id="hf-orlr" id="c05-copy" class="c05-copy-wrap">
+        <h1 data-hf-id="hf-wz0c" class="c05-title">
+          Entrá y descubrí<br data-hf-id="hf-x5px" />
+          tus herramientas.
+        </h1>
+        <p data-hf-id="hf-q7io" class="c05-sub">
+          Gratis, inmediato y sin registros en tu navegador.
+        </p>
+      </div>
+
+      <div data-hf-id="hf-alji" id="c05-domain" class="c05-domain-box">
+        <div data-hf-id="hf-m7m6" class="c05-pill-box">
+          <span data-hf-id="hf-96xe" class="c05-url-text">playcomun.online</span>
+          <span data-hf-id="hf-ga41" class="c05-url-sub">Disponible ahora en cualquier dispositivo</span>
+        </div>
+      </div>
+
+      <div data-hf-id="hf-0bds" id="c05-btn" class="c05-btn">
+        Comenzar ahora gratis
+      </div>
+
+      <div data-hf-id="hf-ncy4" id="c05-trust" class="c05-trust">
+        <span data-hf-id="hf-trn3">✓ 100% Online</span>
+        <span data-hf-id="hf-1bmq">·</span>
+        <span data-hf-id="hf-d6da">✓ Sin costo</span>
+        <span data-hf-id="hf-8hs6">·</span>
+        <span data-hf-id="hf-ikv7">✓ Hecho en Argentina</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    window.__timelines = window.__timelines || {};
+    (function () {
+      const tl = gsap.timeline({ paused: true });
+      window.__timelines["05-cta"] = tl;
+
+      tl.fromTo("#c05-mascot", { scale: 0.9, opacity: 0.8 }, { scale: 1, opacity: 1, duration: 0.6, ease: "back.out(1.4)" }, 0);
+      tl.fromTo("#c05-copy", { y: 20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power2.out" }, 0.2);
+      tl.fromTo("#c05-domain", { scale: 0.92, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.6, ease: "back.out(1.4)" }, 0.35);
+      tl.fromTo("#c05-btn", { y: 20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power2.out" }, 0.5);
+      tl.fromTo("#c05-trust", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power2.out" }, 0.7);
+      tl.to({}, { duration: 4.0 }, 0);
+    })();
+  </script>
+</template>

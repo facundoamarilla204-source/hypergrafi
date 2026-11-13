@@ -1,0 +1,401 @@
+<template>
+  <div id="root" data-composition-id="04-saas" data-width="1080" data-height="1920">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=Sora:wght@300;400;600;700;800;900&display=swap');
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      #root {
+        position: relative;
+        width: 1080px;
+        height: 1920px;
+        background: #0e0d15;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        color: #ffffff;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 190px 72px 260px 72px;
+      }
+
+      .bg-glow-emerald {
+        position: absolute;
+        top: 25%;
+        right: 15%;
+        width: 600px;
+        height: 600px;
+        background: radial-gradient(circle, rgba(16, 185, 129, 0.22) 0%, rgba(14, 13, 21, 0) 70%);
+        pointer-events: none;
+        filter: blur(50px);
+      }
+
+      .top-tag {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        padding: 10px 22px;
+        background: rgba(16, 185, 129, 0.16);
+        border: 1px solid rgba(16, 185, 129, 0.45);
+        border-radius: 9999px;
+        font-size: 22px;
+        font-weight: 700;
+        color: #6ee7b7;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        align-self: flex-start;
+      }
+
+      .frame-title {
+        font-family: 'Sora', sans-serif;
+        font-size: 68px;
+        letter-spacing: -0.02em;
+        margin-top: 24px;
+        margin-bottom: 16px;
+        line-height: 1.15;
+      }
+
+      .frame-desc {
+        font-size: 30px;
+        color: #cbd5e1;
+        line-height: 1.4;
+      }
+
+      /* SaaS Card Mockup */
+      .saas-card {
+        margin-top: 32px;
+        background: #14181f;
+        border: 1.5px solid rgba(16, 185, 129, 0.35);
+        border-radius: 24px;
+        padding: 34px 32px;
+        box-shadow: 0 30px 80px rgba(0, 0, 0, 0.7);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .saas-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 22px;
+        padding-bottom: 18px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .tenant-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 20px;
+        color: #cbd5e1;
+        font-family: monospace;
+      }
+
+      .tenant-dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: #10b981;
+        box-shadow: 0 0 10px #10b981;
+      }
+
+      .active-pill {
+        padding: 8px 18px;
+        background: rgba(16, 185, 129, 0.2);
+        border: 1px solid rgba(16, 185, 129, 0.45);
+        border-radius: 10px;
+        font-size: 16px;
+        color: #6ee7b7;
+        font-weight: 800;
+      }
+
+      .plan-details {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 24px 28px;
+        background: rgba(255, 255, 255, 0.04);
+        border-radius: 18px;
+        margin-bottom: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.06);
+      }
+
+      .plan-name {
+        font-size: 19px;
+        color: #cbd5e1;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+      }
+
+      .plan-price {
+        font-family: 'Sora', sans-serif;
+        font-size: 46px;
+        font-weight: 800;
+        color: #ffffff;
+        margin-top: 4px;
+        display: flex;
+        align-items: baseline;
+        gap: 6px;
+      }
+
+      .plan-freq {
+        font-size: 22px;
+        color: #cbd5e1;
+      }
+
+      .gateway-badge {
+        padding: 8px 20px;
+        background: #0284c7;
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 800;
+        border-radius: 10px;
+      }
+
+      .payment-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 20px;
+        color: #e2e8f0;
+        padding: 16px 20px;
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 14px;
+        border: 1px solid rgba(255, 255, 255, 0.06);
+      }
+
+      /* Push notification de cobro automático (Emil Kowalski style) */
+      .saas-notification {
+        position: absolute;
+        top: 24px;
+        right: 24px;
+        padding: 16px 22px;
+        background: #1e293b;
+        border: 1.5px solid #10b981;
+        border-radius: 14px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.55);
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        z-index: 30;
+      }
+
+      .bell-icon {
+        font-size: 22px;
+      }
+
+      /* Mini Cards Rediseñadas (Emil Kowalski dock style) */
+      .features-row {
+        display: flex;
+        gap: 16px;
+        margin-top: 28px;
+      }
+
+      .feat-box {
+        flex: 1;
+        padding: 22px 20px;
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 20px;
+        backdrop-filter: blur(14px);
+        text-align: left;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .feat-box::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, rgba(16, 185, 129, 0.6), transparent);
+        opacity: 0.7;
+      }
+
+      .feat-top {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 8px;
+      }
+
+      .feat-icon {
+        font-size: 20px;
+      }
+
+      .feat-label {
+        font-size: 15px;
+        color: #94a3b8;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+      }
+
+      .feat-value {
+        font-family: 'Sora', sans-serif;
+        font-size: 28px;
+        font-weight: 800;
+        color: #ffffff;
+        line-height: 1.2;
+      }
+
+      .feat-sub {
+        font-size: 16px;
+        font-weight: 500;
+        color: #cbd5e1;
+        margin-top: 4px;
+      }
+    </style>
+
+    <div class="bg-glow-emerald"></div>
+
+    <div class="header-content">
+      <div id="saas-tag" class="top-tag" data-layout-ignore="true">
+        <span>03 · Solución Digital</span>
+      </div>
+
+      <h2 id="saas-title" class="frame-title">
+        <span style="font-weight: 300; opacity: 0.88;">Solución 03 · </span><span style="font-weight: 900;">Plataforma SaaS</span>
+      </h2>
+      <p id="saas-desc" class="frame-desc">
+        <span style="font-weight: 400;">Tu producto digital por suscripción. </span><strong style="font-weight: 700; color: #ffffff;">Tus clientes acceden con sus propias cuentas</strong><span style="font-weight: 400;"> y pagan de forma automática mes a mes.</span>
+      </p>
+    </div>
+
+    <!-- SaaS Mockup animado -->
+    <div id="saas-box" class="saas-card">
+      <!-- Notificación push de cobro con Emil spring -->
+      <div id="saas-notification" class="saas-notification" style="opacity: 0; transform: translateY(-20px);" data-layout-ignore="true">
+        <span class="bell-icon">🔔</span>
+        <div>
+          <div style="font-weight: 800; color: #f1f5f9; font-size: 19px;">Cobro mensual acreditado ($14.900)</div>
+          <div style="font-weight: 500; color: #94a3b8; font-size: 15px;">Mercado Pago · Tarjeta terminada en 4821</div>
+        </div>
+      </div>
+
+      <div class="saas-header">
+        <div class="tenant-badge" data-layout-ignore="true">
+          <span class="tenant-dot"></span>
+          <span id="tenant-name">FitAdmi · Gimnasio Norte</span>
+        </div>
+        <div id="saas-active-pill" class="active-pill" data-layout-ignore="true">PLAN PRO ACTIVO</div>
+      </div>
+
+      <div id="saas-plan" class="plan-details">
+        <div>
+          <div class="plan-name" data-layout-ignore="true">Suscripción Mensual</div>
+          <div class="plan-price" data-layout-ignore="true">
+            <span data-layout-ignore="true" style="font-weight: 300; font-size: 26px; color: #94a3b8;">$</span>
+            <span style="font-weight: 900; font-size: 46px; color: #ffffff;">14.900</span>
+            <span class="plan-freq" data-layout-ignore="true" style="font-weight: 500; font-size: 22px; color: #94a3b8;">/mes</span>
+          </div>
+        </div>
+        <div class="gateway-badge" data-layout-ignore="true">Mercado Pago</div>
+      </div>
+
+      <div id="saas-payment" class="payment-row" data-layout-ignore="true">
+        <span data-layout-ignore="true">Cobro automático sincronizado</span>
+        <span id="paid-badge" style="color: #6ee7b7; font-weight: 800;" data-layout-ignore="true">✓ Acreditado en cuenta</span>
+      </div>
+    </div>
+
+    <!-- 3 Mini Cards Rediseñadas (Entran unificadas con stagger) -->
+    <div class="features-row">
+      <div id="saas-feat-1" class="feat-box">
+        <div class="feat-top" data-layout-ignore="true">
+          <span class="feat-icon">💳</span>
+          <span class="feat-label">Ingresos</span>
+        </div>
+        <div class="feat-value">Cobro Recurrente</div>
+        <div class="feat-sub" data-layout-ignore="true">Predecible mes a mes</div>
+      </div>
+      <div id="saas-feat-2" class="feat-box">
+        <div class="feat-top" data-layout-ignore="true">
+          <span class="feat-icon">👥</span>
+          <span class="feat-label">Acceso</span>
+        </div>
+        <div class="feat-value">Multi-Tenant</div>
+        <div class="feat-sub" data-layout-ignore="true">Cada cliente aislado</div>
+      </div>
+      <div id="saas-feat-3" class="feat-box">
+        <div class="feat-top" data-layout-ignore="true">
+          <span class="feat-icon">☁️</span>
+          <span class="feat-label">Infraestructura</span>
+        </div>
+        <div class="feat-value">En la Nube</div>
+        <div class="feat-sub" data-layout-ignore="true">Escala sin límites</div>
+      </div>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      window.__timelines["04-saas"] = gsap.timeline({ paused: true });
+
+      (function() {
+        var tl = window.__timelines["04-saas"];
+
+        // Entrada del encabezado
+        tl.fromTo("#saas-tag", { opacity: 0, y: -16 }, { opacity: 1, y: 0, duration: 0.35, ease: "power2.out" }, 0.1);
+        tl.fromTo("#saas-title", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 0.22);
+        tl.fromTo("#saas-desc", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.4, ease: "power2.out" }, 0.4);
+
+        // 1. Entrada de la tarjeta SaaS con escala orgánica y blur
+        tl.fromTo("#saas-box", 
+          { opacity: 0, y: 25, scale: 0.96, filter: "blur(4px)" }, 
+          { opacity: 1, y: 0, scale: 1, filter: "blur(0px)", duration: 0.55, ease: "cubic-bezier(0.23, 1, 0.32, 1)" }, 
+          0.65
+        );
+
+        // 2. Transición del plan y precio
+        tl.fromTo("#saas-plan", { opacity: 0, scale: 0.96 }, { opacity: 1, scale: 1, duration: 0.45, ease: "power2.out" }, 1.25);
+
+        // 3. Fila de estado de pago
+        tl.fromTo("#saas-payment", { opacity: 0, y: 15 }, { opacity: 1, y: 0, duration: 0.4, ease: "power2.out" }, 1.65);
+
+        // 4. Entrada unificada de las 3 mini cards inferiores (Emil Kowalski stagger)
+        tl.fromTo(".feat-box", 
+          { opacity: 0, y: 18, scale: 0.96, filter: "blur(4px)" }, 
+          { 
+            opacity: 1, 
+            y: 0, 
+            scale: 1, 
+            filter: "blur(0px)", 
+            duration: 0.45, 
+            stagger: 0.08, 
+            ease: "cubic-bezier(0.23, 1, 0.32, 1)" 
+          }, 
+          2.0
+        );
+
+        // 5. Notificación push de cobro automático acreditado
+        tl.fromTo("#saas-notification", 
+          { opacity: 0, y: -20, scale: 0.95 }, 
+          { opacity: 1, y: 0, scale: 1, duration: 0.45, ease: "cubic-bezier(0.23, 1, 0.32, 1)" }, 
+          2.6
+        );
+
+        // 6. Pulso en el badge de acreditado
+        tl.to("#paid-badge", { scale: 1.1, duration: 0.2, yoyo: true, repeat: 1 }, 2.8);
+
+        // 7. La mini card de Cobro Recurrente responde al evento de acreditación
+        tl.to("#saas-feat-1", { 
+          borderColor: "rgba(16, 185, 129, 0.8)", 
+          backgroundColor: "rgba(16, 185, 129, 0.14)", 
+          duration: 0.35, 
+          yoyo: true, 
+          repeat: 1 
+        }, 2.9);
+
+        // Duración anclada: 6.2s
+        tl.to({}, { duration: 6.2 }, 0);
+      })();
+    </script>
+  </div>
+</template>

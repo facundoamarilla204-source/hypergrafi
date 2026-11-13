@@ -1,0 +1,259 @@
+<template>
+  <style>
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      src: url('assets/fonts/captured-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      src: url('assets/fonts/captured-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'JetBrains Mono';
+      font-style: normal;
+      font-weight: 500;
+      src: url('assets/fonts/captured-tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwgknk-4.woff2') format('woff2');
+    }
+
+    #root {
+      width: 1080px;
+      height: 1920px;
+      position: relative;
+      overflow: hidden;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: #F4F4F5;
+      box-sizing: border-box;
+      background: #09090B;
+    }
+
+    .frame-bg {
+      position: absolute;
+      inset: 0;
+      background: #0A0A0C;
+      z-index: 0;
+    }
+
+    .container {
+      position: absolute;
+      inset: 0;
+      width: 1080px;
+      height: 1920px;
+      padding: 140px 70px 100px 70px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      text-align: center;
+      z-index: 2;
+      box-sizing: border-box;
+    }
+
+    .result-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 28px;
+      background: rgba(34, 197, 94, 0.08);
+      border: 1px solid rgba(34, 197, 94, 0.25);
+      border-radius: 9999px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 22px;
+      font-weight: 700;
+      color: #22C55E;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+    }
+
+    .final-timer {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 110px;
+      font-weight: 800;
+      color: #FFFFFF;
+      letter-spacing: -0.02em;
+      line-height: 1;
+      margin-bottom: 20px;
+    }
+
+    .final-timer span.sec {
+      color: #22C55E;
+    }
+
+    .brand-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+
+    .logo-img {
+      height: 70px;
+      margin-bottom: 24px;
+    }
+
+    .brand-title {
+      font-size: 72px;
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      color: #FFFFFF;
+      margin-bottom: 16px;
+    }
+
+    .brand-title span.accent {
+      color: #FF7A1A;
+    }
+
+    .brand-tagline {
+      font-size: 28px;
+      color: #A1A1AA;
+      max-width: 800px;
+      line-height: 1.35;
+    }
+
+    /* Benefits List */
+    .benefits-box {
+      width: 100%;
+      max-width: 940px;
+      background: #121215;
+      border: 1px solid #27272A;
+      border-radius: 20px;
+      padding: 30px 40px;
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 40px;
+    }
+
+    .benefit-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .benefit-val {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 32px;
+      font-weight: 800;
+      color: #FF7A1A;
+    }
+
+    .benefit-label {
+      font-size: 18px;
+      color: #A1A1AA;
+      font-weight: 500;
+    }
+
+    /* CTA Card */
+    .cta-button-card {
+      width: 100%;
+      max-width: 940px;
+      background: #FF7A1A;
+      color: #000000;
+      border-radius: 20px;
+      padding: 36px 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 0 20px 40px rgba(255, 122, 26, 0.25);
+    }
+
+    .cta-url {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 44px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: #000000;
+      margin-bottom: 6px;
+    }
+
+    .cta-sub {
+      font-size: 22px;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.8);
+    }
+  </style>
+
+  <div data-hf-id="hf-lut2" id="root" data-composition-id="05-cta" data-start="23.5" data-duration="6.5" data-width="1080" data-height="1920">
+    <div data-hf-id="hf-yw0r" id="f05-bg" class="clip frame-bg" data-start="0" data-duration="6.5" data-track-index="0"></div>
+
+    <div data-hf-id="hf-u0dw" id="f05-main" class="clip container" data-start="0" data-duration="6.5" data-track-index="1">
+      <div data-hf-id="hf-yeow">
+        <div data-hf-id="hf-7khc" id="f05-badge" class="result-badge">
+          <span data-hf-id="hf-tfsh">✓ DESAFÍO COMPLETADO</span>
+        </div>
+        <div data-hf-id="hf-xovt" id="f05-timer" class="final-timer">04:<span data-hf-id="hf-zao2" class="sec">59</span></div>
+      </div>
+
+      <div data-hf-id="hf-alyi" id="f05-brand" class="brand-section">
+        <img data-hf-id="hf-vj7q" class="logo-img" src="assets/logo-734fbcba.svg" alt="FitAdmi">
+        <h1 data-hf-id="hf-hkun" class="brand-title">FIT<span data-hf-id="hf-8ado" class="accent">ADMI</span></h1>
+        <p data-hf-id="hf-ognd" class="brand-tagline">La plataforma inteligente para gestionar tu gimnasio sin estrés.</p>
+      </div>
+
+      <div data-hf-id="hf-v7i6" id="f05-benefits" class="benefits-box">
+        <div data-hf-id="hf-my6n" class="benefit-item">
+          <div data-hf-id="hf-ldv3" class="benefit-val">7 DÍAS</div>
+          <div data-hf-id="hf-i3sv" class="benefit-label">Prueba Gratis</div>
+        </div>
+        <div data-hf-id="hf-pfce" style="width: 1px; background: #27272A;"></div>
+        <div data-hf-id="hf-h8rz" class="benefit-item">
+          <div data-hf-id="hf-xw2d" class="benefit-val">100%</div>
+          <div data-hf-id="hf-oagi" class="benefit-label">En la Nube</div>
+        </div>
+        <div data-hf-id="hf-3t2q" style="width: 1px; background: #27272A;"></div>
+        <div data-hf-id="hf-gugy" class="benefit-item">
+          <div data-hf-id="hf-uqt1" class="benefit-val">0</div>
+          <div data-hf-id="hf-y8ad" class="benefit-label">Instalaciones</div>
+        </div>
+      </div>
+
+      <div data-hf-id="hf-okce" id="f05-cta" class="cta-button-card">
+        <div data-hf-id="hf-xwlk" class="cta-url">fitadmi.com.ar/dem</div>
+        <div data-hf-id="hf-laol" class="cta-sub">Probá la demo en vivo hoy mismo</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+
+    tl.fromTo("#f05-badge", 
+      { opacity: 0, y: -20 }, 
+      { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 
+      0.1
+    );
+
+    tl.fromTo("#f05-timer", 
+      { opacity: 0, scale: 0.94 }, 
+      { opacity: 1, scale: 1, duration: 0.6, ease: "power2.out" }, 
+      0.2
+    );
+
+    tl.fromTo("#f05-brand", 
+      { opacity: 0, y: 30 }, 
+      { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }, 
+      0.5
+    );
+
+    tl.fromTo("#f05-benefits", 
+      { opacity: 0, y: 30 }, 
+      { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 
+      0.8
+    );
+
+    tl.fromTo("#f05-cta", 
+      { opacity: 0, scale: 0.95, y: 30 }, 
+      { opacity: 1, scale: 1, y: 0, duration: 0.6, ease: "back.out(1.1)" }, 
+      1.1
+    );
+
+    window.__timelines = window.__timelines || {};
+    window.__timelines["05-cta"] = tl;
+    tl.seek(0);
+  </script>
+</template>

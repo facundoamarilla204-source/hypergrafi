@@ -1,0 +1,465 @@
+<template>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    #root-04 {
+      width: 1080px;
+      height: 1920px;
+      position: relative;
+      overflow: hidden;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: #ffffff;
+      background: linear-gradient(155deg, #2e096e 0%, #20064f 52%, #150336 100%);
+      box-sizing: border-box;
+    }
+
+    .f04-bg-shape-1 {
+      position: absolute;
+      width: 340px;
+      height: 760px;
+      border-radius: 9999px;
+      background: linear-gradient(180deg, rgba(124, 58, 237, 0.16) 0%, rgba(91, 33, 182, 0.03) 100%);
+      top: -140px;
+      right: -80px;
+      pointer-events: none;
+    }
+
+    .f04-bg-shape-2 {
+      position: absolute;
+      width: 280px;
+      height: 620px;
+      border-radius: 9999px;
+      background: linear-gradient(180deg, rgba(139, 92, 246, 0.10) 0%, rgba(91, 33, 182, 0.02) 100%);
+      bottom: -120px;
+      left: -70px;
+      pointer-events: none;
+    }
+
+    .f04-content {
+      position: absolute;
+      top: 175px;
+      left: 72px;
+      right: 72px;
+      bottom: 240px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      z-index: 10;
+    }
+
+    .f04-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 14px;
+    }
+
+    .f04-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 20px;
+      background: rgba(16, 185, 129, 0.18);
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      border-radius: 9999px;
+      font-size: 14px;
+      font-weight: 700;
+      color: #6ee7b7;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .f04-title {
+      font-family: 'Sora', sans-serif;
+      font-size: 60px;
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      color: #ffffff;
+      max-width: 900px;
+    }
+
+    .f04-title span.hl {
+      color: #6ee7b7;
+    }
+
+    /* Stack of 3 Finance Tools */
+    .f04-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+    }
+
+    .f04-tool-card {
+      background: rgba(19, 4, 46, 0.82);
+      border: 1.5px solid rgba(196, 181, 253, 0.22);
+      border-radius: 22px;
+      padding: 24px;
+      box-shadow: 0 20px 44px rgba(8, 2, 24, 0.45);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      position: relative;
+    }
+
+    .f04-card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .f04-card-title-group {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .f04-icon-box {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .f04-icon-box.emerald {
+      background: rgba(16, 185, 129, 0.22);
+      color: #6ee7b7;
+      border: 1px solid rgba(16, 185, 129, 0.45);
+    }
+
+    .f04-icon-box.blue {
+      background: rgba(59, 130, 246, 0.22);
+      color: #93c5fd;
+      border: 1px solid rgba(59, 130, 246, 0.45);
+    }
+
+    .f04-icon-box.purple {
+      background: rgba(124, 58, 237, 0.25);
+      color: #ddd6fe;
+      border: 1px solid rgba(167, 139, 250, 0.45);
+    }
+
+    .f04-card-heading {
+      font-size: 23px;
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    .f04-card-sub {
+      font-size: 15px;
+      color: #cbd5e1;
+    }
+
+    .f04-status-badge {
+      font-size: 14px;
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 8px;
+    }
+
+    .f04-status-badge.green {
+      background: rgba(16, 185, 129, 0.18);
+      color: #6ee7b7;
+      border: 1px solid rgba(16, 185, 129, 0.35);
+    }
+
+    .f04-status-badge.blue {
+      background: rgba(59, 130, 246, 0.18);
+      color: #93c5fd;
+      border: 1px solid rgba(59, 130, 246, 0.35);
+    }
+
+    .f04-status-badge.purple {
+      background: rgba(124, 58, 237, 0.22);
+      color: #ddd6fe;
+      border: 1px solid rgba(167, 139, 250, 0.4);
+    }
+
+    /* Card 1: Budget Progress View */
+    .f04-budget-view {
+      background: rgba(12, 2, 32, 0.55);
+      border: 1px solid rgba(196, 181, 253, 0.12);
+      border-radius: 14px;
+      padding: 16px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .f04-progress-header {
+      display: flex;
+      justify-content: space-between;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .f04-progress-track {
+      width: 100%;
+      height: 11px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 9999px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .f04-progress-fill {
+      height: 100%;
+      width: 63%;
+      background: linear-gradient(90deg, #10b981 0%, #34d399 100%);
+      border-radius: 9999px;
+    }
+
+    /* Card 2: Split Bill View */
+    .f04-split-view {
+      background: rgba(12, 2, 32, 0.55);
+      border: 1px solid rgba(196, 181, 253, 0.12);
+      border-radius: 14px;
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .f04-split-col {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .f04-split-val {
+      font-size: 26px;
+      font-weight: 800;
+      color: #93c5fd;
+      font-variant-numeric: tabular-nums;
+    }
+
+    /* Card 3: Installments View */
+    .f04-install-view {
+      background: rgba(12, 2, 32, 0.55);
+      border: 1px solid rgba(196, 181, 253, 0.12);
+      border-radius: 14px;
+      padding: 16px 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .f04-opt-box {
+      border: 1px solid rgba(196, 181, 253, 0.16);
+      border-radius: 11px;
+      padding: 12px 16px;
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .f04-opt-title {
+      font-size: 14px;
+      color: #cbd5e1;
+      font-weight: 600;
+    }
+
+    .f04-opt-price {
+      font-size: 22px;
+      font-weight: 800;
+      color: #ffffff;
+      margin-top: 4px;
+    }
+
+    /* Bottom Status */
+    .f04-bottom-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 22px;
+      background: rgba(19, 4, 46, 0.72);
+      border: 1px solid rgba(196, 181, 253, 0.2);
+      border-radius: 16px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #e2e8f0;
+    }
+
+    .f04-bottom-nav span.tag {
+      color: #6ee7b7;
+    }
+  </style>
+
+  <div data-hf-id="hf-04-root" id="root-04" data-composition-id="04-finance" data-width="1080" data-height="1920">
+    <div class="f04-bg-shape-1"></div>
+    <div class="f04-bg-shape-2"></div>
+
+    <div class="f04-content">
+      <!-- Header -->
+      <div id="f04-header" class="f04-header">
+        <div class="f04-badge" data-layout-ignore="true">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <rect width="20" height="14" x="2" y="5" rx="2"/>
+            <line x1="2" y1="10" x2="22" y2="10"/>
+          </svg>
+          Finanzas Personales & Grupo
+        </div>
+        <h1 class="f04-title">
+          Gastos, Cuentas Claras y <span class="hl">Cuotas al Instante</span>
+        </h1>
+      </div>
+
+      <!-- Tools Stack -->
+      <div class="f04-stack">
+        <!-- 1. Control de Gastos -->
+        <div id="f04-card-expenses" class="f04-tool-card">
+          <div class="f04-card-header">
+            <div class="f04-card-title-group">
+              <div class="f04-icon-box emerald">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"/>
+                  <path d="M3 5v14a2 2 0 0 0 2 2h16v-5"/>
+                  <path d="M18 12a2 2 0 0 0 0 4h4v-4Z"/>
+                </svg>
+              </div>
+              <div>
+                <div class="f04-card-heading">Control de Gastos Mensuales</div>
+                <div class="f04-card-sub" data-layout-ignore="true">Seguimiento de presupuesto sin planillas complicadas</div>
+              </div>
+            </div>
+            <span class="f04-status-badge green" data-layout-ignore="true">63% usado</span>
+          </div>
+
+          <div class="f04-budget-view" data-layout-ignore="true">
+            <div class="f04-progress-header">
+              <span style="color: #cbd5e1;">Gastado: <strong style="color: #ffffff;">$410.000</strong></span>
+              <span style="color: #6ee7b7;">Límite: $650.000</span>
+            </div>
+            <div class="f04-progress-track">
+              <div class="f04-progress-fill"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Dividir Cuentas con Amigos -->
+        <div id="f04-card-split" class="f04-tool-card">
+          <div class="f04-card-header">
+            <div class="f04-card-title-group">
+              <div class="f04-icon-box blue">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+              </div>
+              <div>
+                <div class="f04-card-heading">Dividir Cuentas con Amigos</div>
+                <div class="f04-card-sub" data-layout-ignore="true">Cena, asado o salida: cada uno sabe qué transferir</div>
+              </div>
+            </div>
+            <span class="f04-status-badge blue" data-layout-ignore="true">6 personas</span>
+          </div>
+
+          <div class="f04-split-view">
+            <div class="f04-split-col">
+              <span style="font-size: 13px; color: #cbd5e1; font-weight: 600; text-transform: uppercase;" data-layout-ignore="true">Total Salida</span>
+              <span style="font-size: 24px; font-weight: 800; color: #ffffff;">$54.000</span>
+            </div>
+            <div class="f04-split-col" style="text-align: right;">
+              <span style="font-size: 13px; color: #cbd5e1; font-weight: 600; text-transform: uppercase;" data-layout-ignore="true">Aporte por persona</span>
+              <span class="f04-split-val">$9.000 c/u</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Calculador de Cuotas -->
+        <div id="f04-card-installments" class="f04-tool-card">
+          <div class="f04-card-header">
+            <div class="f04-card-title-group">
+              <div class="f04-icon-box purple">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect width="18" height="18" x="3" y="3" rx="2"/>
+                  <line x1="8" y1="12" x2="16" y2="12"/>
+                  <line x1="12" y1="8" x2="12" y2="16"/>
+                </svg>
+              </div>
+              <div>
+                <div class="f04-card-heading">Calculador de Cuotas e Intereses</div>
+                <div class="f04-card-sub" data-layout-ignore="true">Conocé el valor exacto de la cuota fija o con recargo</div>
+              </div>
+            </div>
+            <span class="f04-status-badge purple" data-layout-ignore="true">Compra $120.000</span>
+          </div>
+
+          <div class="f04-install-view">
+            <div class="f04-opt-box">
+              <div class="f04-opt-title" data-layout-ignore="true">3 Cuotas sin interés</div>
+              <div class="f04-opt-price" style="color: #ddd6fe;">$40.000 / mes</div>
+            </div>
+            <div class="f04-opt-box">
+              <div class="f04-opt-title" data-layout-ignore="true">6 Cuotas fijas (CFT)</div>
+              <div class="f04-opt-price">$24.200 / mes</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Nav -->
+      <div id="f04-nav" class="f04-bottom-nav" data-layout-ignore="true">
+        <span>Sin registrarte en ninguna aplicación bancaria</span>
+        <span class="tag">Rápido y sencillo</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    window.__timelines = window.__timelines || {};
+    (function () {
+      const tl = gsap.timeline({ paused: true });
+      window.__timelines["04-finance"] = tl;
+
+      tl.fromTo("#f04-header", 
+        { y: -25, opacity: 0 }, 
+        { y: 0, opacity: 1, duration: 0.45, ease: "power3.out" }, 
+        0.1
+      );
+
+      tl.fromTo("#f04-card-expenses", 
+        { scale: 0.94, y: 25, opacity: 0 }, 
+        { scale: 1, y: 0, opacity: 1, duration: 0.45, ease: "power2.out" }, 
+        0.25
+      );
+
+      tl.fromTo(".f04-progress-fill", 
+        { width: "0%" }, 
+        { width: "63%", duration: 0.8, ease: "power2.out" }, 
+        0.5
+      );
+
+      tl.fromTo("#f04-card-split", 
+        { scale: 0.94, y: 25, opacity: 0 }, 
+        { scale: 1, y: 0, opacity: 1, duration: 0.45, ease: "power2.out" }, 
+        1.8
+      );
+
+      tl.fromTo("#f04-card-installments", 
+        { scale: 0.94, y: 25, opacity: 0 }, 
+        { scale: 1, y: 0, opacity: 1, duration: 0.45, ease: "power2.out" }, 
+        3.5
+      );
+
+      tl.fromTo("#f04-nav", 
+        { y: 20, opacity: 0 }, 
+        { y: 0, opacity: 1, duration: 0.4, ease: "power2.out" }, 
+        4.6
+      );
+
+      tl.to({}, { duration: 6.5 }, 0);
+    })();
+  </script>
+</template>

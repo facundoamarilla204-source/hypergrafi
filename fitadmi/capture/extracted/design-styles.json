@@ -1,0 +1,310 @@
+{
+  "typography": [
+    {
+      "role": "display",
+      "fontFamily": "Space Grotesk",
+      "fontSize": "72px",
+      "fontWeight": "700",
+      "lineHeight": "75.6px",
+      "letterSpacing": "-1.8px",
+      "color": "#FFFFFF",
+      "sampleText": "Gestioná tu gimnasio y conectá con tus socios."
+    },
+    {
+      "role": "heading",
+      "fontFamily": "Space Grotesk",
+      "fontSize": "48px",
+      "fontWeight": "700",
+      "lineHeight": "48px",
+      "letterSpacing": "-1.2px",
+      "color": "#FFFFFF",
+      "sampleText": "Tu gimnasio también tiene su propia app"
+    },
+    {
+      "role": "heading-2",
+      "fontFamily": "Space Grotesk",
+      "fontSize": "36px",
+      "fontWeight": "700",
+      "lineHeight": "40px",
+      "letterSpacing": "-0.9px",
+      "color": "#FFFFFF",
+      "sampleText": "Todo el control de tu negocio en un solo panel"
+    },
+    {
+      "role": "heading-3",
+      "fontFamily": "Space Grotesk",
+      "fontSize": "30px",
+      "fontWeight": "700",
+      "lineHeight": "36px",
+      "letterSpacing": "normal",
+      "color": "#FFFFFF",
+      "sampleText": "Panel de Gestión"
+    },
+    {
+      "role": "heading-3",
+      "fontFamily": "Inter",
+      "fontSize": "24px",
+      "fontWeight": "700",
+      "lineHeight": "32px",
+      "letterSpacing": "normal",
+      "color": "#FFFFFF",
+      "sampleText": "Mi membresía"
+    },
+    {
+      "role": "heading-3",
+      "fontFamily": "Inter",
+      "fontSize": "20px",
+      "fontWeight": "700",
+      "lineHeight": "28px",
+      "letterSpacing": "normal",
+      "color": "#FFFFFF",
+      "sampleText": "Administración"
+    },
+    {
+      "role": "body",
+      "fontFamily": "Inter",
+      "fontSize": "20px",
+      "fontWeight": "500",
+      "lineHeight": "32.5px",
+      "letterSpacing": "normal",
+      "color": "oklch(0.708 0 0)",
+      "sampleText": "FitAdmi reúne en un solo lugar la administración de cobros, "
+    },
+    {
+      "role": "heading-4",
+      "fontFamily": "Space Grotesk",
+      "fontSize": "18px",
+      "fontWeight": "700",
+      "lineHeight": "28px",
+      "letterSpacing": "normal",
+      "color": "#FFFFFF",
+      "sampleText": "Clientes"
+    },
+    {
+      "role": "label",
+      "fontFamily": "Inter",
+      "fontSize": "14px",
+      "fontWeight": "500",
+      "lineHeight": "20px",
+      "letterSpacing": "normal",
+      "color": "oklch(0.708 0 0)",
+      "sampleText": "Nombre *"
+    },
+    {
+      "role": "link",
+      "fontFamily": "Inter",
+      "fontSize": "14px",
+      "fontWeight": "600",
+      "lineHeight": "20px",
+      "letterSpacing": "normal",
+      "color": "#FF7A1A",
+      "sampleText": "Inicio"
+    },
+    {
+      "role": "code",
+      "fontFamily": "JetBrains Mono",
+      "fontSize": "10px",
+      "fontWeight": "400",
+      "lineHeight": "13.3333px",
+      "letterSpacing": "normal",
+      "color": "oklch(0.556 0 0)",
+      "sampleText": "v1.0.0"
+    }
+  ],
+  "spacing": {
+    "observed": [
+      4,
+      8,
+      12,
+      16,
+      20,
+      24,
+      32,
+      40,
+      48,
+      64,
+      80,
+      128,
+      192
+    ],
+    "baseUnit": 8
+  },
+  "radius": [
+    "4px",
+    "8px",
+    "12px"
+  ],
+  "shadows": [
+    {
+      "value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px",
+      "count": 3
+    },
+    {
+      "value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0.723642 0.122801 0.140739 / 0.15) 0px 4px 6px -1px, oklab(0.723642 0.122801 0.140739 / 0.15) 0px 2px 4px -2px",
+      "count": 2
+    },
+    {
+      "value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0.723642 0.122801 0.140739 / 0.2) 0px 10px 15px -3px, oklab(0.723642 0.122801 0.140739 / 0.2) 0px 4px 6px -4px",
+      "count": 2
+    },
+    {
+      "value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 2px 4px 0px inset",
+      "count": 2
+    },
+    {
+      "value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0.723642 0.122801 0.140739 / 0.2) 0px 1px 3px 0px, oklab(0.723642 0.122801 0.140739 / 0.2) 0px 1px 2px -1px",
+      "count": 1
+    }
+  ],
+  "buttons": [
+    {
+      "label": "Probar gratis",
+      "background": "#FF7A1A",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "oklch(0.145 0 0)",
+      "padding": "8px 16px",
+      "borderRadius": "12px",
+      "border": "0px solid oklch(0.145 0 0)",
+      "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0.723642 0.122801 0.140739 / 0.15) 0px 4px 6px -1px, oklab(0.723642 0.122801 0.140739 / 0.15) 0px 2px 4px -2px",
+      "fontSize": "14px",
+      "fontWeight": "600",
+      "height": "36px"
+    },
+    {
+      "label": "Ver demo interactiva",
+      "background": "oklab(0.205 0 0 / 0.6)",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#FFFFFF",
+      "padding": "16px 32px",
+      "borderRadius": "12px",
+      "border": "1px solid oklch(0.371 0 0)",
+      "boxShadow": "none",
+      "fontSize": "16px",
+      "fontWeight": "500",
+      "height": "58px"
+    },
+    {
+      "label": "Home",
+      "background": "oklab(0.205 0 0 / 0.3)",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "oklch(0.708 0 0)",
+      "padding": "12px",
+      "borderRadius": "12px",
+      "border": "1px solid oklab(0.205 0 0 / 0.5)",
+      "boxShadow": "none",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "height": "58px"
+    },
+    {
+      "label": "Mi membresía",
+      "background": "oklab(0.723642 0.122801 0.140739 / 0.1)",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "oklab(0.999994 0.0000455678 0.0000200868)",
+      "padding": "12px",
+      "borderRadius": "12px",
+      "border": "1px solid oklab(0.723642 0.122801 0.140739)",
+      "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, oklab(0.723642 0.122801 0.140739 / 0.2) 0px 1px 3px 0px, oklab(0.723642 0.122801 0.140739 / 0.2) 0px 1px 2px -1px",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "height": "58px"
+    },
+    {
+      "label": "Enviar consulta",
+      "background": "#FFFFFF",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "oklch(0.145 0 0)",
+      "padding": "12px 32px",
+      "borderRadius": "12px",
+      "border": "0px solid oklch(0.145 0 0)",
+      "boxShadow": "none",
+      "fontSize": "16px",
+      "fontWeight": "700",
+      "height": "48px"
+    }
+  ],
+  "cards": [],
+  "nav": {
+    "label": "navigation",
+    "background": "oklab(0.145 0 0 / 0.9)",
+    "backgroundImage": "",
+    "backdropFilter": "blur(12px)",
+    "color": "oklch(0.985 0 0)",
+    "padding": "0px 32px",
+    "borderRadius": "0px",
+    "border": "",
+    "boxShadow": "none",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "height": "65px"
+  },
+  "chips": [
+    {
+      "label": "1",
+      "background": "oklab(0.723642 0.122801 0.140739 / 0.1)",
+      "color": "#FF7A1A",
+      "padding": "0px",
+      "borderRadius": "3.35544e+07px",
+      "border": "1px solid oklab(0.723642 0.122801 0.140739 / 0.2)",
+      "boxShadow": "none",
+      "fontSize": "16px",
+      "fontWeight": "700",
+      "height": "40px"
+    },
+    {
+      "label": "Activo",
+      "background": "oklab(0.723642 0.122801 0.140739 / 0.2)",
+      "color": "oklch(0.985 0 0)",
+      "padding": "4px 10px",
+      "borderRadius": "3.35544e+07px",
+      "border": "1px solid oklab(0.723642 0.122801 0.140739 / 0.5)",
+      "boxShadow": "none",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "height": "34px"
+    }
+  ],
+  "statCells": [],
+  "tabs": [],
+  "backgrounds": [
+    {
+      "value": "linear-gradient(to right, oklch(0.145 0 0) 0%, oklab(0.145 0 0 / 0.85) 50%, oklab(0.145 0 0 / 0.4) 100%)",
+      "area": 2071680
+    },
+    {
+      "value": "linear-gradient(to top, oklch(0.145 0 0) 0%, oklab(0.145 0 0 / 0.3) 50%, oklab(0.145 0 0 / 0.7) 100%)",
+      "area": 2071680
+    },
+    {
+      "value": "linear-gradient(to right bottom, oklch(0.208 0.042 265.755) 0%, rgb(0, 0, 0) 100%)",
+      "area": 69372
+    },
+    {
+      "value": "linear-gradient(to right bottom, oklab(0.999994 0.0000455678 0.0000200868 / 0.1) 0%, rgba(0, 0, 0, 0) 100%)",
+      "area": 69372
+    }
+  ],
+  "glass": [
+    {
+      "backdropFilter": "blur(12px)",
+      "background": "oklab(0.145 0 0 / 0.9)",
+      "border": "",
+      "borderRadius": "0px",
+      "boxShadow": "",
+      "area": 124800
+    },
+    {
+      "backdropFilter": "blur(24px)",
+      "background": "oklab(0.208 -0.00310889 -0.0418848 / 0.5)",
+      "border": "1px solid oklab(0.999994 0.0000455678 0.0000200868 / 0.1)",
+      "borderRadius": "20.8px",
+      "boxShadow": "",
+      "area": 65212
+    }
+  ]
+}

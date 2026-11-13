@@ -1,0 +1,59 @@
+{
+  "summary": {
+    "webAnimations": 1,
+    "cssDeclarations": 39,
+    "scrollTargets": 33,
+    "cdpAnimations": 1181,
+    "canvases": 0
+  },
+  "namedAnimations": [],
+  "scrollTriggeredElements": 33,
+  "representativeAnimations": [
+    {
+      "type": "Animation",
+      "playState": "running",
+      "animationName": null,
+      "targetSelector": "div.absolute.-top-1/4.-right-1/4",
+      "targetRect": {
+        "x": -482.0772705078125,
+        "y": -2194.0791015625,
+        "width": 2884.154296875,
+        "height": 13126.658203125,
+        "top": -2194.0791015625,
+        "right": 2402.0770263671875,
+        "bottom": 10932.5791015625,
+        "left": -482.0772705078125
+      },
+      "keyframes": [
+        {
+          "offset": null,
+          "easing": "linear",
+          "composite": "auto",
+          "opacity": "0.3",
+          "computedOffset": 0
+        },
+        {
+          "offset": null,
+          "easing": "linear",
+          "composite": "auto",
+          "opacity": "0.5",
+          "computedOffset": 0.5
+        },
+        {
+          "offset": null,
+          "easing": "linear",
+          "composite": "auto",
+          "opacity": "0.3",
+          "computedOffset": 1
+        }
+      ],
+      "timing": {
+        "duration": 8000,
+        "delay": 0,
+        "iterations": null,
+        "easing": "ease-in-out",
+        "direction": "normal"
+      }
+    }
+  ]
+}

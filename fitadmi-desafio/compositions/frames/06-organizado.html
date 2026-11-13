@@ -1,0 +1,434 @@
+<template>
+  <style>
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      src: url('assets/fonts/captured-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 600;
+      src: url('assets/fonts/captured-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      src: url('assets/fonts/captured-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'JetBrains Mono';
+      font-style: normal;
+      font-weight: 500;
+      src: url('assets/fonts/captured-tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwgknk-4.woff2') format('woff2');
+    }
+
+    #root {
+      width: 1080px;
+      height: 1920px;
+      position: relative;
+      overflow: hidden;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: #F4F4F5;
+      box-sizing: border-box;
+      background: #09090B;
+    }
+
+    .frame-bg {
+      position: absolute;
+      inset: 0;
+      background: #0A0A0C;
+      z-index: 0;
+    }
+
+    .container {
+      position: absolute;
+      inset: 0;
+      width: 1080px;
+      height: 1920px;
+      padding: 130px 70px 80px 70px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      z-index: 2;
+      box-sizing: border-box;
+    }
+
+    .header-bar {
+      width: 100%;
+      max-width: 940px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .step-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 22px;
+      background: #18181B;
+      border: 1px solid #27272A;
+      border-radius: 8px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 22px;
+      font-weight: 600;
+      color: #FF7A1A;
+      text-transform: uppercase;
+    }
+
+    .time-badge {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 22px;
+      color: #A1A1AA;
+      background: #111114;
+      padding: 10px 20px;
+      border-radius: 8px;
+      border: 1px solid #27272A;
+      font-weight: 600;
+    }
+
+    .headline {
+      width: 100%;
+      max-width: 940px;
+      font-size: 64px;
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      color: #FFFFFF;
+      margin-bottom: 40px;
+      text-align: left;
+    }
+
+    .headline span.accent {
+      color: #FF7A1A;
+    }
+
+    /* Check-in Card */
+    .checkin-card {
+      width: 100%;
+      max-width: 940px;
+      background: #121215;
+      border: 1px solid #27272A;
+      border-radius: 20px;
+      padding: 36px 40px;
+      margin-bottom: 28px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+      text-align: left;
+    }
+
+    .checkin-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .checkin-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 18px;
+      color: #A1A1AA;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .dni-badge {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 20px;
+      color: #FF7A1A;
+      background: #1C1917;
+      border: 1px solid #44240E;
+      padding: 6px 16px;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+
+    .access-result {
+      background: rgba(34, 197, 94, 0.08);
+      border: 1px solid rgba(34, 197, 94, 0.35);
+      border-radius: 14px;
+      padding: 22px 26px;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .result-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: #22C55E;
+      color: #000000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 26px;
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+
+    .result-details {
+      flex: 1;
+    }
+
+    .result-name {
+      font-size: 26px;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 2px;
+    }
+
+    .result-status {
+      font-size: 18px;
+      color: #22C55E;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 600;
+    }
+
+    /* Clases */
+    .classes-section {
+      width: 100%;
+      max-width: 940px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+
+    .section-title {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 20px;
+      color: #A1A1AA;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      text-align: left;
+    }
+
+    .class-item {
+      background: #141418;
+      border: 1px solid #27272A;
+      border-radius: 16px;
+      padding: 22px 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .class-info {
+      text-align: left;
+    }
+
+    .class-title {
+      font-size: 24px;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 4px;
+    }
+
+    .class-schedule {
+      font-size: 18px;
+      color: #A1A1AA;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .class-spots {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 22px;
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 6px;
+    }
+
+    .class-spots.avail {
+      background: #18181B;
+      border: 1px solid #3F3F46;
+      color: #E4E4E7;
+    }
+
+    .class-spots.full {
+      background: rgba(239, 68, 68, 0.12);
+      border: 1px solid rgba(239, 68, 68, 0.35);
+      color: #EF4444;
+    }
+
+    /* Quick stats */
+    .stats-row {
+      width: 100%;
+      max-width: 940px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .stat-box {
+      background: #121215;
+      border: 1px solid #27272A;
+      border-radius: 14px;
+      padding: 20px 24px;
+      text-align: left;
+    }
+
+    .stat-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 17px;
+      color: #71717A;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+
+    .stat-number {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 32px;
+      font-weight: 800;
+      color: #FFFFFF;
+    }
+  </style>
+
+  <div data-hf-id="hf-org0"
+    id="root"
+    data-composition-id="06-organizado"
+    data-start="0"
+    data-duration="6.0"
+    data-width="1080"
+    data-height="1920"
+  >
+    <div data-hf-id="hf-orgbg" id="f06-bg" class="clip frame-bg" data-start="0" data-duration="6.0" data-track-index="0"></div>
+
+    <div data-hf-id="hf-orgct" id="f06-main" class="clip container" data-start="0" data-duration="6.0" data-track-index="1">
+      <div data-hf-id="hf-orghd" id="f06-header" class="header-bar">
+        <div data-hf-id="hf-orgst" class="step-badge" data-layout-ignore="true">Paso 05 • Todo Organizado</div>
+        <div data-hf-id="hf-orgtm" class="time-badge" data-layout-ignore="true">04:55 min</div>
+      </div>
+
+      <h2 data-hf-id="hf-orgti" id="f06-title" class="headline">
+        ¡Listo! Asistencia, clases y métricas <span data-hf-id="hf-orgac" class="accent">en un solo panel</span>.
+      </h2>
+
+      <!-- Control de Asistencia por DNI -->
+      <div data-hf-id="hf-chkbox" id="f06-checkin" class="checkin-card">
+        <div data-hf-id="hf-chktp" class="checkin-top">
+          <div data-hf-id="hf-chklb" class="checkin-label" data-layout-ignore="true">Control de Acceso • Molinete</div>
+          <div data-hf-id="hf-chkdn" class="dni-badge" data-layout-ignore="true">DNI 30.123.456</div>
+        </div>
+
+        <div data-hf-id="hf-chres" class="access-result">
+          <div data-hf-id="hf-chico" class="result-icon">✓</div>
+          <div data-hf-id="hf-chdt" class="result-details">
+            <div data-hf-id="hf-chnm" class="result-name">Carlos Pérez</div>
+            <div data-hf-id="hf-chst" class="result-status" data-layout-ignore="true">ACCESO PERMITIDO • Plan Full Activo</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gestión de Clases -->
+      <div data-hf-id="hf-clsec" id="f06-classes" class="classes-section">
+        <div data-hf-id="hf-clstt" class="section-title" data-layout-ignore="true">Clases & Reservas de Turnos</div>
+
+        <div data-hf-id="hf-c1" id="f06-c1" class="class-item">
+          <div data-hf-id="hf-c1i" class="class-info">
+            <div data-hf-id="hf-c1t" class="class-title">CrossFit WOD</div>
+            <div data-hf-id="hf-c1s" class="class-schedule" data-layout-ignore="true">19:00 hs • Coach Matías</div>
+          </div>
+          <div data-hf-id="hf-c1sp" class="class-spots avail" data-layout-ignore="true">18/20 Cupos</div>
+        </div>
+
+        <div data-hf-id="hf-c2" id="f06-c2" class="class-item">
+          <div data-hf-id="hf-c2i" class="class-info">
+            <div data-hf-id="hf-c2t" class="class-title">Spinning Interval</div>
+            <div data-hf-id="hf-c2s" class="class-schedule" data-layout-ignore="true">20:00 hs • Coach Lucía</div>
+          </div>
+          <div data-hf-id="hf-c2sp" class="class-spots full" data-layout-ignore="true">COMPLETO</div>
+        </div>
+      </div>
+
+      <!-- Métricas del Panel -->
+      <div data-hf-id="hf-strow" id="f06-stats" class="stats-row">
+        <div data-hf-id="hf-st1" class="stat-box">
+          <div data-hf-id="hf-st1l" class="stat-label" data-layout-ignore="true">Socios Activos</div>
+          <div data-hf-id="hf-st1v" class="stat-number">248</div>
+        </div>
+        <div data-hf-id="hf-st2" class="stat-box">
+          <div data-hf-id="hf-st2l" class="stat-label" data-layout-ignore="true">Ingresos Hoy</div>
+          <div data-hf-id="hf-st2v" id="f06-count-ingresos" class="stat-number" style="color: #22C55E;">84</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+
+    tl.fromTo("#f06-header", 
+      { opacity: 0, y: -20 }, 
+      { opacity: 1, y: 0, duration: 0.35, ease: "power2.out" }, 
+      0.05
+    );
+
+    tl.fromTo("#f06-title", 
+      { opacity: 0, y: 25 }, 
+      { opacity: 1, y: 0, duration: 0.35, ease: "power2.out" }, 
+      0.15
+    );
+
+    tl.fromTo("#f06-checkin", 
+      { opacity: 0, scale: 0.96, y: 25 }, 
+      { opacity: 1, scale: 1, y: 0, duration: 0.35, ease: "power2.out" }, 
+      0.3
+    );
+
+    tl.fromTo("#f06-c1", 
+      { opacity: 0, y: 15 }, 
+      { opacity: 1, y: 0, duration: 0.3, ease: "power2.out" }, 
+      0.7
+    );
+
+    tl.fromTo("#f06-c2", 
+      { opacity: 0, y: 15 }, 
+      { opacity: 1, y: 0, duration: 0.3, ease: "power2.out" }, 
+      0.95
+    );
+
+    tl.fromTo("#f06-stats", 
+      { opacity: 0, y: 15 }, 
+      { opacity: 1, y: 0, duration: 0.3, ease: "power2.out" }, 
+      1.2
+    );
+
+    // Dynamic pulse and count up to eliminate dead stretch
+    tl.to("#f06-checkin", {
+      scale: 1.015,
+      duration: 0.18,
+      yoyo: true,
+      repeat: 1,
+      ease: "power1.inOut"
+    }, 2.2);
+
+    const countObj = { val: 80 };
+    tl.to(countObj, {
+      val: 84,
+      duration: 1.2,
+      ease: "power2.out",
+      onUpdate: function() {
+        const el = document.getElementById("f06-count-ingresos");
+        if (el) el.textContent = Math.round(countObj.val);
+      }
+    }, 2.4);
+
+    tl.to("#f06-c1", {
+      scale: 1.01,
+      duration: 0.2,
+      yoyo: true,
+      repeat: 1,
+      ease: "power1.inOut"
+    }, 3.6);
+
+    window.__timelines = window.__timelines || {};
+    window.__timelines["06-organizado"] = tl;
+    tl.seek(0);
+  </script>
+</template>

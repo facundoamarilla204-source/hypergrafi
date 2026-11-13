@@ -1,0 +1,1379 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "filesScanned": 8
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 4,
+    "infoCount": 16,
+    "findings": [
+      {
+        "code": "container_overflow",
+        "severity": "warning",
+        "time": 12.222,
+        "selector": "div.b03-bg-shape-1",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 820,
+          "top": -140,
+          "right": 1160,
+          "bottom": 620,
+          "width": 340,
+          "height": 760
+        },
+        "containerSelector": "#el-03-business > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "right": 80,
+          "top": 140
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/03-business.html",
+        "bbox": {
+          "x": 820,
+          "y": -140,
+          "width": 340,
+          "height": 760
+        },
+        "firstSeen": 12.222,
+        "lastSeen": 17.111,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          12.222,
+          17.111
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "warning",
+        "time": 12.222,
+        "selector": "div.b03-bg-shape-2",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -70,
+          "top": 1420,
+          "right": 210,
+          "bottom": 2040,
+          "width": 280,
+          "height": 620
+        },
+        "containerSelector": "#el-03-business > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 70,
+          "bottom": 120
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/03-business.html",
+        "bbox": {
+          "x": -70,
+          "y": 1420,
+          "width": 280,
+          "height": 620
+        },
+        "firstSeen": 12.222,
+        "lastSeen": 17.111,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          12.222,
+          17.111
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "warning",
+        "time": 26.889,
+        "selector": "div.u05-bg-shape-1",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 820,
+          "top": -140,
+          "right": 1160,
+          "bottom": 620,
+          "width": 340,
+          "height": 760
+        },
+        "containerSelector": "#el-05-utilities > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "right": 80,
+          "top": 140
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/05-utilities.html",
+        "bbox": {
+          "x": 820,
+          "y": -140,
+          "width": 340,
+          "height": 760
+        },
+        "firstSeen": 26.889,
+        "lastSeen": 31.778,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          26.889,
+          31.778
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "warning",
+        "time": 26.889,
+        "selector": "div.u05-bg-shape-2",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -70,
+          "top": 1420,
+          "right": 210,
+          "bottom": 2040,
+          "width": 280,
+          "height": 620
+        },
+        "containerSelector": "#el-05-utilities > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 70,
+          "bottom": 120
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/05-utilities.html",
+        "bbox": {
+          "x": -70,
+          "y": 1420,
+          "width": 280,
+          "height": 620
+        },
+        "firstSeen": 26.889,
+        "lastSeen": 31.778,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          26.889,
+          31.778
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 2.444,
+        "selector": "div.h01-bg-shape-1",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 820,
+          "top": -140,
+          "right": 1160,
+          "bottom": 620,
+          "width": 340,
+          "height": 760
+        },
+        "containerSelector": "#el-01-hook > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "right": 80,
+          "top": 140
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/01-hook.html",
+        "bbox": {
+          "x": 820,
+          "y": -140,
+          "width": 340,
+          "height": 760
+        },
+        "firstSeen": 2.444,
+        "lastSeen": 2.444,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          2.444
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 2.444,
+        "selector": "div.h01-bg-shape-2",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -70,
+          "top": 1420,
+          "right": 210,
+          "bottom": 2040,
+          "width": 280,
+          "height": 620
+        },
+        "containerSelector": "#el-01-hook > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 70,
+          "bottom": 120
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/01-hook.html",
+        "bbox": {
+          "x": -70,
+          "y": 1420,
+          "width": 280,
+          "height": 620
+        },
+        "firstSeen": 2.444,
+        "lastSeen": 2.444,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          2.444
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 4.916,
+        "selector": "h1.h01-title",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 182.83,
+          "top": 169.31,
+          "right": 944.83,
+          "bottom": 413.65,
+          "width": 762,
+          "height": 244.34
+        },
+        "containerSelector": "h1.r02-title",
+        "text": "¿Todavía abrís veinte pestañas distintas cada vez que trabajás?",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/01-hook.html",
+        "bbox": {
+          "x": 182.83,
+          "y": 169.31,
+          "width": 762,
+          "height": 244.34
+        },
+        "firstSeen": 4.916,
+        "lastSeen": 4.916,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          4.916
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 4.916,
+        "selector": "h1.h01-title > em:nth-of-type(1)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 135.15,
+          "top": 169.31,
+          "right": 897.17,
+          "bottom": 335.07,
+          "width": 762.02,
+          "height": 165.76
+        },
+        "containerSelector": "h1.r02-title",
+        "text": "veinte pestañas",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/01-hook.html",
+        "bbox": {
+          "x": 135.15,
+          "y": 169.31,
+          "width": 762.02,
+          "height": 165.76
+        },
+        "firstSeen": 4.916,
+        "lastSeen": 4.916,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          4.916
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 7.333,
+        "selector": "div.r02-bg-shape-1",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 820,
+          "top": -140,
+          "right": 1160,
+          "bottom": 620,
+          "width": 340,
+          "height": 760
+        },
+        "containerSelector": "#el-02-reveal > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "right": 80,
+          "top": 140
+        },
+        "dataAttributes": {
+          "data-hf-id": "hf-ivhi"
+        },
+        "sourceFile": "compositions/frames/02-reveal.html",
+        "bbox": {
+          "x": 820,
+          "y": -140,
+          "width": 340,
+          "height": 760
+        },
+        "firstSeen": 7.333,
+        "lastSeen": 7.333,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          7.333
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 7.333,
+        "selector": "div.r02-bg-shape-2",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -70,
+          "top": 1420,
+          "right": 210,
+          "bottom": 2040,
+          "width": 280,
+          "height": 620
+        },
+        "containerSelector": "#el-02-reveal > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 70,
+          "bottom": 120
+        },
+        "dataAttributes": {
+          "data-hf-id": "hf-exdh"
+        },
+        "sourceFile": "compositions/frames/02-reveal.html",
+        "bbox": {
+          "x": -70,
+          "y": 1420,
+          "width": 280,
+          "height": 620
+        },
+        "firstSeen": 7.333,
+        "lastSeen": 7.333,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          7.333
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 10.078,
+        "selector": "h1.r02-title",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 158.65,
+          "top": 174.3,
+          "right": 857.27,
+          "bottom": 404.45,
+          "width": 698.62,
+          "height": 230.15
+        },
+        "containerSelector": "h1.b03-title",
+        "text": "Reunimos todas tus herramientas en un solo lugar.",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {
+          "data-hf-id": "hf-swgw"
+        },
+        "sourceFile": "compositions/frames/02-reveal.html",
+        "bbox": {
+          "x": 158.65,
+          "y": 174.3,
+          "width": 698.62,
+          "height": 230.15
+        },
+        "firstSeen": 10.078,
+        "lastSeen": 10.078,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          10.078
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 10.078,
+        "selector": "h1.r02-title > span:nth-of-type(1)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 451.04,
+          "top": 248.53,
+          "right": 921.35,
+          "bottom": 404.45,
+          "width": 470.31,
+          "height": 155.92
+        },
+        "containerSelector": "h1.b03-title",
+        "text": "un solo lugar",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {
+          "data-hf-id": "hf-o8gm"
+        },
+        "sourceFile": "compositions/frames/02-reveal.html",
+        "bbox": {
+          "x": 451.04,
+          "y": 248.53,
+          "width": 470.31,
+          "height": 155.92
+        },
+        "firstSeen": 10.078,
+        "lastSeen": 10.078,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          10.078
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 22,
+        "selector": "div.f04-bg-shape-1",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 820,
+          "top": -140,
+          "right": 1160,
+          "bottom": 620,
+          "width": 340,
+          "height": 760
+        },
+        "containerSelector": "#el-04-finance > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "right": 80,
+          "top": 140
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/04-finance.html",
+        "bbox": {
+          "x": 820,
+          "y": -140,
+          "width": 340,
+          "height": 760
+        },
+        "firstSeen": 22,
+        "lastSeen": 22,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          22
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 22,
+        "selector": "div.f04-bg-shape-2",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -70,
+          "top": 1420,
+          "right": 210,
+          "bottom": 2040,
+          "width": 280,
+          "height": 620
+        },
+        "containerSelector": "#el-04-finance > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 70,
+          "bottom": 120
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/04-finance.html",
+        "bbox": {
+          "x": -70,
+          "y": 1420,
+          "width": 280,
+          "height": 620
+        },
+        "firstSeen": 22,
+        "lastSeen": 22,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          22
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 25.81,
+        "selector": "h1.f04-title",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 166.25,
+          "top": 211.89,
+          "right": 913.75,
+          "bottom": 287.92,
+          "width": 747.5,
+          "height": 76.03
+        },
+        "containerSelector": "h1.u05-title",
+        "text": "Gastos, Cuentas Claras y Cuotas al Instante",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/04-finance.html",
+        "bbox": {
+          "x": 166.25,
+          "y": 211.89,
+          "width": 747.5,
+          "height": 76.03
+        },
+        "firstSeen": 25.81,
+        "lastSeen": 25.81,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          25.81
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 25.81,
+        "selector": "h1.f04-title > span:nth-of-type(1)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 265.98,
+          "top": 281.83,
+          "right": 814,
+          "bottom": 357.86,
+          "width": 548.02,
+          "height": 76.03
+        },
+        "containerSelector": "h1.u05-title > span:nth-of-type(1)",
+        "text": "Cuotas al Instante",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/04-finance.html",
+        "bbox": {
+          "x": 265.98,
+          "y": 281.83,
+          "width": 548.02,
+          "height": 76.03
+        },
+        "firstSeen": 25.81,
+        "lastSeen": 25.81,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          25.81
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 36.667,
+        "selector": "div.v06-bg-shape-1",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 820,
+          "top": -140,
+          "right": 1160,
+          "bottom": 620,
+          "width": 340,
+          "height": 760
+        },
+        "containerSelector": "#el-06-frictionless > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "right": 80,
+          "top": 140
+        },
+        "dataAttributes": {
+          "data-hf-id": "hf-pana"
+        },
+        "sourceFile": "compositions/frames/06-frictionless.html",
+        "bbox": {
+          "x": 820,
+          "y": -140,
+          "width": 340,
+          "height": 760
+        },
+        "firstSeen": 36.667,
+        "lastSeen": 36.667,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          36.667
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 36.667,
+        "selector": "div.v06-bg-shape-2",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -70,
+          "top": 1420,
+          "right": 210,
+          "bottom": 2040,
+          "width": 280,
+          "height": 620
+        },
+        "containerSelector": "#el-06-frictionless > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 70,
+          "bottom": 120
+        },
+        "dataAttributes": {
+          "data-hf-id": "hf-lcj9"
+        },
+        "sourceFile": "compositions/frames/06-frictionless.html",
+        "bbox": {
+          "x": -70,
+          "y": 1420,
+          "width": 280,
+          "height": 620
+        },
+        "firstSeen": 36.667,
+        "lastSeen": 36.667,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          36.667
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 41.556,
+        "selector": "div.c07-bg-shape-1",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 820,
+          "top": -140,
+          "right": 1160,
+          "bottom": 620,
+          "width": 340,
+          "height": 760
+        },
+        "containerSelector": "#el-07-cta > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "right": 80,
+          "top": 140
+        },
+        "dataAttributes": {
+          "data-hf-id": "hf-9goi"
+        },
+        "sourceFile": "compositions/frames/07-cta.html",
+        "bbox": {
+          "x": 820,
+          "y": -140,
+          "width": 340,
+          "height": 760
+        },
+        "firstSeen": 41.556,
+        "lastSeen": 41.556,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          41.556
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 41.556,
+        "selector": "div.c07-bg-shape-2",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -70,
+          "top": 1420,
+          "right": 210,
+          "bottom": 2040,
+          "width": 280,
+          "height": 620
+        },
+        "containerSelector": "#el-07-cta > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 70,
+          "bottom": 120
+        },
+        "dataAttributes": {
+          "data-hf-id": "hf-5ikh"
+        },
+        "sourceFile": "compositions/frames/07-cta.html",
+        "bbox": {
+          "x": -70,
+          "y": 1420,
+          "width": 280,
+          "height": 620
+        },
+        "firstSeen": 41.556,
+        "lastSeen": 41.556,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          41.556
+        ]
+      }
+    ],
+    "duration": 44,
+    "samples": [
+      2.444,
+      7.333,
+      12.222,
+      17.111,
+      22,
+      26.889,
+      31.778,
+      36.667,
+      41.556
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 20,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      2.444,
+      12.222,
+      22,
+      31.778,
+      41.556
+    ],
+    "checked": 32,
+    "passed": 32
+  },
+  "craft": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 8,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and 6 text elements stay under it for 0.5 s or more, the smallest \"calculadora-margen-costos.com\" at 21 px: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "calculadora-margen-costos.com",
+        "selector": "#h01-t1 > div:nth-of-type(1) > div:nth-of-type(2) > span:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/01-hook.html",
+        "bbox": {
+          "x": 162.29,
+          "y": 809.86,
+          "width": 348.44,
+          "height": 27
+        },
+        "time": 0.75,
+        "times": [
+          0.75,
+          1,
+          1.375,
+          1.625,
+          2,
+          2.375
+        ],
+        "fontPx": 21,
+        "floorPx": 28,
+        "seconds": 4.25,
+        "elements": [
+          {
+            "selector": "#h01-t1 > div:nth-of-type(1) > div:nth-of-type(2) > span:nth-of-type(1)",
+            "text": "calculadora-margen-costos.com",
+            "fontPx": 21,
+            "time": 0.75,
+            "seconds": 4.25
+          },
+          {
+            "selector": "#h01-t2 > div:nth-of-type(1) > div:nth-of-type(2) > span:nth-of-type(1)",
+            "text": "plantilla-presupuesto-v4.xlsx - Google Drive",
+            "fontPx": 21,
+            "time": 1,
+            "seconds": 4
+          },
+          {
+            "selector": "#h01-t3 > div:nth-of-type(1) > div:nth-of-type(2) > span:nth-of-type(1)",
+            "text": "costear-receta-panaderia.net",
+            "fontPx": 21,
+            "time": 1.375,
+            "seconds": 3.625
+          },
+          {
+            "selector": "#h01-t4 > div:nth-of-type(1) > div:nth-of-type(2) > span:nth-of-type(1)",
+            "text": "generador-qr-gratis-con-anuncios.org",
+            "fontPx": 21,
+            "time": 1.625,
+            "seconds": 3.375
+          },
+          {
+            "selector": "#h01-t5 > div:nth-of-type(1) > div:nth-of-type(2) > span:nth-of-type(1)",
+            "text": "comprimir-fotos-limite-diario.io",
+            "fontPx": 21,
+            "time": 2,
+            "seconds": 3
+          },
+          {
+            "selector": "div.h01-warning-heading",
+            "text": "Pérdida de tiempo y desorden diario",
+            "fontPx": 23,
+            "time": 2.375,
+            "seconds": 2.625
+          }
+        ]
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and 4 text elements stay under it for 0.5 s or more, the smallest \"Presupuestos\" at 20 px: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "Presupuestos",
+        "selector": "#r02-cat-2 > div:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/02-reveal.html",
+        "bbox": {
+          "x": 574.27,
+          "y": 989.48,
+          "width": 136.72,
+          "height": 26.21
+        },
+        "time": 6.125,
+        "times": [
+          6,
+          6.125,
+          6.375,
+          6.5
+        ],
+        "fontPx": 20.39,
+        "floorPx": 28,
+        "seconds": 4,
+        "elements": [
+          {
+            "selector": "#r02-cat-2 > div:nth-of-type(2)",
+            "text": "Presupuestos",
+            "fontPx": 20.39,
+            "time": 6.125,
+            "seconds": 4
+          },
+          {
+            "selector": "#r02-cat-4 > div:nth-of-type(2)",
+            "text": "QR, Firmas & Gastos",
+            "fontPx": 20.39,
+            "time": 6.5,
+            "seconds": 3.625
+          },
+          {
+            "selector": "#r02-cat-3 > div:nth-of-type(2)",
+            "text": "Costeo Gastronómico",
+            "fontPx": 20.76,
+            "time": 6.375,
+            "seconds": 3.75
+          },
+          {
+            "selector": "#r02-cat-1 > div:nth-of-type(2)",
+            "text": "Márgenes y Ventas",
+            "fontPx": 20.87,
+            "time": 6,
+            "seconds": 4.125
+          }
+        ]
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and 9 text elements stay under it for 0.5 s or more, the smallest \"Costeo y Rentabilidad de Recetas\" at 22 px: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "Costeo y Rentabilidad de Recetas",
+        "selector": "#b03-card-recipes > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/03-business.html",
+        "bbox": {
+          "x": 164.12,
+          "y": 1175.11,
+          "width": 366.7,
+          "height": 28.32
+        },
+        "time": 15.25,
+        "times": [
+          10.375,
+          10.375,
+          10.375,
+          10.375,
+          12.75,
+          15.25,
+          15.25,
+          15.25,
+          15.25
+        ],
+        "fontPx": 22.45,
+        "floorPx": 28,
+        "seconds": 4.125,
+        "elements": [
+          {
+            "selector": "#b03-card-recipes > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1)",
+            "text": "Costeo y Rentabilidad de Recetas",
+            "fontPx": 22.45,
+            "time": 15.25,
+            "seconds": 4.125
+          },
+          {
+            "selector": "#b03-card-prices > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1)",
+            "text": "Calculadora de Precios y Margen",
+            "fontPx": 22.59,
+            "time": 10.375,
+            "seconds": 9
+          },
+          {
+            "selector": "#b03-card-quotes > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1)",
+            "text": "Presupuestos en PDF",
+            "fontPx": 22.79,
+            "time": 12.75,
+            "seconds": 6.625
+          },
+          {
+            "selector": "div.b03-recipe-preview > div:nth-of-type(1) > span:nth-of-type(2)",
+            "text": "$870",
+            "fontPx": 24.41,
+            "time": 15.25,
+            "seconds": 4.125
+          },
+          {
+            "selector": "div.b03-recipe-preview > div:nth-of-type(2) > span:nth-of-type(2)",
+            "text": "$2.500",
+            "fontPx": 24.41,
+            "time": 15.25,
+            "seconds": 4.125
+          },
+          {
+            "selector": "div.b03-recipe-preview > div:nth-of-type(3) > span:nth-of-type(2)",
+            "text": "65.2%",
+            "fontPx": 24.41,
+            "time": 15.25,
+            "seconds": 4.125
+          },
+          {
+            "selector": "div.b03-calc-grid > div:nth-of-type(1) > span:nth-of-type(2)",
+            "text": "$14.500",
+            "fontPx": 24.56,
+            "time": 10.375,
+            "seconds": 9
+          },
+          {
+            "selector": "div.b03-calc-grid > div:nth-of-type(2) > span:nth-of-type(2)",
+            "text": "+$5.800",
+            "fontPx": 24.56,
+            "time": 10.375,
+            "seconds": 9
+          },
+          {
+            "selector": "div.b03-calc-grid > div:nth-of-type(3) > span:nth-of-type(2)",
+            "text": "$20.300",
+            "fontPx": 24.56,
+            "time": 10.375,
+            "seconds": 9
+          }
+        ]
+      },
+      {
+        "code": "dead_stretch",
+        "severity": "warning",
+        "message": "Nothing on screen changes for 3.50 s (15.63–19.13 s): start the next move within 3 s, or put data-hold on the element whose stillness is deliberate; see references/motion.md.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 15.625,
+        "seconds": 3.5,
+        "floorSeconds": 3,
+        "until": 19.125
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and 7 text elements stay under it for 0.5 s or more, the smallest \"$40.000 / mes\" at 22 px: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "$40.000 / mes",
+        "selector": "div.f04-install-view > div:nth-of-type(1) > div:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/04-finance.html",
+        "bbox": {
+          "x": 143.46,
+          "y": 1247.61,
+          "width": 160.79,
+          "height": 27.41
+        },
+        "time": 22.75,
+        "times": [
+          19.5,
+          21,
+          21,
+          21,
+          22.75,
+          22.75,
+          22.75
+        ],
+        "fontPx": 21.54,
+        "floorPx": 28,
+        "seconds": 3.125,
+        "elements": [
+          {
+            "selector": "div.f04-install-view > div:nth-of-type(1) > div:nth-of-type(2)",
+            "text": "$40.000 / mes",
+            "fontPx": 21.54,
+            "time": 22.75,
+            "seconds": 3.125
+          },
+          {
+            "selector": "div.f04-install-view > div:nth-of-type(2) > div:nth-of-type(2)",
+            "text": "$24.200 / mes",
+            "fontPx": 21.54,
+            "time": 22.75,
+            "seconds": 3.125
+          },
+          {
+            "selector": "#f04-card-split > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1)",
+            "text": "Dividir Cuentas con Amigos",
+            "fontPx": 22.35,
+            "time": 21,
+            "seconds": 4.875
+          },
+          {
+            "selector": "#f04-card-installments > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1)",
+            "text": "Calculador de Cuotas e Intereses",
+            "fontPx": 22.52,
+            "time": 22.75,
+            "seconds": 3.125
+          },
+          {
+            "selector": "#f04-card-expenses > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1)",
+            "text": "Control de Gastos Mensuales",
+            "fontPx": 22.59,
+            "time": 19.5,
+            "seconds": 6.375
+          },
+          {
+            "selector": "div.f04-split-view > div:nth-of-type(1) > span:nth-of-type(2)",
+            "text": "$54.000",
+            "fontPx": 23.32,
+            "time": 21,
+            "seconds": 4.875
+          },
+          {
+            "selector": "span.f04-split-val",
+            "text": "$9.000 c/u",
+            "fontPx": 25.27,
+            "time": 21,
+            "seconds": 4.875
+          }
+        ]
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and 5 text elements stay under it for 0.5 s or more, the smallest \"Compresor de Imágenes Pesadas\" at 22 px: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "Compresor de Imágenes Pesadas",
+        "selector": "#u05-card-compress > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/05-utilities.html",
+        "bbox": {
+          "x": 165.86,
+          "y": 1178.82,
+          "width": 362.58,
+          "height": 28.18
+        },
+        "time": 30,
+        "times": [
+          26,
+          28,
+          30,
+          30,
+          30
+        ],
+        "fontPx": 22.35,
+        "floorPx": 28,
+        "seconds": 4,
+        "elements": [
+          {
+            "selector": "#u05-card-compress > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1)",
+            "text": "Compresor de Imágenes Pesadas",
+            "fontPx": 22.35,
+            "time": 30,
+            "seconds": 4
+          },
+          {
+            "selector": "#u05-card-qr > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1)",
+            "text": "Generador de Códigos QR",
+            "fontPx": 22.59,
+            "time": 26,
+            "seconds": 8
+          },
+          {
+            "selector": "#u05-card-sign > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1)",
+            "text": "Firmar Documentos PDF",
+            "fontPx": 22.76,
+            "time": 28,
+            "seconds": 6
+          },
+          {
+            "selector": "div.u05-compress-view > div:nth-of-type(1) > span:nth-of-type(2)",
+            "text": "8.6 MB",
+            "fontPx": 23.32,
+            "time": 30,
+            "seconds": 4
+          },
+          {
+            "selector": "span.u05-comp-size.reduced",
+            "text": "640 KB",
+            "fontPx": 23.32,
+            "time": 30,
+            "seconds": 4
+          }
+        ]
+      },
+      {
+        "code": "dead_stretch",
+        "severity": "warning",
+        "message": "Nothing on screen changes for 3.38 s (30.38–33.75 s): start the next move within 3 s, or put data-hold on the element whose stillness is deliberate; see references/motion.md.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 30.375,
+        "seconds": 3.375,
+        "floorSeconds": 3,
+        "until": 33.75
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and 3 text elements stay under it for 0.5 s or more, the smallest \"Sin Instalar Programas\" at 25 px: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "Sin Instalar Programas",
+        "selector": "#v06-p2 > div:nth-of-type(2) > div:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/06-frictionless.html",
+        "bbox": {
+          "x": 198.9,
+          "y": 980.43,
+          "width": 273.65,
+          "height": 32.07
+        },
+        "time": 35,
+        "times": [
+          34.25,
+          35,
+          36
+        ],
+        "fontPx": 25.27,
+        "floorPx": 28,
+        "seconds": 3.875,
+        "elements": [
+          {
+            "selector": "#v06-p2 > div:nth-of-type(2) > div:nth-of-type(1)",
+            "text": "Sin Instalar Programas",
+            "fontPx": 25.27,
+            "time": 35,
+            "seconds": 3.875
+          },
+          {
+            "selector": "#v06-p1 > div:nth-of-type(2) > div:nth-of-type(1)",
+            "text": "100% en tu Navegador",
+            "fontPx": 25.46,
+            "time": 34.25,
+            "seconds": 4.625
+          },
+          {
+            "selector": "#v06-p3 > div:nth-of-type(2) > div:nth-of-type(1)",
+            "text": "Sin Vueltas",
+            "fontPx": 25.73,
+            "time": 36,
+            "seconds": 2.875
+          }
+        ]
+      }
+    ],
+    "enabled": true,
+    "step": 0.125,
+    "samples": 352
+  },
+  "audio": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  }
+}

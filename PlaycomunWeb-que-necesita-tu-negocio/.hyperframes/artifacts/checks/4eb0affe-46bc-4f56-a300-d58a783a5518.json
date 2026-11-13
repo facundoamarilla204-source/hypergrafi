@@ -1,0 +1,200 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "filesScanned": 6
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "duration": 30.6,
+    "samples": [
+      1.7,
+      5.1,
+      8.5,
+      11.9,
+      15.3,
+      18.7,
+      22.1,
+      25.5,
+      28.9
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 0,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      1.7,
+      8.5,
+      15.3,
+      22.1,
+      28.9
+    ],
+    "checked": 26,
+    "passed": 26
+  },
+  "craft": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 2,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and 4 text elements stay under it for 0.5 s or more, the smallest \"Panel de Control & Inventario\" at 24 px: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "Panel de Control & Inventario",
+        "selector": "div.dash-title",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/03-webapp.html",
+        "bbox": {
+          "x": 110.79,
+          "y": 852.87,
+          "width": 332.31,
+          "height": 29.6
+        },
+        "time": 12.74,
+        "times": [
+          12.74,
+          14.238,
+          15.238,
+          16.237
+        ],
+        "fontPx": 23.68,
+        "floorPx": 28,
+        "seconds": 5.87,
+        "elements": [
+          {
+            "selector": "div.dash-title",
+            "text": "Panel de Control & Inventario",
+            "fontPx": 23.68,
+            "time": 12.74,
+            "seconds": 5.87
+          },
+          {
+            "selector": "#app-feat-1 > div:nth-of-type(2)",
+            "text": "Base Central",
+            "fontPx": 26,
+            "time": 14.238,
+            "seconds": 4.372
+          },
+          {
+            "selector": "#app-feat-2 > div:nth-of-type(2)",
+            "text": "Roles y Claves",
+            "fontPx": 26,
+            "time": 15.238,
+            "seconds": 3.372
+          },
+          {
+            "selector": "#app-feat-3 > div:nth-of-type(2)",
+            "text": "Cero Manual",
+            "fontPx": 26,
+            "time": 16.237,
+            "seconds": 2.373
+          }
+        ]
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and 3 text elements stay under it for 0.5 s or more, the smallest \"Ingresos Recurrentes\" at 26 px: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "Ingresos Recurrentes",
+        "selector": "#saas-feat-1 > div:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/04-saas.html",
+        "bbox": {
+          "x": 145.55,
+          "y": 1554.97,
+          "width": 154.22,
+          "height": 66
+        },
+        "time": 20.983,
+        "times": [
+          20.983,
+          21.857,
+          22.731
+        ],
+        "fontPx": 26,
+        "floorPx": 28,
+        "seconds": 3.872,
+        "elements": [
+          {
+            "selector": "#saas-feat-1 > div:nth-of-type(2)",
+            "text": "Ingresos Recurrentes",
+            "fontPx": 26,
+            "time": 20.983,
+            "seconds": 3.872
+          },
+          {
+            "selector": "#saas-feat-2 > div:nth-of-type(2)",
+            "text": "Multi-Cuenta",
+            "fontPx": 26,
+            "time": 21.857,
+            "seconds": 2.998
+          },
+          {
+            "selector": "#saas-feat-3 > div:nth-of-type(2)",
+            "text": "Escala Global",
+            "fontPx": 26,
+            "time": 22.731,
+            "seconds": 2.124
+          }
+        ]
+      }
+    ],
+    "enabled": true,
+    "step": 0.125,
+    "samples": 245
+  },
+  "audio": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  }
+}

@@ -1,0 +1,500 @@
+<template>
+  <style>
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      src: url('assets/fonts/captured-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 600;
+      src: url('assets/fonts/captured-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      src: url('assets/fonts/captured-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'JetBrains Mono';
+      font-style: normal;
+      font-weight: 500;
+      src: url('assets/fonts/captured-tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwgknk-4.woff2') format('woff2');
+    }
+
+    #root {
+      width: 1080px;
+      height: 1920px;
+      position: relative;
+      overflow: hidden;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: #F4F4F5;
+      box-sizing: border-box;
+      background: #09090B;
+    }
+
+    .frame-bg {
+      position: absolute;
+      inset: 0;
+      background: #0A0A0C;
+      z-index: 0;
+    }
+
+    .container {
+      position: absolute;
+      inset: 0;
+      width: 1080px;
+      height: 1920px;
+      padding: 110px 60px 60px 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      z-index: 2;
+      box-sizing: border-box;
+    }
+
+    .header-bar {
+      width: 100%;
+      max-width: 960px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+    }
+
+    .step-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 22px;
+      background: #18181B;
+      border: 1px solid #27272A;
+      border-radius: 8px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 22px;
+      font-weight: 600;
+      color: #FF7A1A;
+      text-transform: uppercase;
+    }
+
+    .time-badge {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 22px;
+      color: #A1A1AA;
+      background: #111114;
+      padding: 10px 20px;
+      border-radius: 8px;
+      border: 1px solid #27272A;
+      font-weight: 600;
+    }
+
+    .headline {
+      width: 100%;
+      max-width: 960px;
+      font-size: 60px;
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      color: #FFFFFF;
+      margin-bottom: 35px;
+      text-align: left;
+    }
+
+    .headline span.accent {
+      color: #FF7A1A;
+    }
+
+    /* Modal exact replica from user screenshot */
+    .modal-wrapper {
+      width: 100%;
+      max-width: 960px;
+      background: #18181B;
+      border: 1px solid #27272A;
+      border-radius: 24px;
+      padding: 40px;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7);
+      position: relative;
+    }
+
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .modal-title {
+      font-size: 32px;
+      font-weight: 700;
+      color: #FFFFFF;
+      letter-spacing: -0.02em;
+    }
+
+    .close-btn {
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+      background: #27272A;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      color: #A1A1AA;
+    }
+
+    .form-grid-2col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .field-box {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      text-align: left;
+    }
+
+    .field-box.full {
+      grid-column: span 2;
+    }
+
+    .label-text {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 17px;
+      font-weight: 600;
+      color: #A1A1AA;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .label-text .req {
+      color: #FF7A1A;
+    }
+
+    .input-control {
+      background: #222226;
+      border: 1px solid #3F3F46;
+      border-radius: 12px;
+      padding: 16px 20px;
+      font-size: 24px;
+      font-weight: 500;
+      color: #F4F4F5;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 64px;
+      box-sizing: border-box;
+    }
+
+    .input-control.active {
+      border-color: #FF7A1A;
+      background: #27272D;
+    }
+
+    .typing-text {
+      color: #FFFFFF;
+      font-weight: 600;
+    }
+
+    .cursor {
+      display: inline-block;
+      width: 3px;
+      height: 26px;
+      background: #FF7A1A;
+      margin-left: 3px;
+      vertical-align: middle;
+    }
+
+    .placeholder-text {
+      color: #71717A;
+    }
+
+    .icon-chevron, .icon-calendar {
+      color: #A1A1AA;
+      font-size: 20px;
+    }
+
+    .modal-actions {
+      display: flex;
+      justify-content: flex-end;
+      gap: 16px;
+      margin-top: 32px;
+    }
+
+    .btn-cancel {
+      padding: 18px 36px;
+      background: #27272A;
+      color: #E4E4E7;
+      border: 1px solid #3F3F46;
+      border-radius: 12px;
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    .btn-submit {
+      padding: 18px 44px;
+      background: #FF7A1A;
+      color: #000000;
+      border: none;
+      border-radius: 12px;
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      box-shadow: 0 10px 25px rgba(255, 122, 26, 0.25);
+    }
+
+    /* Success Toast */
+    .success-toast {
+      position: absolute;
+      bottom: 80px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 90%;
+      max-width: 860px;
+      background: #141418;
+      border: 1px solid rgba(34, 197, 94, 0.4);
+      border-radius: 16px;
+      padding: 22px 30px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+      z-index: 10;
+      opacity: 0;
+    }
+
+    .toast-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: rgba(34, 197, 94, 0.15);
+      color: #22C55E;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      font-weight: bold;
+      flex-shrink: 0;
+    }
+
+    .toast-text {
+      text-align: left;
+    }
+
+    .toast-title {
+      font-size: 24px;
+      font-weight: 700;
+      color: #FFFFFF;
+    }
+
+    .toast-sub {
+      font-size: 18px;
+      color: #A1A1AA;
+      font-family: 'JetBrains Mono', monospace;
+    }
+  </style>
+
+  <div data-hf-id="hf-cli0"
+    id="root"
+    data-composition-id="03-clientes"
+    data-start="0"
+    data-duration="4.8"
+    data-width="1080"
+    data-height="1920"
+  >
+    <div data-hf-id="hf-clbg" id="f03-bg" class="clip frame-bg" data-start="0" data-duration="4.8" data-track-index="0"></div>
+
+    <div data-hf-id="hf-clct" id="f03-main" class="clip container" data-start="0" data-duration="4.8" data-track-index="1">
+      <div data-hf-id="hf-clhd" id="f03-header" class="header-bar">
+        <div data-hf-id="hf-clst" class="step-badge" data-layout-ignore="true">Paso 02 • Carga de Clientes</div>
+        <div data-hf-id="hf-cltm" class="time-badge" data-layout-ignore="true">02:15 min</div>
+      </div>
+
+      <h2 data-hf-id="hf-clti" id="f03-title" class="headline">
+        Cargás tus socios y <span data-hf-id="hf-clac" class="accent">asignás sus planes</span>.
+      </h2>
+
+      <!-- Exact Modal from screenshot -->
+      <div data-hf-id="hf-clmd" id="f03-modal" class="modal-wrapper">
+        <div data-hf-id="hf-clmh" class="modal-header">
+          <span data-hf-id="hf-clmt" class="modal-title">Registrar Nuevo Cliente</span>
+          <div data-hf-id="hf-clcb" class="close-btn" data-layout-ignore="true">✕</div>
+        </div>
+
+        <div data-hf-id="hf-clg1" class="form-grid-2col">
+          <!-- Nombre Completo -->
+          <div data-hf-id="hf-clb1" class="field-box">
+            <span data-hf-id="hf-cll1" class="label-text" data-layout-ignore="true">Nombre Completo <span data-hf-id="hf-68kn" class="req">*</span></span>
+            <div data-hf-id="hf-cli1" id="f03-input-nombre" class="input-control active">
+              <span data-hf-id="hf-clt1" id="f03-txt-nombre" class="typing-text"></span><span data-hf-id="hf-7fvr" id="f03-cur-nombre" class="cursor"></span>
+            </div>
+          </div>
+          <!-- DNI -->
+          <div data-hf-id="hf-clb2" class="field-box">
+            <span data-hf-id="hf-cll2" class="label-text" data-layout-ignore="true">DNI <span data-hf-id="hf-9fuv" class="req">*</span></span>
+            <div data-hf-id="hf-cli2" id="f03-input-dni" class="input-control">
+              <span data-hf-id="hf-clt2" id="f03-txt-dni" class="typing-text"></span><span data-hf-id="hf-ext2" id="f03-cur-dni" class="cursor" style="display:none;"></span>
+            </div>
+          </div>
+        </div>
+
+        <div data-hf-id="hf-clg2" class="form-grid-2col">
+          <!-- Correo -->
+          <div data-hf-id="hf-clb3" class="field-box">
+            <span data-hf-id="hf-cll3" class="label-text" data-layout-ignore="true">Correo Electrónico</span>
+            <div data-hf-id="hf-cli3" class="input-control">
+              <span data-hf-id="hf-clt3" style="font-size: 22px;">carlos@mail.com</span>
+            </div>
+          </div>
+          <!-- Teléfono -->
+          <div data-hf-id="hf-clb4" class="field-box">
+            <span data-hf-id="hf-cll4" class="label-text" data-layout-ignore="true">Teléfono</span>
+            <div data-hf-id="hf-cli4" class="input-control">
+              <span data-hf-id="hf-clt4" style="font-size: 22px;">+54 11 5555-0000</span>
+            </div>
+          </div>
+        </div>
+
+        <div data-hf-id="hf-clg3" class="form-grid-2col">
+          <!-- Asignar Plan -->
+          <div data-hf-id="hf-clb5" class="field-box">
+            <span data-hf-id="hf-cll5" class="label-text" data-layout-ignore="true">Asignar Plan</span>
+            <div data-hf-id="hf-cli5" class="input-control">
+              <span data-hf-id="hf-clt5" style="font-weight: 600; color: #FF7A1A;">Mensual Full — $28.000</span>
+              <span data-hf-id="hf-9293" class="icon-chevron" data-layout-ignore="true">▼</span>
+            </div>
+          </div>
+          <!-- Fecha Inscripción -->
+          <div data-hf-id="hf-clb6" class="field-box">
+            <span data-hf-id="hf-cll6" class="label-text" data-layout-ignore="true">Fecha de Inscripción</span>
+            <div data-hf-id="hf-cli6" class="input-control">
+              <span data-hf-id="hf-clt6">27/10/2026</span>
+              <span data-hf-id="hf-vdoa" class="icon-calendar" data-layout-ignore="true">📅</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Medio de Pago -->
+        <div data-hf-id="hf-clg4" class="form-grid-2col" style="margin-bottom: 10px;">
+          <div data-hf-id="hf-clb7" class="field-box full">
+            <span data-hf-id="hf-cll7" class="label-text" data-layout-ignore="true">Medio de Pago <span data-hf-id="hf-91ju" class="req">*</span></span>
+            <div data-hf-id="hf-cli7" class="input-control">
+              <span data-hf-id="hf-clt7" style="font-weight: 600;">Efectivo</span>
+              <span data-hf-id="hf-fmtj" class="icon-chevron" data-layout-ignore="true">▼</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Buttons -->
+        <div data-hf-id="hf-clba" class="modal-actions">
+          <div data-hf-id="hf-clbc" class="btn-cancel" data-layout-ignore="true">Cancelar</div>
+          <div data-hf-id="hf-clbs" id="f03-btn-submit" class="btn-submit">Registrar Cliente</div>
+        </div>
+      </div>
+
+      <!-- Toast de Confirmación -->
+      <div data-hf-id="hf-clto" id="f03-toast" class="success-toast">
+        <div data-hf-id="hf-clti" class="toast-icon">✓</div>
+        <div data-hf-id="hf-cltt" class="toast-text">
+          <div data-hf-id="hf-cltw" class="toast-title">Carlos Pérez registrado con éxito</div>
+          <div data-hf-id="hf-clts" class="toast-sub" data-layout-ignore="true">Membresía Mensual Full asignada y cobro asentado</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+
+    tl.fromTo("#f03-header", 
+      { opacity: 0, y: -20 }, 
+      { opacity: 1, y: 0, duration: 0.35, ease: "power2.out" }, 
+      0.05
+    );
+
+    tl.fromTo("#f03-title", 
+      { opacity: 0, y: 25 }, 
+      { opacity: 1, y: 0, duration: 0.35, ease: "power2.out" }, 
+      0.15
+    );
+
+    tl.fromTo("#f03-modal", 
+      { opacity: 0, scale: 0.94, y: 30 }, 
+      { opacity: 1, scale: 1, y: 0, duration: 0.4, ease: "power2.out" }, 
+      0.3
+    );
+
+    // Simulación de tipeo nombre
+    const nameStr = "Carlos Pérez";
+    const nameObj = { len: 0 };
+    tl.to(nameObj, {
+      len: nameStr.length,
+      duration: 0.9,
+      ease: "none",
+      onUpdate: function() {
+        const count = Math.round(nameObj.len);
+        const el = document.getElementById("f03-txt-nombre");
+        if (el) el.textContent = nameStr.substring(0, count);
+      }
+    }, 1.0);
+
+    // Salto al DNI
+    tl.call(function() {
+      const curN = document.getElementById("f03-cur-nombre");
+      const curD = document.getElementById("f03-cur-dni");
+      const inpN = document.getElementById("f03-input-nombre");
+      const inpD = document.getElementById("f03-input-dni");
+      if (curN) curN.style.display = "none";
+      if (curD) curD.style.display = "inline-block";
+      if (inpN) inpN.classList.remove("active");
+      if (inpD) inpD.classList.add("active");
+    }, null, 2.0);
+
+    // Simulación tipeo DNI
+    const dniStr = "30123456";
+    const dniObj = { len: 0 };
+    tl.to(dniObj, {
+      len: dniStr.length,
+      duration: 0.7,
+      ease: "none",
+      onUpdate: function() {
+        const count = Math.round(dniObj.len);
+        const el = document.getElementById("f03-txt-dni");
+        if (el) el.textContent = dniStr.substring(0, count);
+      }
+    }, 2.1);
+
+    // Cierre de cursor DNI
+    tl.call(function() {
+      const curD = document.getElementById("f03-cur-dni");
+      if (curD) curD.style.display = "none";
+    }, null, 2.9);
+
+    // Click físico en "Registrar Cliente"
+    tl.to("#f03-btn-submit", {
+      scale: 0.95,
+      duration: 0.12,
+      yoyo: true,
+      repeat: 1,
+      ease: "power1.inOut"
+    }, 3.15);
+
+    // Toast de éxito aparece
+    tl.fromTo("#f03-toast", 
+      { opacity: 0, y: 30, scale: 0.95 }, 
+      { opacity: 1, y: 0, scale: 1, duration: 0.35, ease: "back.out(1.2)" }, 
+      3.45
+    );
+
+    window.__timelines = window.__timelines || {};
+    window.__timelines["03-clientes"] = tl;
+    tl.seek(0);
+  </script>
+</template>

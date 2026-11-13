@@ -1,0 +1,254 @@
+<template>
+  <style>
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      src: url('assets/fonts/captured-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      src: url('assets/fonts/captured-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'JetBrains Mono';
+      font-style: normal;
+      font-weight: 500;
+      src: url('assets/fonts/captured-tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwgknk-4.woff2') format('woff2');
+    }
+
+    #root {
+      width: 1080px;
+      height: 1920px;
+      position: relative;
+      overflow: hidden;
+      font-family: 'Inter', sans-serif;
+      color: #FAFAFA;
+      box-sizing: border-box;
+    }
+
+    .f05-bg {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 50% 35%, #351705 0%, #160c05 45%, #08080a 100%);
+      z-index: 0;
+    }
+
+    .f05-ambient {
+      position: absolute;
+      top: 400px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 700px;
+      height: 700px;
+      background: radial-gradient(circle, rgba(255, 122, 26, 0.35) 0%, transparent 65%);
+      filter: blur(60px);
+      z-index: 1;
+    }
+
+    .f05-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1080px;
+      height: 1600px;
+      padding: 120px 60px 40px 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      z-index: 2;
+      box-sizing: border-box;
+    }
+
+    .f05-logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding: 16px 36px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 122, 26, 0.4);
+      border-radius: 9999px;
+      backdrop-filter: blur(16px);
+      box-shadow: 0 0 30px rgba(255, 122, 26, 0.25);
+      margin-bottom: 50px;
+    }
+
+    .f05-logo-icon {
+      width: 48px;
+      height: 48px;
+    }
+
+    .f05-logo-text {
+      font-size: 36px;
+      font-weight: 700;
+      color: #FFFFFF;
+    }
+
+    .f05-logo-text span {
+      color: #FF7A1A;
+    }
+
+    .f05-headline {
+      font-size: 82px;
+      font-weight: 700;
+      line-height: 1.05;
+      letter-spacing: -0.04em;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+      color: #FFFFFF;
+    }
+
+    .f05-badge-trial {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      background: rgba(255, 122, 26, 0.15);
+      border: 2px solid #FF7A1A;
+      border-radius: 28px;
+      padding: 30px 60px;
+      box-shadow: 0 0 60px rgba(255, 122, 26, 0.35);
+      margin-bottom: 50px;
+    }
+
+    .f05-trial-hero {
+      font-size: 74px;
+      font-weight: 800;
+      color: #FF7A1A;
+      letter-spacing: -0.02em;
+      line-height: 1;
+      text-shadow: 0 0 30px rgba(255, 122, 26, 0.6);
+    }
+
+    .f05-trial-sub {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 24px;
+      font-weight: 600;
+      color: #FAFAFA;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-top: 8px;
+    }
+
+    .f05-btn {
+      width: 100%;
+      max-width: 800px;
+      padding: 36px 40px;
+      background: linear-gradient(135deg, #FF8A2A 0%, #FF6200 100%);
+      color: #000000;
+      font-size: 38px;
+      font-weight: 800;
+      border-radius: 9999px;
+      text-transform: uppercase;
+      letter-spacing: -0.01em;
+      box-shadow: 0 20px 50px rgba(255, 122, 26, 0.5), inset 0 2px 4px rgba(255, 255, 255, 0.4);
+      margin-bottom: 50px;
+      cursor: pointer;
+    }
+
+    .f05-url-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .f05-url {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 42px;
+      font-weight: 700;
+      color: #FFFFFF;
+      letter-spacing: 0.04em;
+      text-decoration: none;
+      border-bottom: 2px dashed rgba(255, 122, 26, 0.6);
+      padding-bottom: 6px;
+    }
+
+    .f05-tagline {
+      font-size: 24px;
+      color: #A1A1AA;
+      letter-spacing: 0.05em;
+    }
+  </style>
+
+  <div data-hf-id="hf-kit7" id="root" data-composition-id="05-cta" data-start="24" data-duration="6" data-width="1080" data-height="1920">
+    <div data-hf-id="hf-m1ry" id="f05-bg" class="clip f05-bg" data-start="0" data-duration="6" data-track-index="0"></div>
+    <div data-hf-id="hf-0559" id="f05-ambient" class="clip f05-ambient" data-start="0" data-duration="6" data-track-index="1"></div>
+
+    <div data-hf-id="hf-92ga" id="f05-main" class="clip f05-container" data-start="0" data-duration="6" data-track-index="2">
+      <div data-hf-id="hf-y4gh" id="f05-logo" class="f05-logo-wrap">
+        <img data-hf-id="hf-bf08" src="assets/logo-734fbcba.svg" alt="FitAdmi" class="f05-logo-icon">
+        <div data-hf-id="hf-5oma" class="f05-logo-text">Fit<span data-hf-id="hf-q1pq">Admi</span></div>
+      </div>
+
+      <h2 data-hf-id="hf-y78f" id="f05-title" class="f05-headline">
+        LLEVÁ TU GIMNASIO<br data-hf-id="hf-x5px">
+        <span data-hf-id="hf-75fh" style="color: #FF7A1A;">AL SIGUIENTE NIVEL</span>
+      </h2>
+
+      <div data-hf-id="hf-cd35" id="f05-badge" class="f05-badge-trial">
+        <div style="text-transform: capitalize; font-style: normal; font-weight: 400; text-align: center; opacity: 0.89" data-hf-id="hf-kz03" class="f05-trial-hero">7 DÍAS GRATIS</div>
+        <div data-hf-id="hf-hmy1" class="f05-trial-sub">Sin compromiso • Activá hoy</div>
+      </div>
+
+      <div data-hf-id="hf-8i77" id="f05-button" class="f05-btn">
+        EMPEZAR AHORA
+      </div>
+
+      <div data-hf-id="hf-etxg" id="f05-url" class="f05-url-box">
+        <div data-hf-id="hf-gi7o" class="f05-url">www.fitadmi.com.ar</div>
+        <div data-hf-id="hf-add9" class="f05-tagline">Software de gestión y App para gimnasios</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+
+    tl.fromTo("#f05-logo", 
+      { opacity: 0, y: -30, scale: 0.9 }, 
+      { opacity: 1, y: 0, scale: 1, duration: 0.6, ease: "back.out(1.5)" }, 
+      0.1
+    );
+
+    tl.fromTo("#f05-title", 
+      { opacity: 0, y: 40 }, 
+      { opacity: 1, y: 0, duration: 0.7, ease: "power3.out" }, 
+      0.4
+    );
+
+    tl.fromTo("#f05-badge", 
+      { opacity: 0, scale: 0.8 }, 
+      { opacity: 1, scale: 1, duration: 0.8, ease: "back.out(1.8)" }, 
+      1.1
+    );
+
+    tl.fromTo("#f05-button", 
+      { opacity: 0, y: 40, scale: 0.95 }, 
+      { opacity: 1, y: 0, scale: 1, duration: 0.6, ease: "power2.out" }, 
+      2.0
+    );
+
+    tl.fromTo("#f05-url", 
+      { opacity: 0, y: 20 }, 
+      { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }, 
+      2.6
+    );
+
+    // Button breathing pulse
+    tl.to("#f05-button", {
+      scale: 1.04,
+      boxShadow: "0 25px 60px rgba(255, 122, 26, 0.7), inset 0 2px 4px rgba(255, 255, 255, 0.5)",
+      duration: 1.2,
+      repeat: 1,
+      yoyo: true,
+      ease: "sine.inOut"
+    }, 3.2);
+
+    window.__timelines["05-cta"] = tl;
+    tl.seek(0);
+  </script>
+</template>

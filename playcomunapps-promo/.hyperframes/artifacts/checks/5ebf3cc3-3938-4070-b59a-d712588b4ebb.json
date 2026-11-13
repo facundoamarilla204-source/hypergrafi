@@ -1,0 +1,418 @@
+{
+  "ok": false,
+  "strict": false,
+  "browserSkipped": true,
+  "lint": {
+    "ok": false,
+    "errorCount": 17,
+    "warningCount": 4,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "missing_or_empty_sub_composition",
+        "severity": "error",
+        "message": "data-composition-src references \"compositions/frames/01-hook.html\", but the file's resolved content has no element with a data-composition-id attribute.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Fix this before rendering: the render pre-flight rejects unusable sub-compositions. Write valid HTML into \"compositions/frames/01-hook.html\". It needs a <template> or <body> containing an element with data-composition-id, data-width, and data-height. Preview/studio still tolerates and skips the scene while you author it. If a scene-authoring step is still running, wait for it to finish before referencing the file, or re-run the step that generates it."
+      },
+      {
+        "code": "missing_or_empty_sub_composition",
+        "severity": "error",
+        "message": "data-composition-src references \"compositions/frames/02-reveal.html\", but the file's resolved content has no element with a data-composition-id attribute.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Fix this before rendering: the render pre-flight rejects unusable sub-compositions. Write valid HTML into \"compositions/frames/02-reveal.html\". It needs a <template> or <body> containing an element with data-composition-id, data-width, and data-height. Preview/studio still tolerates and skips the scene while you author it. If a scene-authoring step is still running, wait for it to finish before referencing the file, or re-run the step that generates it."
+      },
+      {
+        "code": "missing_or_empty_sub_composition",
+        "severity": "error",
+        "message": "data-composition-src references \"compositions/frames/03-tools.html\", but the file's resolved content has no element with a data-composition-id attribute.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Fix this before rendering: the render pre-flight rejects unusable sub-compositions. Write valid HTML into \"compositions/frames/03-tools.html\". It needs a <template> or <body> containing an element with data-composition-id, data-width, and data-height. Preview/studio still tolerates and skips the scene while you author it. If a scene-authoring step is still running, wait for it to finish before referencing the file, or re-run the step that generates it."
+      },
+      {
+        "code": "missing_or_empty_sub_composition",
+        "severity": "error",
+        "message": "data-composition-src references \"compositions/frames/04-value.html\", but the file's resolved content has no element with a data-composition-id attribute.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Fix this before rendering: the render pre-flight rejects unusable sub-compositions. Write valid HTML into \"compositions/frames/04-value.html\". It needs a <template> or <body> containing an element with data-composition-id, data-width, and data-height. Preview/studio still tolerates and skips the scene while you author it. If a scene-authoring step is still running, wait for it to finish before referencing the file, or re-run the step that generates it."
+      },
+      {
+        "code": "missing_or_empty_sub_composition",
+        "severity": "error",
+        "message": "data-composition-src references \"compositions/frames/05-cta.html\", but the file's resolved content has no element with a data-composition-id attribute.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Fix this before rendering: the render pre-flight rejects unusable sub-compositions. Write valid HTML into \"compositions/frames/05-cta.html\". It needs a <template> or <body> containing an element with data-composition-id, data-width, and data-height. Preview/studio still tolerates and skips the scene while you author it. If a scene-authoring step is still running, wait for it to finish before referencing the file, or re-run the step that generates it."
+      },
+      {
+        "code": "root_missing_composition_id",
+        "severity": "error",
+        "message": "Root composition is missing `data-composition-id`.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "J:\\PROYECTOS\\Hyperframes\\playcomun-promo\\compositions\\frames\\01-hook.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add a stable `data-composition-id` to the entry composition wrapper."
+      },
+      {
+        "code": "timeline_id_mismatch",
+        "severity": "error",
+        "message": "Timeline registered as \"01-hook\" but no element has data-composition-id=\"01-hook\". The runtime cannot auto-nest this timeline.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "J:\\PROYECTOS\\Hyperframes\\playcomun-promo\\compositions\\frames\\01-hook.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Change window.__timelines[\"01-hook\"] to match the data-composition-id attribute, or vice versa."
+      },
+      {
+        "code": "overlapping_gsap_tweens",
+        "severity": "warning",
+        "message": "GSAP tweens overlap on \"#h01-card-2\" for y, rotation between 1.00s and 1.15s.",
+        "selector": "#h01-card-2",
+        "dataAttributes": {},
+        "sourceFile": "J:\\PROYECTOS\\Hyperframes\\playcomun-promo\\compositions\\frames\\01-hook.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Shorten the earlier tween, move the later tween, or add `overwrite: \"auto\"`."
+      },
+      {
+        "code": "overlapping_gsap_tweens",
+        "severity": "warning",
+        "message": "GSAP tweens overlap on \"#h01-card-3\" for y, rotation between 1.20s and 1.40s.",
+        "selector": "#h01-card-3",
+        "dataAttributes": {},
+        "sourceFile": "J:\\PROYECTOS\\Hyperframes\\playcomun-promo\\compositions\\frames\\01-hook.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Shorten the earlier tween, move the later tween, or add `overwrite: \"auto\"`."
+      },
+      {
+        "code": "gsap_relative_value_second_writer",
+        "severity": "error",
+        "message": "Relative value(s) y: \"+=12\", rotation: \"+=1.5\" on \"#h01-card-3\" start while another writer for the same properties is active between 1.20s and 1.40s. Relative tweens capture their base at tween init: the sequential path inits mid-flight of the other writer, a cold render worker landing later inits with its end state, so the same frame renders at two different positions (snap at chunk boundaries).",
+        "selector": "#h01-card-3",
+        "dataAttributes": {},
+        "sourceFile": "J:\\PROYECTOS\\Hyperframes\\playcomun-promo\\compositions\\frames\\01-hook.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Use absolute values for y, rotation, or a fromTo() with explicit endpoints, so every seek path resolves the same state. Single-writer relative values are safe; the conflict is the second writer."
+      },
+      {
+        "code": "gsap_relative_value_second_writer",
+        "severity": "error",
+        "message": "Relative value(s) y: \"-=10\", rotation: \"-=1\" on \"#h01-card-2\" start while another writer for the same properties is active between 1.00s and 1.15s. Relative tweens capture their base at tween init: the sequential path inits mid-flight of the other writer, a cold render worker landing later inits with its end state, so the same frame renders at two different positions (snap at chunk boundaries).",
+        "selector": "#h01-card-2",
+        "dataAttributes": {},
+        "sourceFile": "J:\\PROYECTOS\\Hyperframes\\playcomun-promo\\compositions\\frames\\01-hook.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Use absolute values for y, rotation, or a fromTo() with explicit endpoints, so every seek path resolves the same state. Single-writer relative values are safe; the conflict is the second writer."
+      },
+      {
+        "code": "root_missing_composition_id",
+        "severity": "error",
+        "message": "Root composition is missing `data-composition-id`.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "J:\\PROYECTOS\\Hyperframes\\playcomun-promo\\compositions\\frames\\02-reveal.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add a stable `data-composition-id` to the entry composition wrapper."
+      },
+      {
+        "code": "timeline_id_mismatch",
+        "severity": "error",
+        "message": "Timeline registered as \"02-reveal\" but no element has data-composition-id=\"02-reveal\". The runtime cannot auto-nest this timeline.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "J:\\PROYECTOS\\Hyperframes\\playcomun-promo\\compositions\\frames\\02-reveal.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Change window.__timelines[\"02-reveal\"] to match the data-composition-id attribute, or vice versa."
+      },
+      {
+        "code": "root_missing_composition_id",
+        "severity": "error",
+        "message": "Root composition is missing `data-composition-id`.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "J:\\PROYECTOS\\Hyperframes\\playcomun-promo\\compositions\\frames\\03-tools.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add a stable `data-composition-id` to the entry composition wrapper."
+      },
+      {
+        "code": "timeline_id_mismatch",
+        "severity": "error",
+        "message": "Timeline registered as \"03-tools\" but no element has data-composition-id=\"03-tools\". The runtime cannot auto-nest this timeline.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "J:\\PROYECTOS\\Hyperframes\\playcomun-promo\\compositions\\frames\\03-tools.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Change window.__timelines[\"03-tools\"] to match the data-composition-id attribute, or vice versa."
+      },
+      {
+        "code": "css_transition_used",
+        "severity": "warning",
+        "message": "CSS declaration `transition: background 0.3s` runs on the browser clock and cannot be seeked deterministically across render workers.",
+        "selector": ".step-bar",
+        "dataAttributes": {},
+        "sourceFile": "J:\\PROYECTOS\\Hyperframes\\playcomun-promo\\compositions\\frames\\03-tools.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Keep the class or attribute swap for state; put the visual change on the paused GSAP timeline."
+      },
+      {
+        "code": "duplicate_media_discovery_risk",
+        "severity": "warning",
+        "message": "Detected 2 matching img entries with the same source/start/duration.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "J:\\PROYECTOS\\Hyperframes\\playcomun-promo\\compositions\\frames\\03-tools.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Avoid duplicated media nodes that can be discovered twice during compilation."
+      },
+      {
+        "code": "root_missing_composition_id",
+        "severity": "error",
+        "message": "Root composition is missing `data-composition-id`.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "J:\\PROYECTOS\\Hyperframes\\playcomun-promo\\compositions\\frames\\04-value.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add a stable `data-composition-id` to the entry composition wrapper."
+      },
+      {
+        "code": "timeline_id_mismatch",
+        "severity": "error",
+        "message": "Timeline registered as \"04-value\" but no element has data-composition-id=\"04-value\". The runtime cannot auto-nest this timeline.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "J:\\PROYECTOS\\Hyperframes\\playcomun-promo\\compositions\\frames\\04-value.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Change window.__timelines[\"04-value\"] to match the data-composition-id attribute, or vice versa."
+      },
+      {
+        "code": "root_missing_composition_id",
+        "severity": "error",
+        "message": "Root composition is missing `data-composition-id`.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "J:\\PROYECTOS\\Hyperframes\\playcomun-promo\\compositions\\frames\\05-cta.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add a stable `data-composition-id` to the entry composition wrapper."
+      },
+      {
+        "code": "timeline_id_mismatch",
+        "severity": "error",
+        "message": "Timeline registered as \"05-cta\" but no element has data-composition-id=\"05-cta\". The runtime cannot auto-nest this timeline.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "J:\\PROYECTOS\\Hyperframes\\playcomun-promo\\compositions\\frames\\05-cta.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Change window.__timelines[\"05-cta\"] to match the data-composition-id attribute, or vice versa."
+      }
+    ],
+    "filesScanned": 6
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "duration": 0,
+    "samples": [],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 0,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [],
+    "checked": 0,
+    "passed": 0
+  },
+  "craft": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "step": 0,
+    "samples": 0
+  },
+  "audio": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  }
+}

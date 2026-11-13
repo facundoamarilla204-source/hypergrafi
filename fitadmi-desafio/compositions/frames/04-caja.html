@@ -1,0 +1,364 @@
+<template>
+  <style>
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      src: url('assets/fonts/captured-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      src: url('assets/fonts/captured-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'JetBrains Mono';
+      font-style: normal;
+      font-weight: 500;
+      src: url('assets/fonts/captured-tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwgknk-4.woff2') format('woff2');
+    }
+
+    #root {
+      width: 1080px;
+      height: 1920px;
+      position: relative;
+      overflow: hidden;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: #F4F4F5;
+      box-sizing: border-box;
+      background: #09090B;
+    }
+
+    .frame-bg {
+      position: absolute;
+      inset: 0;
+      background: #0A0A0C;
+      z-index: 0;
+    }
+
+    .container {
+      position: absolute;
+      inset: 0;
+      width: 1080px;
+      height: 1920px;
+      padding: 130px 70px 80px 70px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      z-index: 2;
+      box-sizing: border-box;
+    }
+
+    .header-bar {
+      width: 100%;
+      max-width: 940px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .step-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 18px;
+      background: #18181B;
+      border: 1px solid #27272A;
+      border-radius: 6px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 20px;
+      font-weight: 600;
+      color: #FF7A1A;
+      text-transform: uppercase;
+    }
+
+    .time-badge {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 22px;
+      color: #A1A1AA;
+      background: #111114;
+      padding: 8px 16px;
+      border-radius: 6px;
+      border: 1px solid #222226;
+    }
+
+    .headline {
+      width: 100%;
+      max-width: 940px;
+      font-size: 64px;
+      font-weight: 800;
+      line-height: 1.12;
+      letter-spacing: -0.03em;
+      color: #FFFFFF;
+      margin-bottom: 46px;
+      text-align: left;
+    }
+
+    .headline span.accent {
+      color: #FF7A1A;
+    }
+
+    /* Caja Diaria Card */
+    .caja-card {
+      width: 100%;
+      max-width: 940px;
+      background: #121215;
+      border: 1px solid #27272A;
+      border-radius: 24px;
+      padding: 38px 40px;
+      margin-bottom: 30px;
+      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.4);
+    }
+
+    .caja-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid #222226;
+    }
+
+    .caja-title {
+      font-size: 24px;
+      font-weight: 700;
+      color: #FFFFFF;
+    }
+
+    .caja-badge {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 16px;
+      color: #22C55E;
+      background: rgba(34, 197, 94, 0.1);
+      border: 1px solid rgba(34, 197, 94, 0.25);
+      padding: 6px 14px;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+
+    .caja-total-box {
+      text-align: left;
+      margin-bottom: 28px;
+    }
+
+    .caja-total-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 18px;
+      color: #A1A1AA;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 8px;
+    }
+
+    .caja-total-val {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 64px;
+      font-weight: 800;
+      color: #FFFFFF;
+      letter-spacing: -0.02em;
+    }
+
+    /* Breakdown Grid */
+    .breakdown-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-bottom: 30px;
+    }
+
+    .breakdown-item {
+      background: #18181B;
+      border: 1px solid #27272A;
+      border-radius: 12px;
+      padding: 16px 20px;
+      text-align: left;
+    }
+
+    .breakdown-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 15px;
+      color: #A1A1AA;
+      margin-bottom: 6px;
+    }
+
+    .breakdown-val {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 24px;
+      font-weight: 700;
+      color: #E4E4E7;
+    }
+
+    .caja-action-bar {
+      display: flex;
+      gap: 16px;
+    }
+
+    .btn-action-primary {
+      flex: 2;
+      background: #FF7A1A;
+      color: #000000;
+      border: none;
+      border-radius: 12px;
+      padding: 18px;
+      font-size: 20px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .btn-action-secondary {
+      flex: 1;
+      background: #1C1C20;
+      border: 1px solid #3F3F46;
+      color: #E4E4E7;
+      border-radius: 12px;
+      padding: 18px;
+      font-size: 20px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Mobile Sync Card */
+    .mobile-sync-card {
+      width: 100%;
+      max-width: 940px;
+      background: #141418;
+      border: 1px solid #27272A;
+      border-radius: 18px;
+      padding: 26px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .mobile-sync-info {
+      text-align: left;
+    }
+
+    .mobile-sync-title {
+      font-size: 22px;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 4px;
+    }
+
+    .mobile-sync-sub {
+      font-size: 17px;
+      color: #A1A1AA;
+    }
+
+    .mobile-sync-icon {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 18px;
+      font-weight: 600;
+      color: #FF7A1A;
+      background: rgba(255, 122, 26, 0.1);
+      border: 1px solid rgba(255, 122, 26, 0.25);
+      padding: 8px 16px;
+      border-radius: 8px;
+    }
+  </style>
+
+  <div data-hf-id="hf-g1px"
+    id="root"
+    data-composition-id="04-caja"
+    data-start="9.4"
+    data-duration="3.4"
+    data-width="1080"
+    data-height="1920"
+  >
+    <div data-hf-id="hf-lgrv" id="f04-bg" class="clip frame-bg" data-start="0" data-duration="3.4" data-track-index="0"></div>
+
+    <div data-hf-id="hf-7xn4" id="f04-main" class="clip container" data-start="0" data-duration="3.4" data-track-index="1">
+      <div data-hf-id="hf-68hd" id="f04-header" class="header-bar">
+        <div data-hf-id="hf-6whb" class="step-badge">Paso 03 / Caja & Control</div>
+        <div data-hf-id="hf-3apo" class="time-badge">04:10 min</div>
+      </div>
+
+      <h2 data-hf-id="hf-svq0" id="f04-title" class="headline">
+        Abrís la caja del día y controlás <span data-hf-id="hf-foah" class="accent">desde el celular</span>.
+      </h2>
+
+      <!-- Panel de Caja Real FitAdmi -->
+      <div data-hf-id="hf-38e4" id="f04-caja" class="caja-card">
+        <div data-hf-id="hf-olgh" class="caja-top">
+          <div data-hf-id="hf-tl5e" class="caja-title">Arqueo de Turno Tarde</div>
+          <div data-hf-id="hf-w0da" class="caja-badge">CAJA ABIERTA</div>
+        </div>
+
+        <div data-hf-id="hf-rqiu" class="caja-total-box">
+          <div data-hf-id="hf-c4ow" class="caja-total-label">Total en Caja (Tiempo Real)</div>
+          <div data-hf-id="hf-gc31" id="f04-total" class="caja-total-val">$ 185.000</div>
+        </div>
+
+        <div data-hf-id="hf-k28e" class="breakdown-grid">
+          <div data-hf-id="hf-k00j" class="breakdown-item">
+            <div data-hf-id="hf-eq7v" class="breakdown-label">EFECTIVO</div>
+            <div data-hf-id="hf-63if" class="breakdown-val">$ 60.000</div>
+          </div>
+          <div data-hf-id="hf-56r7" class="breakdown-item">
+            <div data-hf-id="hf-7wte" class="breakdown-label">MERCADO PAGO</div>
+            <div data-hf-id="hf-1i7r" class="breakdown-val">$ 105.000</div>
+          </div>
+          <div data-hf-id="hf-4sg6" class="breakdown-item">
+            <div data-hf-id="hf-su4x" class="breakdown-label">KIOSCO/STOCK</div>
+            <div data-hf-id="hf-kikj" class="breakdown-val">$ 20.000</div>
+          </div>
+        </div>
+
+        <div data-hf-id="hf-iq92" class="caja-action-bar">
+          <div data-hf-id="hf-fkwj" class="btn-action-primary">Cierre de Caja en 1 Clic</div>
+          <div data-hf-id="hf-lh0z" class="btn-action-secondary">Historial</div>
+        </div>
+      </div>
+
+      <!-- Sincronización Móvil -->
+      <div data-hf-id="hf-gzq6" id="f04-mobile" class="mobile-sync-card">
+        <div data-hf-id="hf-cg4n" class="mobile-sync-info">
+          <div data-hf-id="hf-71dw" class="mobile-sync-title">Control Remoto 100% en la Nube</div>
+          <div data-hf-id="hf-bjaz" class="mobile-sync-sub">Mirá los números de tu negocio desde cualquier lugar</div>
+        </div>
+        <div data-hf-id="hf-ps57" class="mobile-sync-icon">EN VIVO</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+
+    tl.fromTo("#f04-header", 
+      { opacity: 0, y: -20 }, 
+      { opacity: 1, y: 0, duration: 0.35, ease: "power2.out" }, 
+      0.05
+    );
+
+    tl.fromTo("#f04-title", 
+      { opacity: 0, y: 25 }, 
+      { opacity: 1, y: 0, duration: 0.35, ease: "power2.out" }, 
+      0.15
+    );
+
+    tl.fromTo("#f04-caja", 
+      { opacity: 0, scale: 0.96, y: 25 }, 
+      { opacity: 1, scale: 1, y: 0, duration: 0.35, ease: "power2.out" }, 
+      0.3
+    );
+
+    tl.fromTo("#f04-mobile", 
+      { opacity: 0, y: 20 }, 
+      { opacity: 1, y: 0, duration: 0.35, ease: "power2.out" }, 
+      0.9
+    );
+
+    window.__timelines = window.__timelines || {};
+    window.__timelines["04-caja"] = tl;
+    tl.seek(0);
+  </script>
+</template>

@@ -1,0 +1,683 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "audio_file_without_element",
+        "severity": "warning",
+        "message": "Found audio file(s) in project (vo1.mp3, vo1.raw.mp3, vo2.mp3, vo2.raw.mp3, vo3.mp3, vo3.raw.mp3, vo4.mp3, vo4.raw.mp3, vo5.mp3, vo5.raw.mp3, vo6.mp3, vo6.raw.mp3) but no <audio> element in any composition. The rendered video will be silent.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add an <audio id=\"my-audio\" src=\"vo1.mp3\" data-start=\"0\" data-duration=\"__DURATION__\" data-track-index=\"0\" data-volume=\"1\"></audio> element inside the composition root. Replace __DURATION__ with the audio length in seconds."
+      }
+    ],
+    "filesScanned": 6
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 2,
+    "findings": [
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 5.363,
+        "selector": "#f01-badge > span:nth-of-type(1)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 357.83,
+          "top": 133,
+          "right": 722.16,
+          "bottom": 162,
+          "width": 364.33,
+          "height": 29
+        },
+        "containerSelector": "div.f02-logo-text",
+        "text": "¿TU GIMNASIO SIGUE ASÍ?",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {
+          "data-hf-id": "hf-bizx"
+        },
+        "sourceFile": "compositions/frames/01-hook.html",
+        "bbox": {
+          "x": 357.83,
+          "y": 133,
+          "width": 364.33,
+          "height": 29
+        },
+        "firstSeen": 5.363,
+        "lastSeen": 5.363,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          5.363
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 18.333,
+        "selector": "#f03-tag",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 355,
+          "top": 96,
+          "right": 725,
+          "bottom": 122,
+          "width": 370,
+          "height": 26
+        },
+        "containerSelector": "#f04-tag",
+        "text": "PANEL DE GESTIÓN INTEGRAL",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {
+          "data-hf-id": "hf-wa8k"
+        },
+        "sourceFile": "compositions/frames/03-features.html",
+        "bbox": {
+          "x": 355,
+          "y": 96,
+          "width": 370,
+          "height": 26
+        },
+        "firstSeen": 18.333,
+        "lastSeen": 18.333,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          18.333
+        ]
+      }
+    ],
+    "duration": 30,
+    "samples": [
+      1.667,
+      5,
+      8.333,
+      11.667,
+      15,
+      18.333,
+      21.667,
+      25,
+      28.333
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 2,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      1.667,
+      8.333,
+      15,
+      21.667,
+      28.333
+    ],
+    "checked": 64,
+    "passed": 64
+  },
+  "craft": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 7,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "first_frame_empty",
+        "severity": "warning",
+        "message": "Frame 0 shows only the background, and the first frame is the thumbnail on social players: have the title or key image already on screen at 0 s instead of entering from nothing; see references/review.md.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0
+      },
+      {
+        "code": "film_silent",
+        "severity": "warning",
+        "message": "This 30 s film has no sound source (no <audio>, no <video> with sound): add a music bed and sounds on the visible actions unless the person asked for silence; see references/sound.md.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and 7 text elements stay under it for 0.5 s or more, the smallest \"Registros manuales y desorden\" at 20 px: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "Registros manuales y desorden",
+        "selector": "#f01-card-1 > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/01-hook.html",
+        "bbox": {
+          "x": 195.22,
+          "y": 532.16,
+          "width": 348,
+          "height": 26
+        },
+        "time": 1.375,
+        "times": [
+          0.25,
+          1.375,
+          1.375,
+          2.25,
+          2.25,
+          3,
+          3
+        ],
+        "fontPx": 20,
+        "floorPx": 28,
+        "seconds": 4,
+        "elements": [
+          {
+            "selector": "#f01-card-1 > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2)",
+            "text": "Registros manuales y desorden",
+            "fontPx": 20,
+            "time": 1.375,
+            "seconds": 4
+          },
+          {
+            "selector": "#f01-card-1 > div:nth-of-type(2)",
+            "text": "CAOS",
+            "fontPx": 20,
+            "time": 1.375,
+            "seconds": 4
+          },
+          {
+            "selector": "#f01-card-2 > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2)",
+            "text": "Cuotas vencidas sin aviso",
+            "fontPx": 20,
+            "time": 2.25,
+            "seconds": 3.125
+          },
+          {
+            "selector": "#f01-card-2 > div:nth-of-type(2)",
+            "text": "PÉRDIDAS",
+            "fontPx": 20,
+            "time": 2.25,
+            "seconds": 3.125
+          },
+          {
+            "selector": "#f01-card-3 > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2)",
+            "text": "Números que no coinciden",
+            "fontPx": 20,
+            "time": 3,
+            "seconds": 2.375
+          },
+          {
+            "selector": "#f01-card-3 > div:nth-of-type(2)",
+            "text": "ESTRÉS",
+            "fontPx": 20,
+            "time": 3,
+            "seconds": 2.375
+          },
+          {
+            "selector": "#f01-badge > span:nth-of-type(1)",
+            "text": "¿Tu gimnasio sigue así?",
+            "fontPx": 21.48,
+            "time": 0.25,
+            "seconds": 5.125
+          }
+        ]
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and 3 text elements stay under it for 0.5 s or more, the smallest \"✓ 100% ONLINE\" at 19 px: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "✓ 100% ONLINE",
+        "selector": "#f02-pills > div:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/02-solution.html",
+        "bbox": {
+          "x": 171.16,
+          "y": 552.79,
+          "width": 163.39,
+          "height": 25
+        },
+        "time": 6.25,
+        "times": [
+          6.25,
+          6.375,
+          6.5
+        ],
+        "fontPx": 19,
+        "floorPx": 28,
+        "seconds": 4.125,
+        "elements": [
+          {
+            "selector": "#f02-pills > div:nth-of-type(1)",
+            "text": "✓ 100% ONLINE",
+            "fontPx": 19,
+            "time": 6.25,
+            "seconds": 4.125
+          },
+          {
+            "selector": "#f02-pills > div:nth-of-type(2)",
+            "text": "✓ MULTI-DISPOSITIVO",
+            "fontPx": 19,
+            "time": 6.375,
+            "seconds": 4
+          },
+          {
+            "selector": "#f02-pills > div:nth-of-type(3)",
+            "text": "✓ SIN INSTALACIÓN",
+            "fontPx": 19,
+            "time": 6.5,
+            "seconds": 3.875
+          }
+        ]
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and 22 text elements stay under it for 0.5 s or more, the smallest \"Automático\" at 13 px: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "Automático",
+        "selector": "#f03-c1 > div:nth-of-type(1) > div:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/03-features.html",
+        "bbox": {
+          "x": 402.88,
+          "y": 408.69,
+          "width": 83.31,
+          "height": 16.76
+        },
+        "time": 11.25,
+        "times": [
+          10.375,
+          11.25,
+          11.25,
+          11.25,
+          11.5,
+          11.5,
+          11.5,
+          12.75,
+          12.75,
+          12.75,
+          13,
+          13,
+          13,
+          14.375,
+          14.375,
+          14.375,
+          14.5,
+          14.5,
+          14.5,
+          16,
+          16,
+          16
+        ],
+        "fontPx": 12.82,
+        "floorPx": 28,
+        "seconds": 7.125,
+        "elements": [
+          {
+            "selector": "#f03-c1 > div:nth-of-type(1) > div:nth-of-type(2)",
+            "text": "Automático",
+            "fontPx": 12.82,
+            "time": 11.25,
+            "seconds": 7.125
+          },
+          {
+            "selector": "#f03-c3 > div:nth-of-type(1) > div:nth-of-type(2)",
+            "text": "Finanzas",
+            "fontPx": 12.82,
+            "time": 12.75,
+            "seconds": 5.625
+          },
+          {
+            "selector": "#f03-c6 > div:nth-of-type(1) > div:nth-of-type(2)",
+            "text": "Métricas",
+            "fontPx": 12.83,
+            "time": 14.5,
+            "seconds": 3.875
+          },
+          {
+            "selector": "#f03-c5 > div:nth-of-type(1) > div:nth-of-type(2)",
+            "text": "Mostrador",
+            "fontPx": 12.85,
+            "time": 14.375,
+            "seconds": 4
+          },
+          {
+            "selector": "#f03-c2 > div:nth-of-type(1) > div:nth-of-type(2)",
+            "text": "En Puerta",
+            "fontPx": 12.92,
+            "time": 11.5,
+            "seconds": 6.875
+          },
+          {
+            "selector": "#f03-c4 > div:nth-of-type(1) > div:nth-of-type(2)",
+            "text": "Con Cupos",
+            "fontPx": 12.92,
+            "time": 13,
+            "seconds": 5.375
+          },
+          {
+            "selector": "#f03-banner > div:nth-of-type(1) > span:nth-of-type(1)",
+            "text": "100% en la Nube",
+            "fontPx": 16,
+            "time": 16,
+            "seconds": 2.375
+          },
+          {
+            "selector": "#f03-banner > div:nth-of-type(2) > span:nth-of-type(1)",
+            "text": "Recepción Ágil",
+            "fontPx": 16,
+            "time": 16,
+            "seconds": 2.375
+          },
+          {
+            "selector": "#f03-banner > div:nth-of-type(3) > span:nth-of-type(1)",
+            "text": "Multi-Dispositivo",
+            "fontPx": 16,
+            "time": 16,
+            "seconds": 2.375
+          },
+          {
+            "selector": "#f03-c1 > div:nth-of-type(3)",
+            "text": "Planes periódicos, control de cuotas y alertas de socios por vencer.",
+            "fontPx": 17.75,
+            "time": 11.25,
+            "seconds": 7.125
+          },
+          {
+            "selector": "#f03-c3 > div:nth-of-type(3)",
+            "text": "Cierre diario, múltiples medios de pago y flujo de caja claro.",
+            "fontPx": 17.75,
+            "time": 12.75,
+            "seconds": 5.625
+          },
+          {
+            "selector": "#f03-c6 > div:nth-of-type(3)",
+            "text": "Ingresos mensuales, asistencia promedio y socios activos.",
+            "fontPx": 17.77,
+            "time": 14.5,
+            "seconds": 3.875
+          },
+          {
+            "selector": "#f03-c5 > div:nth-of-type(3)",
+            "text": "Venta rápida de bebidas y suplementos con descuento automático.",
+            "fontPx": 17.8,
+            "time": 14.375,
+            "seconds": 4
+          },
+          {
+            "selector": "#f03-c2 > div:nth-of-type(3)",
+            "text": "Validación automática de estado activo al ingresar al gimnasio.",
+            "fontPx": 17.89,
+            "time": 11.5,
+            "seconds": 6.875
+          },
+          {
+            "selector": "#f03-c4 > div:nth-of-type(3)",
+            "text": "Definición de turnos, cupos por clase y asignación de profesores.",
+            "fontPx": 17.89,
+            "time": 13,
+            "seconds": 5.375
+          },
+          {
+            "selector": "#f03-tag",
+            "text": "PANEL DE GESTIÓN INTEGRAL",
+            "fontPx": 20,
+            "time": 10.375,
+            "seconds": 8
+          },
+          {
+            "selector": "#f03-c1 > div:nth-of-type(2)",
+            "text": "Membresías y Cobros",
+            "fontPx": 25.63,
+            "time": 11.25,
+            "seconds": 7.125
+          },
+          {
+            "selector": "#f03-c3 > div:nth-of-type(2)",
+            "text": "Caja en Vivo",
+            "fontPx": 25.63,
+            "time": 12.75,
+            "seconds": 5.625
+          },
+          {
+            "selector": "#f03-c6 > div:nth-of-type(2)",
+            "text": "Reportes y Retención",
+            "fontPx": 25.67,
+            "time": 14.5,
+            "seconds": 3.875
+          },
+          {
+            "selector": "#f03-c5 > div:nth-of-type(2)",
+            "text": "Productos y Stock",
+            "fontPx": 25.71,
+            "time": 14.375,
+            "seconds": 4
+          },
+          {
+            "selector": "#f03-c2 > div:nth-of-type(2)",
+            "text": "Acceso por DNI",
+            "fontPx": 25.84,
+            "time": 11.5,
+            "seconds": 6.875
+          },
+          {
+            "selector": "#f03-c4 > div:nth-of-type(2)",
+            "text": "Clases y Horarios",
+            "fontPx": 25.84,
+            "time": 13,
+            "seconds": 5.375
+          }
+        ]
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and 7 text elements stay under it for 0.5 s or more, the smallest \"01 • CLASES Y TURNOS\" at 15 px: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "01 • CLASES Y TURNOS",
+        "selector": "#f04-item-1 > div:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/04-experience.html",
+        "bbox": {
+          "x": 589.64,
+          "y": 551.73,
+          "width": 204,
+          "height": 20
+        },
+        "time": 19.625,
+        "times": [
+          18.375,
+          19.625,
+          19.625,
+          20.5,
+          20.5,
+          21.375,
+          21.375
+        ],
+        "fontPx": 15,
+        "floorPx": 28,
+        "seconds": 4.375,
+        "elements": [
+          {
+            "selector": "#f04-item-1 > div:nth-of-type(1)",
+            "text": "01 • CLASES Y TURNOS",
+            "fontPx": 15,
+            "time": 19.625,
+            "seconds": 4.375
+          },
+          {
+            "selector": "#f04-item-2 > div:nth-of-type(1)",
+            "text": "02 • ESTADO DE PLAN",
+            "fontPx": 15,
+            "time": 20.5,
+            "seconds": 3.5
+          },
+          {
+            "selector": "#f04-item-3 > div:nth-of-type(1)",
+            "text": "03 • ASISTENCIAS",
+            "fontPx": 15,
+            "time": 21.375,
+            "seconds": 2.625
+          },
+          {
+            "selector": "#f04-item-1 > div:nth-of-type(3)",
+            "text": "Eligen horario y aseguran su cupo en segundos desde la app.",
+            "fontPx": 19,
+            "time": 19.625,
+            "seconds": 4.375
+          },
+          {
+            "selector": "#f04-item-2 > div:nth-of-type(3)",
+            "text": "Saben cuándo vence su cuota y días restantes sin consultar en recepción.",
+            "fontPx": 19,
+            "time": 20.5,
+            "seconds": 3.5
+          },
+          {
+            "selector": "#f04-item-3 > div:nth-of-type(3)",
+            "text": "Historial de entrenamientos y acceso rápido desde cualquier dispositivo.",
+            "fontPx": 19,
+            "time": 21.375,
+            "seconds": 2.625
+          },
+          {
+            "selector": "#f04-tag",
+            "text": "APP MÓVIL DE SOCIOS",
+            "fontPx": 20,
+            "time": 18.375,
+            "seconds": 5.625
+          }
+        ]
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and 3 text elements stay under it for 0.5 s or more, the smallest \"PRUEBA DE SOFTWARE\" at 16 px: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "PRUEBA DE SOFTWARE",
+        "selector": "div.f05-trial-tag",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/05-cta.html",
+        "bbox": {
+          "x": 437.53,
+          "y": 506.2,
+          "width": 204.91,
+          "height": 20.75
+        },
+        "time": 25.25,
+        "times": [
+          25.25,
+          25.25,
+          26.625
+        ],
+        "fontPx": 15.81,
+        "floorPx": 28,
+        "seconds": 4.75,
+        "elements": [
+          {
+            "selector": "div.f05-trial-tag",
+            "text": "PRUEBA DE SOFTWARE",
+            "fontPx": 15.81,
+            "time": 25.25,
+            "seconds": 4.75
+          },
+          {
+            "selector": "div.f05-trial-sub",
+            "text": "Sin compromiso • Activá hoy",
+            "fontPx": 19.76,
+            "time": 25.25,
+            "seconds": 4.75
+          },
+          {
+            "selector": "div.f05-tagline",
+            "text": "Software de gestión y App para gimnasios",
+            "fontPx": 22,
+            "time": 26.625,
+            "seconds": 3.375
+          }
+        ]
+      }
+    ],
+    "enabled": true,
+    "step": 0.125,
+    "samples": 240
+  },
+  "audio": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 1,
+    "findings": [
+      {
+        "code": "audio_none",
+        "severity": "info",
+        "message": "The film has no sound: no clip in it plays audio.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0
+      }
+    ]
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  }
+}

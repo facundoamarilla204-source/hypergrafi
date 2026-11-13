@@ -1,0 +1,203 @@
+<template>
+  <div id="root" data-composition-id="scene-01-presentacion" data-width="1080" data-height="1920">
+    <style>
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400 800;
+        src: url('../../assets/fonts/captured-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2') format('woff2');
+      }
+      @font-face {
+        font-family: 'Space Grotesk';
+        font-style: normal;
+        font-weight: 500 700;
+        src: url('../../assets/fonts/captured-V8mDoQDjQSkFtoMM3T6r8E7mPbF4C_k3HqU.woff2') format('woff2');
+      }
+      @font-face {
+        font-family: 'JetBrains Mono';
+        font-style: normal;
+        font-weight: 500;
+        src: url('../../assets/fonts/captured-tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwgknk-4.woff2') format('woff2');
+      }
+
+      #root {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: #0A0A0A;
+        overflow: hidden;
+        font-family: 'Inter', sans-serif;
+        color: #FAFAFA;
+      }
+      .s01-grid {
+        position: absolute;
+        inset: 0;
+        background-image:
+          linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+        background-size: 72px 72px;
+        mask-image: radial-gradient(circle at 50% 42%, black 20%, transparent 78%);
+      }
+      .s01-glow {
+        position: absolute;
+        top: 260px;
+        left: 140px;
+        width: 800px;
+        height: 800px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(255, 122, 26, 0.28) 0%, rgba(255, 122, 26, 0) 68%);
+        pointer-events: none;
+      }
+      .s01-safe {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding: 210px 90px 340px 72px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+      }
+      .s01-logo-wrap {
+        padding: 20px 36px;
+        border-radius: 28px;
+        background: rgba(24, 24, 27, 0.85);
+        border: 1px solid rgba(255, 122, 26, 0.32);
+        box-shadow: 0 24px 60px rgba(0, 0, 0, 0.6);
+        margin-bottom: 54px;
+      }
+      .s01-logo {
+        display: block;
+        height: 88px;
+        width: auto;
+      }
+      .s01-headline {
+        text-align: center;
+        font-family: 'Space Grotesk', 'Inter', sans-serif;
+        font-size: 74px;
+        font-weight: 700;
+        line-height: 1.06;
+        letter-spacing: -0.03em;
+        margin-bottom: 14px;
+        color: #FFFFFF;
+      }
+      .s01-headline-accent {
+        text-align: center;
+        font-family: 'Space Grotesk', 'Inter', sans-serif;
+        font-size: 74px;
+        font-weight: 700;
+        line-height: 1.06;
+        letter-spacing: -0.03em;
+        color: #FF7A1A;
+        margin-bottom: 54px;
+      }
+      .s01-dash-preview {
+        width: 880px;
+        background: #141417;
+        border: 1px solid #27272A;
+        border-radius: 24px;
+        padding: 28px;
+        box-shadow: 0 36px 90px rgba(0, 0, 0, 0.75);
+      }
+      .s01-dash-bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #262626;
+        margin-bottom: 22px;
+      }
+      .s01-dots {
+        display: flex;
+        gap: 10px;
+      }
+      .s01-dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: #3F3F46;
+      }
+      .s01-dot.orange { background: #FF7A1A; }
+      .s01-url {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 18px;
+        color: #A1A1A1;
+      }
+      .s01-kpis {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+      }
+      .s01-kpi {
+        background: #18181B;
+        border: 1px solid #27272A;
+        border-radius: 16px;
+        padding: 20px;
+      }
+      .s01-kpi-label {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 15px;
+        color: #A1A1A1;
+        text-transform: uppercase;
+        margin-bottom: 8px;
+      }
+      .s01-kpi-val {
+        font-size: 36px;
+        font-weight: 700;
+        color: #FFFFFF;
+      }
+      .s01-kpi-val.accent { color: #FF7A1A; }
+    </style>
+
+    <div class="s01-grid"></div>
+    <div class="s01-glow" id="s01-glow"></div>
+
+    <div class="s01-safe" id="s01-camera">
+      <div class="s01-logo-wrap" id="s01-logo">
+        <img src="../../assets/brand/fitadmi-software-de-gestin-para-gimnasio.png" alt="FitAdmi" class="s01-logo" />
+      </div>
+
+      <h1 class="s01-headline" id="s01-t1">TODO TU GIMNASIO.</h1>
+      <div class="s01-headline-accent" id="s01-t2">UNA SOLA PLATAFORMA.</div>
+
+      <div class="s01-dash-preview" id="s01-dash">
+        <div class="s01-dash-bar">
+          <div class="s01-dots">
+            <span class="s01-dot orange"></span>
+            <span class="s01-dot"></span>
+            <span class="s01-dot"></span>
+          </div>
+          <span class="s01-url" data-layout-ignore>fitadmi.com.ar/panel</span>
+        </div>
+        <div class="s01-kpis">
+          <div class="s01-kpi">
+            <div class="s01-kpi-label" data-layout-ignore>Socios activos</div>
+            <div class="s01-kpi-val">342</div>
+          </div>
+          <div class="s01-kpi">
+            <div class="s01-kpi-label" data-layout-ignore>Asistencias hoy</div>
+            <div class="s01-kpi-val accent">128</div>
+          </div>
+          <div class="s01-kpi">
+            <div class="s01-kpi-label" data-layout-ignore>Caja del día</div>
+            <div class="s01-kpi-val">$ 485.000</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      (function () {
+        const tl = gsap.timeline({ paused: true });
+        tl.fromTo("#s01-glow", { scale: 0.9, opacity: 0.7 }, { scale: 1.05, opacity: 1, duration: 1.0, ease: "power2.out" }, 0)
+          .fromTo("#s01-logo", { scale: 0.96, y: 0, opacity: 1 }, { scale: 1, y: 0, opacity: 1, duration: 0.75, ease: "power3.out" }, 0)
+          .fromTo("#s01-t1", { y: 24, opacity: 0 }, { y: 0, opacity: 1, duration: 0.65, ease: "power3.out" }, 0.45)
+          .fromTo("#s01-t2", { y: 36, opacity: 0 }, { y: 0, opacity: 1, duration: 0.65, ease: "power3.out" }, 1.15)
+          .fromTo("#s01-dash", { y: 90, scale: 0.92, opacity: 0 }, { y: 0, scale: 1, opacity: 1, duration: 0.85, ease: "power3.out" }, 2.3)
+          .to("#s01-camera", { scale: 1.14, y: -110, opacity: 0, duration: 0.65, ease: "power2.in" }, 4.7);
+        window.__timelines["scene-01-presentacion"] = tl;
+      })();
+    </script>
+  </div>
+</template>

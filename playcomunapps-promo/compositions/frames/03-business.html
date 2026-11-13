@@ -1,0 +1,484 @@
+<template>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    #root-03 {
+      width: 1080px;
+      height: 1920px;
+      position: relative;
+      overflow: hidden;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: #ffffff;
+      background: linear-gradient(155deg, #2e096e 0%, #20064f 52%, #150336 100%);
+      box-sizing: border-box;
+    }
+
+    .b03-bg-shape-1 {
+      position: absolute;
+      width: 340px;
+      height: 760px;
+      border-radius: 9999px;
+      background: linear-gradient(180deg, rgba(124, 58, 237, 0.16) 0%, rgba(91, 33, 182, 0.03) 100%);
+      top: -140px;
+      right: -80px;
+      pointer-events: none;
+    }
+
+    .b03-bg-shape-2 {
+      position: absolute;
+      width: 280px;
+      height: 620px;
+      border-radius: 9999px;
+      background: linear-gradient(180deg, rgba(139, 92, 246, 0.10) 0%, rgba(91, 33, 182, 0.02) 100%);
+      bottom: -120px;
+      left: -70px;
+      pointer-events: none;
+    }
+
+    .b03-content {
+      position: absolute;
+      top: 175px;
+      left: 72px;
+      right: 72px;
+      bottom: 240px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      z-index: 10;
+    }
+
+    /* Top Section Bar */
+    .b03-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 14px;
+    }
+
+    .b03-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 20px;
+      background: rgba(167, 139, 250, 0.18);
+      border: 1px solid rgba(196, 181, 253, 0.38);
+      border-radius: 9999px;
+      font-size: 14px;
+      font-weight: 700;
+      color: #ede9fe;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .b03-title {
+      font-family: 'Sora', sans-serif;
+      font-size: 60px;
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      color: #ffffff;
+      max-width: 900px;
+    }
+
+    .b03-title span.hl {
+      color: #ddd6fe;
+    }
+
+    /* Tools Display Stack */
+    .b03-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+    }
+
+    /* Micro-Tool Cards */
+    .b03-tool-card {
+      background: rgba(19, 4, 46, 0.82);
+      border: 1.5px solid rgba(196, 181, 253, 0.22);
+      border-radius: 22px;
+      padding: 24px;
+      box-shadow: 0 20px 44px rgba(8, 2, 24, 0.45);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      position: relative;
+    }
+
+    .b03-tool-card.active {
+      border-color: rgba(167, 139, 250, 0.55);
+    }
+
+    .b03-card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .b03-card-title-group {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .b03-icon-box {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .b03-icon-box.purple {
+      background: rgba(124, 58, 237, 0.25);
+      color: #ddd6fe;
+      border: 1px solid rgba(167, 139, 250, 0.45);
+    }
+
+    .b03-icon-box.emerald {
+      background: rgba(16, 185, 129, 0.22);
+      color: #6ee7b7;
+      border: 1px solid rgba(16, 185, 129, 0.45);
+    }
+
+    .b03-icon-box.amber {
+      background: rgba(245, 158, 11, 0.22);
+      color: #fcd34d;
+      border: 1px solid rgba(245, 158, 11, 0.45);
+    }
+
+    .b03-card-heading {
+      font-size: 23px;
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    .b03-card-sub {
+      font-size: 15px;
+      color: #cbd5e1;
+    }
+
+    .b03-status-badge {
+      font-size: 14px;
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 8px;
+    }
+
+    .b03-status-badge.green {
+      background: rgba(16, 185, 129, 0.18);
+      color: #6ee7b7;
+      border: 1px solid rgba(16, 185, 129, 0.35);
+    }
+
+    .b03-status-badge.purple {
+      background: rgba(124, 58, 237, 0.22);
+      color: #ddd6fe;
+      border: 1px solid rgba(167, 139, 250, 0.4);
+    }
+
+    .b03-status-badge.amber {
+      background: rgba(245, 158, 11, 0.18);
+      color: #fcd34d;
+      border: 1px solid rgba(245, 158, 11, 0.35);
+    }
+
+    /* Price Calculator Internal View */
+    .b03-calc-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1.3fr;
+      gap: 12px;
+      background: rgba(12, 2, 32, 0.55);
+      border: 1px solid rgba(196, 181, 253, 0.12);
+      border-radius: 14px;
+      padding: 15px 18px;
+    }
+
+    .b03-metric-col {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .b03-metric-label {
+      font-size: 13px;
+      font-weight: 600;
+      color: #cbd5e1;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .b03-metric-val {
+      font-size: 25px;
+      font-weight: 800;
+      color: #ffffff;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .b03-metric-val.result {
+      color: #34d399;
+    }
+
+    /* Presupuestos Table Internal View */
+    .b03-quote-preview {
+      background: rgba(12, 2, 32, 0.55);
+      border: 1px solid rgba(196, 181, 253, 0.12);
+      border-radius: 14px;
+      padding: 15px 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .b03-quote-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 16px;
+      color: #e2e8f0;
+      padding-bottom: 8px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    }
+
+    .b03-quote-line.total {
+      border-bottom: none;
+      padding-bottom: 0;
+      font-weight: 700;
+      color: #ffffff;
+      font-size: 18px;
+    }
+
+    /* Receta Food Cost View */
+    .b03-recipe-preview {
+      background: rgba(12, 2, 32, 0.55);
+      border: 1px solid rgba(196, 181, 253, 0.12);
+      border-radius: 14px;
+      padding: 15px 18px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 12px;
+    }
+
+    /* Bottom Navigator Bar */
+    .b03-bottom-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 22px;
+      background: rgba(19, 4, 46, 0.72);
+      border: 1px solid rgba(196, 181, 253, 0.2);
+      border-radius: 16px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #e2e8f0;
+    }
+
+    .b03-bottom-nav span.live {
+      color: #6ee7b7;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .b03-live-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #34d399;
+      box-shadow: 0 0 8px #34d399;
+    }
+  </style>
+
+  <div data-hf-id="hf-03-root" id="root-03" data-composition-id="03-business" data-width="1080" data-height="1920">
+    <div class="b03-bg-shape-1"></div>
+    <div class="b03-bg-shape-2"></div>
+
+    <div class="b03-content">
+      <!-- Section Header -->
+      <div id="b03-header" class="b03-header">
+        <div class="b03-badge" data-layout-ignore="true">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/>
+            <polyline points="16 7 22 7 22 13"/>
+          </svg>
+          Negocios, Clientes & Gastronomía
+        </div>
+        <h1 class="b03-title">
+          Precios, Presupuestos y <span class="hl">Costos de Recetas</span>
+        </h1>
+      </div>
+
+      <!-- 3 Real Interactive Tools Stack -->
+      <div class="b03-stack">
+        <!-- 1. Calculadora de Precios & Márgenes -->
+        <div id="b03-card-prices" class="b03-tool-card active">
+          <div class="b03-card-header">
+            <div class="b03-card-title-group">
+              <div class="b03-icon-box purple">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="12" y1="1" x2="12" y2="23"/>
+                  <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                </svg>
+              </div>
+              <div>
+                <div class="b03-card-heading">Calculadora de Precios y Margen</div>
+                <div class="b03-card-sub" data-layout-ignore="true">Fijá precios de venta con ganancia real garantizada</div>
+              </div>
+            </div>
+            <span class="b03-status-badge green" data-layout-ignore="true">Margen 40%</span>
+          </div>
+
+          <div class="b03-calc-grid">
+            <div class="b03-metric-col">
+              <span class="b03-metric-label" data-layout-ignore="true">Costo Base</span>
+              <span class="b03-metric-val">$14.500</span>
+            </div>
+            <div class="b03-metric-col">
+              <span class="b03-metric-label" data-layout-ignore="true">Ganancia Neta</span>
+              <span class="b03-metric-val">+$5.800</span>
+            </div>
+            <div class="b03-metric-col">
+              <span class="b03-metric-label" data-layout-ignore="true">Precio Sugerido</span>
+              <span class="b03-metric-val result">$20.300</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Presupuestos Profesionales en PDF -->
+        <div id="b03-card-quotes" class="b03-tool-card">
+          <div class="b03-card-header">
+            <div class="b03-card-title-group">
+              <div class="b03-icon-box emerald">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                  <polyline points="14 2 14 8 20 8"/>
+                  <line x1="16" y1="13" x2="8" y2="13"/>
+                  <line x1="16" y1="17" x2="8" y2="17"/>
+                </svg>
+              </div>
+              <div>
+                <div class="b03-card-heading">Presupuestos en PDF</div>
+                <div class="b03-card-sub" data-layout-ignore="true">Cotizaciones formales listas para enviar por WhatsApp</div>
+              </div>
+            </div>
+            <span class="b03-status-badge purple" data-layout-ignore="true">Descargar PDF</span>
+          </div>
+
+          <div class="b03-quote-preview" data-layout-ignore="true">
+            <div class="b03-quote-line">
+              <span>Desarrollo Web & Identidad Digital</span>
+              <span style="font-weight: 600; color: #ffffff;">$120.000</span>
+            </div>
+            <div class="b03-quote-line">
+              <span>Configuración de Servidor & Dominio</span>
+              <span style="font-weight: 600; color: #ffffff;">$65.000</span>
+            </div>
+            <div class="b03-quote-line total">
+              <span>Total Cotizado (PDF con membrete)</span>
+              <span style="color: #6ee7b7;">$185.000</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Costeo de Recetas & Rentabilidad -->
+        <div id="b03-card-recipes" class="b03-tool-card">
+          <div class="b03-card-header">
+            <div class="b03-card-title-group">
+              <div class="b03-icon-box amber">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/>
+                  <line x1="3" y1="6" x2="21" y2="6"/>
+                  <path d="M16 10a4 4 0 0 1-8 0"/>
+                </svg>
+              </div>
+              <div>
+                <div class="b03-card-heading">Costeo y Rentabilidad de Recetas</div>
+                <div class="b03-card-sub" data-layout-ignore="true">Para emprendimientos de pastelería y gastronomía</div>
+              </div>
+            </div>
+            <span class="b03-status-badge amber" data-layout-ignore="true">8 porciones</span>
+          </div>
+
+          <div class="b03-recipe-preview">
+            <div class="b03-metric-col">
+              <span class="b03-metric-label" data-layout-ignore="true">Costo Porción</span>
+              <span class="b03-metric-val">$870</span>
+            </div>
+            <div class="b03-metric-col">
+              <span class="b03-metric-label" data-layout-ignore="true">Venta Unidad</span>
+              <span class="b03-metric-val">$2.500</span>
+            </div>
+            <div class="b03-metric-col">
+              <span class="b03-metric-label" data-layout-ignore="true">Rentabilidad</span>
+              <span class="b03-metric-val result">65.2%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Status -->
+      <div id="b03-nav" class="b03-bottom-nav" data-layout-ignore="true">
+        <span>Cálculos en tiempo real en tu dispositivo</span>
+        <span class="live">
+          <span class="b03-live-dot"></span>
+          Sin hojas de cálculo complejas
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    window.__timelines = window.__timelines || {};
+    (function () {
+      const tl = gsap.timeline({ paused: true });
+      window.__timelines["03-business"] = tl;
+
+      tl.fromTo("#b03-header", 
+        { y: -25, opacity: 0 }, 
+        { y: 0, opacity: 1, duration: 0.45, ease: "power3.out" }, 
+        0.1
+      );
+
+      tl.fromTo("#b03-card-prices", 
+        { scale: 0.94, y: 25, opacity: 0 }, 
+        { scale: 1, y: 0, opacity: 1, duration: 0.5, ease: "power2.out" }, 
+        0.3
+      );
+
+      tl.fromTo("#b03-card-quotes", 
+        { scale: 0.94, y: 25, opacity: 0 }, 
+        { scale: 1, y: 0, opacity: 1, duration: 0.5, ease: "power2.out" }, 
+        2.6
+      );
+
+      tl.to("#b03-card-prices", { borderColor: "rgba(196, 181, 253, 0.22)", duration: 0.3 }, 2.6);
+      tl.to("#b03-card-quotes", { borderColor: "rgba(16, 185, 129, 0.55)", duration: 0.3 }, 2.6);
+
+      tl.fromTo("#b03-card-recipes", 
+        { scale: 0.94, y: 25, opacity: 0 }, 
+        { scale: 1, y: 0, opacity: 1, duration: 0.5, ease: "power2.out" }, 
+        5.2
+      );
+
+      tl.to("#b03-card-quotes", { borderColor: "rgba(196, 181, 253, 0.22)", duration: 0.3 }, 5.2);
+      tl.to("#b03-card-recipes", { borderColor: "rgba(245, 158, 11, 0.55)", duration: 0.3 }, 5.2);
+
+      tl.fromTo("#b03-nav", 
+        { y: 20, opacity: 0 }, 
+        { y: 0, opacity: 1, duration: 0.4, ease: "power2.out" }, 
+        6.5
+      );
+
+      tl.to({}, { duration: 9.2 }, 0);
+    })();
+  </script>
+</template>

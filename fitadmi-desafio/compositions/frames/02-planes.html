@@ -1,0 +1,371 @@
+<template>
+  <style>
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      src: url('assets/fonts/captured-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      src: url('assets/fonts/captured-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'JetBrains Mono';
+      font-style: normal;
+      font-weight: 500;
+      src: url('assets/fonts/captured-tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwgknk-4.woff2') format('woff2');
+    }
+
+    #root {
+      width: 1080px;
+      height: 1920px;
+      position: relative;
+      overflow: hidden;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: #F4F4F5;
+      box-sizing: border-box;
+      background: #09090B;
+    }
+
+    .frame-bg {
+      position: absolute;
+      inset: 0;
+      background: #0A0A0C;
+      z-index: 0;
+    }
+
+    .container {
+      position: absolute;
+      inset: 0;
+      width: 1080px;
+      height: 1920px;
+      padding: 130px 70px 80px 70px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      z-index: 2;
+      box-sizing: border-box;
+    }
+
+    .header-bar {
+      width: 100%;
+      max-width: 940px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .step-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 22px;
+      background: #18181B;
+      border: 1px solid #27272A;
+      border-radius: 8px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 22px;
+      font-weight: 600;
+      color: #FF7A1A;
+      text-transform: uppercase;
+    }
+
+    .time-badge {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 22px;
+      color: #A1A1AA;
+      background: #111114;
+      padding: 10px 20px;
+      border-radius: 8px;
+      border: 1px solid #27272A;
+      font-weight: 600;
+    }
+
+    .headline {
+      width: 100%;
+      max-width: 940px;
+      font-size: 64px;
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      color: #FFFFFF;
+      margin-bottom: 45px;
+      text-align: left;
+    }
+
+    .headline span.accent {
+      color: #FF7A1A;
+    }
+
+    /* Plans Form Card */
+    .form-card {
+      width: 100%;
+      max-width: 940px;
+      background: #121215;
+      border: 1px solid #27272A;
+      border-radius: 20px;
+      padding: 38px 40px;
+      margin-bottom: 30px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    }
+
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+    }
+
+    .form-title {
+      font-size: 30px;
+      font-weight: 700;
+      color: #FFFFFF;
+    }
+
+    .status-tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 18px;
+      padding: 6px 14px;
+      background: rgba(34, 197, 94, 0.12);
+      border: 1px solid rgba(34, 197, 94, 0.3);
+      color: #22C55E;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      margin-bottom: 24px;
+    }
+
+    .field-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      text-align: left;
+    }
+
+    .field-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 17px;
+      color: #A1A1AA;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .field-input {
+      background: #18181B;
+      border: 1px solid #3F3F46;
+      border-radius: 10px;
+      padding: 18px 22px;
+      font-size: 26px;
+      font-weight: 600;
+      color: #FFFFFF;
+    }
+
+    .field-input.full {
+      grid-column: span 2;
+    }
+
+    .btn-save {
+      width: 100%;
+      background: #FF7A1A;
+      color: #000000;
+      border: none;
+      border-radius: 12px;
+      padding: 20px;
+      font-size: 26px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      letter-spacing: -0.01em;
+      cursor: pointer;
+    }
+
+    /* Trainers section */
+    .trainers-section {
+      width: 100%;
+      max-width: 940px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .section-subtitle {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 20px;
+      color: #A1A1AA;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      text-align: left;
+      margin-bottom: 4px;
+    }
+
+    .trainers-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .trainer-card {
+      background: #141418;
+      border: 1px solid #27272A;
+      border-radius: 16px;
+      padding: 24px;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      text-align: left;
+    }
+
+    .trainer-avatar {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: #27272A;
+      border: 2px solid #3F3F46;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 22px;
+      font-weight: 700;
+      color: #FF7A1A;
+      flex-shrink: 0;
+    }
+
+    .trainer-name {
+      font-size: 24px;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 4px;
+    }
+
+    .trainer-spec {
+      font-size: 18px;
+      color: #A1A1AA;
+      font-family: 'JetBrains Mono', monospace;
+    }
+  </style>
+
+  <div data-hf-id="hf-2sjs"
+    id="root"
+    data-composition-id="02-planes"
+    data-start="0"
+    data-duration="4.9"
+    data-width="1080"
+    data-height="1920"
+  >
+    <div data-hf-id="hf-w69c" id="f02-bg" class="clip frame-bg" data-start="0" data-duration="4.9" data-track-index="0"></div>
+
+    <div data-hf-id="hf-mt4b" id="f02-main" class="clip container" data-start="0" data-duration="4.9" data-track-index="1">
+      <div data-hf-id="hf-o3m7" id="f02-header" class="header-bar">
+        <div data-hf-id="hf-c8f0" class="step-badge" data-layout-ignore="true">Paso 01 • Planes & Entrenadores</div>
+        <div data-hf-id="hf-o3g2" class="time-badge" data-layout-ignore="true">01:05 min</div>
+      </div>
+
+      <h2 data-hf-id="hf-j5t2" id="f02-title" class="headline">
+        Creás tus planes y agregás a tus <span data-hf-id="hf-waps" class="accent">entrenadores</span>.
+      </h2>
+
+      <!-- Formulario de configuración de plan -->
+      <div data-hf-id="hf-w71k" id="f02-form" class="form-card">
+        <div data-hf-id="hf-22zz" class="card-top">
+          <span data-hf-id="hf-rjk9" class="form-title">Configurar Membresía</span>
+          <span data-hf-id="hf-stag" class="status-tag" data-layout-ignore="true">ACTIVO</span>
+        </div>
+
+        <div data-hf-id="hf-i36f" class="form-grid">
+          <div data-hf-id="hf-kcnh" class="field-group full">
+            <span data-hf-id="hf-bdvd" class="field-label" data-layout-ignore="true">Nombre de la Membresía</span>
+            <div data-hf-id="hf-n0j6" id="f02-input-name" class="field-input">Pase Libre Mensual</div>
+          </div>
+          <div data-hf-id="hf-7w46" class="field-group">
+            <span data-hf-id="hf-2aq9" class="field-label" data-layout-ignore="true">Precio</span>
+            <div data-hf-id="hf-hohz" id="f02-input-price" class="field-input">$ 28.000</div>
+          </div>
+          <div data-hf-id="hf-633u" class="field-group">
+            <span data-hf-id="hf-5d0y" class="field-label" data-layout-ignore="true">Duración</span>
+            <div data-hf-id="hf-6cvr" class="field-input">30 Días</div>
+          </div>
+        </div>
+
+        <div data-hf-id="hf-yyfj" id="f02-btn" class="btn-save">
+          <span data-hf-id="hf-c7fm">Guardar Plan Configurado</span>
+        </div>
+      </div>
+
+      <!-- Entrenadores -->
+      <div data-hf-id="hf-trsec" id="f02-trainers" class="trainers-section">
+        <div data-hf-id="hf-subt" class="section-subtitle" data-layout-ignore="true">Staff & Entrenadores Asignados</div>
+        <div data-hf-id="hf-trgrid" class="trainers-grid">
+          <div data-hf-id="hf-t1" id="f02-t1" class="trainer-card">
+            <div data-hf-id="hf-av1" class="trainer-avatar">MR</div>
+            <div data-hf-id="hf-inf1">
+              <div data-hf-id="hf-nm1" class="trainer-name">Matías Rossi</div>
+              <div data-hf-id="hf-sp1" class="trainer-spec" data-layout-ignore="true">Musculación • Turno Mañana</div>
+            </div>
+          </div>
+          <div data-hf-id="hf-t2" id="f02-t2" class="trainer-card">
+            <div data-hf-id="hf-av2" class="trainer-avatar">LG</div>
+            <div data-hf-id="hf-inf2">
+              <div data-hf-id="hf-nm2" class="trainer-name">Lucía Gómez</div>
+              <div data-hf-id="hf-sp2" class="trainer-spec" data-layout-ignore="true">Funcional • Turno Tarde</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+
+    tl.fromTo("#f02-header", 
+      { opacity: 0, y: -20 }, 
+      { opacity: 1, y: 0, duration: 0.35, ease: "power2.out" }, 
+      0.05
+    );
+
+    tl.fromTo("#f02-title", 
+      { opacity: 0, y: 25 }, 
+      { opacity: 1, y: 0, duration: 0.35, ease: "power2.out" }, 
+      0.15
+    );
+
+    tl.fromTo("#f02-form", 
+      { opacity: 0, scale: 0.96, y: 25 }, 
+      { opacity: 1, scale: 1, y: 0, duration: 0.35, ease: "power2.out" }, 
+      0.3
+    );
+
+    // Click feedback físico en botón guardar
+    tl.to("#f02-btn", {
+      scale: 0.96,
+      duration: 0.12,
+      yoyo: true,
+      repeat: 1,
+      ease: "power1.inOut"
+    }, 1.9);
+
+    tl.fromTo("#f02-trainers", 
+      { opacity: 0, y: 20 }, 
+      { opacity: 1, y: 0, duration: 0.4, ease: "power2.out" }, 
+      2.35
+    );
+
+    window.__timelines = window.__timelines || {};
+    window.__timelines["02-planes"] = tl;
+    tl.seek(0);
+  </script>
+</template>

@@ -1,0 +1,401 @@
+<template>
+  <style>
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      src: url('assets/fonts/captured-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 600;
+      src: url('assets/fonts/captured-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      src: url('assets/fonts/captured-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'JetBrains Mono';
+      font-style: normal;
+      font-weight: 500;
+      src: url('assets/fonts/captured-tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwgknk-4.woff2') format('woff2');
+    }
+
+    #root {
+      width: 1080px;
+      height: 1920px;
+      position: relative;
+      overflow: hidden;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: #F4F4F5;
+      box-sizing: border-box;
+      background: #09090B;
+    }
+
+    .frame-bg {
+      position: absolute;
+      inset: 0;
+      background: #0A0A0C;
+      z-index: 0;
+    }
+
+    .container {
+      position: absolute;
+      inset: 0;
+      width: 1080px;
+      height: 1920px;
+      padding: 130px 70px 80px 70px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      z-index: 2;
+      box-sizing: border-box;
+    }
+
+    .header-bar {
+      width: 100%;
+      max-width: 940px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .step-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 22px;
+      background: #18181B;
+      border: 1px solid #27272A;
+      border-radius: 8px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 22px;
+      font-weight: 600;
+      color: #FF7A1A;
+      text-transform: uppercase;
+    }
+
+    .time-badge {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 22px;
+      color: #A1A1AA;
+      background: #111114;
+      padding: 10px 20px;
+      border-radius: 8px;
+      border: 1px solid #27272A;
+      font-weight: 600;
+    }
+
+    .headline {
+      width: 100%;
+      max-width: 940px;
+      font-size: 64px;
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      color: #FFFFFF;
+      margin-bottom: 40px;
+      text-align: left;
+    }
+
+    .headline span.accent {
+      color: #FF7A1A;
+    }
+
+    /* KPI Summary Row */
+    .kpi-row {
+      width: 100%;
+      max-width: 940px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+
+    .kpi-card {
+      background: #121215;
+      border: 1px solid #27272A;
+      border-radius: 16px;
+      padding: 24px 28px;
+      text-align: left;
+    }
+
+    .kpi-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 18px;
+      color: #A1A1AA;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .kpi-value {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 38px;
+      font-weight: 800;
+      color: #FFFFFF;
+    }
+
+    .kpi-value.accent {
+      color: #FF7A1A;
+    }
+
+    /* Product Cards */
+    .products-list {
+      width: 100%;
+      max-width: 940px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .product-item {
+      background: #141418;
+      border: 1px solid #27272A;
+      border-radius: 16px;
+      padding: 22px 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .product-left {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      text-align: left;
+    }
+
+    .product-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 12px;
+      background: #1F1F24;
+      border: 1px solid #33333A;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 26px;
+      flex-shrink: 0;
+    }
+
+    .product-title {
+      font-size: 26px;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 4px;
+    }
+
+    .product-category {
+      font-size: 18px;
+      color: #A1A1AA;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .product-right {
+      text-align: right;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 4px;
+    }
+
+    .product-stock {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 24px;
+      font-weight: 700;
+      color: #FFFFFF;
+    }
+
+    .stock-badge {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 16px;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    .stock-badge.ok {
+      background: rgba(34, 197, 94, 0.12);
+      border: 1px solid rgba(34, 197, 94, 0.3);
+      color: #22C55E;
+    }
+
+    .stock-badge.warning {
+      background: rgba(245, 158, 11, 0.12);
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      color: #F59E0B;
+    }
+  </style>
+
+  <div data-hf-id="hf-stk0"
+    id="root"
+    data-composition-id="04-stock"
+    data-start="0"
+    data-duration="5.4"
+    data-width="1080"
+    data-height="1920"
+  >
+    <div data-hf-id="hf-stbg" id="f04-bg" class="clip frame-bg" data-start="0" data-duration="5.4" data-track-index="0"></div>
+
+    <div data-hf-id="hf-stct" id="f04-main" class="clip container" data-start="0" data-duration="5.4" data-track-index="1">
+      <div data-hf-id="hf-sthd" id="f04-header" class="header-bar">
+        <div data-hf-id="hf-stst" class="step-badge" data-layout-ignore="true">Paso 03 • Productos & Stock</div>
+        <div data-hf-id="hf-sttm" class="time-badge" data-layout-ignore="true">03:20 min</div>
+      </div>
+
+      <h2 data-hf-id="hf-stti" id="f04-title" class="headline">
+        Gestionás tus productos y <span data-hf-id="hf-stac" class="accent">el stock al instante</span>.
+      </h2>
+
+      <!-- Resumen KPI -->
+      <div data-hf-id="hf-stkp" id="f04-kpis" class="kpi-row">
+        <div data-hf-id="hf-kp1" class="kpi-card">
+          <div data-hf-id="hf-kl1" class="kpi-label" data-layout-ignore="true">Existencias Totales</div>
+          <div data-hf-id="hf-kv1" class="kpi-value">152 <span data-hf-id="hf-1f2n" style="font-size: 22px; color: #A1A1AA;" data-layout-ignore="true">unidades</span></div>
+        </div>
+        <div data-hf-id="hf-kp2" class="kpi-card">
+          <div data-hf-id="hf-kl2" class="kpi-label" data-layout-ignore="true">Stock Valorizado</div>
+          <div data-hf-id="hf-kv2" class="kpi-value accent">$ 542.000</div>
+        </div>
+      </div>
+
+      <!-- Listado de Productos -->
+      <div data-hf-id="hf-stls" id="f04-products" class="products-list">
+        <!-- Producto 1: Agua Mineral -->
+        <div data-hf-id="hf-p1" id="f04-prod-1" class="product-item">
+          <div data-hf-id="hf-pl1" class="product-left">
+            <div data-hf-id="hf-pi1" class="product-icon" data-layout-ignore="true">💧</div>
+            <div data-hf-id="hf-px1">
+              <div data-hf-id="hf-pt1" class="product-title">Agua Mineral 500ml</div>
+              <div data-hf-id="hf-pc1" class="product-category" data-layout-ignore="true">Bebidas • $ 1.200 c/u</div>
+            </div>
+          </div>
+          <div data-hf-id="hf-pr1" class="product-right">
+            <div data-hf-id="hf-ps1" class="product-stock">48 disp.</div>
+            <div data-hf-id="hf-pb1" class="stock-badge ok" data-layout-ignore="true">Óptimo</div>
+          </div>
+        </div>
+
+        <!-- Producto 2: Proteína Whey -->
+        <div data-hf-id="hf-p2" id="f04-prod-2" class="product-item">
+          <div data-hf-id="hf-pl2" class="product-left">
+            <div data-hf-id="hf-pi2" class="product-icon" data-layout-ignore="true">⚡</div>
+            <div data-hf-id="hf-px2">
+              <div data-hf-id="hf-pt2" class="product-title">Proteína Whey 1kg</div>
+              <div data-hf-id="hf-pc2" class="product-category" data-layout-ignore="true">Suplementos • $ 34.000 c/u</div>
+            </div>
+          </div>
+          <div data-hf-id="hf-pr2" class="product-right">
+            <div data-hf-id="hf-ps2" class="product-stock" style="color: #F59E0B;">8 disp.</div>
+            <div data-hf-id="hf-pb2" class="stock-badge warning" data-layout-ignore="true">Reponer</div>
+          </div>
+        </div>
+
+        <!-- Producto 3: Bebida Isotónica -->
+        <div data-hf-id="hf-p3" id="f04-prod-3" class="product-item">
+          <div data-hf-id="hf-pl3" class="product-left">
+            <div data-hf-id="hf-pi3" class="product-icon" data-layout-ignore="true">🥤</div>
+            <div data-hf-id="hf-px3">
+              <div data-hf-id="hf-pt3" class="product-title">Bebida Isotónica 600ml</div>
+              <div data-hf-id="hf-pc3" class="product-category" data-layout-ignore="true">Kiosco • $ 2.200 c/u</div>
+            </div>
+          </div>
+          <div data-hf-id="hf-pr3" class="product-right">
+            <div data-hf-id="hf-ps3" class="product-stock">36 disp.</div>
+            <div data-hf-id="hf-pb3" class="stock-badge ok" data-layout-ignore="true">Óptimo</div>
+          </div>
+        </div>
+
+        <!-- Producto 4: Barra Energética -->
+        <div data-hf-id="hf-p4" id="f04-prod-4" class="product-item">
+          <div data-hf-id="hf-pl4" class="product-left">
+            <div data-hf-id="hf-pi4" class="product-icon" data-layout-ignore="true">🍫</div>
+            <div data-hf-id="hf-px4">
+              <div data-hf-id="hf-pt4" class="product-title">Barra Proteica</div>
+              <div data-hf-id="hf-pc4" class="product-category" data-layout-ignore="true">Snacks • $ 1.800 c/u</div>
+            </div>
+          </div>
+          <div data-hf-id="hf-pr4" class="product-right">
+            <div data-hf-id="hf-ps4" class="product-stock">60 disp.</div>
+            <div data-hf-id="hf-pb4" class="stock-badge ok" data-layout-ignore="true">Óptimo</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+
+    tl.fromTo("#f04-header", 
+      { opacity: 0, y: -20 }, 
+      { opacity: 1, y: 0, duration: 0.35, ease: "power2.out" }, 
+      0.05
+    );
+
+    tl.fromTo("#f04-title", 
+      { opacity: 0, y: 25 }, 
+      { opacity: 1, y: 0, duration: 0.35, ease: "power2.out" }, 
+      0.15
+    );
+
+    tl.fromTo("#f04-kpis", 
+      { opacity: 0, scale: 0.96, y: 20 }, 
+      { opacity: 1, scale: 1, y: 0, duration: 0.35, ease: "power2.out" }, 
+      0.3
+    );
+
+    tl.fromTo("#f04-prod-1", 
+      { opacity: 0, y: 15 }, 
+      { opacity: 1, y: 0, duration: 0.3, ease: "power2.out" }, 
+      0.6
+    );
+
+    tl.fromTo("#f04-prod-2", 
+      { opacity: 0, y: 15 }, 
+      { opacity: 1, y: 0, duration: 0.3, ease: "power2.out" }, 
+      0.8
+    );
+
+    tl.fromTo("#f04-prod-3", 
+      { opacity: 0, y: 15 }, 
+      { opacity: 1, y: 0, duration: 0.3, ease: "power2.out" }, 
+      1.0
+    );
+
+    tl.fromTo("#f04-prod-4", 
+      { opacity: 0, y: 15 }, 
+      { opacity: 1, y: 0, duration: 0.3, ease: "power2.out" }, 
+      1.2
+    );
+
+    // Subtle attention pulse on low-stock & beverage items while VO mentions bebidas y suplementos
+    tl.to("#f04-prod-2", {
+      scale: 1.015,
+      duration: 0.22,
+      yoyo: true,
+      repeat: 1,
+      ease: "power1.inOut"
+    }, 3.1);
+
+    tl.to("#f04-prod-3", {
+      scale: 1.015,
+      duration: 0.22,
+      yoyo: true,
+      repeat: 1,
+      ease: "power1.inOut"
+    }, 3.6);
+
+    window.__timelines = window.__timelines || {};
+    window.__timelines["04-stock"] = tl;
+    tl.seek(0);
+  </script>
+</template>

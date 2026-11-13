@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <title>PlayComun Online - Promo TikTok & Reels</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+        background: #1c0545;
+      }
+      #root {
+        position: relative;
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+        background: #1c0545;
+      }
+      .scene {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div data-hf-id="hf-main-root"
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="44.0"
+      data-width="1080"
+      data-height="1920"
+    >
+      <!-- Audio Soundtrack (BGM + Voiceover Master Mix) -->
+      <audio data-hf-id="hf-audio-mix"
+        id="el-master-audio"
+        src="assets/audio/master-mix.mp3"
+        data-start="0"
+        data-duration="44.0"
+        data-volume="1.0"
+      ></audio>
+
+      <!-- Scene 1: Hook (0.0s - 5.0s) -->
+      <div data-hf-id="hf-s1"
+        id="el-01-hook"
+        class="scene"
+        data-composition-id="01-hook"
+        data-composition-src="compositions/frames/01-hook.html"
+        data-start="0"
+        data-duration="5.0"
+        data-track-index="0"
+      ></div>
+
+      <!-- Scene 2: Reveal & Plataforma (4.7s - 10.2s) -->
+      <div data-hf-id="hf-s2"
+        id="el-02-reveal"
+        class="scene"
+        data-composition-id="02-reveal"
+        data-composition-src="compositions/frames/02-reveal.html"
+        data-start="4.7"
+        data-duration="5.5"
+        data-track-index="1"
+      ></div>
+
+      <!-- Scene 3: Negocios, Presupuestos & Recetas (9.9s - 19.4s) -->
+      <div data-hf-id="hf-s3"
+        id="el-03-business"
+        class="scene"
+        data-composition-id="03-business"
+        data-composition-src="compositions/frames/03-business.html"
+        data-start="9.9"
+        data-duration="9.5"
+        data-track-index="0"
+      ></div>
+
+      <!-- Scene 4: Finanzas Personales & Cuotas (19.1s - 25.9s) -->
+      <div data-hf-id="hf-s4"
+        id="el-04-finance"
+        class="scene"
+        data-composition-id="04-finance"
+        data-composition-src="compositions/frames/04-finance.html"
+        data-start="19.1"
+        data-duration="6.8"
+        data-track-index="1"
+      ></div>
+
+      <!-- Scene 5: QR, Firmas & Compresión (25.6s - 34.1s) -->
+      <div data-hf-id="hf-s5"
+        id="el-05-utilities"
+        class="scene"
+        data-composition-id="05-utilities"
+        data-composition-src="compositions/frames/05-utilities.html"
+        data-start="25.6"
+        data-duration="8.5"
+        data-track-index="0"
+      ></div>
+
+      <!-- Scene 6: Sin Fricción (33.8s - 38.9s) -->
+      <div data-hf-id="hf-s6"
+        id="el-06-frictionless"
+        class="scene"
+        data-composition-id="06-frictionless"
+        data-composition-src="compositions/frames/06-frictionless.html"
+        data-start="33.8"
+        data-duration="5.1"
+        data-track-index="1"
+      ></div>
+
+      <!-- Scene 7: CTA Final (38.6s - 44.0s) -->
+      <div data-hf-id="hf-s7"
+        id="el-07-cta"
+        class="scene"
+        data-composition-id="07-cta"
+        data-composition-src="compositions/frames/07-cta.html"
+        data-start="38.6"
+        data-duration="5.4"
+        data-track-index="0"
+      ></div>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = gsap.timeline({ paused: true });
+
+      (function () {
+        const tl = window.__timelines["main"];
+
+        // 1 -> 2 Transition (at 4.7s)
+        tl.to("#el-01-hook", { opacity: 0, filter: "blur(6px)", scale: 1.02, duration: 0.35, ease: "power2.inOut" }, 4.7);
+        tl.fromTo("#el-02-reveal", { opacity: 0, filter: "blur(6px)", scale: 0.98 }, { opacity: 1, filter: "blur(0px)", scale: 1, duration: 0.35, ease: "power2.inOut" }, 4.7);
+
+        // 2 -> 3 Transition (at 9.9s)
+        tl.to("#el-02-reveal", { opacity: 0, filter: "blur(6px)", scale: 1.02, duration: 0.35, ease: "power2.inOut" }, 9.9);
+        tl.fromTo("#el-03-business", { opacity: 0, filter: "blur(6px)", scale: 0.98 }, { opacity: 1, filter: "blur(0px)", scale: 1, duration: 0.35, ease: "power2.inOut" }, 9.9);
+
+        // 3 -> 4 Transition (at 19.1s)
+        tl.to("#el-03-business", { opacity: 0, filter: "blur(6px)", scale: 1.02, duration: 0.35, ease: "power2.inOut" }, 19.1);
+        tl.fromTo("#el-04-finance", { opacity: 0, filter: "blur(6px)", scale: 0.98 }, { opacity: 1, filter: "blur(0px)", scale: 1, duration: 0.35, ease: "power2.inOut" }, 19.1);
+
+        // 4 -> 5 Transition (at 25.6s)
+        tl.to("#el-04-finance", { opacity: 0, filter: "blur(6px)", scale: 1.02, duration: 0.35, ease: "power2.inOut" }, 25.6);
+        tl.fromTo("#el-05-utilities", { opacity: 0, filter: "blur(6px)", scale: 0.98 }, { opacity: 1, filter: "blur(0px)", scale: 1, duration: 0.35, ease: "power2.inOut" }, 25.6);
+
+        // 5 -> 6 Transition (at 33.8s)
+        tl.to("#el-05-utilities", { opacity: 0, filter: "blur(6px)", scale: 1.02, duration: 0.35, ease: "power2.inOut" }, 33.8);
+        tl.fromTo("#el-06-frictionless", { opacity: 0, filter: "blur(6px)", scale: 0.98 }, { opacity: 1, filter: "blur(0px)", scale: 1, duration: 0.35, ease: "power2.inOut" }, 33.8);
+
+        // 6 -> 7 Transition (at 38.6s)
+        tl.to("#el-06-frictionless", { opacity: 0, filter: "blur(6px)", scale: 1.02, duration: 0.35, ease: "power2.inOut" }, 38.6);
+        tl.fromTo("#el-07-cta", { opacity: 0, filter: "blur(6px)", scale: 0.98 }, { opacity: 1, filter: "blur(0px)", scale: 1, duration: 0.35, ease: "power2.inOut" }, 38.6);
+
+        // Anchor span: main.duration() == 44.0s
+        tl.to({}, { duration: 44.0 }, 0);
+      })();
+    </script>
+  </body>
+</html>

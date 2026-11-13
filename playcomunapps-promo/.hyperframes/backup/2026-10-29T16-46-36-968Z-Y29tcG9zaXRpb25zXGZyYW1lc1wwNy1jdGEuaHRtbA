@@ -1,0 +1,309 @@
+<template>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Sora:wght@700;800;900&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    #root-07 {
+      width: 1080px;
+      height: 1920px;
+      position: relative;
+      overflow: hidden;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: #ffffff;
+      background: linear-gradient(155deg, #2e096e 0%, #20064f 52%, #150336 100%);
+      box-sizing: border-box;
+    }
+
+    .c07-bg-shape-1 {
+      position: absolute;
+      width: 340px;
+      height: 760px;
+      border-radius: 9999px;
+      background: linear-gradient(180deg, rgba(124, 58, 237, 0.16) 0%, rgba(91, 33, 182, 0.03) 100%);
+      top: -140px;
+      right: -80px;
+      pointer-events: none;
+    }
+
+    .c07-bg-shape-2 {
+      position: absolute;
+      width: 280px;
+      height: 620px;
+      border-radius: 9999px;
+      background: linear-gradient(180deg, rgba(139, 92, 246, 0.10) 0%, rgba(91, 33, 182, 0.02) 100%);
+      bottom: -120px;
+      left: -70px;
+      pointer-events: none;
+    }
+
+    .c07-content {
+      position: absolute;
+      top: 185px;
+      left: 72px;
+      right: 72px;
+      bottom: 240px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      text-align: center;
+      z-index: 10;
+    }
+
+    /* Main Title without fake top pill */
+    .c07-title {
+      font-family: 'Sora', sans-serif;
+      font-size: 74px;
+      font-weight: 900;
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+      color: #ffffff;
+      max-width: 920px;
+    }
+
+    .c07-title span.hl {
+      color: #ddd6fe;
+    }
+
+    /* Centerpiece: Clean High-Fidelity Domain Card */
+    .c07-url-card {
+      width: 100%;
+      background: rgba(19, 4, 46, 0.85);
+      border: 1.5px solid rgba(196, 181, 253, 0.35);
+      border-radius: 28px;
+      padding: 36px 34px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 22px;
+      box-shadow: 0 28px 64px rgba(8, 2, 24, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.14);
+    }
+
+    .c07-omnibox-strip {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: rgba(12, 2, 32, 0.65);
+      border: 1px solid rgba(196, 181, 253, 0.22);
+      border-radius: 14px;
+      padding: 10px 26px;
+      font-size: 19px;
+      font-weight: 600;
+      color: #cbd5e1;
+    }
+
+    .c07-lock {
+      color: #34d399;
+      display: flex;
+      align-items: center;
+    }
+
+    .c07-domain-display {
+      font-family: 'Sora', sans-serif;
+      font-size: 66px;
+      font-weight: 900;
+      letter-spacing: -0.02em;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      gap: 2px;
+    }
+
+    .c07-domain-display span.tld {
+      color: #c4b5fd;
+    }
+
+    .c07-sub-prompt {
+      font-size: 23px;
+      font-weight: 600;
+      color: #e2e8f0;
+      max-width: 780px;
+      line-height: 1.4;
+    }
+
+    /* Expanded Category Chips Grid + "+27" badge */
+    .c07-chips-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 11px;
+      max-width: 860px;
+      margin-top: 4px;
+    }
+
+    .c07-chip {
+      padding: 11px 18px;
+      background: rgba(255, 255, 255, 0.065);
+      border: 1px solid rgba(196, 181, 253, 0.2);
+      border-radius: 12px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #f1f5f9;
+    }
+
+    .c07-chip-plus {
+      padding: 11px 22px;
+      background: linear-gradient(135deg, #7c3aed 0%, #5b21b6 100%);
+      border: 1.5px solid #c4b5fd;
+      border-radius: 12px;
+      font-family: 'Sora', sans-serif;
+      font-size: 17px;
+      font-weight: 800;
+      color: #ffffff;
+      box-shadow: 0 6px 20px rgba(124, 58, 237, 0.45);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* Primary Action Button */
+    .c07-cta-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      width: 100%;
+      max-width: 860px;
+      height: 86px;
+      background: #ffffff;
+      color: #1c0545;
+      font-family: 'Sora', sans-serif;
+      font-size: 32px;
+      font-weight: 800;
+      border-radius: 20px;
+      border: none;
+      box-shadow: 0 14px 42px rgba(12, 2, 32, 0.45);
+      text-decoration: none;
+    }
+
+    .c07-cta-btn svg {
+      color: #1c0545;
+    }
+
+    /* Bottom Assurance */
+    .c07-bottom-note {
+      font-size: 18px;
+      font-weight: 600;
+      color: #cbd5e1;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .c07-bullet {
+      color: #c4b5fd;
+    }
+  </style>
+
+  <div data-hf-id="hf-07-root" id="root-07" data-composition-id="07-cta" data-width="1080" data-height="1920">
+    <div data-hf-id="hf-9goi" class="c07-bg-shape-1"></div>
+    <div data-hf-id="hf-5ikh" class="c07-bg-shape-2"></div>
+
+    <div data-hf-id="hf-i7uc" class="c07-content">
+      <!-- Main Hook Title without fake top badge -->
+      <h1 data-hf-id="hf-xxq0" id="c07-title" class="c07-title">
+        Todas tus herramientas.<br data-hf-id="hf-x5px"><span data-hf-id="hf-23vb" class="hl">En un solo lugar.</span>
+      </h1>
+
+      <!-- High-Fidelity Domain Centerpiece -->
+      <div data-hf-id="hf-boyy" id="c07-card" class="c07-url-card">
+        
+
+        <div data-hf-id="hf-hb1k" class="c07-domain-display">
+          playcomun<span data-hf-id="hf-lpyw" class="tld">.online</span>
+        </div>
+
+        <p data-hf-id="hf-p2oa" class="c07-sub-prompt" data-layout-ignore="true">
+          Entrá ahora y descubrí todo lo que podés resolver gratis y al instante.
+        </p>
+
+        <!-- Expanded Feature Chips + "+27" badge -->
+        <div data-hf-id="hf-asca" class="c07-chips-grid" data-layout-ignore="true">
+          <span data-hf-id="hf-cjh3" class="c07-chip">Calculadora de Precios</span>
+          <span data-hf-id="hf-pxwk" class="c07-chip">Presupuestos PDF</span>
+          <span data-hf-id="hf-kgxd" class="c07-chip">Costeo de Recetas</span>
+          <span data-hf-id="hf-hnhn" class="c07-chip">Control de Gastos</span>
+          <span data-hf-id="hf-3ge2" class="c07-chip">Dividir Cuentas</span>
+          <span data-hf-id="hf-gv24" class="c07-chip">Calculador de Cuotas</span>
+          <span data-hf-id="hf-b0z6" class="c07-chip">Generador QR</span>
+          <span data-hf-id="hf-0ikc" class="c07-chip">Firmar Documentos</span>
+          <span data-hf-id="hf-nxdo" class="c07-chip">Compresor de Fotos</span>
+          <span data-hf-id="hf-08aa" class="c07-chip">Calculadora de IVA</span>
+          <span data-hf-id="hf-sb9y" class="c07-chip">Aguinaldo</span>
+          <span data-hf-id="hf-n0y8" class="c07-chip-plus">+27 herramientas</span>
+        </div>
+      </div>
+
+      <!-- Action Button -->
+      <div data-hf-id="hf-md2n" id="c07-action" class="c07-cta-btn">
+        <span data-hf-id="hf-6x2k">Comenzar a usar gratis</span>
+        <svg data-hf-id="hf-mp9a" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line data-hf-id="hf-0425" x1="5" y1="12" x2="19" y2="12" />
+          <polyline data-hf-id="hf-f3xy" points="12 5 19 12 12 19" />
+        </svg>
+      </div>
+
+      <!-- Bottom Microcopy -->
+      <div data-hf-id="hf-5sq2" id="c07-bottom" class="c07-bottom-note" data-layout-ignore="true"><span data-hf-id="hf-llki" data-hf-text-key="child:0:span">Sin registrarse</span><span data-hf-id="hf-nk4i" data-hf-text-key="child:1:span">•</span><span data-hf-id="hf-a6xl" data-hf-text-key="child:2:span">Sin instalar nada</span><span data-hf-id="hf-beyu" data-hf-text-key="child:3:span">•</span></div>
+    </div>
+  </div>
+
+  <script>
+    window.__timelines = window.__timelines || {};
+    (function () {
+      const tl = gsap.timeline({ paused: true });
+      window.__timelines["07-cta"] = tl;
+
+      // Title entrance
+      tl.fromTo("#c07-title", 
+        { y: -20, opacity: 0 }, 
+        { y: 0, opacity: 1, duration: 0.45, ease: "power3.out" }, 
+        0.15
+      );
+
+      // Domain card entrance
+      tl.fromTo("#c07-card", 
+        { scale: 0.94, y: 30, opacity: 0 }, 
+        { scale: 1, y: 0, opacity: 1, duration: 0.55, ease: "power3.out" }, 
+        0.4
+      );
+
+      // Domain subtle pulse
+      tl.fromTo(".c07-domain-display", 
+        { scale: 0.98 }, 
+        { scale: 1.02, yoyo: true, repeat: 1, duration: 0.35, ease: "power2.inOut" }, 
+        1.0
+      );
+
+      // Highlight "+27 herramientas" badge pop
+      tl.fromTo(".c07-chip-plus",
+        { scale: 0.88 },
+        { scale: 1.05, yoyo: true, repeat: 1, duration: 0.3, ease: "power2.out" },
+        1.2
+      );
+
+      // Action button entrance
+      tl.fromTo("#c07-action", 
+        { scale: 0.92, y: 20, opacity: 0 }, 
+        { scale: 1, y: 0, opacity: 1, duration: 0.45, ease: "back.out(1.5)" }, 
+        1.4
+      );
+
+      // Bottom reassurance note
+      tl.fromTo("#c07-bottom", 
+        { y: 15, opacity: 0 }, 
+        { y: 0, opacity: 1, duration: 0.4, ease: "power2.out" }, 
+        1.8
+      );
+
+      // Total scene anchor (5.1s)
+      tl.to({}, { duration: 5.1 }, 0);
+    })();
+  </script>
+</template>

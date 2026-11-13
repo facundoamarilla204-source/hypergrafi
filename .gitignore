@@ -1,0 +1,8 @@
+node_modules/
+**/node_modules/
+.remotion/
+**/.remotion/
+dist/
+build/
+.DS_Store
+*.log

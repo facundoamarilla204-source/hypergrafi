@@ -1,0 +1,376 @@
+<template>
+  <style>
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      src: url('assets/fonts/captured-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 600;
+      src: url('assets/fonts/captured-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      src: url('assets/fonts/captured-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'JetBrains Mono';
+      font-style: normal;
+      font-weight: 500;
+      src: url('assets/fonts/captured-tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwgknk-4.woff2') format('woff2');
+    }
+
+    #root {
+      width: 1080px;
+      height: 1920px;
+      position: relative;
+      overflow: hidden;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: #F4F4F5;
+      box-sizing: border-box;
+      background: #09090B;
+    }
+
+    .frame-bg {
+      position: absolute;
+      inset: 0;
+      background: #0A0A0C;
+      z-index: 0;
+    }
+
+    .container {
+      position: absolute;
+      inset: 0;
+      width: 1080px;
+      height: 1920px;
+      padding: 130px 70px 80px 70px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      z-index: 2;
+      box-sizing: border-box;
+    }
+
+    .header-bar {
+      width: 100%;
+      max-width: 940px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .step-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 22px;
+      background: #18181B;
+      border: 1px solid #27272A;
+      border-radius: 8px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 22px;
+      font-weight: 600;
+      color: #FF7A1A;
+      text-transform: uppercase;
+    }
+
+    .time-badge {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 22px;
+      color: #A1A1AA;
+      background: #111114;
+      padding: 10px 20px;
+      border-radius: 8px;
+      border: 1px solid #27272A;
+      font-weight: 600;
+    }
+
+    .headline {
+      width: 100%;
+      max-width: 940px;
+      font-size: 64px;
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      color: #FFFFFF;
+      margin-bottom: 40px;
+      text-align: left;
+    }
+
+    .headline span.accent {
+      color: #FF7A1A;
+    }
+
+    /* Big Cash Overview */
+    .cash-card {
+      width: 100%;
+      max-width: 940px;
+      background: #121215;
+      border: 1px solid #27272A;
+      border-radius: 20px;
+      padding: 36px 40px;
+      margin-bottom: 30px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+      text-align: left;
+    }
+
+    .cash-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    .cash-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 18px;
+      color: #A1A1AA;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .cash-pill {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 17px;
+      padding: 6px 14px;
+      background: rgba(34, 197, 94, 0.12);
+      border: 1px solid rgba(34, 197, 94, 0.3);
+      color: #22C55E;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+
+    .cash-total {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 56px;
+      font-weight: 800;
+      color: #FFFFFF;
+      margin-bottom: 24px;
+      letter-spacing: -0.02em;
+    }
+
+    .cash-breakdown {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 16px;
+      padding-top: 20px;
+      border-top: 1px solid #27272A;
+    }
+
+    .breakdown-item {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .breakdown-name {
+      font-size: 17px;
+      color: #71717A;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .breakdown-val {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 24px;
+      font-weight: 700;
+      color: #E4E4E7;
+    }
+
+    /* Movements stream */
+    .movements-section {
+      width: 100%;
+      max-width: 940px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .section-title {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 20px;
+      color: #A1A1AA;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      text-align: left;
+    }
+
+    .movement-row {
+      background: #141418;
+      border: 1px solid #27272A;
+      border-radius: 14px;
+      padding: 20px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .movement-info {
+      text-align: left;
+    }
+
+    .movement-concept {
+      font-size: 24px;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 4px;
+    }
+
+    .movement-method {
+      font-size: 18px;
+      color: #A1A1AA;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .movement-amount {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 26px;
+      font-weight: 700;
+      color: #22C55E;
+    }
+  </style>
+
+  <div data-hf-id="hf-caj0"
+    id="root"
+    data-composition-id="05-caja"
+    data-start="0"
+    data-duration="5.75"
+    data-width="1080"
+    data-height="1920"
+  >
+    <div data-hf-id="hf-cjbg" id="f05-bg" class="clip frame-bg" data-start="0" data-duration="5.75" data-track-index="0"></div>
+
+    <div data-hf-id="hf-cjct" id="f05-main" class="clip container" data-start="0" data-duration="5.75" data-track-index="1">
+      <div data-hf-id="hf-cjhd" id="f05-header" class="header-bar">
+        <div data-hf-id="hf-cstb" class="step-badge" data-layout-ignore="true">Paso 04 • Control de Caja</div>
+        <div data-hf-id="hf-ctmb" class="time-badge" data-layout-ignore="true">04:10 min</div>
+      </div>
+
+      <h2 data-hf-id="hf-cjti" id="f05-title" class="headline">
+        Controlás tu caja y <span data-hf-id="hf-cjac" class="accent">cobros en un solo lugar</span>.
+      </h2>
+
+      <!-- Tarjeta Principal de Caja Diaria -->
+      <div data-hf-id="hf-cjcrd" id="f05-cash-card" class="cash-card">
+        <div data-hf-id="hf-cjch" class="cash-card-header">
+          <div data-hf-id="hf-cjcl" class="cash-label" data-layout-ignore="true">Total en Caja Diaria</div>
+          <div data-hf-id="hf-cjcp" class="cash-pill" data-layout-ignore="true">TURNO ABIERTO</div>
+        </div>
+
+        <div data-hf-id="hf-cjctt" class="cash-total">$ 184.500</div>
+
+        <div data-hf-id="hf-cjcbd" class="cash-breakdown">
+          <div data-hf-id="hf-cjb1" class="breakdown-item">
+            <span data-hf-id="hf-cjn1" class="breakdown-name" data-layout-ignore="true">Efectivo</span>
+            <span data-hf-id="hf-cjv1" class="breakdown-val">$ 72.000</span>
+          </div>
+          <div data-hf-id="hf-cjb2" class="breakdown-item">
+            <span data-hf-id="hf-cjn2" class="breakdown-name" data-layout-ignore="true">Transf. / MP</span>
+            <span data-hf-id="hf-cjv2" class="breakdown-val">$ 88.500</span>
+          </div>
+          <div data-hf-id="hf-cjb3" class="breakdown-item">
+            <span data-hf-id="hf-cjn3" class="breakdown-name" data-layout-ignore="true">Débito / Tarj.</span>
+            <span data-hf-id="hf-cjv3" class="breakdown-val">$ 24.000</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Movimientos Recientes -->
+      <div data-hf-id="hf-cjmvs" id="f05-moves" class="movements-section">
+        <div data-hf-id="hf-cjst" class="section-title" data-layout-ignore="true">Últimos Movimientos Asentados</div>
+
+        <div data-hf-id="hf-cjm1" id="f05-m1" class="movement-row">
+          <div data-hf-id="hf-cmi1" class="movement-info">
+            <div data-hf-id="hf-cmc1" class="movement-concept">Membresía Pase Libre Full</div>
+            <div data-hf-id="hf-cmm1" class="movement-method" data-layout-ignore="true">Efectivo • Carlos Pérez • 18:42</div>
+          </div>
+          <div data-hf-id="hf-cma1" class="movement-amount">+ $ 28.000</div>
+        </div>
+
+        <div data-hf-id="hf-cjm2" id="f05-m2" class="movement-row">
+          <div data-hf-id="hf-cmi2" class="movement-info">
+            <div data-hf-id="hf-cmc2" class="movement-concept">Cuota Musculación Mensual</div>
+            <div data-hf-id="hf-cmm2" class="movement-method" data-layout-ignore="true">Mercado Pago • Sofía Benítez • 18:25</div>
+          </div>
+          <div data-hf-id="hf-cma2" class="movement-amount">+ $ 22.000</div>
+        </div>
+
+        <div data-hf-id="hf-cjm3" id="f05-m3" class="movement-row">
+          <div data-hf-id="hf-cmi3" class="movement-info">
+            <div data-hf-id="hf-cmc3" class="movement-concept">Venta Kiosco 2x Isotónicas</div>
+            <div data-hf-id="hf-cmm3" class="movement-method" data-layout-ignore="true">Efectivo • Mostrador • 18:10</div>
+          </div>
+          <div data-hf-id="hf-cma3" class="movement-amount">+ $ 4.400</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+
+    tl.fromTo("#f05-header", 
+      { opacity: 0, y: -20 }, 
+      { opacity: 1, y: 0, duration: 0.35, ease: "power2.out" }, 
+      0.05
+    );
+
+    tl.fromTo("#f05-title", 
+      { opacity: 0, y: 25 }, 
+      { opacity: 1, y: 0, duration: 0.35, ease: "power2.out" }, 
+      0.15
+    );
+
+    tl.fromTo("#f05-cash-card", 
+      { opacity: 0, scale: 0.96, y: 25 }, 
+      { opacity: 1, scale: 1, y: 0, duration: 0.35, ease: "power2.out" }, 
+      0.3
+    );
+
+    tl.fromTo("#f05-m1", 
+      { opacity: 0, y: 15 }, 
+      { opacity: 1, y: 0, duration: 0.3, ease: "power2.out" }, 
+      0.7
+    );
+
+    tl.fromTo("#f05-m2", 
+      { opacity: 0, y: 15 }, 
+      { opacity: 1, y: 0, duration: 0.3, ease: "power2.out" }, 
+      0.95
+    );
+
+    tl.fromTo("#f05-m3", 
+      { opacity: 0, y: 15 }, 
+      { opacity: 1, y: 0, duration: 0.3, ease: "power2.out" }, 
+      1.2
+    );
+
+    // Subtle pulse on cash card & recent sale to eliminate dead stretch
+    tl.to("#f05-cash-card", {
+      scale: 1.012,
+      duration: 0.22,
+      yoyo: true,
+      repeat: 1,
+      ease: "power1.inOut"
+    }, 3.1);
+
+    tl.to("#f05-m1", {
+      scale: 1.015,
+      duration: 0.2,
+      yoyo: true,
+      repeat: 1,
+      ease: "power1.inOut"
+    }, 3.8);
+
+    window.__timelines = window.__timelines || {};
+    window.__timelines["05-caja"] = tl;
+    tl.seek(0);
+  </script>
+</template>

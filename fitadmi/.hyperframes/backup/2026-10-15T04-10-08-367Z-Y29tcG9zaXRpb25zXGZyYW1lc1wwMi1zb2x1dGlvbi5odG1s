@@ -1,0 +1,242 @@
+<template>
+  <style>
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      src: url('assets/fonts/captured-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      src: url('assets/fonts/captured-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'JetBrains Mono';
+      font-style: normal;
+      font-weight: 500;
+      src: url('assets/fonts/captured-tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwgknk-4.woff2') format('woff2');
+    }
+
+    #root {
+      width: 1080px;
+      height: 1920px;
+      position: relative;
+      overflow: hidden;
+      font-family: 'Inter', sans-serif;
+      color: #FAFAFA;
+      box-sizing: border-box;
+      background: #09090B;
+    }
+
+    .f02-bg {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, #0E0E12 0%, #08080A 100%);
+      z-index: 0;
+    }
+
+    .f02-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1080px;
+      height: 1600px;
+      padding: 100px 60px 40px 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      z-index: 2;
+      box-sizing: border-box;
+    }
+
+    .f02-logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding: 14px 34px;
+      background: #141417;
+      border: 1px solid #27272A;
+      border-radius: 9999px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      margin-bottom: 40px;
+    }
+
+    .f02-logo-icon {
+      width: 46px;
+      height: 46px;
+    }
+
+    .f02-logo-text {
+      font-size: 36px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: #FAFAFA;
+    }
+
+    .f02-logo-text span {
+      color: #D4681A;
+    }
+
+    .f02-headline {
+      font-size: 78px;
+      font-weight: 700;
+      line-height: 1.06;
+      letter-spacing: -0.03em;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+      color: #FAFAFA;
+    }
+
+    .f02-headline span.accent {
+      color: #D4681A;
+    }
+
+    .f02-sub {
+      font-size: 30px;
+      color: #A1A1AA;
+      max-width: 840px;
+      line-height: 1.45;
+      margin-bottom: 45px;
+      font-weight: 400;
+    }
+
+    .f02-pills {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 45px;
+    }
+
+    .f02-pill {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 19px;
+      font-weight: 600;
+      padding: 10px 22px;
+      background: #141417;
+      border: 1px solid #27272A;
+      color: #D4681A;
+      border-radius: 30px;
+      letter-spacing: 0.05em;
+    }
+
+    .f02-mockup-frame {
+      width: 100%;
+      max-width: 880px;
+      border-radius: 20px;
+      overflow: hidden;
+      border: 1px solid #27272A;
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6);
+      background: #141417;
+      position: relative;
+    }
+
+    .f02-mockup-bar {
+      height: 44px;
+      background: #1F1F23;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      gap: 10px;
+      border-bottom: 1px solid #27272A;
+    }
+
+    .f02-dot {
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .f02-mockup-img {
+      width: 100%;
+      height: 460px;
+      object-fit: cover;
+      object-position: top center;
+      display: block;
+    }
+  </style>
+
+  <div data-hf-id="hf-ija8" id="root" data-composition-id="02-solution" data-start="5" data-duration="5.5" data-width="1080" data-height="1920">
+    <div data-hf-id="hf-e5ua" id="f02-bg" class="clip f02-bg" data-start="0" data-duration="5.5" data-track-index="0"></div>
+
+    <div data-hf-id="hf-0cgn" id="f02-main" class="clip f02-container" data-start="0" data-duration="5.5" data-track-index="1">
+      <div data-hf-id="hf-r7e3" id="f02-logo" class="f02-logo-wrap">
+        
+        <div data-hf-id="hf-vnnv" class="f02-logo-text">Fit<span data-hf-id="hf-q1pq">Admi</span></div>
+      </div>
+
+      <h2 data-hf-id="hf-o29f" id="f02-title" class="f02-headline">
+        TODO TU GIMNASIO<br data-hf-id="hf-x5px">
+        <span data-hf-id="hf-1mrs" class="accent">BAJO CONTROL</span>
+      </h2>
+
+      <p data-hf-id="hf-3q9f" id="f02-desc" class="f02-sub">
+        Olvidate de las planillas. FitAdmi centraliza y automatiza toda tu gestión desde un solo panel.
+      </p>
+
+      <div data-hf-id="hf-5eh8" id="f02-pills" class="f02-pills">
+        <div data-hf-id="hf-39zw" class="f02-pill">✓ 100% ONLINE</div>
+        <div data-hf-id="hf-ibh0" class="f02-pill">✓ MULTI-DISPOSITIVO</div>
+        <div data-hf-id="hf-q2rq" class="f02-pill">✓ SIN INSTALACIÓN</div>
+      </div>
+
+      <div data-hf-id="hf-8zbi" id="f02-mockup" class="f02-mockup-frame">
+        <div data-hf-id="hf-l780" class="f02-mockup-bar">
+          <div data-hf-id="hf-i0o6" class="f02-dot" style="background: #ff5f56;"></div>
+          <div data-hf-id="hf-d5p9" class="f02-dot" style="background: #ffbd2e;"></div>
+          <div data-hf-id="hf-a2k0" class="f02-dot" style="background: #27c93f;"></div>
+        </div>
+        <img data-hf-id="hf-7w6k" src="assets/scroll-000.png" alt="Dashboard FitAdmi" class="f02-mockup-img">
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+
+    tl.fromTo("#f02-logo", 
+      { opacity: 0, scale: 0.9 }, 
+      { opacity: 1, scale: 1, duration: 0.6, ease: "power2.out" }, 
+      0.1
+    );
+
+    tl.fromTo("#f02-title", 
+      { opacity: 0, y: 30 }, 
+      { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }, 
+      0.4
+    );
+
+    tl.fromTo("#f02-desc", 
+      { opacity: 0, y: 20 }, 
+      { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 
+      0.7
+    );
+
+    tl.fromTo("#f02-pills .f02-pill", 
+      { opacity: 0, y: 15 }, 
+      { opacity: 1, y: 0, duration: 0.4, stagger: 0.12, ease: "power2.out" }, 
+      1.1
+    );
+
+    tl.fromTo("#f02-mockup", 
+      { opacity: 0, y: 60, scale: 0.97 }, 
+      { opacity: 1, y: 0, scale: 1, duration: 0.7, ease: "power2.out" }, 
+      1.6
+    );
+
+    // Subtle gentle float
+    tl.to("#f02-mockup", {
+      y: -10,
+      duration: 2.0,
+      ease: "sine.inOut"
+    }, 2.4);
+
+    window.__timelines["02-solution"] = tl;
+    tl.seek(0);
+  </script>
+</template>

@@ -1,0 +1,188 @@
+[a] Funcionalidades
+[a] App Socios
+[a] Beneficios
+[a] Contacto
+[span] Probar gratis
+[h1] Gestioná tu gimnasio y
+[span] conectá con tus socios.
+[p] FitAdmi reúne en un solo lugar la administración de cobros, membresías y asistencias, junto con una app móvil para que tus alumnos sigan su entrenamiento.
+[span] Comenzar prueba gratis de 7 días
+[span] Ver demo interactiva
+[p] Gestión Administrativa
+[h2] Todo el control de tu negocio en un solo panel
+[p] Herramientas claras para organizar las cuotas, los accesos diarios y el seguimiento de cada alumno sin perder tiempo en planillas.
+[h3] Panel de Gestión
+[p] El centro operativo de tu gimnasio: cobros, membresías, asistencias y clases en una interfaz rápida e intuitiva.
+[span] Clientes y membresías
+[span] Pagos y caja
+[span] Clases y reservas
+[span] Stock y productos
+[span] Entrenamiento
+[span] Reportes operativos
+[p] Herramientas del Sistema
+[h2] Módulos diseñados para el trabajo diario
+[p] Funcionalidades pensadas para resolver las tareas reales de recepción, administración y entrenamiento sin pasos innecesarios.
+[h3] Administración
+[h4] Clientes
+[p] Gestión centralizada de socios, datos personales, membresías e historial de asistencia.
+[h4] Membresías y Planes
+[p] Creación de planes periódicos, control de vencimientos y alertas de socios por vencer.
+[h4] Caja y Cobros
+[p] Control de ingresos diarios, múltiples medios de pago y registro claro de movimientos.
+[h4] Productos y Stock
+[p] Venta de bebidas, suplementos y artículos en mostrador con descuento automático de stock.
+[h4] Entrenadores
+[p] Asignación de alumnos, gestión del staff y supervisión de rutinas creadas.
+[h4] Reportes Operativos
+[p] Métricas de ingresos mensuales, asistencia promedio y estado de renovación de membresías.
+[h3] Operación Diaria
+[h4] Asistencias y Acceso por DNI
+[p] Registro de ingresos y control de acceso simplificado. El gimnasio puede identificar al socio mediante DNI, validar automáticamente si tiene una membresía activa y registrar su asistencia al instante.
+[h4] Clases y Reservas
+[p] Creación de clases, definición de horarios y cupos. Los socios pueden solicitar una plaza desde la App, y el gimnasio la gestiona y confirma desde el Panel para mantener todo organizado.
+[p] Seguimiento Deportivo
+[h2] Del plan de entrenamiento al progreso real
+[p] FitAdmi acompaña el trabajo de tus entrenadores. Creá rutinas personalizadas y permití que cada socio registre sus cargas para ver cómo evoluciona en el tiempo.
+[h4] Entrenador: Crea y asigna
+[p] Arma planes de entrenamiento en base a la biblioteca de ejercicios y los asigna al perfil del socio.
+[h4] Socio: Entrena y anota
+[p] Abre su rutina en el celular y registra los pesos y repeticiones realizados en cada serie.
+[h4] Seguimiento: Mide la evolución
+[p] Visualiza el historial semana a semana para ajustar cargas y mantener la constancia.
+[span] Press de Banca
+[span] Registro de series en app
+[span] Ejemplo en app
+[span] Semana 1
+[span] 60 kg
+[span] Semana 2
+[span] 62.5 kg
+[span] Semana 3
+[span] 65 kg
+[p] Experiencia para Socios
+[h2] Tu gimnasio también tiene su propia app
+[p] Junto con el panel de administración, tus alumnos acceden a una aplicación web progresiva vinculada a tu local para autogestionar reservas, ver rutinas y revisar pagos.
+[h3] App para Socios
+[p] Una aplicación vinculada directamente a tu gimnasio para que tus socios autogestionen su entrenamiento y se mantengan conectados.
+[span] Membresía y pagos
+[span] Reservas de clases
+[span] Entrenamiento
+[span] Progreso y pesos
+[span] Evolución semanal
+[span] Novedades
+[h3] Cuaderno de entrenamiento
+[p] Registran el peso utilizado y las repeticiones realizadas durante cada entrenamiento para llevar su control.
+[span] Home
+[span] Mi membresía
+[span] Clases y reservas
+[span] Asistencias
+[span] Mi rutina
+[span] Cuaderno de entrenamiento
+[span] Mi progreso
+[span] Comunicados
+[span] Mis pagos
+[span] Mi perfil
+[a] Conocé la App para socios
+[h1] Cuaderno
+[h4] Press de Banca
+[span] Peso
+[span] 80 kg
+[span] Series x Reps
+[span] 4x10
+[p] Actualizado:
+[p] Hoy
+[h4] Aperturas
+[span] Peso
+[span] 20 kg
+[span] Series x Reps
+[span] 4x12
+[p] Actualizado:
+[p] Hace 3 días
+[h4] Extensiones Tríceps
+[span] Peso
+[span] 45 kg
+[span] Series x Reps
+[span] 3x15
+[p] Actualizado:
+[p] Hace 3 días
+[h4] Publicá una novedad
+[p] Centralizá la comunicación del gimnasio. Publicás desde el Panel y los socios reciben los comunicados directamente en su App.
+[h4] Acceso simple y seguro
+[p] El socio se vincula con su gimnasio mediante un proceso muy simple:
+[strong] Código + DNI
+[p] . Sin complicaciones.
+[h4] Una cuenta, varios gimnasios
+[p] Si un usuario asiste a diferentes gimnasios con FitAdmi, puede vincularlos a su única cuenta y elegir con cuál ingresar.
+[p] Puesta en Marcha
+[h2] Poné tu gimnasio en marcha rápidamente
+[p] Configurar FitAdmi toma pocos minutos y no requiere instalaciones complicadas.
+[h4] Registrá tu gimnasio
+[p] Configurá la información básica y de contacto.
+[h4] Tus planes
+[p] Creá membresías, clases y productos.
+[h4] Sumá a tu equipo
+[p] Registrá entrenadores y responsables.
+[h4] Gestioná
+[p] Administrá membresías, pagos y asistencias.
+[h4] Conectá la App
+[p] Tus socios usan la app para ver clases y rutinas.
+[p] Beneficios Operativos
+[h2] Por qué los centros eligen FitAdmi
+[p] Diseñado para simplificar el día a día y ordenar la gestión de tus clientes con 7 días de acceso de prueba.
+[h5] Menos tareas manuales
+[p] Automatizá cálculos de vencimientos y reducí el tiempo dedicado a planillas.
+[h5] Comunicación directa con socios
+[p] El gimnasio y los miembros interactúan bajo la misma plataforma para reservas y avisos.
+[h5] Información ordenada y clara
+[p] Caja, socios, asistencias y rutinas organizados en un panel unificado.
+[h4] Todo centralizado
+[p] Clientes, membresías, caja, clases, asistencia, entrenamiento y comunicación unificados.
+[h4] Experiencia digital
+[p] Tus socios consultan su información y registran sus rutinas directamente desde el celular.
+[h4] Adaptable a tu centro
+[p] Desde un estudio de entrenamiento personal hasta un gimnasio con múltiples sedes.
+[h4] Control y respaldo
+[p] Registro de cada movimiento de caja, control de accesos por DNI y datos en la nube.
+[p] Suscripción Simple
+[h2] Empezá hoy sin riesgos
+[p] Tu plan incluye 7 días de prueba sin costo. Podés cancelar en cualquier momento antes del primer ciclo de facturación.
+[span] Plan Integral
+[h4] Acceso Total
+[span] $2000
+[span] ARS / mes (luego de tus 7 días gratis)
+[p] Panel administrativo completo y aplicación web para todos tus socios.
+[span] Panel Administrativo completo
+[span] App para Socios incluida
+[span] Gestión de clientes y cuotas
+[span] Control de caja y productos
+[span] Gestión de clases y reservas
+[span] Módulo de rutinas y entrenamiento
+[span] Soporte técnico preferente
+[span] Comenzar prueba gratis de 7 días
+[h2] Hablemos sobre FitAdmi
+[p] ¿Tenés alguna consulta o querés una demostración personalizada? Escribinos.
+[label] Nombre
+[label] Email
+[label] Teléfono / WhatsApp
+[span] (Opcional)
+[label] Nombre del gimnasio
+[span] (Opcional)
+[label] Mensaje
+[button] Enviar consulta
+[h2] Comenzá a gestionar tu gimnasio de forma simple
+[p] Probá FitAdmi durante 7 días sin costo. Configurá tus planes, cargá tus socios y conocé la app en minutos.
+[span] Comenzar prueba gratis de 7 días
+[button] Consultar por WhatsApp o email
+[p] Software de gestión administrativa y app móvil para gimnasios, boxes y centros deportivos.
+[h4] Producto
+[a] App para socios
+[a] Beneficios
+[a] Sobre Nosotros
+[a] Centro de Ayuda
+[a] Términos de Servicio
+[a] Política de Privacidad
+[h4] Contacto
+[span] playcomun.ok@gmail.com
+[span] Argentina
+[span] FitAdmi Inc. Todos los derechos reservados.
+[span] Desarrollado por
+[a] @Playcomun

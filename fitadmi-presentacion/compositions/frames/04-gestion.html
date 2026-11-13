@@ -1,0 +1,252 @@
+<template>
+  <div id="root" data-composition-id="scene-04-gestion" data-width="1080" data-height="1920">
+    <style>
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400 800;
+        src: url('../../assets/fonts/captured-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2') format('woff2');
+      }
+      @font-face {
+        font-family: 'Space Grotesk';
+        font-style: normal;
+        font-weight: 500 700;
+        src: url('../../assets/fonts/captured-V8mDoQDjQSkFtoMM3T6r8E7mPbF4C_k3HqU.woff2') format('woff2');
+      }
+      @font-face {
+        font-family: 'JetBrains Mono';
+        font-style: normal;
+        font-weight: 500;
+        src: url('../../assets/fonts/captured-tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwgknk-4.woff2') format('woff2');
+      }
+
+      #root {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle at 50% 45%, rgba(255, 122, 26, 0.14) 0%, #0A0A0A 65%);
+        overflow: hidden;
+        font-family: 'Inter', sans-serif;
+        color: #FAFAFA;
+      }
+      .s04-safe {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding: 200px 90px 330px 72px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .s04-kicker {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 20px;
+        color: #FF7A1A;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        margin-bottom: 14px;
+      }
+      .s04-title {
+        font-family: 'Space Grotesk', 'Inter', sans-serif;
+        font-size: 56px;
+        font-weight: 700;
+        color: #FFFFFF;
+        margin-bottom: 42px;
+      }
+      .s04-deck {
+        position: relative;
+        width: 100%;
+        height: 620px;
+      }
+      .s04-card {
+        position: absolute;
+        inset: 0;
+        background: #141417;
+        border: 1px solid #27272A;
+        border-radius: 28px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-shadow: 0 32px 80px rgba(0, 0, 0, 0.72);
+        opacity: 0;
+      }
+      .s04-card-tag {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 18px;
+        color: #FF7A1A;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+      .s04-card-h {
+        font-family: 'Space Grotesk', 'Inter', sans-serif;
+        font-size: 46px;
+        font-weight: 700;
+        color: #FFFFFF;
+        margin-top: 10px;
+      }
+      .s04-items {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 24px;
+      }
+      .s04-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 24px;
+        background: #18181B;
+        border: 1px solid #262626;
+        border-radius: 16px;
+        font-size: 23px;
+      }
+      .s04-pill {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 16px;
+        padding: 6px 14px;
+        border-radius: 999px;
+        background: rgba(255, 122, 26, 0.16);
+        color: #FF7A1A;
+      }
+      .s04-pill.ok {
+        background: rgba(16, 185, 129, 0.15);
+        color: #34D399;
+      }
+      .s04-summary {
+        position: absolute;
+        inset: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
+      }
+      .s04-mini {
+        background: #141417;
+        border: 1px solid rgba(255, 122, 26, 0.4);
+        border-radius: 22px;
+        padding: 28px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .s04-mini-num {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 18px;
+        color: #FF7A1A;
+      }
+      .s04-mini-title {
+        font-family: 'Space Grotesk', 'Inter', sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        color: #FFFFFF;
+      }
+      .s04-mini-sub {
+        font-size: 19px;
+        color: #A1A1A1;
+      }
+    </style>
+
+    <div class="s04-safe">
+      <div class="s04-kicker" id="s04-kicker" data-layout-ignore>Gestión integral</div>
+      <h2 class="s04-title" id="s04-title">Todo conectado en un panel</h2>
+
+      <div class="s04-deck">
+        <!-- 1. Asistencias -->
+        <div class="s04-card" id="s04-c1">
+          <div>
+            <div class="s04-card-tag" data-layout-ignore>01 · Control de acceso</div>
+            <div class="s04-card-h">ASISTENCIAS</div>
+          </div>
+          <div class="s04-items" data-layout-ignore>
+            <div class="s04-item"><span>Lucía Fernández · 18:42</span><span class="s04-pill ok">HABILITADA</span></div>
+            <div class="s04-item"><span>Mateo Gómez · 18:39</span><span class="s04-pill ok">HABILITADO</span></div>
+            <div class="s04-item"><span>Sofía Álvarez · 18:31</span><span class="s04-pill ok">HABILITADA</span></div>
+          </div>
+        </div>
+
+        <!-- 2. Clases y Entrenadores -->
+        <div class="s04-card" id="s04-c2">
+          <div>
+            <div class="s04-card-tag" data-layout-ignore>02 · Agenda y equipo</div>
+            <div class="s04-card-h">CLASES Y ENTRENADORES</div>
+          </div>
+          <div class="s04-items" data-layout-ignore>
+            <div class="s04-item"><span>CrossFit 19:00 · Prof. Martín</span><span class="s04-pill">16 / 18 cupos</span></div>
+            <div class="s04-item"><span>Funcional 20:00 · Prof. Carla</span><span class="s04-pill">14 / 15 cupos</span></div>
+            <div class="s04-item"><span>Musculación · Turno noche</span><span class="s04-pill ok">ACTIVA</span></div>
+          </div>
+        </div>
+
+        <!-- 3. Productos y Caja -->
+        <div class="s04-card" id="s04-c3">
+          <div>
+            <div class="s04-card-tag" data-layout-ignore>03 · Finanzas y ventas</div>
+            <div class="s04-card-h">PRODUCTOS Y CAJA</div>
+          </div>
+          <div class="s04-items" data-layout-ignore>
+            <div class="s04-item"><span>Cuota Mensual Full (Transferencia)</span><span class="s04-pill ok">+ $ 38.000</span></div>
+            <div class="s04-item"><span>Proteína Whey 1kg (Stock: 14)</span><span class="s04-pill ok">+ $ 42.500</span></div>
+            <div class="s04-item"><span>Balance diario en tiempo real</span><span class="s04-pill">$ 485.000</span></div>
+          </div>
+        </div>
+
+        <!-- 4. Reportes -->
+        <div class="s04-card" id="s04-c4">
+          <div>
+            <div class="s04-card-tag" data-layout-ignore>04 · Métricas clave</div>
+            <div class="s04-card-h">REPORTES</div>
+          </div>
+          <div class="s04-items" data-layout-ignore>
+            <div class="s04-item"><span>Socios activos este mes</span><span class="s04-pill ok">+14%</span></div>
+            <div class="s04-item"><span>Tasa de renovación</span><span class="s04-pill">92,4%</span></div>
+            <div class="s04-item"><span>Ingresos totales del período</span><span class="s04-pill ok">$ 6.420.000</span></div>
+          </div>
+        </div>
+
+        <!-- Resumen 2x2 -->
+        <div class="s04-summary" id="s04-summary">
+          <div class="s04-mini">
+            <span class="s04-mini-num" data-layout-ignore>01</span>
+            <div class="s04-mini-title">Asistencias</div>
+            <div class="s04-mini-sub" data-layout-ignore>Ingresos al instante</div>
+          </div>
+          <div class="s04-mini">
+            <span class="s04-mini-num" data-layout-ignore>02</span>
+            <div class="s04-mini-title">Clases &amp; Profes</div>
+            <div class="s04-mini-sub" data-layout-ignore>Cupos y horarios</div>
+          </div>
+          <div class="s04-mini">
+            <span class="s04-mini-num" data-layout-ignore>03</span>
+            <div class="s04-mini-title">Stock &amp; Caja</div>
+            <div class="s04-mini-sub" data-layout-ignore>Ingresos y egresos</div>
+          </div>
+          <div class="s04-mini">
+            <span class="s04-mini-num" data-layout-ignore>04</span>
+            <div class="s04-mini-title">Reportes</div>
+            <div class="s04-mini-sub" data-layout-ignore>Decisiones claras</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      (function () {
+        const tl = gsap.timeline({ paused: true });
+        tl.fromTo("#s04-kicker", { y: 18, opacity: 0 }, { y: 0, opacity: 1, duration: 0.4, ease: "power3.out" }, 0.1)
+          .fromTo("#s04-title", { y: 24, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" }, 0.2)
+          .fromTo("#s04-c1", { x: 80, opacity: 0 }, { x: 0, opacity: 1, duration: 0.45, ease: "power3.out" }, 0.35)
+          .to("#s04-c1", { x: -80, opacity: 0, duration: 0.35, ease: "power2.in" }, 2.2)
+          .fromTo("#s04-c2", { x: 80, opacity: 0 }, { x: 0, opacity: 1, duration: 0.45, ease: "power3.out" }, 2.35)
+          .to("#s04-c2", { x: -80, opacity: 0, duration: 0.35, ease: "power2.in" }, 4.6)
+          .fromTo("#s04-c3", { x: 80, opacity: 0 }, { x: 0, opacity: 1, duration: 0.45, ease: "power3.out" }, 4.75)
+          .to("#s04-c3", { x: -80, opacity: 0, duration: 0.35, ease: "power2.in" }, 7.0)
+          .fromTo("#s04-c4", { x: 80, opacity: 0 }, { x: 0, opacity: 1, duration: 0.45, ease: "power3.out" }, 7.15)
+          .to("#s04-c4", { scale: 0.9, opacity: 0, duration: 0.35, ease: "power2.in" }, 8.6)
+          .fromTo("#s04-summary", { scale: 0.92, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.5, ease: "power3.out" }, 8.75)
+          .to(["#s04-kicker", "#s04-title", "#s04-summary"], { opacity: 0, y: -20, duration: 0.45, ease: "power2.in" }, 9.8);
+        window.__timelines["scene-04-gestion"] = tl;
+      })();
+    </script>
+  </div>
+</template>
